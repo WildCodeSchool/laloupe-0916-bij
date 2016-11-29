@@ -14,7 +14,12 @@ const routes = ($routeProvider, $httpProvider) => {
             controller: 'mainController',
             controllerAs: 'vm'
         })
+        .when('/pres1', {
+            templateUrl: 'views/pres1/sheet1.html',
+            controller: 'presoneController',
+            controllerAs: 'vm'
+        })
         .otherwise({
             redirectTo: '/'
         });
-}
+};

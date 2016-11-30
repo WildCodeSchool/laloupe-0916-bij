@@ -41,7 +41,7 @@ created by the awesome electron community.
 
 ## CSS Structure and Rules
 
-**List of different CSS Structure **
+**List of different CSS Structure**
 
  - element_type 
  - namepage_type

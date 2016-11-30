@@ -1,0 +1,34 @@
+/* BODY*/
+body {
+    background-color: #2a477c;
+    font-style: Roboto;
+}
+
+.navbar_link {
+    color: #2a477c;
+}
+
+/* NAVBAR*/
+
+.navbar_logo {
+  width: 25%;
+}
+
+/* MAIN*/
+
+.main_center{
+  margin-top: 5%;
+}
+.main_lvdf_logo {
+  width: 50%;
+}
+
+.navbar_paragraphe {
+    color: white;
+    margin-left: 24%;
+    margin-right: 24%;
+}
+
+.main_next_logo{
+  font-size: 5em;
+}

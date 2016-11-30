@@ -1,18 +1,21 @@
-#pres1carousel, .pres1car {
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
-}
+/* Debut Menu de nagigation par image*/
 
 .pres1fixed {
-  width: 99vw;
+  width: 100vw;
   position: absolute;
+  margin-top: 1vh;
 }
 
 .pres1car {
   width: 100%;
   overflow: hidden;
+}
+
+#pres1carousel, .pres1car {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
 }
 
 #pres1carousel li {
@@ -43,12 +46,21 @@
   position: absolute;
 }
 
-
 .pres1next {
   position: absolute;
-  right: 0;
+  right: 0px;
 }
 
-.slideActive {
-  display:block;
+.active::before {
+  position: absolute;
+  background-color: #2A477C;
+  opacity: .8;
+  height: 15px;
+  line-height: 15px;
+  width: 25vw;
+  content: "active";
+  border-right: 2px solid white;
+  color: #2A477C;
+  bottom: 1px;
 }
+/* Fin Menu de nagigation par image*/

@@ -1,39 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="vendor/materialize/bin/materialize.css" title="materialize">
-  </head>
-  <body>
+<html lang="fr" ng-app='app'>
+    <head>
+        <meta charset="UTF-8">
+        <title>Le Vrai du Faux</title>
+        <link rel="stylesheet" href="views/pres1/assets/css/pres1.css" title="pres1">
+        <link rel="stylesheet" href="vendor/materialize/bin/materialize.css" title="materialize">
+    </head>
+    <body>
+        <div class="container">
+            <ng-view></ng-view>
+        </div>
 
+    </body>
 
-    <nav>
-  <div class="nav-wrapper">
-    <a href="#" class="brand-logo">Logo</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a href="sass.html">Sass</a></li>
-      <li><a href="badges.html">Components</a></li>
-      <li><a href="collapsible.html">JavaScript</a></li>
-    </ul>
-  </div>
-</nav>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-  </body>
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/angular/angular.min.js"></script>
+    <script src="vendor/angular-route/angular-route.min.js"></script>
+    <script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>
 
+    <script src="js/controllers/mainController.js"></script>
+    <script src="js/controllers/navbarController.js"></script>
+    <script src="js/controllers/presoneController.js"></script>
 
-          <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/app.js"></script>
 
-          <script src="vendor/angular/angular.min.js"></script>
-          <script src="vendor/angular-route/angular-route.min.js"></script>
-          <script src="vendor/angular-route/angular-sanitize.min.js"></script>
-
-  <script>
-    // You can also require other files to run in this process
-    require('../renderer.js')
-  </script>
+    <script>
+        // You can also require other files to run in this process
+        require('../renderer.js')
+    </script>
 </html>

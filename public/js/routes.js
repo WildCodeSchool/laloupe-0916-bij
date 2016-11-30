@@ -5,9 +5,6 @@ const routes = ($routeProvider, $httpProvider) => {
             templateUrl: 'views/main.html',
             controller: 'mainController',
             controllerAs: 'vm',
-            resolve: {
-                connected: checkIsConnected
-            }
         })
         .when('/parcours', {
             templateUrl: 'views/parcours.html',

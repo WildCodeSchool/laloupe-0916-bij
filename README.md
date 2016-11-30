@@ -38,3 +38,12 @@ For more example apps, see the
 created by the awesome electron community.
 
 #### License [CC0 1.0 (Public Domain)](LICENSE.md)
+
+## css structure and rules
+
+
+```bash
+# Nom-de-la-page_type
+exemple : navbar_logo
+
+```

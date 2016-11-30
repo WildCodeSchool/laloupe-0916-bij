@@ -55,6 +55,7 @@ function presoneController() {
         this.elAdd = angular.element(document.querySelector('#b' + index)).addClass('active');
         this.elRemove = angular.element(document.querySelector('#b' + this.nextIndex)).removeClass('active');
         this.nextIndex = index;
-      }this.active = index;
+      }
+      this.active = index;
     };
 }

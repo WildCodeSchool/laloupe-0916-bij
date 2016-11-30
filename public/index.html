@@ -2,18 +2,22 @@
 <html lang="fr" ng-app='app'>
     <head>
         <meta charset="UTF-8">
-        <title>Le Vrai du Faux</title>
+        <title>Le Vrai du Faux
+        </title>
         <link rel="stylesheet" href="views/pres1/assets/css/pres1.css" title="pres1">
         <link rel="stylesheet" href="vendor/materialize/bin/materialize.css" title="materialize">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
-    <body>
-        <div class="container">
-            <ng-view></ng-view>
-        </div>
 
+    <ng-include src="'views/navbar.html'"></ng-include>
+    <body>
+        <ng-view></ng-view>
     </body>
+    <ng-include src="'views/footer.html'"></ng-include>
 
     <script src="vendor/jquery/dist/jquery.min.js"></script>
+
     <script src="vendor/angular/angular.min.js"></script>
     <script src="vendor/angular-route/angular-route.min.js"></script>
     <script src="vendor/angular-sanitize/angular-sanitize.min.js"></script>

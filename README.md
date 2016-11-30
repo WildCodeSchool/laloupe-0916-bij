@@ -41,9 +41,10 @@ created by the awesome electron community.
 
 ## CSS Structure and Rules
 
+**List of different CSS Structure **
 
-```bash
-# element_type element_type
+ - element_type 
+ - namepage_type
+ 
 exemple : navbar_logo
 
-```

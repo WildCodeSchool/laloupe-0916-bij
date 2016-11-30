@@ -1,12 +1,12 @@
 <!-- PresentationCarousel -->
 <div ng-controller="presoneController as vm" class="pres1fixed">
     <div class="pres1car">
-        <span class="pres1prev" ng-click="vm.preview()" ><</span>
+        <span class="pres1prev" ng-click="vm.preview()"><</span>
         <ul id="pres1carousel" class="pres1carousel-list" style="{{vm.moveStyle}}">
             <li ng-repeat="slide in vm.slides">
                 <a id="{{$index}}" ng-class="{{vm.selected}}" href="#sheet{{$index+1}}"><img ng-src="views/pres1/assets/img/small/{{slide.image}}.jpg" alt="image{{$index+1}}"/></a>
             </li>
         </ul>
-        <button class="pres1next" ng-click="vm.next()" >></button>
+        <button class="pres1next" ng-click="vm.next()">></button>
     </div>
 </div>

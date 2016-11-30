@@ -35,8 +35,8 @@
   background-color: #2A477C;
   border: 1px solid white;
   opacity: 0.7;
-  line-height:150px; /* centrage vertical */
-  text-align:center; /* centrage horizontal */
+  line-height:150px;
+  text-align:center;
 }
 
 .pres1prev {

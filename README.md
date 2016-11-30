@@ -39,11 +39,11 @@ created by the awesome electron community.
 
 #### License [CC0 1.0 (Public Domain)](LICENSE.md)
 
-## css structure and rules
+## CSS Structure and Rules
 
 
 ```bash
-# Nom-de-la-page_type
+# element_type element_type
 exemple : navbar_logo
 
 ```

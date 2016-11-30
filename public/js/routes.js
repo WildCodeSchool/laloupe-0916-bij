@@ -11,7 +11,7 @@ const routes = ($routeProvider, $httpProvider) => {
         })
         .when('/parcours', {
             templateUrl: 'views/parcours.html',
-            controller: 'mainController',
+            controller: 'parcoursController',
             controllerAs: 'vm'
         })
         .otherwise({

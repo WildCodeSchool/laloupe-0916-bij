@@ -9,11 +9,9 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
 
-    <ng-include src="'views/navbar.html'"></ng-include>
     <body>
+    <ng-include src="'views/navbar.html'"></ng-include>
         <ng-view></ng-view>
-    </body>
-    <ng-include src="'views/footer.html'"></ng-include>
 
     <script src="vendor/jquery/dist/jquery.min.js"></script>
 
@@ -33,4 +31,5 @@
         // You can also require other files to run in this process
         require('../renderer.js')
     </script>
+  </body>
 </html>

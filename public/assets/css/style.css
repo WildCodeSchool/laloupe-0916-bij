@@ -6,6 +6,7 @@ body {
 
 .navbar_link {
     color: #2a477c;
+    font-size: 2em;
 }
 
 /* NAVBAR*/
@@ -25,10 +26,19 @@ body {
 
 .navbar_paragraphe {
     color: white;
-    margin-left: 24%;
-    margin-right: 24%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 .main_next_logo{
   font-size: 5em;
+}
+
+/* NAVBAR*/
+
+.footer_link {
+    color: #2a477c;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
 }

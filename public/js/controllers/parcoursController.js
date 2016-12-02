@@ -1,10 +1,9 @@
 function parcoursController() {
-
-    this.parcoursService = parcoursService;
-    this.load();
-  load() {
-    this.parcoursService.gatAll().then((res) => {
-      this.parcourss=res.data;
-    });
-  }
+  this.cadenas = 'lock icon';
+  this.unlock=()=>{
+    this.cadenas='unlock icon';
+  };
+  this.lock=()=>{
+    this.cadenas='lock icon';
+  };
 }

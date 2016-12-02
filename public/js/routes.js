@@ -16,6 +16,16 @@ const routes = ($routeProvider, $httpProvider) => {
             controller: 'presoneController',
             controllerAs: 'vm'
         })
+        .when('/mention', {
+            templateUrl: 'views/mention.html',
+            controller: 'mainController',
+            controllerAs: 'vm',
+        })
+        .when('/credit', {
+            templateUrl: 'views/credit.html',
+            controller: 'mainController',
+            controllerAs: 'vm',
+        })
         .otherwise({
             redirectTo: '/'
         });

@@ -65,6 +65,14 @@
 }
 /* Fin Menu de nagigation par image*/
 
-.blockSpace {
-  height: 2vh;
+.blockSpacePres {
+  height: 21vh;
+}
+
+.main_row {
+  margin-top: 20px;
+}
+
+.main_p {
+  margin: 15px;
 }

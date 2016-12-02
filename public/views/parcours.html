@@ -1,46 +1,38 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Hello World!</title>
-        <link rel="stylesheet" href="vendor/materialize/bin/materialize.css" title="materialize">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
-    </head>
-    <body>
-      <a href="#pres1">
-        <div class="row parcours_white_border">
-            <div class="col s2 parcours_blue_rectangle">
-                <span class="styleSentence">Parcours Collège</span>
-                <div class="lock icon"></div>
-            </div>
-            </a>
-            <div class="col s2 parcours_blue_rectangle">
-                <span class="styleSentence">Parcours 2</span>
-                <div class="lock icon"></div>
-            </div>
-            <div class="col s2 parcours_blue_rectangle">
-                <span class="styleSentence">Parcours 3</span>
-                <div class="lock icon"></div>
-            </div>
-            <div class="col s2 parcours_blue_rectangle">
-                <span class="styleSentence">Parcours 4</span>
-                <div class="lock icon"></div>
-            </div>
-            <div class="col s2 parcours_blue_rectangle">
-                <span class="styleSentence">Parcours 5</span>
-                <div class="lock icon"></div>
-            </div>
-            <div class="col s2 parcours_blue_rectangle">
-                <span class="styleSentence">Parcours 6</span>
-                <div class="lock icon"></div>
-            </div>
+<div class="row parcours_white_border" ng-controller='parcoursController as vm'>
+    <div class="col s2 parcours_blue_rectangle valign-wrapper" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock()">
+        <div class="valign">
+            <span class="styleFirstSentence center">Parcours Collège</span>
+            <div ng-class="{{'vm.cadenas'}}"></div>
         </div>
-    </body>
-
-    <script src="vendor/jquery/dist/jquery.min.js"></script>
-
-    <script src="vendor/angular/angular.min.js"></script>
-    <script src="vendor/angular-route/angular-route.min.js"></script>
-    <script src="vendor/angular-route/angular-sanitize.min.js"></script>
-</html>
+    </div>
+    <div class="col s2 parcours_blue_rectangle valign-wrapper" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock()">
+        <div class="valign">
+            <span class="styleSentence center">Parcours 2</span>
+            <div ng-class="{{'vm.cadenas'}}"></div>
+        </div>
+    </div>
+    <div class="col s2 parcours_blue_rectangle valign-wrapper" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock()">
+        <div class="valign">
+            <span class="styleSentence center">Parcours 3</span>
+            <div ng-class="{{'vm.cadenas'}}"></div>
+        </div>
+    </div>
+    <div class="col s2 parcours_blue_rectangle valign-wrapper" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock()">
+        <div class="valign">
+            <span class="styleSentence center">Parcours 4</span>
+            <div ng-class="{{'vm.cadenas'}}"></div>
+        </div>
+    </div>
+    <div class="col s2 parcours_blue_rectangle valign-wrapper" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock()">
+        <div class="valign">
+            <span class="styleSentence center">Parcours 5</span>
+            <div ng-class="{{'vm.cadenas'}}"></div>
+        </div>
+    </div>
+    <div class="col s2 parcours_blue_rectangle valign-wrapper" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock()">
+        <div class="valign">
+            <span class="styleSentence center">Parcours perso.</span>
+            <div ng-class="{{'vm.cadenas'}}"></div>
+        </div>
+    </div>
+</div>

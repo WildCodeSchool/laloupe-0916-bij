@@ -71,19 +71,18 @@ nav img {
     width: 50%;
 }
 
-
-/* parcours*/
+/*PARCOURS*/
 
 .lock.icon {
-    color: #fff;
-    position: absolute;
-    margin-left: 5%;
-    margin-top: -40vh;
-    width: 7.5vh;
-    height: 6vh;
-    border-radius: 10px;
-    border: solid 3px currentColor;
-    z-index: 100;
+  color: #fff;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 5vh;
+  width: 7.5vh;
+  height: 6vh;
+  border-radius: 10px;
+  border: solid 3px currentColor;
+  z-index: 100;
 }
 
 .lock.icon:before {
@@ -100,25 +99,60 @@ nav img {
     z-index: 100;
 }
 
+.unlock.icon {
+  color: #fff;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 5vh;
+  width: 7.5vh;
+  height: 6vh;
+  border-radius: 10px;
+  border: solid 3px currentColor;
+  z-index: 100;
+}
+
+.unlock.icon:before {
+  content: '';
+  position: absolute;
+  left: 1vh;
+  top: -5vh;
+  width: 5vh;
+  height: 3.3vh;
+  border-radius: 25px 25px 0 0;
+  border-top: solid 3px currentColor;
+  border-left: solid 3px currentColor;
+  border-right: solid 3px currentColor;
+}
+
+.unlock.icon:after {
+  content: '';
+  position: absolute;
+  left: 1vh;
+  top: -3vh;
+  width: 1px;
+  height: 3vh;
+  background-color: currentColor;
+  border-left: solid 3px currentColor;
+}
+
 .parcours_white_border {
     border: white solid 5px;
 }
 
 .parcours_blue_rectangle {
-    height: 100vh;
-    width: 50vh;
-    background-color: rgb(7, 33, 57);
-    border: #fff solid 2px;
-    color: #fff;
-    text-align: center;
-    font-family: 'Roboto:500', sans-serif;
-    font-size: 2em;
+  height: 100vh;
+  width: 50vh;
+  background-color: rgb(7, 33, 57);
+  border: #fff solid 2px;
+  color: #fff;
+  font-family: 'Roboto:500', sans-serif;
+  font-size: 2em;
 }
 
 .styleSentence {
-    border-bottom: #fff solid 2px;
-    padding: 0 2vh 0 2vh;
-    margin-top: -50px;
-    height: 100vh;
-    line-height: 100vh;
+  padding-left: 60px;
+}
+
+.styleFirstSentence {
+  padding-left: 25px;
 }

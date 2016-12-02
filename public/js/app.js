@@ -3,5 +3,5 @@ angular.module('app', ['ngRoute'])
         .controller('presoneController', presoneController)
         .controller('parcoursController', parcoursController)
         .controller('navbarController', navbarController)
-        .config(routes)
-        ;
+        .controller('parcoursController', parcoursController)
+        .config(routes);

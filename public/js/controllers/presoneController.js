@@ -21,31 +21,31 @@ function presoneController() {
     }, {
         image: '10'
     }];
-    index = 0;
-    position = 0;
+    this.index = 0;
+    this.position = 0;
     this.preview = () => {
-        if (index > 0) {
-            this.value = index + 3;
+        if (this.index > 0) {
+            this.value = this.index + 3;
             if (angular.element(document.querySelector('#b' + this.value))[0].className == "active") {
               this.active = this.value;
               // console.log(this.active);
               angular.element(document.querySelector('#b' + this.value)).removeClass('active');
             }
-            position = position - 25;
-            this.moveStyle = "margin-left: -" + position + "vw;";
-            index--;
-            // console.log(index);
-            // console.log(position);
+            this.position = this.position - 25;
+            this.moveStyle = "margin-left: -" + this.position + "vw;";
+            this.index--;
+            // console.log(this.index);
+            // console.log(this.position);
         }
     };
     this.next = () => {
-        if (index < this.slides.length - 4) {
+        if (this.index < this.slides.length - 4) {
             angular.element(document.querySelector('#b' + this.active)).addClass('active');
-            position = position + 25;
-            this.moveStyle = "margin-left: -" + position + "vw;";
-            index++;
-            // console.log(index);
-            // console.log(position);
+            this.position = this.position + 25;
+            this.moveStyle = "margin-left: -" + this.position + "vw;";
+            this.index++;
+            // console.log(this.index);
+            // console.log(this.position);
         }
     };
     this.select = (index) => {
@@ -57,10 +57,7 @@ function presoneController() {
         this.nextIndex = index;
       }
       this.active = index;
-      this.includerPres1 = 'views/pres1/views/sheet' + (index + 1) + '.html';
-      console.log(this.includerPres1);
-    };
-    this.vroumvroum = () => {
-      return this.includerPres1;
+      this.includerPres1 = 'views/pres1/views/sheet' + index + '.html';
+
     };
 }

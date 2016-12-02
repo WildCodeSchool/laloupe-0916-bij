@@ -26,10 +26,14 @@ nav .footer_link i {
 }
 
 /* MAIN*/
-
+.blockSpacePres {
+  height: 20vh;
+}
+/*
 .main_center{
   margin-top: 5%;
-}
+}*/
+
 .main_lvdf_logo {
   width: 50%;
 }

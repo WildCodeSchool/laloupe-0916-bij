@@ -11,8 +11,8 @@ const routes = ($routeProvider, $httpProvider) => {
             controller: 'parcoursController',
             controllerAs: 'vm'
         })
-        .when('/pres1', {
-            templateUrl: 'views/pres1/sheet1.html',
+        .when('/index1', {
+            templateUrl: 'views/pres1/index1.html',
             controller: 'presoneController',
             controllerAs: 'vm'
         })

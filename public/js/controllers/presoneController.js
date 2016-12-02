@@ -1,5 +1,5 @@
 function presoneController() {
-    console.log("pass");
+    this.includerPres1 = 'views/pres1/views/sheet1.html';
     this.slides = [{
         image: '1'
     }, {
@@ -57,5 +57,10 @@ function presoneController() {
         this.nextIndex = index;
       }
       this.active = index;
+      this.includerPres1 = 'views/pres1/views/sheet' + (index + 1) + '.html';
+      console.log(this.includerPres1);
+    };
+    this.vroumvroum = () => {
+      return this.includerPres1;
     };
 }

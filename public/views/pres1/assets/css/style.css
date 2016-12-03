@@ -23,9 +23,11 @@
   height: 150px;
   border: 1px solid white;
   list-style: none;
+  text-align: center;
 }
 
 #pres1carousel li img {
+  margin-top: -21px;
   width: 100%;
   height: 100%;
 }
@@ -51,15 +53,25 @@
   right: 0px;
 }
 
+.titlePres {
+  width: 24.95vw;
+  background-color: #2A477C;
+  opacity: .8;
+}
+
+.titlePres a {
+  color: white;
+}
+
 .active::before {
   position: absolute;
   background-color: #2A477C;
   opacity: .8;
   height: 15px;
   line-height: 15px;
-  width: 25vw;
+  width: 24.95vw;
   content: "active";
-  border-right: 2px solid white;
+  border-right: 1px solid white;
   color: #2A477C;
   bottom: 1px;
 }

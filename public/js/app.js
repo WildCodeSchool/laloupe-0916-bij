@@ -1,4 +1,4 @@
-angular.module('app', ['ngRoute', 'ngAnimate'])
+angular.module('app', ['ngRoute'])
         .controller('mainController', mainController)
         .controller('presoneController', presoneController)
         .controller('parcoursController', parcoursController)

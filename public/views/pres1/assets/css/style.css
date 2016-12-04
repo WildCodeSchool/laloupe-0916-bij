@@ -123,9 +123,9 @@ html {
 }
 
 .main_container {
-  /*margin-top: 30px;*/
-  margin-left: 30px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  /*margin-left: 30px;
+  margin-bottom: 10px;*/
 }
 
 .main_p {
@@ -139,6 +139,19 @@ html {
 }
 
 .main_answer img {
-width: 40%;
-height: 70%;
+  width: 40%;
+  height: 70%;
+}
+
+.main_btn_answer {
+  background-color: #597dbe;
+  height: 80px;
+}
+
+.main_btn {
+  font-size: 2em;
+}
+
+.main_btn a {
+  color: white;
 }

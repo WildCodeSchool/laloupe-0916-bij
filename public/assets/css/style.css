@@ -5,7 +5,6 @@ body {
     font-style: Roboto;
 }
 
-
 /* footer*/
 
 .main_footer {
@@ -190,7 +189,7 @@ nav img {
 }
 
 .parcours_blue_rectangle {
-  height: 105vh;
+  height: 90vh;
   background-color: rgb(7, 33, 57);
   border: #fff solid 2px;
   color: #fff;

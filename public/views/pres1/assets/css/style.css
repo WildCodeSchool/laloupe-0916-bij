@@ -1,5 +1,33 @@
-/* Debut Menu de nagigation par image*/
+/*main*/
+html {
+  color: white;
+  font-size: 1.4em;
+}
 
+/*animation ng-include*/
+.fadeAnimation.ng-enter,
+.fadeAnimation.ng-leave {
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
+.fadeAnimation.ng-enter {
+  z-index: 100;
+  opacity: 0;
+}
+.fadeAnimation.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.fadeAnimation.ng-leave {
+  z-index: 101;
+  opacity: 1;
+}
+.fadeAnimation.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+
+/* Debut Menu de nagigation par image*/
 .pres1fixed {
   width: 100vw;
   position: absolute;
@@ -23,9 +51,11 @@
   height: 150px;
   border: 1px solid white;
   list-style: none;
+  text-align: center;
 }
 
 #pres1carousel li img {
+  margin-top: -21px;
   width: 100%;
   height: 100%;
 }
@@ -35,11 +65,12 @@
   font-size: 2em;
   width: 2vw;
   height: 150px;
-  background-color: #2A477C;
+  background-color: #4fc2c0;
   border: 1px solid white;
   opacity: 0.7;
   line-height:150px;
   text-align:center;
+  z-index: 100;
 }
 
 .pres1prev {
@@ -51,16 +82,76 @@
   right: 0px;
 }
 
+.titlePres {
+  width: 24.95vw;
+  background-color: #4fc2c0;
+  opacity: .8;
+}
+
+.titlePres a {
+  color: white;
+}
+
 .active::before {
   position: absolute;
-  background-color: #2A477C;
+  background-color: #4fc2c0;
   opacity: .8;
   height: 15px;
   line-height: 15px;
-  width: 25vw;
+  width: 24.95vw;
   content: "active";
-  border-right: 2px solid white;
-  color: #2A477C;
+  border-right: 1px solid white;
+  color: #4fc2c0;
   bottom: 1px;
 }
 /* Fin Menu de nagigation par image*/
+
+.blockSpacePres {
+  height: 20vh;
+}
+
+.main_row {
+  margin-top: 5vh;
+  display: flex;
+  /*background-color: #e6e7e9;*/
+  height: 60vh;
+  width: 100%;
+}
+
+.main_title {
+  color: #4fc2c0;
+}
+
+.main_container {
+  margin-top: 30px;
+  /*margin-left: 30px;
+  margin-bottom: 10px;*/
+}
+
+.main_p {
+  margin: 15px;
+  /*color: black;*/
+}
+
+.main_answer {
+  display: flex;
+  flex-direction: row;
+}
+
+.main_answer img {
+  width: 40%;
+  height: 70%;
+}
+
+.main_btn_answer {
+  background-color: #597dbe;
+  height: 80px;
+}
+
+.main_btn {
+  font-size: 2em;
+}
+
+.main_btn a {
+  color: white;
+}

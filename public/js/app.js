@@ -1,7 +1,7 @@
-angular.module('app', ['ngRoute'])
+angular.module('app', ['ngRoute', 'ngAnimate'])
         .controller('mainController', mainController)
         .controller('presoneController', presoneController)
         .controller('parcoursController', parcoursController)
         .controller('navbarController', navbarController)
-        .config(routes)
-        ;
+        .controller('parcoursController', parcoursController)
+        .config(routes);

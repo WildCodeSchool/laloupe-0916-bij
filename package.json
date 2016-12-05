@@ -1,7 +1,7 @@
 {
-  "name": "electron-quick-start",
+  "name": "le_vrai_du_faux",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Plateforme de rééducation aux média",
   "main": "main.js",
   "scripts": {
     "start": "electron ."

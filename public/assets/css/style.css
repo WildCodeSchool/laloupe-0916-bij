@@ -61,8 +61,12 @@ nav img {
 
 
 /* MAIN*/
-.blockSpace {
+/*.blockSpace {
   height: 2vh;
+}*/
+
+.main_center {
+  margin-top: 20px;
 }
 
 .main_lvdf_logo {

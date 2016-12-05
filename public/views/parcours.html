@@ -1,38 +1,38 @@
 <div class="row parcours_white_border" ng-controller='parcoursController as vm'>
-    <div class="col s2 parcours_blue_rectangle valign-wrapper" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock()">
-        <div class="valign">
-            <span class="parcours_styleFirstSentence">Parcours Collège</span>
-            <div ng-class="{{'vm.cadenas'}}"></div>
+    <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.unlock(1)" ng-mouseleave="vm.lock(1)">
+        <div class="center">
+            <span>Parcours Collège</span>
+            <div id="padlock1" class="lock icon"></div>
         </div>
     </div>
-    <div class="col s2 parcours_blue_rectangle valign-wrapper" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock()">
-        <div class="valign">
-            <span class="parcours_styleSentence">Parcours 2</span>
-            <div ng-class="{{'vm.cadenas'}}"></div>
+    <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.unlock(2)" ng-mouseleave="vm.lock(2)">
+        <div class="center">
+            <span>Parcours 2</span>
+            <div id="padlock2" class="lock icon"></div>
         </div>
     </div>
-    <div class="col s2 parcours_blue_rectangle valign-wrapper" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock()">
-        <div class="valign">
-            <span class="parcours_styleSentence">Parcours 3</span>
-            <div ng-class="{{'vm.cadenas'}}"></div>
+    <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.unlock(3)" ng-mouseleave="vm.lock(3)">
+        <div class="center">
+            <span>Parcours 3</span>
+            <div id="padlock3" class="lock icon"></div>
         </div>
     </div>
-    <div class="col s2 parcours_blue_rectangle valign-wrapper" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock()">
-        <div class="valign">
-            <span class="parcours_styleSentence">Parcours 4</span>
-            <div ng-class="{{'vm.cadenas'}}"></div>
+    <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.unlock(4)" ng-mouseleave="vm.lock(4)">
+        <div class="center">
+            <span>Parcours 4</span>
+            <div id="padlock4" class="lock icon"></div>
         </div>
     </div>
-    <div class="col s2 parcours_blue_rectangle valign-wrapper" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock()">
-        <div class="valign">
-            <span class="parcours_styleSentence">Parcours 5</span>
-            <div ng-class="{{'vm.cadenas'}}"></div>
+    <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.unlock(5)" ng-mouseleave="vm.lock(5)">
+        <div class="center">
+            <span>Parcours 5</span>
+            <div id="padlock5" class="lock icon"></div>
         </div>
     </div>
-    <div class="col s2 parcours_blue_rectangle valign-wrapper" ng-mouseenter="vm.actif()" ng-mouseleave="vm.repos()">
-        <div class="valign">
-            <span class="parcours_styleSentence">Parcours perso.</span>
-            <div ng-class="{{'vm.crayon'}}"></div>
+    <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.actif(6)" ng-mouseleave="vm.repos(6)">
+        <div class="center">
+            <span>Parcours perso.</span>
+            <div id="padlock6" ng-class="{{'vm.crayon'}}"></div>
         </div>
     </div>
 </div>

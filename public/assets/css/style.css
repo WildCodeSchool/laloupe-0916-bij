@@ -38,7 +38,7 @@ nav ul a {
 }
 
 nav {
-    height: 62px;
+    height: 6vh;
 }
 
 nav img {
@@ -74,6 +74,10 @@ nav img {
 }
 
 /*PARCOURS*/
+
+.row {
+  margin-bottom: 0px;
+}
 
 .lock.icon {
   color: #fff;
@@ -179,7 +183,7 @@ nav img {
   content: '';
   position: absolute;
   left: -5.8vh;
-  top: -0.5vh;
+  top: -0.7vh;
   width: 0vh;
   height: 0vh;
   border-left: solid 2vh transparent;
@@ -188,12 +192,14 @@ nav img {
   border-bottom: solid 1.5vh transparent;
 }
 
+
 .parcours_white_border {
     border: white solid 5px;
+    height: 94vh;
 }
 
 .parcours_blue_rectangle {
-  height: 90vh;
+  height: 100%;
   background-color: rgb(7, 33, 57);
   border: #fff solid 2px;
   color: #fff;

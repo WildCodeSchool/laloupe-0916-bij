@@ -1,10 +1,11 @@
 function parcoursController() {
-  this.cadenas = 'lock icon';
-  this.unlock=()=>{
-    this.cadenas='unlock icon';
+  this.unlock=(value)=>{
+    angular.element(document.querySelector('#padlock'+value)).removeClass('lock icon');
+    angular.element(document.querySelector('#padlock'+value)).addClass('unlock icon');
   };
-  this.lock=()=>{
-    this.cadenas='lock icon';
+  this.lock=(value)=>{
+    angular.element(document.querySelector('#padlock'+value)).removeClass('unlock icon');
+    angular.element(document.querySelector('#padlock'+value)).addClass('lock icon');
   };
 
   this.crayon = 'edit icon';

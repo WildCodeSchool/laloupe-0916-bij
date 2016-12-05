@@ -186,10 +186,11 @@ nav img {
 
 .parcours_white_border {
     border: white solid 5px;
+    height: 90vh;
 }
 
 .parcours_blue_rectangle {
-  height: 90vh;
+  height: 100%;
   background-color: rgb(7, 33, 57);
   border: #fff solid 2px;
   color: #fff;

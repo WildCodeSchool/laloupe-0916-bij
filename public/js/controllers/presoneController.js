@@ -1,25 +1,37 @@
 function presoneController() {
     this.includerPres1 = '1';
     this.slides = [{
-        image: '1', title: '24h en images', logo:''
+        image: '1', title: '24h en images', icon:'./assets/icon/globe_turquoise.png', color:'turquoise'
     }, {
-        image: '2', title: '24h en images', logo:''
+        image: '2', title: '24h en images', icon:'./assets/icon/globe_turquoise.png', color:'turquoise'
     }, {
-        image: '3', title: '24h en images', logo:''
+        image: '3', title: '24h en images', icon:'./assets/icon/globe_turquoise.png', color:'turquoise'
     }, {
-        image: '4', title: 'Exercices: Légendage', logo:''
+        image: '4', title: 'Exercices: Légendage', icon:'./assets/icon/exe_turquoise.png', color:'turquoise'
     }, {
-        image: '5', title: '24h en images', logo:''
+        image: '5', title: '24h en images', icon:'./assets/icon/globe_turquoise.png', color:'turquoise'
     }, {
-        image: '6', title: '24h en images', logo:''
+        image: '6', title: '24h en images', icon:'./assets/icon/globe_turquoise.png', color:'turquoise'
     }, {
-        image: '7', title: 'Exercices: Recadrage', logo:''
+        image: '7', title: 'Exercices: Recadrage', icon:'./assets/icon/exe_turquoise.png', color:'turquoise'
     }, {
-        image: '8', title: 'International', logo:''
+        image: '8', title: 'International', icon:'./assets/icon/globe_blue.png', color:'bleu'
     }, {
-        image: '9', title: 'Exercices: Putaclic', logo:''
+        image: '9', title: 'Exercices: Putaclic', icon:'./assets/icon/exe_turquoise.png', color:'turquoise'
     }, {
-        image: '10', title: 'Exercices: Putaclic', logo:''
+        image: '10', title: 'Exercices: Putaclic', icon:'./assets/icon/exe_turquoise.png', color:'turquoise'
+    }, {
+        image: '11', title: 'Culture', icon:'./assets/icon/new_green.png', color:'vert'
+    }, {
+        image: '12', title: 'Vidéo', icon:'./assets/icon/video_turquoise.png', color:'turquoise'
+    }, {
+        image: '13', title: 'Technologie', icon:'./assets/icon/conv_orange.png', color:'orang'
+    }, {
+        image: '14', title: 'France', icon:'./assets/icon/conv_violet.png', color:'violet'
+    }, {
+        image: '15', title: 'International', icon:'./assets/icon/globe_blue.png', color:'bleu',
+    }, {
+        image: '16', title: 'Conclusion', icon:'./assets/icon/end_turquoise.png', color:'turquoise'
     }];
     this.index = 0;
     this.position = 0;

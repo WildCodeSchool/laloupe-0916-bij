@@ -5,10 +5,8 @@
           <button class="pres1prev" ng-click="vm.preview()"><</button>
           <ul id="pres1carousel" style="{{vm.moveStyle}}">
               <li ng-repeat="slide in vm.slides">
-                <div class="titlePres">
-                  <a>{{slide.icon}} {{slide.title}}</a>
-                </div>
-                  <a id="b{{$index}}"><img ng-src="views/pres1/assets/img/small/{{slide.image}}.jpg" alt="image{{$index+1}}" ng-click="vm.select($index)"/></a>
+                <div class="chip title_pres {{slide.color}}"><img src="{{slide.icon}}" alt="icone">{{slide.title}}</div>
+                <a id="b{{$index}}"><img class="img_nav" ng-src="views/pres1/assets/img/small/{{slide.image}}.jpg" alt="image{{$index+1}}" ng-click="vm.select($index)"/></a>
               </li>
           </ul>
           <button class="pres1next" ng-click="vm.next()">></button>

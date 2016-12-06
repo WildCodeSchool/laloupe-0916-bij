@@ -203,5 +203,13 @@ nav img {
   background-color: rgb(7, 33, 57);
   border: #fff solid 2px;
   color: #fff;
+}
+
+h2 {
   font-size: 2em;
+  margin-top: 120%;
+}
+
+.parcours_resume {
+  margin-top: 75%;
 }

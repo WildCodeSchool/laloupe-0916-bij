@@ -4,4 +4,5 @@ angular.module('app', ['ngRoute', 'ngAnimate'])
         .controller('parcoursController', parcoursController)
         .controller('navbarController', navbarController)
         .controller('parcoursController', parcoursController)
+        .directive('directiveZoom', directiveZoom)
         .config(routes);

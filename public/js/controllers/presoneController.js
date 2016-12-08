@@ -120,7 +120,8 @@ function presoneController() {
     };
 
     this.biggerTrueAnswer = () => {
-      if (angular.element(document.querySelector('#true_answer')).className != 'bigger') {
+      console.log(angular.element(document.querySelector('#true_answer'))[0].className);
+      if (angular.element(document.querySelector('#true_answer'))[0].className == 'chip choice') {
         angular.element(document.querySelector('#true_answer')).addClass('bigger');
         angular.element(document.querySelector('#false_answer')).removeClass('bigger');
       }
@@ -130,7 +131,7 @@ function presoneController() {
 };
 
       this.biggerFalseAnswer = () => {
-      if (angular.element(document.querySelector('#false_answer')).className != 'bigger') {
+      if (angular.element(document.querySelector('#false_answer'))[0].className == 'chip choice') {
         angular.element(document.querySelector('#false_answer')).addClass('bigger');
         angular.element(document.querySelector('#true_answer')).removeClass('bigger');
       }

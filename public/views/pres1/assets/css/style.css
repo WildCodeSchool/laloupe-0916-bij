@@ -143,3 +143,10 @@ html {
   margin-top: 10px;
   border-radius: 30px;
 }
+.answer.bigger img {
+height: 160%;
+}
+label {
+  color: white;
+  font-size: 1em;
+}

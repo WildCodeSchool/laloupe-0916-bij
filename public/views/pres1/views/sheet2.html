@@ -1,11 +1,70 @@
 <h4 class="main_title">24h en images</h4>
-<div class="main_row container col s10">
+<div class="main_row row col s12">
     <div class="main_container container col s6">
-        <img width="500" src="views/pres1/assets/img/large/carroussel.jpg">
+        <img src="views/pres1/assets/img/large/photo_lascars.jpg">
         <p class="main_p"></p>
     </div>
-    <div class="main_container container col s6">
-      <h3 class="main_text_title">10h16</h3>
-      <p class="main_p"><b><span>FRANCE</span></b> - Des policiers pris à partie et braqués par un groupe de jeunes dans le quartier du Bois l’Abbé à Champigny-sur-Marne (Val-de-Marne).</p>
+    <div class="main_sub_container container col s6" ng-show="">
+        <div class="subContainer row col s12">
+            <h3 class="sub_title">10h16</h3>
+            <p class="sub_p col s12">
+                <b><span>FRANCE</span></b> - Des policiers pris à partie et braqués par un groupe de jeunes dans le quartier du Bois l'Abbé à Champigny-sur-Marne (Val-de-Marne).</p>
+        </div>
+        <div class="sub_container row col s12">
+            <ul class="sub_answer col s12">
+                <!-- <li>
+                    <div class="chip answer">
+                        <div ng-init="checked = true">
+                            <label>
+                                <input type="checkbox" ng-model="checked"/>
+                                <p>Vrai ?</p>
+                            </label>
+                            <div class="answer" ng-show="checked">
+                                <img src="./assets/icon/like_blue.png" alt="vrai">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                  <div class="chip answer">
+                    <div ng-init="checked = true">
+                            <label>
+                                <input type="checkbox" ng-model="checked"/>
+                                Faux ?
+                            </label>
+                            <div class="answer" ng-show="checked">
+                                <img src="./assets/icon/angry_red.png" alt="faux">
+                            </div>
+                        </div>
+                    </div>
+                </li> -->
+
+                <li><div id="true_answer" class='answer' ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</div></li>
+                <li><div id="false_answer" class='answer' ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</div></li>
+                <!-- <li><img src="./assets/icon/like_blue.png" alt="vrai"> Vrai ?</li>
+          <li><img src="./assets/icon/angry_red.png" alt="faux"> Faux ?</li> -->
+            </ul>
+            <div class="sub_btn_answer row col s12">
+                <button class="btn_answer">
+                    <a href="" class="sub_btn">Voir la solution ></a>
+                </button>
+            </div>
+        </div>
     </div>
+
+<!-- ANSWER -->
+    <div class="main_sub_container container col s6" ng-hide="">
+        <div class="subContainer row col s12">
+            <p class="sub_p col s12">
+                <b><span>La légende de la photo est totalement fausse<br><br></span></b>La photo est tirée du tournage de la série ‘’Les Lascars’’ et n’a donc rien à voir avec des faits réels dans le Val-de-Marne. Il s’agit ici d’un hoax (détournement) dont l’objectif est de susciter des commentaires discriminants.</p>
+    </div>
+<!-- ANSWER -->
+
+
+
+
+
+
+
 </div>

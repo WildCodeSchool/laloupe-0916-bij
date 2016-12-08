@@ -108,16 +108,34 @@ function presoneController() {
         }
     };
     this.select = (index) => {
-        if (angular.element(document.querySelector('#b' + index))[0].className != "active" && this.nextIndex == index) {
-            this.elAdd = angular.element(document.querySelector('#b' + index)).addClass('active');
-        } else {
-            this.elAdd = angular.element(document.querySelector('#b' + index)).addClass('active');
-            this.elRemove = angular.element(document.querySelector('#b' + this.nextIndex)).removeClass('active');
-            this.nextIndex = index;
-        }
-        this.active = index;
-        this.includerPres1 = index + 1;
-        console.log(index + 1);
-        console.log(this.includerPres1);
+      if (angular.element(document.querySelector('#b' + index))[0].className != "active" && this.nextIndex == index) {
+        this.elAdd = angular.element(document.querySelector('#b' + index)).addClass('active');
+      } else {
+        this.elAdd = angular.element(document.querySelector('#b' + index)).addClass('active');
+        this.elRemove = angular.element(document.querySelector('#b' + this.nextIndex)).removeClass('active');
+        this.nextIndex = index;
+      }
+      this.active = index;
+      this.includerPres1 =  index+1;
+    };
+
+    this.biggerTrueAnswer = () => {
+      if (angular.element(document.querySelector('#true_answer')).className != 'bigger') {
+        angular.element(document.querySelector('#true_answer')).addClass('bigger');
+        angular.element(document.querySelector('#false_answer')).removeClass('bigger');
+      }
+      else {
+        angular.element(document.querySelector('#true_answer')).removeClass('bigger');
+      }
+};
+
+      this.biggerFalseAnswer = () => {
+      if (angular.element(document.querySelector('#false_answer')).className != 'bigger') {
+        angular.element(document.querySelector('#false_answer')).addClass('bigger');
+        angular.element(document.querySelector('#true_answer')).removeClass('bigger');
+      }
+      else {
+        angular.element(document.querySelector('#false_answer')).removeClass('bigger');
+      }
     };
 }

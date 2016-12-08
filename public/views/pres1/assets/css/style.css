@@ -47,7 +47,7 @@ html {
   opacity: 0;
 }
 
-/* Debut Menu de nagigation par image*/
+/* Debut Menu de navigation par image*/
 .pres1fixed {
   width: 100vw;
   position: absolute;
@@ -226,6 +226,10 @@ html {
   width: auto;
 }
 
+.answer.bigger img {
+height: 160%;
+}
+
 .btn_answer {
   background-color: #597dbe;
   width: 70%;
@@ -256,4 +260,9 @@ html {
 transform: rotateX(180deg);
 -webkit-transform: rotateX(180deg);
 -ms-transform: rotateX(180deg);
+}
+
+label {
+  color: white;
+  font-size: 1em;
 }

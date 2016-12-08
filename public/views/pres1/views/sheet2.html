@@ -1,7 +1,9 @@
-<h4 class="main_title">24h en images</h4>
-<div class="main_row row col s12">
+<!-- question -->
+<div ng-hide="show" class="main_row row col s12">
     <div class="main_container container col s6">
+      <div class="container_img">
         <img src="views/pres1/assets/img/large/photo_lascars.jpg">
+      </div>
         <p class="main_p"></p>
     </div>
     <div class="main_sub_container container col s6">
@@ -13,20 +15,55 @@
                 </b>
                 - Des policiers pris à partie et braqués par un groupe de jeunes dans le quartier du Bois l'Abbé à Champigny-sur-Marne (Val-de-Marne).</p>
         </div>
+        <p class="main_p col s12">
+            <b>
+                <span></span>
+            </b>
+        </p>
+    </div>
+    <div class="main_sub_container container col s6">
+      <div class="subContainer row col s12">
+          <h1 class="sub_title">10h16</h3>
+          <p class="sub_p col s12">
+              <b><span>FRANCE</span></b> - Des policiers pris à partie et braqués par un groupe de jeunes dans le quartier du Bois l'Abbé à Champigny-sur-Marne (Val-de-Marne).</p>
+      </div>
         <div class="sub_container row col s12">
-            <ul class="sub_answer col s12">
-                <li>
-                    <div id="true_answer" class='answer' ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</div>
+            <ul class="sub_main container col s12">
+                <li class="col s6">
+                    <div id="true_answer" class="chip choice" ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</div>
                 </li>
-                <li>
-                    <div id="false_answer" class='answer' ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</div>
+                <li class="col s6">
+                    <div id="false_answer" class="chip choice" ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</div>
                 </li>
             </ul>
-            <div class="sub_btn_answer row col s12">
-                <button class="btn_answer">
-                    <a href="" class="sub_btn">Voir la solution ></a>
+            <div class="sub_btn_choice row col s12 center-align">
+                <button class="btn_choice" ng-click="show = true">
+                    <a href="" class="sub_btn_choice">Voir la solution ></a>
                 </button>
             </div>
+        </div>
+    </div>
+</div>
+<!-- answer -->
+<div ng-show="show" class="main_row_answer row col s10">
+    <div class="main_container_answer container col s8">
+        <div id="zoom_area">
+          <div class="marking">
+            <img src="./assets/icon/angry_red.png" alt="faux">
+          </div>
+          <div id="zoom"></div>
+          <img id="zoom_sur" src="views/pres1/assets/img/large/photo_lascars.jpg">
+        </div>
+    </div>
+    <div class="main_sub_container_answer container col s4">
+        <p class="sub_p_answer col s12">
+            <b>
+                <span>FRANCE</span>
+            </b> - Des policiers pris à partie et braqués par un groupe de jeunes dans le quartier du Bois l'Abbé à Champigny-sur-Marne (Val-de-Marne).</p>
+        <div class="sub_btn_answer row col s12 center-align">
+            <button class="btn_answer">
+                <a href="" class="sub_btn_answer">Suivant ></a>
+            </button>
         </div>
     </div>
 </div>

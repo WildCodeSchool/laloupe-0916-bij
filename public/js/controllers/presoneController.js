@@ -1,8 +1,10 @@
 function presoneController() {
-  this.show = false;
+    angular.element(document.querySelector('#b0')).addClass('active');
+    this.show = false;
     this.includerPres1 = '1';
+    this.active = 0;
     this.slides = [{
-        image: '1',
+        image: 'test',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
@@ -108,12 +110,12 @@ function presoneController() {
         }
     };
     this.select = (index) => {
-      if (angular.element(document.querySelector('#b' + index))[0].className != "active" && this.nextIndex == index) {
-        this.elAdd = angular.element(document.querySelector('#b' + index)).addClass('active');
+      if (angular.element(document.querySelector('#b' + index))[0].className != "active" && this.active == index) {
+        angular.element(document.querySelector('#b' + index)).addClass('active');
       } else {
-        this.elAdd = angular.element(document.querySelector('#b' + index)).addClass('active');
-        this.elRemove = angular.element(document.querySelector('#b' + this.nextIndex)).removeClass('active');
-        this.nextIndex = index;
+        angular.element(document.querySelector('#b' + index)).addClass('active');
+        angular.element(document.querySelector('#b' + this.active)).removeClass('active');
+        this.active = index;
       }
       this.active = index;
       this.includerPres1 =  index+1;

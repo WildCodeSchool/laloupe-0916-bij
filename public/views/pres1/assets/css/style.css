@@ -85,31 +85,42 @@ html {
   display: flex;
   flex-direction: row;
 }
-.sub_btn_choise {
+.sub_btn_choice {
   font-size: 3rem;
   color: white;
   margin-left: auto;
   margin-right: auto;
 }
-.btn_choise {
+.btn_choice {
   margin-top: 100px;
   background-color: #597dbe;
   width: 50%;
-  margin-top: 30px;
+  margin-top: 90px;
   border-radius: 30px;
 }
-.choise {
+.choice {
   padding-left: 20%;
-  padding-right: 20%;
+  margin-top: -20%;
   height: 10vh;
   font-size: 3.1rem;
   line-height: 10vh;
   background-color: inherit;
   color: white;
 }
-.choise img {
+.choice img {
   height: 100%;
   width: auto;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
+.bigger img {
+  height: 140%;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
 }
 
 /* answer */
@@ -143,10 +154,9 @@ html {
   margin-top: 10px;
   border-radius: 30px;
 }
-.answer.bigger img {
-height: 160%;
-}
-label {
-  color: white;
-  font-size: 1em;
+
+.marking {
+  position: relative;
+  height: 20%;
+  
 }

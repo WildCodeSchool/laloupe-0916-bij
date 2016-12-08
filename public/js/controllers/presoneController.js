@@ -54,7 +54,7 @@ function presoneController() {
         icon: './assets/icon/exe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '11_Vraix_Faux_Minion',
+        image: '11_Vraix_Faux_Minion_small',
         title: 'Culture',
         icon: './assets/icon/new_green.png',
         color: 'vert'

@@ -1,6 +1,7 @@
 /* zoom animation */
 #zoom_area {
   position: relative;
+  margin-left: 30px;
   height: 100%;
 }
 #zoom_area img {

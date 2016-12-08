@@ -6,7 +6,7 @@
 }
 #zoom_area img {
   margin-left: 0px;
-  height: 100%;
+  width: 100%;
 }
 #zoom {
   position: absolute;

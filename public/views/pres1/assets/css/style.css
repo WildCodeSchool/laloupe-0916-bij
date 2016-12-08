@@ -150,7 +150,7 @@ html {
 }
 .btn_answer {
   background-color: #597dbe;
-  width: 50%;
+  width: 80%;
   margin-top: 10px;
   border-radius: 30px;
 }
@@ -158,5 +158,5 @@ html {
 .marking {
   position: relative;
   height: 20%;
-  
+
 }

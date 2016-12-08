@@ -12,63 +12,55 @@ body {
     bottom: 0;
     width: 100%;
 }
-
 .footer_link, nav {
     height: 50px;
 }
-
 nav .footer_link i {
     height: 50px;
     line-height: 50px;
 }
 
-
 /* NAVBAR*/
 
+.right, .right li, .right li a, .right li a i {
+  height: 6vh;
+  line-height: 6vh;
+}
+.right a {
+  font-size: 1.5rem;
+}
 .navbar_link {
     color: #2a477c;
 }
-
 nav ul a {
     color: #2a477c;
 }
-
 .navbar_logo {
     height: 100%;
 }
-
 nav {
     height: 6vh;
 }
-
 nav img {
     width: 100%;
 }
-
 .navbar_logo {
     max-height: 65px;
     width: auto;
     height: 100%;
 }
-
 .navbar_paragraphe {
     color: white;
 }
-
 .main_next_logo {
     font-size: 5em;
 }
 
-
 /* MAIN*/
-/*.blockSpace {
-  height: 2vh;
-}*/
 
 .main_center {
   margin-top: 20px;
 }
-
 .main_lvdf_logo {
     width: 50%;
 }
@@ -78,7 +70,6 @@ nav img {
 .row {
   margin-bottom: 0px;
 }
-
 .lock.icon {
   color: #fff;
   position: absolute;
@@ -89,7 +80,6 @@ nav img {
   border-radius: 10px;
   border: solid 3px currentColor;
 }
-
 .lock.icon:before {
   content: '';
   position: absolute;
@@ -102,7 +92,6 @@ nav img {
   border-left: solid 3px currentColor;
   border-right: solid 3px currentColor;
 }
-
 .unlock.icon {
   color: #fff;
   position: absolute;
@@ -115,7 +104,6 @@ nav img {
   -webkit-transform: rotate(20deg);
           transform: rotate(20deg);
 }
-
 .unlock.icon:before {
   content: '';
   position: absolute;
@@ -128,7 +116,6 @@ nav img {
   border-left: solid 3px currentColor;
   border-right: solid 3px currentColor;
 }
-
 .unlock.icon:after {
   content: '';
   position: absolute;
@@ -139,7 +126,6 @@ nav img {
   background-color: currentColor;
   border-left: solid 3px currentColor;
 }
-
 .edit.icon {
   color: #fff;
   position: absolute;
@@ -152,7 +138,6 @@ nav img {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
-
 .edit.icon:before {
   content: '';
   position: absolute;
@@ -165,7 +150,6 @@ nav img {
   border-top: solid 1.5vh transparent;
   border-bottom: solid 1.5vh transparent;
 }
-
 .write.icon {
   color: #fff;
   position: absolute;
@@ -178,7 +162,6 @@ nav img {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-
 .write.icon:before {
   content: '';
   position: absolute;
@@ -191,25 +174,20 @@ nav img {
   border-top: solid 1.5vh transparent;
   border-bottom: solid 1.5vh transparent;
 }
-
-
 .parcours_white_border {
     border: white solid 5px;
     height: 94vh;
 }
-
 .parcours_blue_rectangle {
   height: 100%;
   background-color: rgb(7, 33, 57);
   border: #fff solid 2px;
   color: #fff;
 }
-
 h2 {
   font-size: 2em;
   margin-top: 120%;
 }
-
 .parcours_resume {
   margin-top: 75%;
 }

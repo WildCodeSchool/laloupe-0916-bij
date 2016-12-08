@@ -117,7 +117,5 @@ function presoneController() {
         }
         this.active = index;
         this.includerPres1 = index + 1;
-        console.log(index + 1);
-        console.log(this.includerPres1);
     };
 }

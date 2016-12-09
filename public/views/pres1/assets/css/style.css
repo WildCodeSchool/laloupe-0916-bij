@@ -96,7 +96,7 @@ html {
   background-color: #597dbe;
   width: 50%;
   margin-top: 90px;
-  border-radius: 30px;
+  /*border-radius: 30px;*/
 }
 .choice {
   padding-left: 20%;
@@ -152,11 +152,11 @@ html {
   background-color: #597dbe;
   width: 80%;
   margin-top: 10px;
-  border-radius: 30px;
+  /*border-radius: 30px;*/
 }
 
 .marking {
-  position: relative;
-  height: 20%;
+  position: absolute;
+  /*height: 20%;*/
 
 }

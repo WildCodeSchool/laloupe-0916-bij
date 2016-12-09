@@ -17,7 +17,7 @@ function directiveHighlight() {
 
                     console.log(width, height);
                     var box = document.createElement('div');
-                    box.setAttribute('style', 'position: absolute; display: block; top: ' + yEnd + 'px; left: ' + xStart + 'px; width: ' + width + 'px; height: ' + height + 'px; background-color: yellow; opacity: .6');
+                    box.setAttribute('style', 'position: absolute; display: block; top: ' + yEnd + 'px; left: ' + xStart + 'px; width: ' + width + 'px; height: ' + height + 'px; background-color: yellow; opacity: .4');
                     box.className = 'highlight';
                     box.id = 'div' + id;
                     id++;

@@ -1,6 +1,8 @@
 function presoneController() {
-  this.show = false;
+    angular.element(document.querySelector('#b0')).addClass('active');
+    this.show = false;
     this.includerPres1 = '1';
+    this.active = 0;
     this.slides = [{
         image: '1_chien_small',
         title: '24h en images',
@@ -52,7 +54,7 @@ function presoneController() {
         icon: './assets/icon/exe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '11_Vraix_Faux_Minion',
+        image: '11_minions_small',
         title: 'Culture',
         icon: './assets/icon/new_green.png',
         color: 'vert'
@@ -108,19 +110,20 @@ function presoneController() {
         }
     };
     this.select = (index) => {
-      if (angular.element(document.querySelector('#b' + index))[0].className != "active" && this.nextIndex == index) {
-        this.elAdd = angular.element(document.querySelector('#b' + index)).addClass('active');
+      if (angular.element(document.querySelector('#b' + index))[0].className != "active" && this.active == index) {
+        angular.element(document.querySelector('#b' + index)).addClass('active');
       } else {
-        this.elAdd = angular.element(document.querySelector('#b' + index)).addClass('active');
-        this.elRemove = angular.element(document.querySelector('#b' + this.nextIndex)).removeClass('active');
-        this.nextIndex = index;
+        angular.element(document.querySelector('#b' + index)).addClass('active');
+        angular.element(document.querySelector('#b' + this.active)).removeClass('active');
+        this.active = index;
       }
       this.active = index;
       this.includerPres1 =  index+1;
     };
 
     this.biggerTrueAnswer = () => {
-      if (angular.element(document.querySelector('#true_answer')).className != 'bigger') {
+      console.log(angular.element(document.querySelector('#true_answer'))[0].className);
+      if (angular.element(document.querySelector('#true_answer'))[0].className == 'chip choice') {
         angular.element(document.querySelector('#true_answer')).addClass('bigger');
         angular.element(document.querySelector('#false_answer')).removeClass('bigger');
       }
@@ -130,7 +133,7 @@ function presoneController() {
 };
 
       this.biggerFalseAnswer = () => {
-      if (angular.element(document.querySelector('#false_answer')).className != 'bigger') {
+      if (angular.element(document.querySelector('#false_answer'))[0].className == 'chip choice') {
         angular.element(document.querySelector('#false_answer')).addClass('bigger');
         angular.element(document.querySelector('#true_answer')).removeClass('bigger');
       }

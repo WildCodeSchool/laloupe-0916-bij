@@ -6,6 +6,16 @@ const routes = ($routeProvider, $httpProvider) => {
             controller: 'mainController',
             controllerAs: 'vm',
         })
+        .when('/mention', {
+          templateUrl: 'views/mention.html',
+          controller: 'mainController',
+          controllerAs: 'vm',
+        })
+        .when('/credit', {
+          templateUrl: 'views/credit.html',
+          controller: 'mainController',
+          controllerAs: 'vm',
+        })
         .when('/parcours', {
             templateUrl: 'views/parcours.html',
             controller: 'parcoursController',
@@ -15,16 +25,6 @@ const routes = ($routeProvider, $httpProvider) => {
             templateUrl: 'views/pres1/index1.html',
             controller: 'presoneController',
             controllerAs: 'vm'
-        })
-        .when('/mention', {
-            templateUrl: 'views/mention.html',
-            controller: 'mainController',
-            controllerAs: 'vm',
-        })
-        .when('/credit', {
-            templateUrl: 'views/credit.html',
-            controller: 'mainController',
-            controllerAs: 'vm',
         })
         .otherwise({
             redirectTo: '/'

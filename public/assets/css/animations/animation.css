@@ -1,11 +1,13 @@
 /* zoom animation */
 #zoom_area {
   position: relative;
-  height: 100%;
+  margin-left: 30px;
+  width: 100%;
 }
 #zoom_area img {
-  margin-left: 0px;
-  height: 100%;
+  /*margin-left: 0px;*/
+  width: 90%;
+  height: auto;
 }
 #zoom {
   position: absolute;

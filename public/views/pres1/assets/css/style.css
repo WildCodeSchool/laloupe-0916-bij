@@ -156,7 +156,16 @@ html {
 }
 
 .marking {
-  position: relative;
-  height: 20%;
-  
+    position: absolute;
+    margin-top: -5%;
+    margin-left: 25%;
+    -webkit-transform : rotate(-20deg) scale(0.2, 1);
+    transform         : rotate(-20deg) scale(0.2, 1);
+    /*-webkit-transform: rotate(-20deg) scale(0, 1);
+    transform: rotate(-20deg) scale(0, 1);
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;*/
+    height: 20%;
 }

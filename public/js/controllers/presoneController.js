@@ -3,6 +3,7 @@ function presoneController() {
     this.show = false;
     this.includerPres1 = '1';
     this.active = 0;
+    this.selectClass = "1";
     this.slides = [{
         image: '1_chien_small',
         title: '24h en images',
@@ -117,6 +118,7 @@ function presoneController() {
         angular.element(document.querySelector('#b' + this.active)).removeClass('active');
         this.active = index;
       }
+      this.selectClass = Math.floor( Math.random() * (4 - 1) + 1 );
       this.active = index;
       this.includerPres1 =  index+1;
     };

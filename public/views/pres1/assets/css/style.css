@@ -22,34 +22,6 @@ html {
   margin: 0;
 }
 
-/* decalage main */
-.blockSpacePres {
-  height: 20vh;
-}
-
-/*animation ng-include*/
-.fadeAnimation.ng-enter,
-.fadeAnimation.ng-leave {
-  -webkit-transition: 0.5s linear all;
-  -moz-transition: 0.5s linear all;
-  -o-transition: 0.5s linear all;
-  transition: 0.5s linear all;
-}
-.fadeAnimation.ng-enter {
-  z-index: 100;
-  opacity: 0;
-}
-.fadeAnimation.ng-enter.ng-enter-active {
-  opacity: 1;
-}
-.fadeAnimation.ng-leave {
-  z-index: 101;
-  opacity: 1;
-}
-.fadeAnimation.ng-leave.ng-leave-active {
-  opacity: 0;
-}
-
 /* parcours */
 .main_row {
   display: flex;
@@ -199,3 +171,46 @@ html {
     transform: scale(1);
   }
 }*/
+
+
+/*TEST*/
+
+
+.test{
+  font-size: 5em;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 2s steps(60, end);
+}
+
+.test:nth-child(2){
+  animation: type2 4s steps(60, end);
+}
+
+.test:nth-child(3){
+  animation: type2 8s steps(100, end);
+}
+
+.test:nth-child(4){
+  animation: type2 16s steps(200, end);
+}
+
+.test:nth-child(5){
+  animation: type2 24s steps(400, end);
+}
+
+
+@keyframes type{
+  from { width: 0; }
+}
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; }
+}
+
+@keyframes blink{
+  to{opacity: .0;
+  }

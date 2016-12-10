@@ -8,19 +8,19 @@ html         {
  /* page parameters */
 .page        {
 	bottom:0;
-	padding-top:30vh;
+	padding-top:24vh;
 	position:absolute;
 	text-align:center;
-	top:0;
+	top:6vh;
 	width:100%;
 }
 
 /* offset page */
 .page.ng-leave 	{
-   z-index:3000;
+   z-index:50;
 }
 .page.ng-enter 	{
-   z-index:2000;
+   z-index:40;
  }
 
  /* Animation 1 */
@@ -169,7 +169,7 @@ html         {
   box-shadow: 0 0 0 7px rgba(255,255,255,.8), 0 0 7px 7px rgba(20,20,20,.25), inset 0 0 40px 2px rgba(20,20,20,.25);
   width: 175px;
   height: 175px;
-  z-index: 1000;
+  z-index: 60;
 }
 
 /*rotate image*/

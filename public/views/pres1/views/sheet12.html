@@ -1,0 +1,28 @@
+<!-- question -->
+<div ng-hide="show" class="main_row row col s12">
+    <div class="main_container container col s6">
+      <video class="responsive-video" controls>
+        <source src="views/pres1/assets/img/large/zlatan.mp4" type="video/mp4">
+      </video>
+
+    </div>
+    <div class="main_sub_container container col s6">
+        <div class="subContainer row col s12">
+            <h1 class="sub_title">Zlatan Ibrahimović - Le Complot</h1>
+            <p class="sub_p col s12">Et si Zlatan Ibrahimović n'était qu'un complot de l'Eglise catholique ?</p>
+        </div>
+        <div class="sub_container row col s12">
+            <ul class="sub_main container col s12">
+                <li class="col s6">
+                    <div id="true_answer" class="chip choice" ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</div>
+                </li>
+                <li class="col s6">
+                    <div id="false_answer" class="chip choice" ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</div>
+                </li>
+            </ul>
+            <div class="sub_btn_choice row col s12 center-align">
+                <button class="btn_choice" ng-click="show = true">
+                    <a href="" class="sub_btn_choice">Voir la solution ></a>
+                </button>
+            </div>
+        </div>

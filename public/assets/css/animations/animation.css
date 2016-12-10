@@ -1,3 +1,69 @@
+/* Animation page */
+html         {
+   overflow-y:hidden;
+ }
+.page        {
+	bottom:0;
+	padding-top:30vh;
+	position:absolute;
+	text-align:center;
+	top:0;
+	width:100%;
+}
+.page.ng-leave 	{
+   z-index:3000;
+}
+.page.ng-enter 	{
+   z-index:2000;
+ }
+
+.slide.ng-leave {
+  -webkit-transform-origin: 0% 0%;
+	-webkit-animation: rotateFall .8s both ease-in;
+	-moz-transform-origin: 0% 0%;
+	-moz-animation: rotateFall .8s both ease-in;
+	transform-origin: 0% 0%;
+	animation: rotateFall .8s both ease-in;
+}
+.slide.ng-enter {
+  -webkit-animation:scaleUp 1.5s both ease-in;
+  -moz-animation:scaleUp 1.5s both ease-in;
+  animation:scaleUp 1.5s both ease-in;
+}
+/* rotate and fall */
+@-webkit-keyframes rotateFall {
+	0% { -webkit-transform: rotateZ(0deg); }
+	20% { -webkit-transform: rotateZ(10deg); -webkit-animation-timing-function: ease-out; }
+	40% { -webkit-transform: rotateZ(17deg); }
+	60% { -webkit-transform: rotateZ(16deg); }
+	100% { -webkit-transform: translateY(100%) rotateZ(17deg); }
+}
+@-moz-keyframes rotateFall {
+	0% { -moz-transform: rotateZ(0deg); }
+	20% { -moz-transform: rotateZ(10deg); -moz-animation-timing-function: ease-out; }
+	40% { -moz-transform: rotateZ(17deg); }
+	60% { -moz-transform: rotateZ(16deg); }
+	100% { -moz-transform: translateY(100%) rotateZ(17deg); }
+}
+@keyframes rotateFall {
+	0% { transform: rotateZ(0deg); }
+	20% { transform: rotateZ(10deg); animation-timing-function: ease-out; }
+	40% { transform: rotateZ(17deg); }
+	60% { transform: rotateZ(16deg); }
+	100% { transform: translateY(100%) rotateZ(17deg); }
+}
+/* scale up */
+@keyframes scaleUp {
+	from 		{ opacity: 0.3; transform: scale(0.3); }
+}
+@-moz-keyframes scaleUp {
+	from 		{ opacity: 0.3; -moz-transform: scale(0.8); }
+}
+@-webkit-keyframes scaleUp {
+	from 		{ opacity: 0.3; -webkit-transform: scale(0.3); }
+}
+/*fin animation page*/
+
 /* zoom animation */
 #zoom_area {
   position: relative;
@@ -16,6 +82,7 @@
   box-shadow: 0 0 0 7px rgba(255,255,255,.8), 0 0 7px 7px rgba(20,20,20,.25), inset 0 0 40px 2px rgba(20,20,20,.25);
   width: 175px;
   height: 175px;
+  z-index: 1000;
 }
 
 /*rotate image*/

@@ -10,6 +10,7 @@ html {
 .pres1fixed {
     width: 100vw;
     position: absolute;
+    z-index: 10000;
 }
 .pres1car {
     width: 100%;

@@ -22,34 +22,6 @@ html {
   margin: 0;
 }
 
-/* decalage main */
-.blockSpacePres {
-  height: 20vh;
-}
-
-/*animation ng-include*/
-.fadeAnimation.ng-enter,
-.fadeAnimation.ng-leave {
-  -webkit-transition: 0.5s linear all;
-  -moz-transition: 0.5s linear all;
-  -o-transition: 0.5s linear all;
-  transition: 0.5s linear all;
-}
-.fadeAnimation.ng-enter {
-  z-index: 100;
-  opacity: 0;
-}
-.fadeAnimation.ng-enter.ng-enter-active {
-  opacity: 1;
-}
-.fadeAnimation.ng-leave {
-  z-index: 101;
-  opacity: 1;
-}
-.fadeAnimation.ng-leave.ng-leave-active {
-  opacity: 0;
-}
-
 /* parcours */
 .main_row {
   display: flex;
@@ -157,6 +129,4 @@ html {
 
 .marking {
   position: absolute;
-  /*height: 20%;*/
-
 }

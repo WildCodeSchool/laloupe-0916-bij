@@ -122,6 +122,9 @@ function presoneController() {
       this.active = index;
       this.includerPres1 =  index+1;
     };
+    this.nextSlide = () => {
+      this.includerPres1++;
+    };
 
     this.biggerTrueAnswer = () => {
       console.log(angular.element(document.querySelector('#true_answer'))[0].className);

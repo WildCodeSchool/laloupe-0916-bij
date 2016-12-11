@@ -159,7 +159,7 @@ html         {
 }
 #zoom_area img {
   /*margin-left: 0px;*/
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 #zoom {

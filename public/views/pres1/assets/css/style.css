@@ -131,48 +131,24 @@ html {
     position: absolute;
     margin-top: -5%;
     margin-left: 25%;
+    height: 20%;
     -webkit-animation:1s show;
     animation:1s show;
     -webkit-transform : rotate(-20deg);
     transform         : rotate(-20deg);
-    height: 20%;
-}
-
-
-
-.marking.ng-hide-remove {
-  -webkit-animation:0.3s show;
-  animation:0.3s show;
 }
 
 @keyframes show {
   0% {
-    opacity:0;
-    transform: scale(0.5);
+    opacity:1;
+    transform: rotate(-20deg) scale(2);
   }
-  70% {
-    transform: scale(1.02);
-  }
+
   100% {
     opacity:1;
-    transform: scale(1);
+    transform: rotate(40deg) scale(1);
   }
 }
-
-@-webkit-keyframes show {
-  0% {
-    opacity:0;
-    transform: scale(0.5);
-  }
-  70% {
-    transform: scale(1.02);
-  }
-  100% {
-    opacity:1;
-    transform: scale(1);
-  }
-}
-
 
 /*TEST*/
 

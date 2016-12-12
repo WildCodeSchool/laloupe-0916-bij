@@ -1,9 +1,10 @@
 function presoneController() {
-    angular.element(document.querySelector('#b0')).addClass('active');
+    // angular.element(document.querySelector('#b0')).addClass('active pos1');
     this.show = false;
     this.includerPres1 = '1';
     this.active = 0;
     this.selectClass = "1";
+    this.light = false;
     this.slides = [{
         image: '1_chien_small',
         title: '24h en images',
@@ -85,46 +86,65 @@ function presoneController() {
         icon: './assets/icon/end_turquoise.png',
         color: 'turquoise'
     }];
-    this.index = 0;
-    this.position = 0;
-    this.preview = () => {
-        if (this.index > 0) {
-            this.value = this.index + 3;
-            if (angular.element(document.querySelector('#b' + this.value))[0].className == "active") {
-                this.active = this.value;
-                // console.log(this.active);
-                angular.element(document.querySelector('#b' + this.value)).removeClass('active');
-            }
-            this.position = this.position - 25;
-            this.moveStyle = "margin-left: -" + this.position + "vw;";
-            this.index--;
-        }
-    };
-    this.next = () => {
-        if (this.index < this.slides.length - 4) {
-            if (this.index + 4 == this.active) {
-                angular.element(document.querySelector('#b' + this.active)).addClass('active');
-            }
-            this.position = this.position + 25;
-            this.moveStyle = "margin-left: -" + this.position + "vw;";
-            this.index++;
-        }
-    };
-    this.select = (index) => {
-      if (angular.element(document.querySelector('#b' + index))[0].className != "active" && this.active == index) {
-        angular.element(document.querySelector('#b' + index)).addClass('active');
-      } else {
-        angular.element(document.querySelector('#b' + index)).addClass('active');
-        angular.element(document.querySelector('#b' + this.active)).removeClass('active');
-        this.active = index;
-      }
-      this.selectClass = Math.floor( Math.random() * (4 - 1) + 1 );
-      this.active = index;
-      this.includerPres1 =  index+1;
-    };
-    this.nextSlide = () => {
-      this.includerPres1++;
-    };
+    // this.index = 0;
+    // this.active = 0;
+    // this.previewPos = 0;
+    // this.position = 0;
+    // this.preview = () => {
+    //     if (this.index > 0) {
+    //         this.value = this.index + 3;
+    //         if (angular.element(document.querySelector('#b' + this.value))[0].className == "active") {
+    //             this.active = this.value;
+    //             // console.log(this.active);
+    //             angular.element(document.querySelector('#b' + this.active)).removeClass('active');
+    //         }
+    //         this.position = this.position - 25;
+    //         this.moveStyle = "margin-left: -" + this.position + "vw;";
+    //         this.previewPos = this.index;
+    //         this.index--;
+    //     }
+    // };
+    // this.next = () => {
+    //     if (this.index < this.slides.length - 4) {
+    //         if (this.index + 4 == this.active) {
+    //             angular.element(document.querySelector('#b' + this.active)).addClass('active');
+    //         }
+    //         this.position = this.position + 25;
+    //         this.moveStyle = "margin-left: -" + this.position + "vw;";
+    //         this.previewPos = this.index;
+    //         this.index++;
+    //     }
+    // };
+    // this.select = (index) => {
+    //   this.previewPos = this.active;
+    //   if (angular.element(document.querySelector('#b' + index))[0].className != "active" && this.active == index) {
+    //     angular.element(document.querySelector('#b' + index)).addClass('active');
+    //     this.active = index;
+    //   } else {
+    //     angular.element(document.querySelector('#b' + index)).addClass('active');
+    //     angular.element(document.querySelector('#b' + this.previewPos)).removeClass('active');
+    //     this.active = index;
+    //   }
+    //   this.selectClass = Math.floor( Math.random() * (4 - 1) + 1 );
+    //   this.includerPres1 =  index+1;
+    // };
+    // this.nextSlide = (i) => {
+    //   this.includerPres1++;
+    //   console.log(i-1 > this.previewPos);
+    //   if (i % 4 === 0 && (i-1) > this.previewPos) {
+    //     console.log(i, angular.element(document.querySelector('#b' + (i - 1))));
+    //     this.index = this.index + 4;
+    //     this.position = this.position + 100;
+    //     this.moveStyle = "margin-left: -" + this.position + "vw;";
+    //     angular.element(document.querySelector('#b' + i)).addClass('active');
+    //     angular.element(document.querySelector('#b' + this.active)).removeClass('active');
+    //     this.active = this.index;
+    //   } else {
+    //     angular.element(document.querySelector('#b' + i)).addClass('active');
+    //     angular.element(document.querySelector('#b' + this.active)).removeClass('active');
+    //     this.active = i;
+    //   }
+    // };
 
     this.biggerTrueAnswer = () => {
       console.log(angular.element(document.querySelector('#true_answer'))[0].className);
@@ -135,7 +155,7 @@ function presoneController() {
       else {
         angular.element(document.querySelector('#true_answer')).removeClass('bigger');
       }
-};
+    };
 
       this.biggerFalseAnswer = () => {
       if (angular.element(document.querySelector('#false_answer'))[0].className == 'chip choice') {
@@ -145,5 +165,86 @@ function presoneController() {
       else {
         angular.element(document.querySelector('#false_answer')).removeClass('bigger');
       }
+    };
+      this.highlight = () => {
+        console.log("pass");
+        this.light = true;
+    };
+
+    this.index = 0;
+    this.active = 0;
+    this.previewPos = 0;
+    this.position = 0;
+
+    this.next = () => {
+      if (this.index < this.slides.length - 4) {
+        if (this.index + 4 == this.active) {
+          angular.element(document.querySelector('#b' + this.active)).addClass('active');
+        }
+        this.position = this.position + 25;
+        this.moveStyle = "margin-left: -" + this.position + "vw;";
+        this.previewPos = this.index;
+        this.index++;
+        angular.element(document.querySelector('#b' + (this.index))).addClass('pos1');
+        angular.element(document.querySelector('#b' + this.previewPos)).removeClass('pos1');
+      }
+      console.log("next preview:" + this.previewPos, "next index:" + this.index, "next active:" + this.active);
+    };
+    this.preview = () => {
+      if (this.index > 0) {
+        if (angular.element(document.querySelector('#b' + (this.index + 3)))[0].className == "active") {
+          this.active = this.index + 3;
+          angular.element(document.querySelector('#b' + this.active)).removeClass('active');
+        }
+        this.position = this.position - 25;
+        this.moveStyle = "margin-left: -" + this.position + "vw;";
+        this.previewPos = this.active;
+        this.index--;
+        angular.element(document.querySelector('#b' + (this.index))).addClass('pos1');
+        angular.element(document.querySelector('#b' + this.previewPos)).removeClass('pos1');
+      }
+      console.log("preview preview:" + this.previewPos, "preview index:" + this.index, "preview active:" + this.active);
+    };
+    this.select = (i) => {
+      console.log(this.active);
+        if (angular.element(document.querySelector('#b' + i))[0].className != "active" && this.active == i) {
+          angular.element(document.querySelector('#b' + i)).addClass('active');
+          this.active = i;
+        } else {
+          angular.element(document.querySelector('#b' + i)).addClass('active');
+          angular.element(document.querySelector('#b' + this.previewPos)).removeClass('active');
+          this.active = i;
+          this.previewPos = this.active;
+
+          this.index = i;
+        }
+        this.selectClass = Math.floor( Math.random() * (4 - 1) + 1 );
+        this.includerPres1 =  i + 1;
+        console.log("select preview:" + this.previewPos, "select index:" + this.index, "select active:" + this.active, "select i:" + i);
+
+    };
+    this.nextVisibleSlide = (i) => {
+        var posOne = angular.element(document.querySelector('.pos1'))[0].id;
+        posOne = Number(posOne.substr(1, 2));
+        this.includerPres1++;
+        console.log("slide preview:" + this.previewPos, "slide index:" + this.index, "slide active:" + this.active, "slide i:" + i);
+          if ((i - posOne) == 4) {
+            console.log("decalage");
+            // if (this.index + 4 == this.active)
+              angular.element(document.querySelector('#b' + i)).addClass('pos1');
+              this.position = this.position + 100;
+              this.moveStyle = "margin-left: -" + this.position + "vw;";
+            }
+              console.log("pas decalage");
+              angular.element(document.querySelector('#b' + i)).addClass('active');
+              angular.element(document.querySelector('#b' + this.previewPos)).removeClass('active');
+              // this.position = this.position + 25;
+              // this.moveStyle = "margin-left: -" + this.position + "vw;";
+        this.active = i;
+        this.previewPos = i;
+        this.index = i;
+        console.log("slide preview:" + this.previewPos, "slide index:" + this.index, "slide active:" + this.active, "slide i:" + i);
+
+
     };
 }

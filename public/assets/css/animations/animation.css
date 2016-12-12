@@ -172,6 +172,18 @@ html         {
   z-index: 60;
 }
 
+/* highligth */
+
+.highlight {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  background-color: yellow;
+  opacity: .4;
+  right: 0;
+}
+
 /*rotate image*/
 
 .rotation {

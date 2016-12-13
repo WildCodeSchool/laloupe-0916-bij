@@ -1,0 +1,46 @@
+<!-- Pour réactiver l'animation sur les cadenas et le crayon, rajouter dans "vm.unlock()" le même chiffre que dans le "vm.lock()" correspondant. -->
+<a href="#index1">
+<div class="row parcours_white_border" ng-controller='parcoursController as vm'>
+    <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.unlock(1)" ng-mouseleave="vm.lock(1)">
+        <div class="center">
+            <h2>Parcours collège</h2>
+            <div id="padlock1" class="lock icon"></div>
+            <p id="resume1" class="parcours_resume hide">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+    </div>
+    </a>
+    <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock(2)">
+        <div class="center">
+            <h2>Parcours deux</h2>
+            <div id="padlock2" class="lock icon"></div>
+            <p id="resume2" class="parcours_resume hide">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec accumsan massa.</p>
+        </div>
+    </div>
+    <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock(3)">
+        <div class="center">
+            <h2>Parcours trois</h2>
+            <div id="padlock3" class="lock icon"></div>
+            <p id="resume3" class="parcours_resume hide">Duis eros massa, dapibus et lobortis in, ultrices eu nunc. Sed nec enim mauris.</p>
+        </div>
+    </div>
+    <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock(4)">
+        <div class="center">
+            <h2>Parcours quatre</h2>
+            <div id="padlock4" class="lock icon"></div>
+            <p id="resume4" class="parcours_resume hide">Mauris risus magna, fringilla a libero non, ultricies feugiat ex.</p>
+        </div>
+    </div>
+    <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock(5)">
+        <div class="center">
+            <h2>Parcours cinq</h2>
+            <div id="padlock5" class="lock icon"></div>
+            <p id="resume5" class="parcours_resume hide">Nam semper consequat enim, nec pretium ante pretium quis. Pellentesque sit amet aliquet felis.</p>
+        </div>
+    </div>
+    <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.actif()" ng-mouseleave="vm.repos(6)">
+        <div class="center">
+            <h2>Parcours perso.</h2>
+            <div id="padlock6" ng-class="{{'vm.crayon'}}"></div>
+        </div>
+    </div>
+</div>

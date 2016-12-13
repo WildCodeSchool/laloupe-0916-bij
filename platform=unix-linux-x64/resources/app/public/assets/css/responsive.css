@@ -1,0 +1,52 @@
+/*responsive*/
+@media screen and (max-width: 1480px) {
+html {
+  font-size: 65%;
+  }
+  .chois {
+    height: 8vh;
+    font-size: 2.8rem;
+    line-height: 8vh;
+  }
+    #zoom_area img {
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+html {
+  font-size: 55%;
+  }
+  .title_pres {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  .main_row {
+    height: 55vh;
+  }
+  .container_img {
+    height: 100%;
+  }
+  .container_img img {
+    height: 100%;
+  }
+  .main_p {
+    margin: 10px;
+    height: 10vh;
+    font-size: 2rem;
+  }
+  .sub_p {
+    margin: 15px;
+    height: 30vh;
+    font-size: 2rem;
+  }
+  .main_row_answer, .main_container_answer {
+    margin-top: 20px;
+  }
+  #zoom_area img {
+    width: 100%;
+  }
+
+}

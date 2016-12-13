@@ -1,0 +1,193 @@
+/* BODY*/
+
+body {
+    background-color: #2a477c;
+    font-style: Roboto;
+}
+
+/* footer*/
+
+.main_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer_link, nav {
+    height: 50px;
+}
+nav .footer_link i {
+    height: 50px;
+    line-height: 50px;
+}
+
+/* NAVBAR*/
+
+.right, .right li, .right li a, .right li a i {
+  height: 6vh;
+  line-height: 6vh;
+}
+.right a {
+  font-size: 1.5rem;
+}
+.navbar_link {
+    color: #2a477c;
+}
+nav ul a {
+    color: #2a477c;
+}
+.navbar_logo {
+    height: 100%;
+}
+nav {
+    height: 6vh;
+}
+nav img {
+    width: 100%;
+}
+.navbar_logo {
+    max-height: 65px;
+    width: auto;
+    height: 100%;
+}
+.navbar_paragraphe {
+    color: white;
+}
+.main_next_logo {
+    font-size: 5em;
+}
+
+/* MAIN*/
+
+.main_center {
+  margin-top: 20px;
+}
+.main_lvdf_logo {
+    width: 50%;
+}
+
+/*PARCOURS*/
+
+.row {
+  margin-bottom: 0px;
+}
+.lock.icon {
+  color: #fff;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 5vh;
+  width: 7.5vh;
+  height: 6vh;
+  border-radius: 10px;
+  border: solid 3px currentColor;
+}
+.lock.icon:before {
+  content: '';
+  position: absolute;
+  left: 1vh;
+  top: -3.3vh;
+  width: 5vh;
+  height: 3vh;
+  border-radius: 25px 25px 0 0;
+  border-top: solid 3px currentColor;
+  border-left: solid 3px currentColor;
+  border-right: solid 3px currentColor;
+}
+.unlock.icon {
+  color: #fff;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 5vh;
+  width: 7.5vh;
+  height: 6vh;
+  border-radius: 10px;
+  border: solid 3px currentColor;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+.unlock.icon:before {
+  content: '';
+  position: absolute;
+  left: 1vh;
+  top: -5vh;
+  width: 5vh;
+  height: 3.3vh;
+  border-radius: 25px 25px 0 0;
+  border-top: solid 3px currentColor;
+  border-left: solid 3px currentColor;
+  border-right: solid 3px currentColor;
+}
+.unlock.icon:after {
+  content: '';
+  position: absolute;
+  left: 1vh;
+  top: -3vh;
+  width: 1px;
+  height: 3vh;
+  background-color: currentColor;
+  border-left: solid 3px currentColor;
+}
+.edit.icon {
+  color: #fff;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 8.5vh;
+  width: 7.5vh;
+  height: 2.1vh;
+  border-radius: 6px;
+  border: solid 3px currentColor;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.edit.icon:before {
+  content: '';
+  position: absolute;
+  left: -5.8vh;
+  top: -0.5vh;
+  width: 0vh;
+  height: 0vh;
+  border-left: solid 2vh transparent;
+  border-right: solid 3vh currentColor;
+  border-top: solid 1.5vh transparent;
+  border-bottom: solid 1.5vh transparent;
+}
+.write.icon {
+  color: #fff;
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 5vh;
+  width: 7.5vh;
+  height: 2.1vh;
+  border-radius: 6px;
+  border: solid 3px currentColor;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.write.icon:before {
+  content: '';
+  position: absolute;
+  left: -5.8vh;
+  top: -0.7vh;
+  width: 0vh;
+  height: 0vh;
+  border-left: solid 2vh transparent;
+  border-right: solid 3vh currentColor;
+  border-top: solid 1.5vh transparent;
+  border-bottom: solid 1.5vh transparent;
+}
+.parcours_white_border {
+    border: white solid 5px;
+    height: 94vh;
+}
+.parcours_blue_rectangle {
+  height: 100%;
+  background-color: rgb(7, 33, 57);
+  border: #fff solid 2px;
+  color: #fff;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 120%;
+}
+.parcours_resume {
+  margin-top: 75%;
+}

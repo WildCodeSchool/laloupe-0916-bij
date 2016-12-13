@@ -1,0 +1,71 @@
+<!-- question -->
+<div ng-hide="show" class="main_row row col s12">
+    <div class="main_container container col s6">
+        <div class="container_img">
+          <div class="front face" id="front">
+            <img class="responsive-img" src="views/pres1/assets/img/large/Vancouver_Photo_Plan_Large.jpg">
+          </div>
+          <div class="inner-left face" id='inner-left'>
+            <img class="responsive-img" src="views/pres1/assets/img/large/Vancouver_Photo_Plan_Large.jpg">
+          </div>
+          <div class="flap face" id='flap'>
+            <img class="responsive-img" id="zoom_sur" src="views/pres1/assets/img/large/photo_lascars.jpg">
+          </div>
+        </div>
+        <p class="main_p col s12">
+          <b>
+            <span>FRANCE</span>
+          </b>
+          - Des policiers pris à partie et braqués par un groupe de jeunes dans le quartier du Bois l'Abbé à Champigny-sur-Marne (Val-de-Marne).</p>
+    </div>
+    <div class="main_sub_container container col s6">
+        <div class="subContainer row col s12">
+            <h1 class="sub_title">22h46</h3>
+            <p class="sub_p col s12">
+                <b>
+                    <span>CANADA</span>
+                </b>
+                 - Scène de romantisme au milieu des forces de l’ordre canadiennes pendant les émeutes qui ont suivi la défaite des Canucks de Vancouver face aux Bruins de Boston en finale de la Stanley Cup de hockey sur glace.</p>
+        </div>
+        <div class="sub_container row col s12">
+            <ul class="sub_main container col s12">
+                <li class="col s6">
+                    <div id="true_answer" class="chip choice" ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</div>
+                </li>
+                <li class="col s6">
+                    <div id="false_answer" class="chip choice" ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</div>
+                </li>
+            </ul>
+            <div class="sub_btn_choice row col s12 center-align">
+                <button class="btn_choice" ng-click="show = true">
+                    <a href="" class="sub_btn_choice">Voir la solution ></a>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- answer -->
+<div ng-show="show" class="main_row_answer row col s10">
+    <div class="main_container_answer container col s7">
+        <div id="zoom_area">
+            <div class="marking" ng-show="true">
+                <img class="responsive-img" class="responsive-img" src="./assets/icon/angry_red.png" alt="faux">
+            </div>
+            <div id="zoom"></div>
+            <img class="responsive-img" id="zoom_sur" src="views/pres1/assets/img/large/photo_lascars.jpg">
+        </div>
+    </div>
+    <div class="main_sub_container_answer container col s5">
+      <h1 class="sub_title">22h46</h1>
+        <p class="sub_p_answer col s12">
+            <b>
+                <span>CANADA</span>
+            </b>
+            - La légende de la photo est fausse. La photo est véridique et non retouchée. La photo est ici ambiguë, et la légende va permettre de raconter une histoire. Ici la légende raconte une histoire qui parait crédible mais qui est fausse. Voici la véritable histoire : la jeune fille est tombée sur le sol, poussée par la foule et le jeune garçon tente de la protéger. Une photo prise d’un autre angle et une vidéo (https://www.youtube.com/watch?v=8mtURc7mkUg) accrédite cette version des faits. Plus d’infos sur : http://www.liminaire.fr/photographie-2/article/le-baiser-des-emeutes-de-vancouver</p>
+        <div class="sub_btn_answer row col s12 center-align">
+            <button class="btn_answer">
+                <a href="views/pres1/views/sheet2" class="sub_btn_answer">Suivant ></a>
+            </button>
+        </div>
+    </div>
+</div>

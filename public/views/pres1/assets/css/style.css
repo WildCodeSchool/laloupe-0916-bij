@@ -106,6 +106,7 @@ html {
   margin-top: 30px;
 }
 .main_sub_container_answer {
+  position: relative;
   height: 65vh;
 }
 .sub_p_answer {
@@ -125,29 +126,6 @@ html {
   width: 80%;
   margin-top: 10px;
   /*border-radius: 30px;*/
-}
-
-.marking {
-    position: absolute;
-    margin-top: -5%;
-    margin-left: 25%;
-    height: 20%;
-    -webkit-animation:1s show;
-    animation:1s show;
-    -webkit-transform : rotate(-20deg);
-    transform         : rotate(-20deg);
-}
-
-@keyframes show {
-  0% {
-    opacity:1;
-    transform: rotate(-20deg) scale(2);
-  }
-
-  100% {
-    opacity:1;
-    transform: rotate(40deg) scale(1);
-  }
 }
 
 /*TEST*/

@@ -1,9 +1,15 @@
 function presoneController() {
-    angular.element(document.querySelector('#b0')).addClass('active');
+    // angular.element(document.querySelector('#b0')).addClass('active pos1');
     this.show = false;
+    this.highlight = false;
     this.includerPres1 = '1';
-    this.active = 0;
     this.selectClass = "1";
+    this.index = 0;
+    this.active = 0;
+    this.previewPos = 0;
+    this.position = 0;
+
+// datas for navigation slide
     this.slides = [{
         image: '1_chien_small',
         title: '24h en images',
@@ -85,47 +91,8 @@ function presoneController() {
         icon: './assets/icon/end_turquoise.png',
         color: 'turquoise'
     }];
-    this.index = 0;
-    this.position = 0;
-    this.preview = () => {
-        if (this.index > 0) {
-            this.value = this.index + 3;
-            if (angular.element(document.querySelector('#b' + this.value))[0].className == "active") {
-                this.active = this.value;
-                // console.log(this.active);
-                angular.element(document.querySelector('#b' + this.value)).removeClass('active');
-            }
-            this.position = this.position - 25;
-            this.moveStyle = "margin-left: -" + this.position + "vw;";
-            this.index--;
-        }
-    };
-    this.next = () => {
-        if (this.index < this.slides.length - 4) {
-            if (this.index + 4 == this.active) {
-                angular.element(document.querySelector('#b' + this.active)).addClass('active');
-            }
-            this.position = this.position + 25;
-            this.moveStyle = "margin-left: -" + this.position + "vw;";
-            this.index++;
-        }
-    };
-    this.select = (index) => {
-      if (angular.element(document.querySelector('#b' + index))[0].className != "active" && this.active == index) {
-        angular.element(document.querySelector('#b' + index)).addClass('active');
-      } else {
-        angular.element(document.querySelector('#b' + index)).addClass('active');
-        angular.element(document.querySelector('#b' + this.active)).removeClass('active');
-        this.active = index;
-      }
-      this.selectClass = Math.floor( Math.random() * (4 - 1) + 1 );
-      this.active = index;
-      this.includerPres1 =  index+1;
-    };
-    this.nextSlide = () => {
-      this.includerPres1++;
-    };
 
+// Start offunction for animation true or false
     this.biggerTrueAnswer = () => {
       console.log(angular.element(document.querySelector('#true_answer'))[0].className);
       if (angular.element(document.querySelector('#true_answer'))[0].className == 'chip choice') {
@@ -135,7 +102,7 @@ function presoneController() {
       else {
         angular.element(document.querySelector('#true_answer')).removeClass('bigger');
       }
-};
+    };
 
       this.biggerFalseAnswer = () => {
       if (angular.element(document.querySelector('#false_answer'))[0].className == 'chip choice') {
@@ -145,5 +112,52 @@ function presoneController() {
       else {
         angular.element(document.querySelector('#false_answer')).removeClass('bigger');
       }
+    };
+// End fo function for animation true or false
+    //
+    //   this.highlight = () => {
+    //     this.light = true;
+    // };
+
+// next function for navigate inside navigation slide
+    this.next = () => {
+      var posOne = angular.element(document.querySelector('.pos1'))[0].id;
+      posOne = Number(posOne.substr(1, 2));
+      if (this.index < this.slides.length - 4 ) {
+        if (this.index + 4 == this.active) {
+          angular.element(document.querySelector('#b' + this.active)).addClass('active');
+        }
+        this.position = this.position + 25;
+        this.moveStyle = "margin-left: -" + this.position + "vw;";
+      this.index++;
+    }
+    };
+
+// preview function for navigate inside navigation slide
+    this.preview = () => {
+      if (this.index > 0) {
+        if (angular.element(document.querySelector('#b' + (this.index + 3)))[0].className == "active") {
+          this.active = this.index + 3;
+          angular.element(document.querySelector('#b' + this.active)).removeClass('active');
+        }
+        this.position = this.position - 25;
+        this.moveStyle = "margin-left: -" + this.position + "vw;";
+        this.index--;
+      }
+    };
+
+// select function for show indicator under the picture
+    this.select = (i) => {
+      angular.element(document.querySelector('#b' + i)).addClass('active');
+      angular.element(document.querySelector('#b' + this.previewPos)).removeClass('active');
+      this.active = i;
+      this.previewPos = i;
+      this.includerPres1 =  i + 1;
+      };
+
+// function for move to the next slide
+    this.nextVisibleSlide = (i) => {
+      this.select(i);
+      this.next();
     };
 }

@@ -41,15 +41,15 @@
     <div class="main_container_answer container col s8">
         <div id="zoom_area" class="valign-wrapper">
             <div id="zoom"></div>
-            <img class="responsive-img" id="zoom_sur" src="views/pres1/assets/img/large/carroussel.jpg" ng-click="vm.highlight()">
-            <div ng-show="vm.light" class="highlight"></div>
+            <img class="responsive-img" id="zoom_sur" src="views/pres1/assets/img/large/carroussel.jpg" ng-click="highlight = true">
+            <div ng-show="highlight" class="highlight"></div>
         </div>
     </div>
     <div class="main_sub_container_answer container col s4">
-      <h1 ng-hide="vm.light" class="sub_title">19h11</h1>
-      <h1 ng-show="vm.light" class="sub_title"><mark>19h11</mark></h1>
-      <p ng-hide="vm.light" class="sub_p_answer col s12"><b><span>FRANCE</span></b>- Des rues désertes un samedi à Paris après les attentats qui ont ensanglanté la capitale française le 13 novembre 2015. Des Champs-Elysées à l’Opéra, les Parisiens ont délaissé les rues de la ville Lumière.</p>
-      <p ng-show="vm.light" class="sub_p_answer col s12"><b><span>FRANCE</span></b>- Des rues désertes un samedi à Paris après les attentats qui ont ensanglanté la capitale française <mark>le 13 novembre 2015.</mark> Des Champs-Elysées à l’Opéra, les Parisiens ont délaissé les rues de la ville Lumière.</p>
+      <h1 ng-hide="highlight" class="sub_title">19h11</h1>
+      <h1 ng-show="highlight" class="sub_title"><mark>19h11</mark></h1>
+      <p ng-hide="highlight" class="sub_p_answer col s12"><b><span>FRANCE</span></b>- Des rues désertes un samedi à Paris après les attentats qui ont ensanglanté la capitale française le 13 novembre 2015. Des Champs-Elysées à l’Opéra, les Parisiens ont délaissé les rues de la ville Lumière.</p>
+      <p ng-show="highlight" class="sub_p_answer col s12"><b><span>FRANCE</span></b>- Des rues désertes un samedi à Paris après les attentats qui ont ensanglanté la capitale française <mark>le 13 novembre 2015.</mark> Des Champs-Elysées à l’Opéra, les Parisiens ont délaissé les rues de la ville Lumière.</p>
       <div class="sub_btn_answer row col s12 center-align">
         <button class="btn_answer">
           <a class="sub_btn_answer" ng-click="vm.nextVisibleSlide(4)">Suivant ></a>

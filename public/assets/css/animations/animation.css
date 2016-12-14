@@ -154,7 +154,7 @@ html         {
 /* zoom animation */
 #zoom_area {
   position: relative;
-  margin-left: 30px;
+  margin-left: 10px;
   width: 100%;
 }
 #zoom_area img {
@@ -186,20 +186,20 @@ html         {
 
 /*rotate image*/
 
-.rotation {
--webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-}
-.rotation:focus {
-transform: rotateX(180deg);
--webkit-transform: rotateX(180deg);
--ms-transform: rotateX(180deg);
-}
+/*.rotation {
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+}*/
+/*.rotation:active {
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+}*/
 
 /*Marking-stamp effect*/
 

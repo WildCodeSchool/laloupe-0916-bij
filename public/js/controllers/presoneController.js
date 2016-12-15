@@ -9,7 +9,7 @@ function presoneController() {
     this.previewPos = 0;
     this.position = 0;
 
-// datas for navigation slide
+    // datas for navigation slide
     this.slides = [{
         image: '1_chien_small',
         title: '24h en images',
@@ -92,72 +92,73 @@ function presoneController() {
         color: 'turquoise'
     }];
 
-// Start offunction for animation true or false
+    // Start offunction for animation true or false
     this.biggerTrueAnswer = () => {
-      console.log(angular.element(document.querySelector('#true_answer'))[0].className);
-      if (angular.element(document.querySelector('#true_answer'))[0].className == 'chip choice') {
-        angular.element(document.querySelector('#true_answer')).addClass('bigger');
-        angular.element(document.querySelector('#false_answer')).removeClass('bigger');
-      }
-      else {
-        angular.element(document.querySelector('#true_answer')).removeClass('bigger');
-      }
+        console.log(angular.element(document.querySelector('#true_answer'))[0].className);
+        if (angular.element(document.querySelector('#true_answer'))[0].className == 'chip choice') {
+            angular.element(document.querySelector('#true_answer')).addClass('bigger');
+            angular.element(document.querySelector('#false_answer')).removeClass('bigger');
+        } else {
+            angular.element(document.querySelector('#true_answer')).removeClass('bigger');
+        }
     };
 
-      this.biggerFalseAnswer = () => {
-      if (angular.element(document.querySelector('#false_answer'))[0].className == 'chip choice') {
-        angular.element(document.querySelector('#false_answer')).addClass('bigger');
-        angular.element(document.querySelector('#true_answer')).removeClass('bigger');
-      }
-      else {
-        angular.element(document.querySelector('#false_answer')).removeClass('bigger');
-      }
+    this.biggerFalseAnswer = () => {
+        if (angular.element(document.querySelector('#false_answer'))[0].className == 'chip choice') {
+            angular.element(document.querySelector('#false_answer')).addClass('bigger');
+            angular.element(document.querySelector('#true_answer')).removeClass('bigger');
+        } else {
+            angular.element(document.querySelector('#false_answer')).removeClass('bigger');
+        }
     };
-// End fo function for animation true or false
+    // End fo function for animation true or false
     //
     //   this.highlight = () => {
     //     this.light = true;
     // };
 
-// next function for navigate inside navigation slide
+    // next function for navigate inside navigation slide
     this.next = () => {
-      var posOne = angular.element(document.querySelector('.pos1'))[0].id;
-      posOne = Number(posOne.substr(1, 2));
-      if (this.index < this.slides.length - 4 ) {
-        if (this.index + 4 == this.active) {
-          angular.element(document.querySelector('#b' + this.active)).addClass('active');
+        var posOne = angular.element(document.querySelector('.pos1'))[0].id;
+        posOne = Number(posOne.substr(1, 2));
+        if (this.index < this.slides.length - 4) {
+            if (this.index + 4 == this.active) {
+                angular.element(document.querySelector('#b' + this.active)).addClass('active');
+            }
+            this.position = this.position + 25;
+            this.moveStyle = "margin-left: -" + this.position + "vw;";
+            this.index++;
         }
-        this.position = this.position + 25;
-        this.moveStyle = "margin-left: -" + this.position + "vw;";
-      this.index++;
-    }
     };
 
-// preview function for navigate inside navigation slide
+    // preview function for navigate inside navigation slide
     this.preview = () => {
-      if (this.index > 0) {
-        if (angular.element(document.querySelector('#b' + (this.index + 3)))[0].className == "active") {
-          this.active = this.index + 3;
-          angular.element(document.querySelector('#b' + this.active)).removeClass('active');
+        if (this.index > 0) {
+            if (angular.element(document.querySelector('#b' + (this.index + 3)))[0].className == "active") {
+                this.active = this.index + 3;
+                angular.element(document.querySelector('#b' + this.active)).removeClass('active');
+            }
+            this.position = this.position - 25;
+            this.moveStyle = "margin-left: -" + this.position + "vw;";
+            this.index--;
         }
-        this.position = this.position - 25;
-        this.moveStyle = "margin-left: -" + this.position + "vw;";
-        this.index--;
-      }
     };
 
-// select function for show indicator under the picture
+    // select function for show indicator under the picture
     this.select = (i) => {
-      angular.element(document.querySelector('#b' + i)).addClass('active');
-      angular.element(document.querySelector('#b' + this.previewPos)).removeClass('active');
-      this.active = i;
-      this.previewPos = i;
-      this.includerPres1 =  i + 1;
-      };
-
-// function for move to the next slide
-    this.nextVisibleSlide = (i) => {
-      this.select(i);
-      this.next();
+        angular.element(document.querySelector('#b' + i)).addClass('active');
+        angular.element(document.querySelector('#b' + this.previewPos)).removeClass('active');
+        this.active = i;
+        this.previewPos = i;
+        this.selectClass = Math.floor(Math.random() * (4 - 1) + 1);
+        console.log(this.selectClass);
+        this.includerPres1 = i + 1;
     };
+
+    // function for move to the next slide
+    this.nextVisibleSlide = (i) => {
+        this.select(i);
+        this.next();
+    };
+
 }

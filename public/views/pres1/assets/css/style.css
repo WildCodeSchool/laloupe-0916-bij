@@ -128,10 +128,8 @@ html {
   /*border-radius: 30px;*/
 }
 
-/*TEST*/
+/*TEXT Conclusion */
 
-
-/* Global */
 
 .main_sheet16{
   margin-top: 100px;
@@ -167,4 +165,58 @@ html {
 @keyframes typewriter{
   from{width: 0;}
   to{width: 22em;}
+}
+
+
+/*Split*/
+
+
+
+.reveal {
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 75px;
+  margin-left: 35%;
+  float: left;
+  position: relative;
+}
+.reveal-top, .reveal-bottom {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+}
+.reveal-top {
+  left: 0;
+}
+
+.reveal-bottom {
+  left: 95px;
+}
+
+.reveal:hover .reveal-top{
+  left: -50px;
+
+}
+
+.reveal:hover .reveal-bottom{
+  left: 150px;
+
+}
+.reveal-top, .reveal-bottom{
+  -webkit-transition: left 0.3s ease;
+  -moz-transition: left 0.3s ease;
+  -o-transition: left 0.3s ease;
+  -ms-transition: left 0.3s ease;
+  transition: left 0.3s ease;
+}
+
+.circuit .reveal-top{
+  background-image: url(../img/large/recadrage1.jpg);
+  background-repeat: no-repeat;
+}
+
+.circuit .reveal-bottom {
+  background-image: url(../img/large/recadrage2.jpg);
+  background-repeat: no-repeat;
 }

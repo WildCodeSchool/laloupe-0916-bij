@@ -4,7 +4,8 @@
   "description": "Plateforme de rééducation aux média",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager --all ./ LeVraiDuFaux"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -17,7 +18,9 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.4.1"
+    "electron": "^1.4.1",
+    "electron-packager": "^8.4.0",
+    "electron-prebuilt": "^1.4.12"
   },
   "dependencies": {}
 }

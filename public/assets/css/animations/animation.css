@@ -235,6 +235,56 @@ transform: rotateX(180deg);
 /*flip-flop*/
 
 .photo {
+  display: block;
+  width: 635px;
+  height: 355px;
+  position: relative;
+  margin-left: 800px;
+  -webkit-perspective: 2000;
+  -moz-perspective: 2000;
+  perspective: 2000;
+  margin: 120px auto;
+  cursor: pointer;
+}
 
+.decal {
+  margin-left: 500px;
+  margin-top: 50px;
+}
 
+.decal_button {
+margin-bottom: -50px;
+  margin-right: -50px;
+}
+
+#inner-left > img {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-out;
+  transform-origin: 0 0;
+}
+
+.front {
+  transform: rotateY(-5deg);
+  z-index: 6;
+  backface-visibility: hidden;
+}
+
+.inner-left {
+  transform: rotateY(-5deg);
+}
+
+.on-left {
+  transform: translateX(200px) rotateY(-170deg);
+}
+
+.on-right {
+  transform: translateX(200px) rotateY(-10deg);
 }

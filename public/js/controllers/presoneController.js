@@ -28,7 +28,7 @@ function presoneController() {
     }, {
         image: '4_Djibouti_John_Steinmeyer_small',
         title: 'Exercices: Légendage',
-        icon: './assets/icon/exe_turquoise.png',
+        icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
         image: '5_Vancouver_Photo_small',
@@ -43,22 +43,22 @@ function presoneController() {
     }, {
         image: '7_recadrage_small',
         title: 'Exercices: Recadrage',
-        icon: './assets/icon/exe_turquoise.png',
+        icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
         image: '8_chute-libre-image_small',
         title: 'International',
-        icon: './assets/icon/globe_blue.png',
+        icon: './assets/icon/globe_turquoise.png',
         color: 'bleu'
     }, {
         image: '9_Maitre-gims_small',
         title: 'Exercices: Putaclic',
-        icon: './assets/icon/exe_turquoise.png',
+        icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
         image: '10_messi_small',
         title: 'Exercices: Putaclic',
-        icon: './assets/icon/exe_turquoise.png',
+        icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
         image: '11_minions_small',
@@ -83,12 +83,12 @@ function presoneController() {
     }, {
         image: '15_Graph_small',
         title: 'International',
-        icon: './assets/icon/globe_blue.png',
+        icon: './assets/icon/globe_turquoise.png',
         color: 'bleu',
     }, {
         image: '16_conclusion_small',
         title: 'Conclusion',
-        icon: './assets/icon/end_turquoise.png',
+        icon: './assets/icon/vrai_faux.png',
         color: 'turquoise'
     }];
 

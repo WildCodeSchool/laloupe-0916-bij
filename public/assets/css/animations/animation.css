@@ -247,16 +247,6 @@ html         {
   cursor: pointer;
 }
 
-.decal {
-  margin-left: 500px;
-  margin-top: 50px;
-}
-
-.decal_button {
-margin-bottom: -50px;
-  margin-right: -50px;
-}
-
 #inner-left > img {
   transform: rotateY(180deg);
 }
@@ -265,6 +255,8 @@ margin-bottom: -50px;
   position: absolute;
   top: 0;
   left: 0;
+  margin-left: 200px;
+  margin-bottom: 100px;
   width: 100%;
   height: 100%;
   transition: all 1s ease-out;

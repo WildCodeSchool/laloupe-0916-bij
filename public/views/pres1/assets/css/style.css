@@ -220,3 +220,10 @@ html {
   background-image: url(../img/large/recadrage2.jpg);
   background-repeat: no-repeat;
 }
+
+/*manage the button positioning on sheet5' response*/
+
+.decal_button {
+  margin-top: 300px;
+  margin-left: 200px;
+}

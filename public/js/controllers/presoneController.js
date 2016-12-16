@@ -163,7 +163,6 @@ function presoneController() {
 
 //flip-flop controller
   this.flip = () => {
-    console.log('coucou');
     let front = angular.element(document.querySelector('#front'));
     let innerLeft = angular.element(document.querySelector('#inner-left'));
     let innerRight = angular.element(document.querySelector('#inner-right'));

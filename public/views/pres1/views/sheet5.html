@@ -33,7 +33,7 @@
 <!-- answer -->
 <div ng-show="show" class="main_row_answer row col s12">
     <div class="main_container_answer container col s12" ng-controller="presoneController as vm">
-        <div class="container_img photo decal" id="photo" ng-click="vm.flip()">
+        <div class="container_img photo" id="photo" ng-click="vm.flip()">
             <div class="front face" id="front">
                 <img src="views/pres1/assets/img/large/Vancouver_Photo_Plan_Large.jpg">
             </div>
@@ -45,11 +45,10 @@
             </div>
         </div>
     </div>
-    <div class="main_sub_container_answer container col s2">
-        <div class="sub_btn_answer center-align decal_button row col s1">
+        <div class="sub_btn_answer row col s1">
             <button class="btn_answer decal_button">
                 <a class="sub_btn_answer" ng-click="vm.nextVisibleSlide(5)">suivant ></a>
             </button>
         </div>
-    </div>
+
 </div>

@@ -89,7 +89,7 @@ function presoneController() {
         image: '16_conclusion_small',
         title: 'Conclusion',
         icon: './assets/icon/vrai_faux.png',
-        color: 'turquoise'
+        color: 'bleu'
     }];
 
     // Start offunction for animation true or false
@@ -163,6 +163,7 @@ function presoneController() {
 
 //flip-flop controller
   this.flip = () => {
+    console.log('coucou');
     let front = angular.element(document.querySelector('#front'));
     let innerLeft = angular.element(document.querySelector('#inner-left'));
     let innerRight = angular.element(document.querySelector('#inner-right'));

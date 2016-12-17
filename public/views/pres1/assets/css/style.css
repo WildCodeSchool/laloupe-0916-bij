@@ -193,6 +193,7 @@ html {
 
 .reveal-bottom {
   left: 95px;
+
 }
 
 .reveal:hover .reveal-top{
@@ -212,12 +213,12 @@ html {
   transition: left 0.3s ease;
 }
 
-.circuit .reveal-top{
+.recadrage .reveal-top{
   background-image: url(../img/large/recadrage1.jpg);
   background-repeat: no-repeat;
 }
 
-.circuit .reveal-bottom {
+.recadrage .reveal-bottom {
   background-image: url(../img/large/recadrage2.jpg);
   background-repeat: no-repeat;
 }

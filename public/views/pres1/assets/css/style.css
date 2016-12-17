@@ -65,10 +65,10 @@ html {
   margin-right: auto;
 }
 .btn_choice {
-  margin-top: 100px;
+  position: absolute;
+  right: 40px;
+  bottom: -70px;
   background-color: #597dbe;
-  width: 50%;
-  margin-top: 90px;
   /*border-radius: 30px;*/
 }
 .choice {

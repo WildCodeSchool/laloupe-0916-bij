@@ -7,11 +7,11 @@ html         {
 
  /* page parameters */
 .page        {
-	bottom:0;
-	padding-top:24vh;
+	/*bottom:0;*/
+	/*padding-top:24vh;*/
 	position:absolute;
 	text-align:center;
-	top:6vh;
+	/*top:6vh;*/
 	width:100%;
 }
 
@@ -25,7 +25,7 @@ html         {
 
  /* Animation 1 */
  .anim1.ng-leave         {
-     -webkit-transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
  	-webkit-animation: rotateFall 1s both ease-in;
  	-moz-transform-origin: 0% 0%;
  	-moz-animation: rotateFall 1s both ease-in;
@@ -33,7 +33,7 @@ html         {
  	animation: rotateFall 1s both ease-in;
  }
  .anim1.ng-enter 		{
-     -webkit-animation:scaleUp 0.5s both ease-in;
+  -webkit-animation:scaleUp 0.5s both ease-in;
  	-moz-animation:scaleUp 0.5s both ease-in;
  	animation:scaleUp 0.5s both ease-in;
  }
@@ -160,7 +160,7 @@ html         {
 #zoom_area img {
   /*margin-left: 0px;*/
   width: 100%;
-  height: auto;
+  /*height: auto;*/
 }
 #zoom {
   position: absolute;

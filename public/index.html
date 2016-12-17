@@ -14,9 +14,11 @@
     </head>
 
     <body>
-        <ng-include src="'views/navbar.html'"></ng-include>
-        <div class="blockSpace"></div>
-        <ng-view></ng-view>
+        <div class="row">
+          <ng-include src="'views/navbar.html'"></ng-include>
+          <div class="blockSpace"></div>
+          <ng-view></ng-view>
+        </div>
 
 
         <script src="vendor/jquery/dist/jquery.min.js"></script>

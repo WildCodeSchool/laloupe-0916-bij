@@ -8,7 +8,6 @@ function directiveHighlight() {
             document.getElementById('zoom_area').onmousedown = () => {
                 this.xStart = Number(event.clientX) - document.getElementById('zoom_area').offsetLeft;
                 this.yStart = Number(event.clientY) - document.getElementById('zoom_area').offsetTop-50;
-                console.log(this.yStart, Number(event.clientY), document.getElementById('zoom_area').offsetTop);
                 document.getElementById('zoom_area').onmouseup = () => {
                     this.xEnd = Number(event.clientX) - document.getElementById('zoom_area').offsetLeft;
                     this.yEnd = Number(event.clientY) - document.getElementById('zoom_area').offsetTop-50;
@@ -30,7 +29,6 @@ function directiveHighlight() {
             document.getElementById('sub_container_answer').onmousedown = () => {
                 this.xStart = Number(event.clientX) - document.getElementById('sub_container_answer').offsetLeft;
                 this.yStart = Number(event.clientY) - document.getElementById('sub_container_answer').offsetTop-50;
-                console.log(this.yStart, Number(event.clientY), document.getElementById('sub_container_answer').offsetTop);
                 document.getElementById('sub_container_answer').onmouseup = () => {
                     this.xEnd = Number(event.clientX) - document.getElementById('sub_container_answer').offsetLeft;
                     this.yEnd = Number(event.clientY) - document.getElementById('sub_container_answer').offsetTop-50;

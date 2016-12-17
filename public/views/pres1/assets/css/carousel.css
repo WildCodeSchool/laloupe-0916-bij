@@ -9,7 +9,7 @@ html {
 
 .pres1fixed {
     width: 100vw;
-    position: absolute;
+    /*position: absolute;*/
     z-index: 100;
 }
 .pres1car {
@@ -24,18 +24,19 @@ html {
     margin: 0;
 }
 #pres1carousel li {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;*/
+    /*flex-direction: column;*/
     width: 25vw;
     height: 20vh;
     border: 1px solid white;
     list-style: none;
     text-align: center;
     overflow: hidden;
+    position: relative;
 }
 #pres1carousel li a {
-    margin-top: -36px;
-    height: 20vh;
+    /*margin-top: -36px;*/
+    /*height: 20vh;*/
 }
 .img_nav {
     height: 100%;
@@ -66,6 +67,7 @@ html {
     font-size: 2rem;
     opacity: .8;
     border-radius: 0;
+    position: absolute;
 }
 .title_pres img {
     margin-left: 30px;

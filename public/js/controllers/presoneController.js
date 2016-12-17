@@ -94,7 +94,7 @@ function presoneController() {
 
     // Start offunction for animation true or false
     this.biggerTrueAnswer = () => {
-        console.log(angular.element(document.querySelector('#true_answer'))[0].className);
+        // console.log(angular.element(document.querySelector('#true_answer'))[0].className);
         if (angular.element(document.querySelector('#true_answer'))[0].className == 'chip choice') {
             angular.element(document.querySelector('#true_answer')).addClass('bigger');
             angular.element(document.querySelector('#false_answer')).removeClass('bigger');
@@ -151,7 +151,7 @@ function presoneController() {
         this.active = i;
         this.previewPos = i;
         this.selectClass = Math.floor(Math.random() * (4 - 1) + 1);
-        console.log(this.selectClass);
+        // console.log(this.selectClass);
         this.includerPres1 = i + 1;
     };
 
@@ -163,7 +163,6 @@ function presoneController() {
 
 //flip-flop controller
   this.flip = () => {
-    console.log('coucou');
     let front = angular.element(document.querySelector('#front'));
     let innerLeft = angular.element(document.querySelector('#inner-left'));
     let innerRight = angular.element(document.querySelector('#inner-right'));

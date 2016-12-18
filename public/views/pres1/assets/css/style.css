@@ -80,6 +80,9 @@ html {
   background-color: inherit;
   color: white;
 }
+#true_answer img, #false_answer img  {
+  width: 100%;
+}
 .choice img {
   height: 100%;
   width: auto;

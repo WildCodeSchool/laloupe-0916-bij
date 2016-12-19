@@ -232,3 +232,7 @@ html {
   margin-top: 300px;
   margin-left: 200px;
 }
+
+.resize > img {
+  width: 25%;
+}

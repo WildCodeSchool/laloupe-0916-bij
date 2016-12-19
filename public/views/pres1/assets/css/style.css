@@ -58,56 +58,50 @@ html {
   display: flex;
   flex-direction: row;
 }
-.sub_btn_choice {
-  font-size: 3rem;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-}
 .btn_choice {
   position: absolute;
   right: 40px;
   bottom: -70px;
   background-color: #597dbe;
-  /*border-radius: 30px;*/
 }
-.choice {
-  /*padding-left: 20%;
-  margin-top: -20%;
-  height: 10vh;
-  font-size: 3.1rem;
-  line-height: 10vh;*/
-  background-color: inherit;
-  color: white;
+.btn_choice i, .btn_next i {
+  font-size: 4.5rem;
+}
+.btn_next {
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  background-color: #597dbe;
 }
 #true_answer img, #false_answer img  {
   width: 100%;
-}
-.choice img {
   height: 100%;
-  width: auto;
+}
+.choice {
+  background-color: inherit;
+  color: white;
   -webkit-transition: 0.5s linear all;
   -moz-transition: 0.5s linear all;
   -o-transition: 0.5s linear all;
   transition: 0.5s linear all;
 }
-.bigger img {
-  height: 130%;
+.bigger {
+  height: 70px !important;
+  width: 70px !important;
   -webkit-transition: 0.5s linear all;
   -moz-transition: 0.5s linear all;
   -o-transition: 0.5s linear all;
   transition: 0.5s linear all;
 }
-
 /* answer */
 
-.main_row_answer {
-  margin-top: 50px;
-  height: 65vh;
-}
 .main_container_answer {
   height: 60vh;
   margin-top: 30px;
+}
+.main_row_answer {
+  margin-top: 50px;
+  height: 65vh;
 }
 .main_sub_container_answer {
   position: relative;
@@ -173,8 +167,6 @@ html {
 
 
 /*Split*/
-
-
 
 .reveal {
   width: 100%;

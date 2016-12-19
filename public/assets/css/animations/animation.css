@@ -6,12 +6,9 @@ html         {
  }
 
  /* page parameters */
-.page        {
-	/*bottom:0;*/
-	/*padding-top:24vh;*/
+.page {
 	position:absolute;
 	text-align:center;
-	/*top:6vh;*/
 	width:100%;
 }
 
@@ -158,9 +155,7 @@ html         {
   width: 100%;
 }
 #zoom_area img {
-  /*margin-left: 0px;*/
   width: 100%;
-  /*height: auto;*/
 }
 #zoom {
   position: absolute;
@@ -183,23 +178,6 @@ html         {
   opacity: .4;
   right: 0;
 }
-
-/*rotate image*/
-
-/*.rotation {
-  -webkit-transition-duration: 1s;
-  -moz-transition-duration: 1s;
-  -o-transition-duration: 1s;
-  transition-duration: 1s;
-  -webkit-transition-property: -webkit-transform;
-  -moz-transition-property: -moz-transform;
-  -o-transition-property: -o-transform;
-}*/
-/*.rotation:active {
-  transform: rotateX(180deg);
-  -webkit-transform: rotateX(180deg);
-  -ms-transform: rotateX(180deg);
-}*/
 
 /*Marking-stamp effect*/
 

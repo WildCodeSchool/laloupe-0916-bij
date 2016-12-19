@@ -95,7 +95,7 @@ function presoneController() {
     // Start offunction for animation true or false
     this.biggerTrueAnswer = () => {
         // console.log(angular.element(document.querySelector('#true_answer'))[0].className);
-        if (angular.element(document.querySelector('#true_answer'))[0].className == 'chip choice') {
+        if (angular.element(document.querySelector('#true_answer'))[0].className == 'btn-floating btn-large choice') {
             angular.element(document.querySelector('#true_answer')).addClass('bigger');
             angular.element(document.querySelector('#false_answer')).removeClass('bigger');
         } else {
@@ -104,7 +104,7 @@ function presoneController() {
     };
 
     this.biggerFalseAnswer = () => {
-        if (angular.element(document.querySelector('#false_answer'))[0].className == 'chip choice') {
+        if (angular.element(document.querySelector('#false_answer'))[0].className == 'btn-floating btn-large choice') {
             angular.element(document.querySelector('#false_answer')).addClass('bigger');
             angular.element(document.querySelector('#true_answer')).removeClass('bigger');
         } else {

@@ -169,11 +169,27 @@ html {
 }
 
 
+
+
+/*twitter*/
+.responsive-img.twitter{
+  width: 70%;
+}
+.responsive-img.twitter2{
+  width: 100%;
+}
+
 /*Split*/
 
+.col.s6.soldat{
+  width: 41%;
+}
 
+.soldat_photo_left{
+  margin-left: 39%;
+}
 
-.reveal {
+/*.reveal {
   width: 100%;
   height: 300px;
   margin-top: 50px;
@@ -182,7 +198,7 @@ html {
   float: left;
   position: relative;
 }
-.reveal-top, .reveal-bottom {
+.reveal-top, .reveal-bottom{
   position: absolute;
   width: 100%;
   height: 500px;
@@ -194,9 +210,9 @@ html {
 .reveal-bottom {
   left: 95px;
 
-}
+}*/
 
-.reveal:hover .reveal-top{
+/*.reveal:hover .reveal-top{
   left: -50px;
 
 }
@@ -211,7 +227,7 @@ html {
   -o-transition: left 0.3s ease;
   -ms-transition: left 0.3s ease;
   transition: left 0.3s ease;
-}
+/*}
 
 .recadrage .reveal-top{
   background-image: url(../img/large/recadrage1.jpg);
@@ -221,7 +237,7 @@ html {
 .recadrage .reveal-bottom {
   background-image: url(../img/large/recadrage2.jpg);
   background-repeat: no-repeat;
-}
+}*/
 
 /*manage the button positioning on sheet5' response*/
 

@@ -2,21 +2,22 @@
 <div ng-hide="show" class="main_row row col s12">
     <div class="main_container container col s6">
         <div class="container_img">
-          <div class="reveal recadrage">
-            <div class="reveal-top"></div>
-            <div id="myBtn" class="reveal-bottom"></div>
-          </div>
+            <div class="row recadrage">
+                <div class="col s6 soldat">
+                    <img class="soldat_photo_left"src="views/pres1/assets/img/large/recadrage1.jpg" alt=""/></div>
+                <div class="col s6 ">
+                    <img src="views/pres1/assets/img/large/recadrage2.jpg" alt=""/></div>
+            </div>
         </div>
-
 
         <p class="main_p col s12">
             <b>
                 <span>Exercice</span>
             </b>
             Recadre la photo</p>
-            <button class="btn_answer">
-              <a class="sub_btn_answer" ng-click="vm.nextVisibleSlide(7)">Suivant ></a>
-            </button>
+        <button class="btn_answer">
+            <a class="sub_btn_answer" ng-click="vm.nextVisibleSlide(7)">Suivant ></a>
+        </button>
     </div>
 
 </div>

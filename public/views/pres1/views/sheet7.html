@@ -1,22 +1,8 @@
 <!-- question -->
-<div ng-hide="show" class="main_row row col s12">
-    <div class="main_container container col s6">
+<div ng-hide="show">
         <div class="container_img">
-          <div class="reveal recadrage">
-            <div class="reveal-top"></div>
-            <div id="myBtn" class="reveal-bottom"></div>
-          </div>
-        </div>
-
-
-        <p class="main_p col s12">
-            <b>
-                <span>Exercice</span>
-            </b>
-            Recadre la photo</p>
-            <button class="btn_answer">
-              <a class="sub_btn_answer" ng-click="vm.nextVisibleSlide(7)">Suivant ></a>
-            </button>
-    </div>
-
-</div>
+                    <img class="soldat_photo" src="views/pres1/assets/img/large/recadrage.jpg" alt=""/>
+                  </div>
+        <p class="main_p"><b><span>Exercice : </span></b>Recadre la photo</p>
+        <a class="btn-floating btn-large btn_next" ng-click="vm.nextVisibleSlide(7)"><i class="material-icons">fast_forward</i></a>
+      </div>

@@ -166,9 +166,24 @@ html {
 }
 
 
+
+
+/*twitter*/
+.responsive-img.twitter{
+  width: 70%;
+}
+.responsive-img.twitter2{
+  width: 100%;
+}
+
 /*Split*/
 
-.reveal {
+.soldat_photo{
+  margin-top: 2%;
+  width: 23%!important;
+}
+
+/*.reveal {
   width: 100%;
   height: 300px;
   margin-top: 50px;
@@ -177,7 +192,7 @@ html {
   float: left;
   position: relative;
 }
-.reveal-top, .reveal-bottom {
+.reveal-top, .reveal-bottom{
   position: absolute;
   width: 100%;
   height: 500px;
@@ -189,9 +204,9 @@ html {
 .reveal-bottom {
   left: 95px;
 
-}
+}*/
 
-.reveal:hover .reveal-top{
+/*.reveal:hover .reveal-top{
   left: -50px;
 
 }
@@ -206,7 +221,7 @@ html {
   -o-transition: left 0.3s ease;
   -ms-transition: left 0.3s ease;
   transition: left 0.3s ease;
-}
+/*}
 
 .recadrage .reveal-top{
   background-image: url(../img/large/recadrage1.jpg);
@@ -216,7 +231,7 @@ html {
 .recadrage .reveal-bottom {
   background-image: url(../img/large/recadrage2.jpg);
   background-repeat: no-repeat;
-}
+}*/
 
 /*managing the button position on sheet5' response*/
 
@@ -227,4 +242,10 @@ html {
 
 .resize > img {
   width: 25%;
+}
+
+/* */
+
+#slide_six_position {
+  margin-left: -0.5%;
 }

@@ -194,6 +194,19 @@ html         {
   transform: rotate(-20deg);
 }
 
+.marking_right {
+  position: absolute;
+  margin-top: -3%;
+  margin-left: 2%;
+  height: 20%;
+  -webkit-animation:1s stamp;
+  -moz-animation: 1s stamp;
+  animation:1s stamp;
+  -webkit-transform : rotate(-20deg);
+  -moz-animation: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
 @keyframes stamp {
   0% {
     opacity:1;

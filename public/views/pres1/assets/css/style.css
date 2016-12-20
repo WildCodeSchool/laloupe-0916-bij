@@ -243,3 +243,9 @@ html {
 .resize > img {
   width: 25%;
 }
+
+/* */
+
+#slide_six_position {
+  margin-left: -0.5%;
+}

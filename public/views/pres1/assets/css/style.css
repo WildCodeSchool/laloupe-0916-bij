@@ -58,53 +58,50 @@ html {
   display: flex;
   flex-direction: row;
 }
-.sub_btn_choice {
-  font-size: 3rem;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-}
 .btn_choice {
   position: absolute;
   right: 40px;
   bottom: -70px;
   background-color: #597dbe;
-  /*border-radius: 30px;*/
+}
+.btn_choice i, .btn_next i {
+  font-size: 4.5rem;
+}
+.btn_next {
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  background-color: #597dbe;
+}
+#true_answer img, #false_answer img  {
+  width: 100%;
+  height: 100%;
 }
 .choice {
-  padding-left: 20%;
-  margin-top: -20%;
-  height: 10vh;
-  font-size: 3.1rem;
-  line-height: 10vh;
   background-color: inherit;
   color: white;
-}
-.choice img {
-  height: 100%;
-  width: auto;
   -webkit-transition: 0.5s linear all;
   -moz-transition: 0.5s linear all;
   -o-transition: 0.5s linear all;
   transition: 0.5s linear all;
 }
-.bigger img {
-  height: 140%;
+.bigger {
+  height: 70px !important;
+  width: 70px !important;
   -webkit-transition: 0.5s linear all;
   -moz-transition: 0.5s linear all;
   -o-transition: 0.5s linear all;
   transition: 0.5s linear all;
 }
-
 /* answer */
 
-.main_row_answer {
-  margin-top: 50px;
-  height: 65vh;
-}
 .main_container_answer {
   height: 60vh;
   margin-top: 30px;
+}
+.main_row_answer {
+  margin-top: 50px;
+  height: 65vh;
 }
 .main_sub_container_answer {
   position: relative;
@@ -181,12 +178,9 @@ html {
 
 /*Split*/
 
-.col.s6.soldat{
-  width: 41%;
-}
-
-.soldat_photo_left{
-  margin-left: 39%;
+.soldat_photo{
+  margin-top: 2%;
+  width: 23%!important;
 }
 
 /*.reveal {
@@ -239,9 +233,13 @@ html {
   background-repeat: no-repeat;
 }*/
 
-/*manage the button positioning on sheet5' response*/
+/*managing the button position on sheet5' response*/
 
 .decal_button {
   margin-top: 300px;
   margin-left: 200px;
+}
+
+.resize > img {
+  width: 25%;
 }

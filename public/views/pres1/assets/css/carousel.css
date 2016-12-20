@@ -9,7 +9,6 @@ html {
 
 .pres1fixed {
     width: 100vw;
-    /*position: absolute;*/
     z-index: 100;
 }
 .pres1car {
@@ -24,8 +23,6 @@ html {
     margin: 0;
 }
 #pres1carousel li {
-    /*display: flex;*/
-    /*flex-direction: column;*/
     width: 25vw;
     height: 20vh;
     border: 1px solid white;
@@ -33,10 +30,6 @@ html {
     text-align: center;
     overflow: hidden;
     position: relative;
-}
-#pres1carousel li a {
-    /*margin-top: -36px;*/
-    /*height: 20vh;*/
 }
 .img_nav {
     height: 100%;

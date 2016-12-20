@@ -9,23 +9,21 @@
         <div class="subContainer row col s12">
             <h1 class="sub_title"></h1>
             <p class="sub_p col s12">
-              <b>Twitter</b></p>
+              <b>Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter</b></p>
         </div>
         <div class="sub_container row col s12">
             <ul class="sub_main container col s12">
                 <li class="col s6">
-                    <div id="true_answer" class="chip choice" ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</div>
+                  <a class="btn-floating btn-large choice" id="true_answer" ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
+                    <!-- <div id="true_answer" class="chip choice" ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</div> -->
                 </li>
                 <li class="col s6">
-                    <div id="false_answer" class="chip choice" ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</div>
+                  <a class="btn-floating btn-large choice" id="false_answer" ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
+                    <!-- <div id="false_answer" class="chip choice" ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</div> -->
                 </li>
             </ul>
-            <div class="sub_btn_choice row col s12 center-align">
-                <button class="btn_choice" ng-click="show = true">
-                    <a href="" class="sub_btn_choice">Voir la solution ></a>
-                </button>
-            </div>
         </div>
+        <a class="btn-floating btn-large btn_choice" ng-click="show = true"><i class="material-icons">fast_forward</i></a>
     </div>
 </div>
 <!-- answer -->

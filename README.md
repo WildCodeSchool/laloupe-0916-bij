@@ -13,6 +13,7 @@
 
 ### Execution
  npm start
+ 
 #### Installation
 
 ```bash
@@ -25,6 +26,8 @@ bower install
 #### Development
 
 ```bash
+npm install electron-packager
+npm electron-prebuilt
 npm run build
 ```
 
@@ -38,3 +41,14 @@ npm run build
 -   [Camille Fontaine](https://github.com/CamJr)
 -   [Gaëlle Morin](https://github.com/Daedalus418)
 -   [Stéphane Senocq](https://github.com/stephsen)
+
+#### License [CC0 1.0 (Public Domain)](LICENSE.md)
+
+## CSS Structure and Rules
+
+**List of different CSS Structure**
+
+ - element_type
+ - namepage_type
+
+exemple : navbar_logo

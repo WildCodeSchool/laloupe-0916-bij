@@ -203,7 +203,7 @@ html         {
 .marking_right {
   position: absolute;
   margin-top: -3%;
-  margin-left: 2%;
+  margin-left: 15%;
   height: 20%;
   -webkit-animation:1s stamp;
   -moz-animation: 1s stamp;

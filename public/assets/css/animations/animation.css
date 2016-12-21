@@ -2,7 +2,7 @@
 
 /* Page hidden */
 html         {
-   overflow-y:hidden;
+   /*overflow-y:hidden;*/
  }
 
  /* page parameters */
@@ -10,6 +10,7 @@ html         {
 	position:absolute;
 	text-align:center;
 	width:100%;
+  height: 70%;
 }
 
 /* offset page */
@@ -60,6 +61,11 @@ html         {
   -webkit-animation:slideInUp 0.5s both ease-in;
  	-moz-animation:slideInUp 0.5s both ease-in;
  	animation:slideInUp 0.5s both ease-in;
+ }
+ .anim4 {
+  -webkit-animation:slideInUp 0.3s both ease-in;
+   -moz-animation:slideInUp 0.3s both ease-in;
+   animation:slideInUp 0.3s both ease-in;
  }
 
  /* rotate and fall */
@@ -210,9 +216,9 @@ html         {
 @keyframes stamp {
   0% {
     opacity:1;
-    -webkit-transform: rotate(-20deg) scale(2);
-    -moz-transform: rotate(-20deg) scale(2);
-    transform: rotate(-20deg) scale(2);
+    -webkit-transform: rotate(-20deg) scale(3);
+    -moz-transform: rotate(-20deg) scale(3);
+    transform: rotate(-20deg) scale(3);
   }
 
   100% {

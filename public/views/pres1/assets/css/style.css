@@ -24,13 +24,13 @@ html {
 }
 
 /* parcours */
-.main_row {
+.main_row, .main_row_answer {
   display: flex;
   margin-top: 10px;
-  height: 62vh;
+  /*height: 70%;*/
   width: 100vw;
 }
-.main_container, .main_sub_container {
+.main_container, .main_sub_container, .main_container_answer, .main_sub_container_answer {
   margin-top: 30px;
   width: 100%;
 }
@@ -40,16 +40,16 @@ html {
 .container_img img {
   width: 100%;
 }
-.main_p {
+/*.main_p {
   margin: 10px;
   height: 12vh;
   font-size: 2.5rem;
-}
+}*/
 .sub_title {
   margin-top: 0;
   margin-bottom: 0;
 }
-.sub_p {
+.sub_p, .sub_p_answer {
   margin: 15px;
   height: 30vh;
   font-size: 2.5rem;
@@ -58,21 +58,21 @@ html {
   display: flex;
   flex-direction: row;
 }
-.btn_choice {
+.btn_choice, .btn_next {
   position: absolute;
   right: 40px;
-  bottom: -70px;
+  bottom: 20px;
   background-color: #597dbe;
 }
 .btn_choice i, .btn_next i {
   font-size: 4.5rem;
 }
-.btn_next {
+/*.btn_next {
   position: absolute;
   right: 40px;
   bottom: 0;
   background-color: #597dbe;
-}
+}*/
 #true_answer img, #false_answer img  {
   width: 100%;
   height: 100%;
@@ -95,25 +95,24 @@ html {
 }
 /* answer */
 
-.main_container_answer {
+/*.main_container_answer {
   height: 60vh;
   margin-top: 30px;
 }
-.main_row_answer {
-  margin-top: 50px;
-  height: 65vh;
-}
+
 .main_sub_container_answer {
   position: relative;
-  height: 65vh;
-}
-.sub_p_answer {
+  /*height: 65vh;*/
+/*}
+/*.sub_p_answer {
   margin-top: 50px;
   margin-bottom: 20px;
-  font-size: 2rem;
-  height: 45vh;
-}
-.sub_btn_answer {
+  font-size: 2rem;*/
+  /*height: 45vh;*/
+  /*margin-top: 30px;
+  width: 100%;
+}*/
+/*.sub_btn_answer {
   font-size: 3rem;
   color: white;
   margin-left: auto;
@@ -124,7 +123,7 @@ html {
   width: 80%;
   margin-top: 10px;
   /*border-radius: 30px;*/
-}
+}*/
 
 /*TEXT Conclusion */
 

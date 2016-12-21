@@ -1,39 +1,31 @@
 <!-- question -->
 <div ng-hide="show" class="main_row row col s12">
-    <div class="main_container container col s8">
+    <div class="main_container container col s7">
         <div class="container_img">
             <img class="responsive-img" src="views/pres1/assets/img/large/le_plus_gros_chien_du_monde.jpg">
         </div>
     </div>
-    <div class="main_sub_container container col s4">
+    <div class="main_sub_container container col s5">
         <div class="subContainer row col s12">
             <h1 class="sub_title">08h32</h1>
-            <p class="sub_p col s12">
-                <b>
-                    <span>ÉTATS-UNIS</span>
-                </b>
-                - Première sortie officielle en famille pour le plus grand chien du monde dans un parc de Washington.</p>
+            <p class="sub_p col s12"><b><span>ÉTATS-UNIS</span></b>- Première sortie officielle en famille pour le plus grand chien du monde dans un parc de Washington.</p>
         </div>
         <div class="sub_container row col s12">
             <ul class="sub_main container col s12">
                 <li class="col s6">
                   <a class="btn-floating btn-large choice" id="true_answer" ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
-                    <!-- <div id="true_answer" class="chip choice" ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</div> -->
                 </li>
                 <li class="col s6">
                   <a class="btn-floating btn-large choice" id="false_answer" ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
-                    <!-- <div id="false_answer" class="chip choice" ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</div> -->
                 </li>
             </ul>
         </div>
     </div>
-    <!-- <div class="sub_btn_choice row col s8 center-align"> -->
-    <a class="btn-floating btn-large btn_choice" ng-click="show = true"><i class="material-icons">fast_forward</i></a>
-    <!-- </div> -->
 </div>
+<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true"><i class="material-icons">fast_forward</i></a>
 <!-- answer -->
-<div ng-show="show" class="main_row_answer row col s12">
-    <div class="main_container_answer container col s8">
+<div ng-show="show" class="main_row_answer anim4 row col s12">
+    <div class="main_container_answer container col s7">
         <div directive-zoom id="zoom_area">
           <div class="marking" ng-show="true">
               <img class="responsive-img" class="responsive-img" src="./assets/icon/angry_red.png" alt="faux">
@@ -42,14 +34,9 @@
             <img class="responsive-img" id="zoom_sur" src="views/pres1/assets/img/large/le_plus_gros_chien_du_monde.jpg">
         </div>
     </div>
-    <div class="main_sub_container_answer container col s4">
+    <div class="main_sub_container_answer container col s5">
       <h1 class="sub_title">08h32</h1>
       <p class="sub_p_answer col s12"><b><span>ÉTATS-UNIS</span></b>- Première sortie officielle en famille pour le plus grand chien du monde dans un parc de Washington.</p>
-      <!-- <div class="sub_btn_answer row col s12 center-align"> -->
-        <!-- <button class="btn_answer"> -->
-          <!-- <a class="sub_btn_answer" ng-click="vm.nextVisibleSlide(1)">Suivant ></a> -->
-        <!-- </button> -->
-      <!-- </div> -->
-      <a class="btn-floating btn-large btn_next" ng-click="vm.nextVisibleSlide(1)"><i class="material-icons">fast_forward</i></a>
     </div>
 </div>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(1)"><i class="material-icons">fast_forward</i></a>

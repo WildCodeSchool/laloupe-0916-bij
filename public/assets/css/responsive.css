@@ -24,7 +24,7 @@ html {
 
 @media screen and (max-height: 900px) {
   .main_row {
-    height: 55vh;
+    /*height: 55vh;*/
   }
   .container_img {
     height: 100%;

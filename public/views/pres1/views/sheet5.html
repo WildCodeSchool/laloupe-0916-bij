@@ -1,37 +1,34 @@
 <!-- question -->
 <div ng-hide="show" class="main_row row col s12">
-    <div class="main_container container col s8">
+    <div class="main_container container col s7">
         <div class="container_img">
             <img class="responsive-img" src="views/pres1/assets/img/large/Vancouver_Photo_Plan_Large.jpg">
         </div>
     </div>
-    <div class="main_sub_container container col s4">
+    <div class="main_sub_container container col s5">
         <div class="subContainer row col s12">
             <h1 class="sub_title">22h46</h3>
             <p class="sub_p col s12">
                 <b>
                     <span>CANADA</span>
-                </b>
-                - Scène de romantisme au milieu des forces de l’ordre canadiennes pendant les émeutes qui ont suivi la défaite des Canucks de Vancouver face aux Bruins de Boston en finale de la Stanley Cup de hockey sur glace.
+                </b>- Scène de romantisme au milieu des forces de l’ordre canadiennes pendant les émeutes qui ont suivi la défaite des Canucks de Vancouver face aux Bruins de Boston en finale de la Stanley Cup de hockey sur glace.
             </p>
         </div>
         <div class="sub_container row col s12">
             <ul class="sub_main container col s12">
                 <li class="col s6">
-                    <div id="true_answer" class="chip choice" ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</div>
+                    <a class="btn-floating btn-large choice" id="true_answer" ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
                 </li>
                 <li class="col s6">
-                    <div id="false_answer" class="chip choice" ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</div>
+                    <a class="btn-floating btn-large choice" id="false_answer" ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
                 </li>
             </ul>
-            <div class="sub_btn_choice row col s12 center-align">
-                <button class="btn_choice" ng-click="show = true">
-                    <a href="" class="sub_btn_choice">Voir la solution ></a>
-                </button>
-            </div>
         </div>
     </div>
 </div>
+<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
+    <i class="material-icons">fast_forward</i>
+</a>
 <!-- answer -->
 <div ng-show="show" class="main_row_answer row col s12">
     <div class="main_container_answer container col s12" ng-controller="presoneController as vm">
@@ -47,10 +44,7 @@
             </div>
         </div>
     </div>
-    <div class="sub_btn_answer row col s1">
-        <button class="btn_answer decal_button">
-            <a class="sub_btn_answer" ng-click="vm.nextVisibleSlide(5)">suivant ></a>
-        </button>
-    </div>
-
 </div>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(5)">
+    <i class="material-icons">fast_forward</i>
+</a>

@@ -1,70 +1,46 @@
 <!-- question -->
 <div ng-hide="show" class="main_row row col s12">
     <div class="main_container container col s4">
-      <div class="container_img">
-          <img class="responsive-img twitter" src="views/pres1/assets/img/large/twitter.jpg">
-      </div>
+        <div class="container_img">
+            <img class="responsive-img twitter" src="views/pres1/assets/img/large/twitter.jpg">
+        </div>
     </div>
     <div class="main_sub_container container col s8">
         <div class="subContainer row col s12">
             <h1 class="sub_title"></h1>
             <p class="sub_p col s12">
-              <b>Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter</b></p>
+                <b>Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter</b>
+            </p>
         </div>
         <div class="sub_container row col s12">
             <ul class="sub_main container col s12">
                 <li class="col s6">
-                  <a class="btn-floating btn-large choice" id="true_answer" ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
-                    <!-- <div id="true_answer" class="chip choice" ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</div> -->
+                    <a class="btn-floating btn-large choice" id="true_answer" ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
                 </li>
                 <li class="col s6">
-                  <a class="btn-floating btn-large choice" id="false_answer" ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
-                    <!-- <div id="false_answer" class="chip choice" ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</div> -->
+                    <a class="btn-floating btn-large choice" id="false_answer" ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
                 </li>
             </ul>
         </div>
-        <a class="btn-floating btn-large btn_choice" ng-click="show = true"><i class="material-icons">fast_forward</i></a>
     </div>
 </div>
+<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
+    <i class="material-icons">fast_forward</i>
+</a>
 <!-- answer -->
-<div ng-show="show" class="main_row_answer row col s12">
+<div ng-show="show" class="main_row_answer anim4 row col s12">
     <div class="main_container_answer container col s4">
-      <div class="container_img">
-          <img class="responsive-img twitter2" src="views/pres1/assets/img/large/twitter2.png">
-      </div>
+        <div class="container_img">
+            <img class="responsive-img twitter2" src="views/pres1/assets/img/large/twitter2.png">
+        </div>
     </div>
     <div class="main_sub_container_answer container col s8" ng-click="highlight = true">
-      <h1 class="sub_title"></h1>
-      <p class="sub_p_answer col s12">La loi floridienne ‘’Stand your ground’’
-
-a fait couler beaucoup d’encre lors de
-
-sa promulgation en 2005. Offrant une
-
-conception très large de l’autodéfense,
-
-elle s’offre un retour sous les projecteurs
-
-inattendu avec la publication de chiffres
-
-par le département d’application des lois
-
-de l’État de Floride. Depuis l’entrée en vigueur de
-
-Le "permis de tuer" sauve des vies !
-
-la loi en 2005, le nombre de morts par armes à feu a baissé significativement d’après
-
-le graphique communiqué à la presse. La NRA (National Rifle Association), puissant
-
-lobby pro-arme et soutien indéfectible de cette loi, s’est réjouie de ces chiffres dans
-
-un communiqué.</p>
-
-      <div class="sub_btn_answer row col s12 center-align">
-        <button class="btn_answer">
-          <a class="sub_btn_answer" ng-click="vm.nextVisibleSlide(15)">Suivant ></a>
-        </button>
-      </div>
+        <h1 class="sub_title"></h1>
+        <p class="sub_p_answer col s12">La loi floridienne ‘’Stand your ground’’ a fait couler beaucoup d’encre lors de sa promulgation en 2005. Offrant une conception très large de l’autodéfense, elle s’offre un retour sous les projecteurs inattendu avec la
+            publication de chiffres par le département d’application des lois de l’État de Floride. Depuis l’entrée en vigueur de Le "permis de tuer" sauve des vies ! la loi en 2005, le nombre de morts par armes à feu a baissé significativement d’après le
+            graphique communiqué à la presse. La NRA (National Rifle Association), puissant lobby pro-arme et soutien indéfectible de cette loi, s’est réjouie de ces chiffres dans un communiqué.</p>
     </div>
 </div>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(14)">
+    <i class="material-icons">fast_forward</i>
+</a>

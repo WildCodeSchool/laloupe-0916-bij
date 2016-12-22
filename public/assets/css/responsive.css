@@ -1,14 +1,12 @@
 /*responsive*/
 @media screen and (max-width: 1480px) {
-html {
-  font-size: 65%;
+  html {
+    font-size: 65%;
   }
-    /*#zoom_area img {
-      width: 100%;
-    }*/
-    .photo {
-      width: 45%;
-    }
+  .photo {
+    width: 45%;
+    height: 70%;
+  }
 }
 /*
 @media screen and (max-width: 1150px) {

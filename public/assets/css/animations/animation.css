@@ -2,7 +2,7 @@
 
 /* Page hidden */
 html         {
-   /*overflow-y:hidden;*/
+   overflow-y:hidden;
  }
 
  /* page parameters */
@@ -176,8 +176,8 @@ html         {
 /* highligth */
 
 .highlight {
-  width: 300px;
-  height: 200px;
+  width: 35%;
+  height: 50%;
   position: absolute;
   bottom: 0;
   background-color: yellow;
@@ -235,35 +235,29 @@ html         {
 
 .photo {
   display: block;
-  width: 60%;
-  height: 100%;
+  margin-top: 5%;
+  width: 70%;
+  height: 80%;
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  /*margin-left: 800px;*/
   -webkit-perspective: 2000;
   -moz-perspective: 2000;
   perspective: 2000;
-  /*margin: 120px auto;*/
   cursor: pointer;
 }
-
 #inner-left > img {
   transform: rotateY(180deg);
 }
-
 .face {
   position: absolute;
   top: 0;
   left: 0;
-  /*margin-left: 200px;
-  margin-bottom: 100px;*/
   width: 100%;
   height: 100%;
   transition: all 1s ease-out;
   transform-origin: 0 0;
 }
-
 .front {
   width: 100%;
   height: 100%;
@@ -271,15 +265,12 @@ html         {
   z-index: 6;
   backface-visibility: hidden;
 }
-
 .inner-left {
   transform: rotateY(-5deg);
 }
-
 .on-left {
   transform: translateX(50%) rotateY(-170deg);
 }
-
 .on-right {
   transform: translateX(50%) rotateY(-10deg);
 }

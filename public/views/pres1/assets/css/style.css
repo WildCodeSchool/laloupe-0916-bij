@@ -230,8 +230,8 @@ html {
 /*managing the button position on sheet5' response*/
 
 .decal_button {
-  margin-top: 300px;
-  margin-left: 200px;
+  margin-top: 50%;
+  margin-left: 50%;
 }
 
 .resize > img {

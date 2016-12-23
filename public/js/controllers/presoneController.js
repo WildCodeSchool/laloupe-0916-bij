@@ -179,17 +179,4 @@ function presoneController() {
       innerRight.removeClass('on-right');
     }
   };
-
-
-  //Recadrage controller
-  this.recadrage = () => {
-      // console.log(angular.element(document.querySelector('#true_answer'))[0].className);
-      if (angular.element(document.querySelector('#red'))[0].className == 'reveal recadrage') {
-          angular.element(document.querySelector('#red')).addClass('blue');
-          angular.element(document.querySelector('#blue')).removeClass('red');
-      } else {
-          angular.element(document.querySelector('#red')).removeClass('blue');
-      }
-  };
-
 }

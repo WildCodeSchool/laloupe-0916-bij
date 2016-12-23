@@ -1,14 +1,15 @@
 <!-- question -->
-<div ng-hide="show">
-    <div class="container_img">
-        <img class="soldat_photo" src="views/pres1/assets/img/large/recadrage.jpg" alt=""/>
+<div ng-hide="show" class="main_row row col s12">
+    <div class="main_container container col s7">
+            <img ng-click="show = true" class="responsive-img" src="views/pres1/assets/img/large/recadrage.jpg">
+            <p class="sub_p col s12"><b><span>Recadre la photo</span></b>- Présentation et lancement de la nouvelle campagne choc contre les violences conjugales par le collectif des associations de soutien aux femmes victimes.</p>
     </div>
-    <p class="main_p">
-        <b>
-            <span>Exercice :
-            </span>
-        </b>Recadre la photo</p>
-    <a class="btn-floating btn-large btn_next" ng-click="vm.nextVisibleSlide(7)">
-        <i class="material-icons">fast_forward</i>
-    </a>
 </div>
+<!-- answer -->
+<div ng-show="show" class="main_row_answer row col s12">
+    <div class="main_container_answer container col s8">
+            <img class="responsive-img slideExpandUp" id="slide_six_position" src="views/pres1/assets/img/large/recadrage2.png">
+            <p class="sub_p col s12"><b><span>Recadre la photo</span></b>- Présentation et lancement de la nouvelle campagne choc contre les violences conjugales par le collectif des associations de soutien aux femmes victimes.</p>
+    </div>
+</div>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(7)"><i class="material-icons">fast_forward</i></a>

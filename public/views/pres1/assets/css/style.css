@@ -175,62 +175,7 @@ html {
   width: 100%;
 }
 
-/*Split*/
 
-.soldat_photo{
-  margin-top: 2%;
-  width: 23%!important;
-}
-
-/*.reveal {
-  width: 100%;
-  height: 300px;
-  margin-top: 50px;
-  margin-bottom: 75px;
-  margin-left: 35%;
-  float: left;
-  position: relative;
-}
-.reveal-top, .reveal-bottom{
-  position: absolute;
-  width: 100%;
-  height: 500px;
-}
-.reveal-top {
-  left: 0;
-}
-
-.reveal-bottom {
-  left: 95px;
-
-}*/
-
-/*.reveal:hover .reveal-top{
-  left: -50px;
-
-}
-
-.reveal:hover .reveal-bottom{
-  left: 150px;
-
-}
-.reveal-top, .reveal-bottom{
-  -webkit-transition: left 0.3s ease;
-  -moz-transition: left 0.3s ease;
-  -o-transition: left 0.3s ease;
-  -ms-transition: left 0.3s ease;
-  transition: left 0.3s ease;
-/*}
-
-.recadrage .reveal-top{
-  background-image: url(../img/large/recadrage1.jpg);
-  background-repeat: no-repeat;
-}
-
-.recadrage .reveal-bottom {
-  background-image: url(../img/large/recadrage2.jpg);
-  background-repeat: no-repeat;
-}*/
 
 /*managing the button position on sheet5' response*/
 

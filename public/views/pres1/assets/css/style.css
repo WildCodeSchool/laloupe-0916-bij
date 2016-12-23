@@ -27,32 +27,24 @@ html {
 .main_row, .main_row_answer {
   display: flex;
   margin-top: 10px;
-  height: 100%;
+  /*height: 70%;*/
   width: 100vw;
 }
 .main_container, .main_sub_container, .main_container_answer, .main_sub_container_answer {
   margin-top: 30px;
   width: 100%;
-  height: 90%;
 }
 .container_img {
-  position: relative;
-  margin-left: 10px;
   width: 100%;
 }
 .container_img img {
   width: 100%;
 }
-.container_img_flip {
-  position: relative;
-  margin-left: 10px;
-  width: 100%;
-  height: 90%;
-}
-.container_img_flip img {
-  width: 100%;
-  height: 100%;
-}
+/*.main_p {
+  margin: 10px;
+  height: 12vh;
+  font-size: 2.5rem;
+}*/
 .sub_title {
   margin-top: 0;
   margin-bottom: 0;
@@ -75,6 +67,12 @@ html {
 .btn_choice i, .btn_next i {
   font-size: 4.5rem;
 }
+/*.btn_next {
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  background-color: #597dbe;
+}*/
 #true_answer img, #false_answer img  {
   width: 100%;
   height: 100%;
@@ -125,7 +123,7 @@ html {
   width: 80%;
   margin-top: 10px;
   /*border-radius: 30px;*/
-/*}*/
+}*/
 
 /*TEXT Conclusion */
 
@@ -145,15 +143,19 @@ html {
 .anim-typewriter:nth-child(1){
   animation: typewriter 4s steps(44) 1s 1 normal both;
 }
+
+
 .anim-typewriter:nth-child(2){
   animation: typewriter 4s steps(44) 3s 1 normal both;
 }
+
 .anim-typewriter:nth-child(3){
   animation: typewriter 4s steps(44) 4s 1 normal both;
 }
 .anim-typewriter:nth-child(4){
   animation: typewriter 4s steps(44) 8s 1 normal both;
 }
+
 .anim-typewriter:nth-child(5){
   animation: typewriter 4s steps(44) 10s 1 normal both;
 }
@@ -161,6 +163,9 @@ html {
   from{width: 0;}
   to{width: 22em;}
 }
+
+
+
 
 /*twitter*/
 .responsive-img.twitter{
@@ -187,26 +192,4 @@ html {
 
 #slide_six_position {
   margin-left: -0.5%;
-}
-
-/* minions */
-.minon {
-  position: relative;
-}
-.incrust, .bulle {
-  position: absolute;
-  width: 20%;
-  height: auto;
-}
-.incrust {
-  top: -10%;
-  right: 35%;
-}
-.bulle {
-  bottom: 5%;
-  left: 5%;
-}
-.incrust img, .bulle img {
-  width: 100%;
-  height: auto;
 }

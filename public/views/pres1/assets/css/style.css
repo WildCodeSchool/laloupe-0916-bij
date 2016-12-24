@@ -40,11 +40,34 @@ html {
 .container_img img {
   width: 100%;
 }
+
 /*.main_p {
   margin: 10px;
   height: 12vh;
   font-size: 2.5rem;
 }*/
+
+.container_img_flip {
+  position: relative;
+  margin-left: 10px;
+  width: 100%;
+  height: 90%;
+}
+.container_img_flip img {
+  width: 100%;
+  height: 100%;
+}
+
+.container_img_vertical {
+  position: relative;
+  margin-left: 10px;
+  width: 100%;
+}
+.container_vertical img {
+  width: 100%;
+  height: 5vh;
+}
+
 .sub_title {
   margin-top: 0;
   margin-bottom: 0;
@@ -180,8 +203,8 @@ html {
 /*managing the button position on sheet5' response*/
 
 .decal_button {
-  margin-top: 300px;
-  margin-left: 200px;
+  margin-top: 50%;
+  margin-left: 50%;
 }
 
 .resize > img {

@@ -1,11 +1,56 @@
 /*responsive*/
+@media screen and (max-width: 1810px) {
+  html {
+    font-size: 70%;
+  }
+  .photo {
+    width: 60%;
+    height: 70%;
+  }
+}
+@media screen and (max-width: 1610px) {
+  html {
+    font-size: 65%;
+  }
+  .photo {
+    width: 55%;
+    height: 65%;
+  }
+}
 @media screen and (max-width: 1480px) {
   html {
     font-size: 65%;
   }
   .photo {
+    width: 50%;
+    height: 60%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 60%;
+  }
+  .photo {
     width: 45%;
-    height: 70%;
+    height: 55%;
+  }
+}
+@media screen and (max-width: 1080px) {
+  html {
+    font-size: 60%;
+  }
+  .photo {
+    width: 40%;
+    height: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 55%;
+  }
+  .photo {
+    width: 35%;
+    height: 25%;
   }
 }
 /*

@@ -27,7 +27,7 @@ html {
 .main_row, .main_row_answer {
   display: flex;
   margin-top: 10px;
-  /*height: 70%;*/
+  height: 100%;
   width: 100vw;
 }
 .main_container, .main_sub_container, .main_container_answer, .main_sub_container_answer {
@@ -146,7 +146,7 @@ html {
   width: 80%;
   margin-top: 10px;
   /*border-radius: 30px;*/
-}*/
+}
 
 /*TEXT Conclusion */
 

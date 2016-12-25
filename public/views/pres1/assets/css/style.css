@@ -40,24 +40,16 @@ html {
 .container_img img {
   width: 100%;
 }
-
-/*.main_p {
-  margin: 10px;
-  height: 12vh;
-  font-size: 2.5rem;
-}*/
-
 .container_img_flip {
   position: relative;
   margin-left: 10px;
-  width: 100%;
   height: 90%;
+  /*height: 90%;*/
 }
 .container_img_flip img {
   width: 100%;
   height: 100%;
 }
-
 .container_img_vertical {
   position: relative;
   margin-left: 10px;
@@ -67,7 +59,6 @@ html {
   width: 100%;
   height: 5vh;
 }
-
 .sub_title {
   margin-top: 0;
   margin-bottom: 0;
@@ -90,12 +81,6 @@ html {
 .btn_choice i, .btn_next i {
   font-size: 4.5rem;
 }
-/*.btn_next {
-  position: absolute;
-  right: 40px;
-  bottom: 0;
-  background-color: #597dbe;
-}*/
 #true_answer img, #false_answer img  {
   width: 100%;
   height: 100%;
@@ -116,40 +101,8 @@ html {
   -o-transition: 0.5s linear all;
   transition: 0.5s linear all;
 }
-/* answer */
-
-/*.main_container_answer {
-  height: 60vh;
-  margin-top: 30px;
-}
-
-.main_sub_container_answer {
-  position: relative;
-  /*height: 65vh;*/
-/*}
-/*.sub_p_answer {
-  margin-top: 50px;
-  margin-bottom: 20px;
-  font-size: 2rem;*/
-  /*height: 45vh;*/
-  /*margin-top: 30px;
-  width: 100%;
-}*/
-/*.sub_btn_answer {
-  font-size: 3rem;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-}
-.btn_answer {
-  background-color: #597dbe;
-  width: 80%;
-  margin-top: 10px;
-  /*border-radius: 30px;*/
-}
 
 /*TEXT Conclusion */
-
 
 .main_sheet16{
   margin-top: 100px;
@@ -166,19 +119,15 @@ html {
 .anim-typewriter:nth-child(1){
   animation: typewriter 4s steps(44) 1s 1 normal both;
 }
-
-
 .anim-typewriter:nth-child(2){
   animation: typewriter 4s steps(44) 3s 1 normal both;
 }
-
 .anim-typewriter:nth-child(3){
   animation: typewriter 4s steps(44) 4s 1 normal both;
 }
 .anim-typewriter:nth-child(4){
   animation: typewriter 4s steps(44) 8s 1 normal both;
 }
-
 .anim-typewriter:nth-child(5){
   animation: typewriter 4s steps(44) 10s 1 normal both;
 }
@@ -186,9 +135,6 @@ html {
   from{width: 0;}
   to{width: 22em;}
 }
-
-
-
 
 /*twitter*/
 .responsive-img.twitter{
@@ -198,15 +144,12 @@ html {
   width: 100%;
 }
 
-
-
 /*managing the button position on sheet5' response*/
 
 .decal_button {
   margin-top: 50%;
   margin-left: 50%;
 }
-
 .resize > img {
   width: 25%;
 }
@@ -215,4 +158,25 @@ html {
 
 #slide_six_position {
   margin-left: -0.5%;
+}
+
+/* minions */
+.minion {
+  position: relative;
+}
+.bulle {
+  bottom: 10%;
+  left: 3%;
+  position: absolute;
+  width: 15%;
+}
+.incrust {
+  top: -5%;
+  left: 43%;
+  position: absolute;
+  width: 20%;
+}
+.incrust img, .bulle img {
+  width: 100%;
+  height: auto;
 }

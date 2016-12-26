@@ -67,6 +67,14 @@ html         {
    -moz-animation:slideInUp 0.3s both ease-in;
    animation:slideInUp 0.3s both ease-in;
  }
+ .animRotate {
+   -webkit-transform-origin: 50% 50%;
+  	-webkit-animation: animRotate .5s both ease-in;
+  	-moz-transform-origin: 50% 50%;
+  	-moz-animation: animRotate .5s both ease-in;
+  	transform-origin: 50% 50%;
+  	animation: animRotate .5s both ease-in;
+ }
 
  /* rotate and fall */
  @-webkit-keyframes rotateFall {
@@ -152,6 +160,16 @@ html         {
  	to { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
  }
 
+ /* animRotate */
+ @-webkit-keyframes animRotate {
+ 	to { -webkit-transform: translateZ(-3000px) rotateZ(360deg); opacity: 1; }
+ }
+ @-moz-keyframes animRotate {
+ 	to { -moz-transform: translateZ(-3000px) rotateZ(360deg); opacity: 1; }
+ }
+ @keyframes animRotate {
+ 	to { transform: translateZ(-3000px) rotateZ(360deg); opacity: 1; }
+ }
 /*fin animation page*/
 
 /* zoom animation */

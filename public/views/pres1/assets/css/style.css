@@ -30,6 +30,13 @@ html {
   height: 100%;
   width: 100vw;
 }
+.main_row_legendage {
+  display: flex;
+  width: 100vw;
+}
+.main_container_legendage {
+  width: 100%;
+}
 .main_container, .main_sub_container, .main_container_answer, .main_sub_container_answer {
   margin-top: 30px;
   width: 100%;
@@ -89,6 +96,11 @@ html {
 .sub_title {
   margin-top: 0;
   margin-bottom: 0;
+}
+.sub_title2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem; 
 }
 .sub_p, .sub_p_answer {
   margin: 15px;

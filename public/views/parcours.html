@@ -3,7 +3,7 @@
 <div class="row parcours_white_border" ng-controller='parcoursController as vm'>
     <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.unlock(1)" ng-mouseleave="vm.lock(1)">
         <div class="center">
-            <h2>Parcours Décryptage</h2>
+            <h2 class="titleParcours" >Parcours Décryptage</h2>
             <div id="padlock1" class="lock icon"></div>
             <p id="resume1" class="parcours_resume hide">Ce parcours peut notamment être proposé en collège</p>
         </div>
@@ -11,35 +11,35 @@
     </a>
     <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock(2)">
         <div class="center">
-            <h2>Parcours Décodage</h2>
+            <h2 class="titleParcours" >Parcours Décodage</h2>
             <div id="padlock2" class="lock icon"></div>
             <p id="resume2" class="parcours_resume hide">Ce parcours peut notamment être proposé en lycée général</p>
         </div>
     </div>
     <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock(3)">
         <div class="center">
-            <h2>Parcours Déchiffrage</h2>
+            <h2 class="titleParcours" >Parcours Déchiffrage</h2>
             <div id="padlock3" class="lock icon"></div>
             <p id="resume3" class="parcours_resume hide">Ce parcours peut notamment être proposé en lycée professionnel, en centre d’apprentissage, en Centre Educatif Fermé…</p>
         </div>
     </div>
     <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock(4)">
         <div class="center">
-            <h2>Parcours Sourcing</h2>
+            <h2 class="titleParcours" >Parcours Sourcing</h2>
             <div id="padlock4" class="lock icon"></div>
             <p id="resume4" class="parcours_resume hide">Mauris risus magna, fringilla a libero non, ultricies feugiat ex.</p>
         </div>
     </div>
     <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.unlock()" ng-mouseleave="vm.lock(5)">
         <div class="center">
-            <h2>Parcours Fact Checking</h2>
+            <h2 class="titleParcours" >Parcours Fact Checking</h2>
             <div id="padlock5" class="lock icon"></div>
             <p id="resume5" class="parcours_resume hide">Ce parcours peut notamment être proposé à des étudiants ou à des adultes</p>
         </div>
     </div>
     <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.actif()" ng-mouseleave="vm.repos(6)">
         <div class="center">
-            <h2>Parcours perso.</h2>
+            <h2 class="titleParcours" >Parcours perso.</h2>
             <div id="padlock6" ng-class="{{'vm.crayon'}}"></div>
         </div>
     </div>

@@ -1,20 +1,18 @@
 <!-- question -->
-<div ng-hide="show" class="main_row row col s12">
-    <div class="main_container container col s7">
+<h2>Exercice autour du légendage</h2>
+<div ng-hide="show" class="main_row_legendage row col s12">
+    <div class="main_container_legendage container col s7">
         <div class="container_img">
-            <img class="responsive-img" src="views/pres1/assets/img/large/le_plus_gros_chien_du_monde.jpg">
+            <img class="responsive-img" src="views/pres1/assets/img/large/Djibouti_John_Steinmeyer.jpg" ng-click="showRecadrage = true">
         </div>
     </div>
     <div class="main_sub_container container col s5">
-        <div class="subContainer row col s12">
-            <h1 class="sub_title">08h32</h1>
-            <p class="sub_p col s12">
-                <b>
-                    <span>ÉTATS-UNIS</span>
-                </b>
-                - Première sortie officielle en famille pour le plus grand chien du monde dans un parc de Washington.</p>
+        <div ng-show="showRecadrage" class="subContainer row col s12 animRotate">
+            <h1 class="sub_title">Légende originale :</h1>
+            <p class="sub_p col s12"><b>Des migrants africains tentent de capter un réseau téléphonique pour joindre leurs proches le 26 février 2013 à Djibouti.</b></p>
+            <p class="sub_p col s12">©John Steinmeyer. Photo lauréate du World Press Photo 2014.</p>
         </div>
-        <div class="sub_container row col s12">
+        <!-- <div class="sub_container row col s12">
             <ul class="sub_main container col s12">
                 <li class="col s6">
                   <a class="btn-floating btn-large choice" id="true_answer" ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
@@ -23,12 +21,16 @@
                   <a class="btn-floating btn-large choice" id="false_answer" ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
                 </li>
             </ul>
-        </div>
+        </div> -->
     </div>
 </div>
-<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true"><i class="material-icons">fast_forward</i></a>
+<!-- <h1 class="sub_title2">Légende originale :</h1>
+<p><b>Des migrants africains tentent de capter un réseau téléphonique pour joindre leurs proches le 26 février 2013 à Djibouti.</b>
+©John Steinmeyer. Photo lauréate du World Press Photo 2014.</p> -->
+
+<!-- <a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true"><i class="material-icons">fast_forward</i></a> -->
 <!-- answer -->
-<div ng-show="show" class="main_row_answer anim4 row col s12">
+<!-- <div ng-show="show" class="main_row_answer anim4 row col s12">
     <div class="main_container_answer container col s7">
         <div directive-zoom id="zoom_area">
           <div class="marking" ng-show="true">
@@ -42,5 +44,5 @@
       <h1 class="sub_title">08h32</h1>
       <p class="sub_p_answer col s12"><b><span>ÉTATS-UNIS</span></b>- Première sortie officielle en famille pour le plus grand chien du monde dans un parc de Washington.</p>
     </div>
-</div>
+</div> -->
 <a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(4)"><i class="material-icons">fast_forward</i></a>

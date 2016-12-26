@@ -1,6 +1,7 @@
 function presoneController() {
     // angular.element(document.querySelector('#b0')).addClass('active pos1');
     this.show = false;
+    this.showRecadrage = false;
     this.highlight = false;
     this.includerPres1 = '1';
     this.selectClass = "1";

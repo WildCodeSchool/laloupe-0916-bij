@@ -32,6 +32,13 @@
 
 <!-- answer -->
 <div ng-show="show" class="main_row_answer anim4 row col s12">
+    <div class="main_sub_container_answer container col s5 animRotate">
+        <div id="zoom_area">
+            <div id="zoom"></div>
+            <img class="responsive-img" id="zoom_sur" src="views/pres1/assets/img/large/lascars_verite.png">
+        </div>
+        <a class="verif" target="blanck" href="http://www.konbini.com/fr/tendances-2/photo-jeune-visant-policier-avec-flingue-detournement-raciste/">Verification de l'information:http://www.konbini.com/</a>
+    </div>
     <div class="main_container_answer container col s7 animRotate">
         <div id="zoom_area">
             <div class="marking" ng-show="true">
@@ -42,12 +49,7 @@
         </div>
         <a class="verif" target="blanck" href="http://www.google.fr">Vérification sur : www.google.fr</a>
     </div>
-    <div class="main_sub_container_answer container col s5 animRotate">
-      <div id="zoom_area">
-          <div id="zoom"></div>
-          <img class="responsive-img" id="zoom_sur" src="views/pres1/assets/img/large/lascars_verite.png">
-      </div>
-            <a class="verif" target="blanck" href="http://www.konbini.com/fr/tendances-2/photo-jeune-visant-policier-avec-flingue-detournement-raciste/">Verification de l'information:http://www.konbini.com/</a>
-    </div>
 </div>
-<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(2)"><i class="material-icons">fast_forward</i></a>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(2)">
+    <i class="material-icons">fast_forward</i>
+</a>

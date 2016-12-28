@@ -86,12 +86,17 @@ html {
 }
 .container_img_vertical {
   position: relative;
-  margin-left: 10px;
-  width: 100%;
+  margin: 0 auto;
 }
-.container_vertical img {
-  width: 100%;
-  height: 5vh;
+.container_img_vertical img {
+  max-width: 45%;
+}
+.container_answer_img_vertical {
+  position: relative;
+  margin: 0 auto;
+}
+.container_answer_img_vertical img {
+  max-width: 35%;
 }
 .sub_title {
   margin-top: 0;
@@ -100,7 +105,7 @@ html {
 .sub_title2 {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
 }
 .sub_p, .sub_p_answer {
   margin: 15px;

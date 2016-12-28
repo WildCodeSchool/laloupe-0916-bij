@@ -130,7 +130,7 @@ html {
   height: 100%;
 }
 .choice {
-  background-color: inherit;
+  background-color: transparent;
   color: white;
   -webkit-transition: 0.5s linear all;
   -moz-transition: 0.5s linear all;
@@ -209,4 +209,9 @@ html {
 .verif {
   font-size: 2rem;
   color: white;
+}
+
+/*background color on hover angry button set to transparent*/
+.btn-floating:hover {
+  background-color: transparent !important;
 }

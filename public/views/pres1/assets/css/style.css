@@ -64,12 +64,16 @@ html {
 }
 
 .container_img_vertical img {
-  width: 45%;
+  max-width: 45%;
+}
+
+.container_answer_img_vertical {
+  position: relative;
+  margin: 0 auto;
 }
 
 .container_answer_img_vertical img {
-  width: 38%;
-  margin: 0 auto;
+  max-width: 35%;
 }
 
 .sub_title {

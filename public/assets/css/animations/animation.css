@@ -193,14 +193,40 @@ html         {
 
 /* highligth */
 
+.highlight, .tinder_highlight1, .tinder_highlight2, .tinder_highlight3, .tinder_highlight4 {
+  position: absolute;
+  background-color: yellow;
+  opacity: .4;
+}
 .highlight {
   width: 35%;
   height: 50%;
-  position: absolute;
   bottom: 0;
-  background-color: yellow;
-  opacity: .4;
   right: 0;
+}
+.tinder_highlight1 {
+  width: 10%;
+  height: 3%;
+  top: 61%;
+  left: 10%;
+}
+.tinder_highlight2 {
+  width: 18%;
+  height: 3%;
+  top: 34%;
+  right: 20%;
+}
+.tinder_highlight3 {
+  width: 10%;
+  height: 3%;
+  top: 41%;
+  right: 39%;
+}
+.tinder_highlight4 {
+  width: 23%;
+  height: 3%;
+  bottom: 31%;
+  right: 26%;
 }
 
 /*Marking-stamp effect*/

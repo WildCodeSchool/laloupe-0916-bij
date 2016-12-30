@@ -1,0 +1,38 @@
+<!-- question -->
+<div ng-hide="show" class="main_row row col s12">
+    <div class="main_container container col s7">
+        <div class="container_img_heigth">
+            <img class="tinder-img" src="views/pres1/assets/img/large/tinder.png">
+        </div>
+    </div>
+    <div class="main_sub_container container col s5">
+        <div class="subContainer row col s12">
+            <h1 class="sub_title"></h1>
+            <p class="sub_p col s12"><b><span></span></b></p>
+        </div>
+        <div class="sub_container row col s12">
+          <ul class="sub_main container col s12">
+              <li class="col s6">
+                <a class="btn-floating btn-large choice" id="true_answer" ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
+              </li>
+              <li class="col s6">
+                <a class="btn-floating btn-large choice" id="false_answer" ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
+              </li>
+          </ul>
+        </div>
+    </div>
+</div>
+<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true"><i class="material-icons">fast_forward</i></a>
+<!-- answer -->
+<div ng-show="show" class="main_row_answer anim4 row col s12">
+    <div class="main_container container col s7">
+        <div class="container_img_heigth">
+            <img class="tinder-img" src="views/pres1/assets/img/large/tinder.png" ng-click="highlight = true">
+            <div ng-show="highlight" class="tinder_highlight1 slideExpandUp"></div>
+            <div ng-show="highlight" class="tinder_highlight2 slideExpandUp"></div>
+            <div ng-show="highlight" class="tinder_highlight3 slideExpandUp"></div>
+            <div ng-show="highlight" class="tinder_highlight4 slideExpandUp"></div>
+        </div>
+    </div>
+</div>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(13)"><i class="material-icons">fast_forward</i></a>

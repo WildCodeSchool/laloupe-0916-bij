@@ -93,23 +93,27 @@ function presoneController() {
         color: 'bleu'
     }];
 
+    const getElement = (id) => {
+      return angular.element(document.querySelector(id));
+    };
+
     // Start offunction for animation true or false
     this.biggerTrueAnswer = () => {
         // console.log(angular.element(document.querySelector('#true_answer'))[0].className);
-        if (angular.element(document.querySelector('#true_answer'))[0].className == 'btn-floating btn-large choice') {
-            angular.element(document.querySelector('#true_answer')).addClass('bigger');
-            angular.element(document.querySelector('#false_answer')).removeClass('bigger');
+        if (getElement('#true_answer')[0].className == 'btn-floating btn-large choice') {
+            getElement('#true_answer').addClass('bigger');
+            getElement('#false_answer').removeClass('bigger');
         } else {
-            angular.element(document.querySelector('#true_answer')).removeClass('bigger');
+            getElement('#true_answer').removeClass('bigger');
         }
     };
 
     this.biggerFalseAnswer = () => {
-        if (angular.element(document.querySelector('#false_answer'))[0].className == 'btn-floating btn-large choice') {
-            angular.element(document.querySelector('#false_answer')).addClass('bigger');
-            angular.element(document.querySelector('#true_answer')).removeClass('bigger');
+        if (getElement('#false_answer')[0].className == 'btn-floating btn-large choice') {
+            getElement('#false_answer').addClass('bigger');
+            getElement('#true_answer').removeClass('bigger');
         } else {
-            angular.element(document.querySelector('#false_answer')).removeClass('bigger');
+            getElement('#false_answer').removeClass('bigger');
         }
     };
     // End fo function for animation true or false
@@ -163,20 +167,16 @@ function presoneController() {
     };
 
 //flip-flop controller
-  const getElement = (id) => {
-    return angular.element(document.querySelector(id));
-  };
-
-  this.flip = () => {
-    if(!getElement('#front').hasClass('on-left')) {
-      getElement('#front').addClass('on-left');
-      getElement('#inner-left').addClass('on-left');
-      getElement('#inner-right').addClass('on-right');
-    }
-    else {
-      getElement('#front').removeClass('on-left');
-      getElement('#inner-left').removeClass('on-left');
-      getElement('#inner-right').removeClass('on-right');
-    }
-  };
+    this.flip = () => {
+      if(!getElement('#front').hasClass('on-left')) {
+        getElement('#front').addClass('on-left');
+        getElement('#inner-left').addClass('on-left');
+        getElement('#inner-right').addClass('on-right');
+      }
+      else {
+        getElement('#front').removeClass('on-left');
+        getElement('#inner-left').removeClass('on-left');
+        getElement('#inner-right').removeClass('on-right');
+      }
+    };
 }

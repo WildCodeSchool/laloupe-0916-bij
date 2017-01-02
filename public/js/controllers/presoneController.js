@@ -163,7 +163,6 @@ function presoneController() {
     };
 
 //flip-flop controller
-
   const getElement = (id) => {
     return angular.element(document.querySelector(id));
   };

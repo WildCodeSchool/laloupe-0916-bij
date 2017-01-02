@@ -53,8 +53,10 @@ nav img {
     height: 100%;
 }
 .navbar_paragraphe {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
     color: white;
+    margin-right: 25%;
+    margin-left: 25%;
 }
 .main_next_logo {
     font-size: 5em;

@@ -1,8 +1,8 @@
 function parcoursController() {
 
-  function getElement(id){
+  const getElement = (id) => {
     return angular.element(document.querySelector(id));
-  }
+  };
 
   this.unlock=(value)=>{
     getElement('#padlock'+value).removeClass('lock icon');

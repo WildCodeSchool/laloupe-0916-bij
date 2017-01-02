@@ -1,46 +1,90 @@
 <!-- question -->
 <div ng-hide="show" class="main_row row col s12">
-    <div class="main_container container col s4">
-        <div class="container_img">
-            <img class="responsive-img twitter" src="views/pres1/assets/img/large/twitter.jpg">
-        </div>
-    </div>
-    <div class="main_sub_container container col s8">
-        <div class="subContainer row col s12">
-            <h1 class="sub_title"></h1>
-            <p class="sub_p col s12">
-                <b>Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter Twitter</b>
-            </p>
-        </div>
-        <div class="sub_container row col s12">
-            <ul class="sub_main container col s12">
-                <li class="col s6">
-                    <a class="btn-floating btn-large choice" id="true_answer" ng-click="vm.biggerTrueAnswer()"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
-                </li>
-                <li class="col s6">
-                    <a class="btn-floating btn-large choice" id="false_answer" ng-click="vm.biggerFalseAnswer()"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
-                </li>
-            </ul>
-        </div>
+    <div class="main_container container col s7">
+        <img class="responsive-img size_middle_answer" src="views/pres1/assets/img/large/twitter.jpg">
+
+        <ul class="sub_main container col s12 vrai_faux0">
+            <li class="col s6">
+                <a class="btn-floating btn-large choice" id="true_answer0" ng-click="vm.biggerTrueAnswer(0)"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
+            </li>
+            <li class="col s6">
+                <a class="btn-floating btn-large choice" id="false_answer0" ng-click="vm.biggerFalseAnswer(0)"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
+            </li>
+        </ul>
+
+        <ul class="sub_main container col s12 vrai_faux1">
+            <li class="col s6">
+                <a class="btn-floating btn-large choice" id="true_answer1" ng-click="vm.biggerTrueAnswer(1)"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
+            </li>
+            <li class="col s6">
+                <a class="btn-floating btn-large choice" id="false_answer1" ng-click="vm.biggerFalseAnswer(1)"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
+            </li>
+        </ul>
+
+        <ul class="sub_main container col s12 vrai_faux2">
+            <li class="col s6">
+                <a class="btn-floating btn-large choice" id="true_answer2" ng-click="vm.biggerTrueAnswer(2)"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
+            </li>
+            <li class="col s6">
+                <a class="btn-floating btn-large choice" id="false_answer2" ng-click="vm.biggerFalseAnswer(2)"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
+            </li>
+        </ul>
+
+        <ul class="sub_main container col s12 vrai_faux3">
+            <li class="col s6">
+                <a class="btn-floating btn-large choice" id="true_answer3" ng-click="vm.biggerTrueAnswer(3)"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
+            </li>
+            <li class="col s6">
+                <a class="btn-floating btn-large choice" id="false_answer3" ng-click="vm.biggerFalseAnswer(3)"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
+            </li>
+        </ul>
+
+        <ul class="sub_main container col s12 vrai_faux4">
+            <li class="col s6">
+                <a class="btn-floating btn-large choice" id="true_answer4" ng-click="vm.biggerTrueAnswer(4)"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
+            </li>
+            <li class="col s6">
+                <a class="btn-floating btn-large choice" id="false_answer4" ng-click="vm.biggerFalseAnswer(4)"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
+            </li>
+        </ul>
     </div>
 </div>
 <a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
     <i class="material-icons">fast_forward</i>
 </a>
+
+<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
+    <i class="material-icons">fast_forward</i>
+</a>
 <!-- answer -->
-<div ng-show="show" class="main_row_answer anim4 row col s12">
-    <div class="main_container_answer container col s4">
-        <div class="container_img">
-            <img class="responsive-img twitter2" src="views/pres1/assets/img/large/twitter2.png">
-        </div>
+
+<div class="row">
+    <div class="col s12">
+        <h1>Certification Twitter</h1>
+        <div class="col s4"></div>
+        <div class="col s4"><h4>VRAI</h4></div>
+        <div class="col s4"><h4>FAUX</h4></div>
     </div>
-    <div class="main_sub_container_answer container col s8" ng-click="highlight = true">
-        <h1 class="sub_title"></h1>
-        <p class="sub_p_answer col s12">La loi floridienne ‘’Stand your ground’’ a fait couler beaucoup d’encre lors de sa promulgation en 2005. Offrant une conception très large de l’autodéfense, elle s’offre un retour sous les projecteurs inattendu avec la
-            publication de chiffres par le département d’application des lois de l’État de Floride. Depuis l’entrée en vigueur de Le "permis de tuer" sauve des vies ! la loi en 2005, le nombre de morts par armes à feu a baissé significativement d’après le
-            graphique communiqué à la presse. La NRA (National Rifle Association), puissant lobby pro-arme et soutien indéfectible de cette loi, s’est réjouie de ces chiffres dans un communiqué.</p>
+    <div class="col s4 twitter">
+        <img class="size_middle_answer_block" src="views/pres1/assets/img/large/twitter0.jpg">
+        <img class="size_middle_answer_block" src="views/pres1/assets/img/large/twitter1.jpg"><img class="answer_smiley1" src="./assets/icon/like_blue.png"/>
+        <img class="size_middle_answer_block" src="views/pres1/assets/img/large/twitter2.jpg" ng-click="answerLeParisien = true"><img class="answer_smiley2" src="./assets/icon/angry_red.png"/>
+        <img class="size_middle_answer_block" src="views/pres1/assets/img/large/twitter3.jpg"><img class="answer_smiley3" src="./assets/icon/like_blue.png"/>
+        <img class="size_middle_answer_block" src="views/pres1/assets/img/large/twitter4.jpg"><img class="answer_smiley4" src="./assets/icon/like_blue.png"/>
+        <img class="size_middle_answer_block" src="views/pres1/assets/img/large/twitter5.jpg" ng-click="image20Minutes = true"><img class="answer_smiley5" src="./assets/icon/angry_red.png"/>
     </div>
+    <div ng-show="answerLeParisien" class="col s4"><img class="size_middle_answer_twitter_example" src="views/pres1/assets/img/large/twitter_vrai_LeParisien.jpg"></div>
+    <div ng-show="answerLeParisien" class="col s4"><img class="size_middle_answer_twitter_example" src="views/pres1/assets/img/large/twitter_faux_LeParisien.jpg"></div>
+    <div ng-show="image20Minutes" class="col s4"><img class="size_middle_answer_twitter_example" src="views/pres1/assets/img/large/twitter_vrai_20minutes.jpg"></div>
+    <div ng-show="image20Minutes" class="col s4"><img class="size_middle_answer_twitter_example" src="views/pres1/assets/img/large/twitter_faux_20minutes.jpg"></div>
 </div>
+
 <a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(14)">
     <i class="material-icons">fast_forward</i>
 </a>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.collapsible').collapsible();
+    });
+</script>

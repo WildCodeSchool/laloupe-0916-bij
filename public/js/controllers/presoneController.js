@@ -94,24 +94,25 @@ function presoneController() {
     }];
 
     // Start offunction for animation true or false
-    this.biggerTrueAnswer = () => {
+    this.biggerTrueAnswer = (n) => {
         // console.log(angular.element(document.querySelector('#true_answer'))[0].className);
-        if (angular.element(document.querySelector('#true_answer'))[0].className == 'btn-floating btn-large choice') {
-            angular.element(document.querySelector('#true_answer')).addClass('bigger');
-            angular.element(document.querySelector('#false_answer')).removeClass('bigger');
+        if (angular.element(document.querySelector('#true_answer' + n))[0].className == 'btn-floating btn-large choice') {
+            angular.element(document.querySelector('#true_answer' + n)).addClass('bigger');
+            angular.element(document.querySelector('#false_answer'+ n)).removeClass('bigger');
         } else {
-            angular.element(document.querySelector('#true_answer')).removeClass('bigger');
+            angular.element(document.querySelector('#true_answer'+ n)).removeClass('bigger');
         }
     };
 
-    this.biggerFalseAnswer = () => {
-        if (angular.element(document.querySelector('#false_answer'))[0].className == 'btn-floating btn-large choice') {
-            angular.element(document.querySelector('#false_answer')).addClass('bigger');
-            angular.element(document.querySelector('#true_answer')).removeClass('bigger');
+    this.biggerFalseAnswer = (n) => {
+        if (angular.element(document.querySelector('#false_answer' + n))[0].className == 'btn-floating btn-large choice') {
+            angular.element(document.querySelector('#false_answer' + n)).addClass('bigger');
+            angular.element(document.querySelector('#true_answer' + n)).removeClass('bigger');
         } else {
-            angular.element(document.querySelector('#false_answer')).removeClass('bigger');
+            angular.element(document.querySelector('#false_answer' + n)).removeClass('bigger');
         }
     };
+
     // End fo function for animation true or false
     //
     //   this.highlight = () => {

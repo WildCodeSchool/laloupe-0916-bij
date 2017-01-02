@@ -135,10 +135,11 @@ html {
 .btn_choice i, .btn_next i {
   font-size: 4.5rem;
 }
-#true_answer img, #false_answer img  {
+.choice img {
   width: 100%;
   height: 100%;
 }
+
 .choice {
   background-color: transparent;
   color: white;
@@ -190,9 +191,82 @@ html {
   to{width: 22em;}
 }
 
-/*twitter*/
-.responsive-img.twitter{
+/*recadrage*/
+.size_middle_answer{
+  width: 40%;
+}
+.size_middle_answer1{
   width: 70%;
+}
+
+/*twitter*/
+
+.twitter{
+  margin-top: -4%
+}
+.size_middle_answer_twitter{
+  width: 100%;
+  margin-top: -39px;
+}
+.size_middle_answer_block{
+  width: 70%;
+  margin-top: -1%
+}
+
+.answer_smiley1 {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: -27%;
+    width: 4%;
+}
+.answer_smiley2 {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 0%;
+    width: 4%;
+}
+
+.answer_smiley3 {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: -27%;
+    width: 4%;
+}
+
+.answer_smiley4 {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: -27%;
+    width: 4%;
+}
+
+.answer_smiley5 {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 0%;
+    width: 4%;
+}
+
+
+.size_middle_answer_twitter_example{
+  width: 90%;
+}
+.sub_main.container.col.s12.vrai_faux0{
+  margin-top: -55%
+}
+
+.sub_main.container.col.s12.vrai_faux1{
+  margin-top: -44%
+}
+.sub_main.container.col.s12.vrai_faux2{
+  margin-top: -33%
+}
+
+.sub_main.container.col.s12.vrai_faux3{
+  margin-top: -22%
+}
+.sub_main.container.col.s12.vrai_faux4{
+  margin-top: -9%
 }
 .responsive-img.twitter2{
   width: 100%;

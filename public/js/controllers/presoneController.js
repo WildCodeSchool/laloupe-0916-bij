@@ -93,23 +93,27 @@ function presoneController() {
         color: 'bleu'
     }];
 
+    const getElement = (id) => {
+      return angular.element(document.querySelector(id));
+    };
+
     // Start offunction for animation true or false
     this.biggerTrueAnswer = (n) => {
         // console.log(angular.element(document.querySelector('#true_answer'))[0].className);
-        if (angular.element(document.querySelector('#true_answer' + n))[0].className == 'btn-floating btn-large choice') {
-            angular.element(document.querySelector('#true_answer' + n)).addClass('bigger');
-            angular.element(document.querySelector('#false_answer'+ n)).removeClass('bigger');
+        if (getElement('#true_answer' + n)[0].className == 'btn-floating btn-large choice') {
+            getElement('#true_answer' + n).addClass('bigger');
+            getElement('#false_answer' + n).removeClass('bigger');
         } else {
-            angular.element(document.querySelector('#true_answer'+ n)).removeClass('bigger');
+            getElement('#true_answer').removeClass('bigger');
         }
     };
 
     this.biggerFalseAnswer = (n) => {
-        if (angular.element(document.querySelector('#false_answer' + n))[0].className == 'btn-floating btn-large choice') {
-            angular.element(document.querySelector('#false_answer' + n)).addClass('bigger');
-            angular.element(document.querySelector('#true_answer' + n)).removeClass('bigger');
+        if (getElement('#false_answer' + n)[0].className == 'btn-floating btn-large choice') {
+            getElement('#false_answer' + n).addClass('bigger');
+            getElement('#true_answer' + n).removeClass('bigger');
         } else {
-            angular.element(document.querySelector('#false_answer' + n)).removeClass('bigger');
+            getElement('#false_answer' + n).removeClass('bigger');
         }
     };
 
@@ -164,21 +168,16 @@ function presoneController() {
     };
 
 //flip-flop controller
-  this.flip = () => {
-    console.log('coucou');
-    let front = angular.element(document.querySelector('#front'));
-    let innerLeft = angular.element(document.querySelector('#inner-left'));
-    let innerRight = angular.element(document.querySelector('#inner-right'));
-
-    if(!front.hasClass('on-left')) {
-      front.addClass('on-left');
-      innerLeft.addClass('on-left');
-      innerRight.addClass('on-right');
-    }
-    else {
-      front.removeClass('on-left');
-      innerLeft.removeClass('on-left');
-      innerRight.removeClass('on-right');
-    }
-  };
+    this.flip = () => {
+      if(!getElement('#front').hasClass('on-left')) {
+        getElement('#front').addClass('on-left');
+        getElement('#inner-left').addClass('on-left');
+        getElement('#inner-right').addClass('on-right');
+      }
+      else {
+        getElement('#front').removeClass('on-left');
+        getElement('#inner-left').removeClass('on-left');
+        getElement('#inner-right').removeClass('on-right');
+      }
+    };
 }

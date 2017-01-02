@@ -240,7 +240,7 @@ html         {
   -moz-animation: 1s stamp;
   animation:1s stamp;
   -webkit-transform : rotate(-20deg);
-  -moz-animation: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
   transform: rotate(-20deg);
   z-index: 10;
 }
@@ -254,7 +254,7 @@ html         {
   -moz-animation: 1s stamp;
   animation:1s stamp;
   -webkit-transform : rotate(-20deg);
-  -moz-animation: rotate(-20deg);
+  -moz-tranform: rotate(-20deg);
   transform: rotate(-20deg);
   z-index: 10;
 }
@@ -262,19 +262,38 @@ html         {
 @keyframes stamp {
   0% {
     opacity:1;
-    -webkit-transform: rotate(-20deg) scale(3);
-    -moz-transform: rotate(-20deg) scale(3);
     transform: rotate(-20deg) scale(3);
   }
 
   100% {
     opacity:1;
-    -webkit-transform: rotate(40deg) scale(1);
-    -moz-transform: rotate(40deg) scale(1);
     transform: rotate(40deg) scale(1);
   }
 }
 
+@-moz-keyframes stamp {
+  0% {
+    opacity:1;
+    -moz-transform: rotate(-20deg) scale(3);
+  }
+
+  100% {
+    opacity:1;
+    -moz-transform: rotate(40deg) scale(1);
+  }
+}
+
+@-webkit-keyframes stamp {
+  0% {
+    opacity:1;
+    -webkit-transform: rotate(-20deg) scale(3);
+  }
+
+  100% {
+    opacity:1;
+    -webkit-transform: rotate(40deg) scale(1);
+  }
+}
 /*flip-flop*/
 
 .photo {
@@ -458,6 +477,31 @@ html         {
 		transform: scaleY(1);
 	}
 }
+
+@-moz-keyframes expandDown {
+	0% {
+		-moz-transform: scaleY(0.1);
+	}
+	40% {
+		-moz-transform: scaleY(1.02);
+	}
+	60% {
+		-moz-transform: scaleY(0.98);
+	}
+	80% {
+		-moz-transform: scaleY(1.01);
+	}
+	100% {
+		-moz-transform: scaleY(0.98);
+	}
+	80% {
+		-moz-transform: scaleY(1.01);
+	}
+	100% {
+		-moz-transform: scaleY(1);
+	}
+}
+
 
 @-webkit-keyframes expandDown {
 	0% {

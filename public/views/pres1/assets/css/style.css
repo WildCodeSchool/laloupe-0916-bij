@@ -42,6 +42,9 @@ html {
 .container_img_legendage img {
   height: 95%;
 }
+.main_sub_container_legendage {
+  margin-top: 10px;
+}
 .main_container, .main_sub_container, .main_container_answer, .main_sub_container_answer {
   margin-top: 30px;
   width: 100%;

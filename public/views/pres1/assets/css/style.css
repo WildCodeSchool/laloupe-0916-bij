@@ -111,7 +111,7 @@ html {
 }
 @media screen and (min-width: 1280px) and (min-height: 800px){
   .ship_icon{
-    max-width: 200%;
+    max-width: 300%;
   }
 }
 .sub_title {

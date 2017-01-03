@@ -7,7 +7,7 @@ body {
 
 /* footer*/
 .social_footer{
-  margin-bottom: -15px;
+  margin-bottom: -35%;
   width: 4vh;
 }
 .main_footer {
@@ -15,14 +15,6 @@ body {
     bottom: 0;
     width: 100%;
 }
-.footer_link, nav {
-    height: 50px;
-}
-nav .footer_link i {
-    height: 50px;
-    line-height: 50px;
-}
-
 /* NAVBAR*/
 
 .right, .right li, .right li a, .right li a i {

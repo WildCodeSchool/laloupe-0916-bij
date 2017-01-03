@@ -13,7 +13,7 @@
 
 ### Execution
  npm start
- 
+
 #### Installation
 
 ```bash
@@ -48,7 +48,7 @@ npm run build
 
 **List of different CSS Structure**
 
- - element_type
- - namepage_type
+-   element_type
+-   namepage_type
 
 exemple : navbar_logo

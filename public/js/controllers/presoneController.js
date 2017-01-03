@@ -9,7 +9,7 @@ function presoneController() {
     this.active = 0;
     this.previewPos = 0;
     this.position = 0;
-
+    this.minion = false;
     // datas for navigation slide
     this.slides = [{
         image: '1_chien_small',
@@ -173,11 +173,17 @@ function presoneController() {
         getElement('#front').addClass('on-left');
         getElement('#inner-left').addClass('on-left');
         getElement('#inner-right').addClass('on-right');
+        getElement('#logo_minion').removeClass('contractedUp');
+        getElement('#logo_minion').addClass('expandDown');
+        this.minion = true;
       }
       else {
+        getElement('#logo_minion').removeClass('expandDown');
+        getElement('#logo_minion').addClass('contractedUp');
         getElement('#front').removeClass('on-left');
         getElement('#inner-left').removeClass('on-left');
         getElement('#inner-right').removeClass('on-right');
+        this.minion = false;
       }
     };
 }

@@ -1,22 +1,22 @@
 <!-- question -->
 <div ng-hide="show" class="main_row row col s12">
     <div class="main_container container col s7">
-        <div class="container_img">
+        <div class="container_img col s12">
             <img class="minion" src="views/pres1/assets/img/large/minions.png">
-            <div class="container_incrust_flip">
-              <img class="responsive-img incrust" src="views/pres1/assets/img/large/les-minions.png">
-              <img class="responsive-img bulle" src="views/pres1/assets/img/large/minionsBulle.png">
+            <div class="container_incrust col s12">
+              <div class=" incrust col s12">
+                <img class="responsive-img right" src="views/pres1/assets/img/large/les-minions.png">
+              </div>
+              <div class="bulle col s12">
+                <img class="responsive-img left" src="views/pres1/assets/img/large/minionsBulle.png">
+              </div>
             </div>
         </div>
     </div>
     <div class="main_sub_container container col s5">
         <div class="subContainer row col s12">
-            <h1 class="sub_title">22h46</h3>
-            <p class="sub_p col s12">
-                <b>
-                    <span>CANADA</span>
-                </b>- Scène de romantisme au milieu des forces de l’ordre canadiennes pendant les émeutes qui ont suivi la défaite des Canucks de Vancouver face aux Bruins de Boston en finale de la Stanley Cup de hockey sur glace.
-            </p>
+            <h1 class="sub_title"></h3>
+            <p class="sub_p col s12"><b><span></span></b></p>
         </div>
         <div class="sub_container row col s12">
             <ul class="sub_main container col s12">
@@ -44,12 +44,13 @@
                 <img src="views/pres1/assets/img/large/minions.png">
             </div>
             <div class="inner-left face" id="inner-left">
-                <img src="views/pres1/assets/img/large/minions.png">
+                <img src="views/pres1/assets/img/large/minionsHighlight.png">
             </div>
             <div class="face" id='inner-right'>
-                <img src="views/pres1/assets/img/large/articleMinions.png">
+                <img src="views/pres1/assets/img/large/articleMinionsHighlight.png">
             </div>
         </div>
+        <img ng-show="vm.minion == true" class="responsive-img" id="logo_minion" src="views/pres1/assets/img/large/les-minions.png">
     </div>
 </div>
 <a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(11)">

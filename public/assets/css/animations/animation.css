@@ -235,7 +235,7 @@ html         {
   position: absolute;
   margin-top: -5%;
   margin-left: 25%;
-  height: 20%;
+  max-width: 5%;
   -webkit-animation:1s stamp;
   -moz-animation: 1s stamp;
   animation:1s stamp;

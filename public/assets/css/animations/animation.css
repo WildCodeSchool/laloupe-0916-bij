@@ -247,8 +247,8 @@ html         {
 
 .marking_right {
   position: absolute;
-  margin-top: -3%;
-  margin-left: 15%;
+  margin-top: 25%;
+  margin-left: 25%;
   height: 20%;
   -webkit-animation:1s stamp;
   -moz-animation: 1s stamp;
@@ -257,6 +257,18 @@ html         {
   -moz-tranform: rotate(-20deg);
   transform: rotate(-20deg);
   z-index: 10;
+}
+
+.position_right{
+
+}
+
+.position_left{
+
+}
+
+.position_top{
+
 }
 
 @keyframes stamp {

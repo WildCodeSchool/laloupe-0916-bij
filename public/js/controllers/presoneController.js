@@ -9,6 +9,8 @@ function presoneController() {
     this.active = 0;
     this.previewPos = 0;
     this.position = 0;
+    this.answerLeParisien = false;
+    this.image20Minutes = true;
 
     // datas for navigation slide
     this.slides = [{
@@ -180,4 +182,12 @@ function presoneController() {
         getElement('#inner-right').removeClass('on-right');
       }
     };
+    //Twitter controller
+    this.showMe = '';
+    this.twitterParisiens = () =>{
+      this.showMe = 'LeParisien';
+    }
+    this.twitter20minutes = () =>{
+      this.showMe = '20mn';
+    }
 }

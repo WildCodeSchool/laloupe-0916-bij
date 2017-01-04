@@ -130,10 +130,15 @@ html {
   .ship_icon {
     width: 64%;
   }
+  .position_right{
+    position: absolute;
+    margin-top: 36%;
+    margin-left: 50%;
+  }
 }
 @media screen and (min-width: 1280px) and (min-height: 800px){
   .ship_icon{
-    max-width: 300%;
+    max-width: 50%;
   }
 }
 .sub_title {

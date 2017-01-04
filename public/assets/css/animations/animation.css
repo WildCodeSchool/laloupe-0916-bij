@@ -246,9 +246,6 @@ html         {
 }
 
 .marking_right {
-  position: absolute;
-  margin-top: 25%;
-  margin-left: 25%;
   height: 20%;
   -webkit-animation:1s stamp;
   -moz-animation: 1s stamp;
@@ -260,7 +257,9 @@ html         {
 }
 
 .position_right{
-
+  position: absolute;
+  margin-top: 25%;
+  margin-left: 35%;
 }
 
 .position_left{

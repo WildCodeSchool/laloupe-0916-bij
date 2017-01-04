@@ -230,26 +230,7 @@ html         {
 }
 
 /*Marking-stamp effect*/
-
 .marking {
-  position: absolute;
-  margin-top: -5%;
-  margin-left: 25%;
-  max-width: 5%;
-  -webkit-animation:1s stamp;
-  -moz-animation: 1s stamp;
-  animation:1s stamp;
-  -webkit-transform : rotate(-20deg);
-  -moz-transform: rotate(-20deg);
-  transform: rotate(-20deg);
-  z-index: 10;
-}
-
-.marking_right {
-  position: absolute;
-  margin-top: 25%;
-  margin-left: 25%;
-  height: 20%;
   -webkit-animation:1s stamp;
   -moz-animation: 1s stamp;
   animation:1s stamp;
@@ -259,28 +240,13 @@ html         {
   z-index: 10;
 }
 
-.position_right{
-
-}
-
-.position_left{
-
-}
-
-.position_top{
-
-}
-
 /*Marking Twitter*/
-
-
 .answer_smiley1, .answer_smiley2 , .answer_smiley3, .answer_smiley4, .answer_smiley5 {
   -webkit-animation:1s stamp;
   -moz-animation: 1s stamp;
   animation:1s stamp;
   -webkit-transform : rotate(0deg);
 }
-
 @keyframes stamp {
   0% {
     opacity:1;

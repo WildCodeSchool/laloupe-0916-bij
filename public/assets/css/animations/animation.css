@@ -271,15 +271,25 @@ html         {
 
 }
 
+/*Marking Twitter*/
+
+
+.answer_smiley1, .answer_smiley2 , .answer_smiley3, .answer_smiley4, .answer_smiley5 {
+  -webkit-animation:1s stamp;
+  -moz-animation: 1s stamp;
+  animation:1s stamp;
+  -webkit-transform : rotate(0deg);
+}
+
 @keyframes stamp {
   0% {
     opacity:1;
-    transform: rotate(-20deg) scale(3);
+    transform: rotate(40deg) scale(3);
   }
 
   100% {
     opacity:1;
-    transform: rotate(40deg) scale(1);
+    transform: rotate(0deg) scale(1);
   }
 }
 
@@ -306,6 +316,8 @@ html         {
     -webkit-transform: rotate(40deg) scale(1);
   }
 }
+
+
 /*flip-flop*/
 
 .photo {

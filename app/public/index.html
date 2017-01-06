@@ -15,13 +15,15 @@
 
     <body>
         <div class="row">
-          <ng-include src="'views/navbar.html'"></ng-include>
-          <div class="blockSpace"></div>
-          <ng-view></ng-view>
+            <ng-include src="'views/navbar.html'"></ng-include>
+            <div class="blockSpace"></div>
+            <ng-view></ng-view>
         </div>
 
-
-        <script src="vendor/jquery/dist/jquery.js"></script>
+        <script src="vendor/jquery/dist/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+        <script type="text/javascript">
+            window.Hammer = require('./vendor/materialize/js/hammer.min.js');
+        </script>
         <script src="vendor/angular/angular.min.js"></script>
 
         <script src="vendor/angular-route/angular-route.min.js"></script>
@@ -44,8 +46,7 @@
 
         <script>
             // You can also require other files to run in this process
-            require('../../renderer.js');
-            // window.$ = window.jQuery = require('./vendor/jquery/dist/jquery.js');
+            require('../renderer.js')
         </script>
     </body>
 </html>

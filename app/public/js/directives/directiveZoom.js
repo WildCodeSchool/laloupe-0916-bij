@@ -26,7 +26,7 @@ function directiveZoom() {
                     zoom.style.left = (x - zoom.clientWidth / 2) + "px";
                     zoom.style.top = (y - zoom.clientHeight / 2) + "px";
                     if (zoom_sur.hasAttribute('style')) {
-                      ry = Math.round(this.height / zoom_sur.clientHeight * y - zoom.clientHeight * 4);
+                      ry = Math.round(this.height / zoom_sur.clientHeight * y - zoom.clientHeight * 8.5);
                       // ry = Math.round(this.height / zoom_sur.clientHeight * y - zoom.clientHeight / 2)-(zoom_area.clientHeight);
                       // console.log(ry);
                       zoom.style.backgroundPosition = rx + "px " + ry + "px";

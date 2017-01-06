@@ -192,8 +192,8 @@ function presoneController() {
     this.showMe = '';
     this.twitterParisiens = () =>{
       this.showMe = 'LeParisien';
-    }
+    };
     this.twitter20minutes = () =>{
       this.showMe = '20mn';
-    }
+    };
 }

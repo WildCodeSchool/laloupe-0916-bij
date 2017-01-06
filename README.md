@@ -36,6 +36,7 @@ brew install [mono](http://brewformulas.org/Mono)
 To build app for Linux on macOS:
 
 brew install gnu-tar [graphicsmagick](http://www.graphicsmagick.org/) xz
+
 To build rpm: brew install rpm.
 
 npm run dist
@@ -45,6 +46,7 @@ npm run dist
 ###### To build app in distributable format for Linux:
 
 sudo apt-get install --no-install-recommends -y icnsutils [graphicsmagick](http://www.graphicsmagick.org/) xz-utils
+
 To build rpm: sudo apt-get install --no-install-recommends -y rpm.
 
 To build pacman: sudo apt-get install --no-install-recommends -y bsdtar.
@@ -55,14 +57,21 @@ npm run dist
 
 Install [Wine](https://doc.ubuntu-fr.org/wine) (1.8+ is required):
 
-sudo add-apt-repository ppa:ubuntu-wine/ppa -y
+sudo add-apt-repository
+
+ppa:ubuntu-wine/ppa -y
+
 sudo apt-get update
+
 sudo apt-get install --no-install-recommends -y wine1.8
+
 Install [Mono](http://www.mono-project.com/docs/getting-started/install/linux/#usage) (4.2+ is required):
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
+
 sudo apt-get update
+
 sudo apt-get install --no-install-recommends -y mono-devel ca-certificates-mono
 
 npm run dist

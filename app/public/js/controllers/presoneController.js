@@ -51,7 +51,7 @@ function presoneController() {
     }, {
         image: '8_chute-libre-image_small',
         title: 'International',
-        icon: './assets/icon/globe_turquoise.png',
+        icon: './assets/icon/globe_blue.png',
         color: 'bleu'
     }, {
         image: '9_Maitre-gims_small',
@@ -86,7 +86,7 @@ function presoneController() {
     }, {
         image: '15_Graph_small',
         title: 'International',
-        icon: './assets/icon/globe_turquoise.png',
+        icon: './assets/icon/globe_blue.png',
         color: 'bleu',
     }, {
         image: '16_conclusion_small',

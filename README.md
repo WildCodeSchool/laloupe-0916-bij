@@ -1,20 +1,15 @@
-# electron-quick-start Bureau Info Jeunesse BIJ
+# Electron Bureau Info Jeunesse BIJ
 
-### Requirements
+#### License [This website is the property of the UNIJ.](http://www.unij.fr/)
+
+## Requirements
 
 -   [Electron](http://electron.atom.io/)
--   [Electron-packager](https://github.com/electron-userland/electron-packager)
+-   [Electron-builder](https://github.com/electron-userland/electron-builder)
 -   [Electron-prebuilt](https://github.com/electron-userland/electron-prebuilt)
 -   [Bower](https://bower.io/)
 
-### Auto-install
-
-[]()
-
-### Execution
- npm start
-
-#### Installation
+## Installation
 
 ```bash
 git clone git@github.com:WildCodeSchool/laloupe-0916-bij.git
@@ -23,78 +18,74 @@ npm install
 bower install
 ```
 
-#### Development
+## Development
 
-```bash
-npm install electron-packager
-npm electron-prebuilt
-npm run build
-```
+npm start
 
-#### Production
+## Production
 
-```bash
--   macOS
+### MacOS
 
-Use brew to install required packages.
+Use [brew](http://brew.sh/) to install required packages.
 
-To build app for Windows on macOS:
+###### To build app for Windows on macOS:
 
-brew install wine --without-x11 (require x-code)
-brew install mono
+brew install [wine](https://www.davidbaumgold.com/tutorials/wine-mac/) --without-x11 (require x-code)
+
+brew install [mono](http://brewformulas.org/Mono)
 To build app for Linux on macOS:
 
-brew install gnu-tar graphicsmagick xz
+brew install gnu-tar [graphicsmagick](http://www.graphicsmagick.org/) xz
 To build rpm: brew install rpm.
 
--   Linux
+npm run dist
 
-To build app in distributable format for Linux:
+### Linux
 
-sudo apt-get install --no-install-recommends -y icnsutils graphicsmagick xz-utils
+###### To build app in distributable format for Linux:
+
+sudo apt-get install --no-install-recommends -y icnsutils [graphicsmagick](http://www.graphicsmagick.org/) xz-utils
 To build rpm: sudo apt-get install --no-install-recommends -y rpm.
 
 To build pacman: sudo apt-get install --no-install-recommends -y bsdtar.
 
-To build app for Windows on Linux:
+npm run dist
 
-Install Wine (1.8+ is required):
+###### To build app for Windows on Linux:
+
+Install [Wine](https://doc.ubuntu-fr.org/wine) (1.8+ is required):
 
 sudo add-apt-repository ppa:ubuntu-wine/ppa -y
 sudo apt-get update
 sudo apt-get install --no-install-recommends -y wine1.8
-Install Mono (4.2+ is required):
+Install [Mono](http://www.mono-project.com/docs/getting-started/install/linux/#usage) (4.2+ is required):
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 echo "deb http://download.mono-project.com/repo/debian wheezy main" | sudo tee /etc/apt/sources.list.d/mono-xamarin.list
 sudo apt-get update
 sudo apt-get install --no-install-recommends -y mono-devel ca-certificates-mono
-To build app in 32 bit from a machine with 64 bit:
+
+npm run dist
+
+###### To build app in 32 bit from a machine with 64 bit:
 
 sudo apt-get install --no-install-recommends -y gcc-multilib g++-multilib
 Travis Linux
 
-Trusty is required — default Travis Linux dist is outdated and icnsutils version is non-functional.
+Trusty is required — default [Travis](https://docs.travis-ci.com/user/trusty-ci-environment/) Linux dist is outdated and icnsutils version is non-functional.
 
 sudo: required
 dist: trusty
-Windows
 
-Please use Docker.
-```
+npm run dist
+
+### Windows
+
+Please use [Docker](https://github.com/electron-userland/electron-builder/wiki/Docker).
+
+npm run dist
 
 #### Contributors
 -   [Camille Fontaine](https://github.com/CamJr)
 -   [Gaëlle Morin](https://github.com/Daedalus418)
 -   [Stéphane Senocq](https://github.com/stephsen)
-
-#### License [CC0 1.0 (Public Domain)](LICENSE.md)
-
-## CSS Structure and Rules
-
-**List of different CSS Structure**
-
--   element_type
--   namepage_type
-
-exemple : navbar_logo

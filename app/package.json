@@ -1,0 +1,9 @@
+{
+    "name": "levraidufaux",
+    "version": "0.1.0",
+    "description": "Plateforme de rééducation aux média",
+    "main": "main.js",
+    "repository": "https://github.com/WildCodeSchool/laloupe-0916-bij",
+    "author": "Stéphane Senocq <stephsen59@gmail.com>",
+    "license": "CC0-1.0"
+}

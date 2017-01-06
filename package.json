@@ -1,26 +1,41 @@
 {
-  "name": "le_vrai_du_faux",
-  "version": "1.0.0",
-  "description": "Plateforme de rééducation aux média",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "build": "electron-packager --all ./ LeVraiDuFaux"
-  },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
-  "devDependencies": {
-    "electron": "^1.4.1",
-    "electron-packager": "^8.4.0",
-    "electron-prebuilt": "^1.4.12"
-  },
-  "dependencies": {}
+    "name": "levraidufaux",
+    "description": "Plateforme de rééducation aux média",
+    "scripts": {
+        "postinstall": "install-app-deps",
+        "start": "electron ./app --enable-logging",
+        "dev": "NODE_ENV='development' npm run start",
+        "dist": "build -mwl --x64 --ia32"
+    },
+    "author": [
+        "Camille Fontaine",
+        "Gaëlle Morin et Stéphane Senocq"
+    ],
+    "devDependencies": {
+        "electron-builder": "^10.17.3",
+        "electron-prebuilt": "^1.4.13"
+    },
+    "build": {
+        "appId": "LeVraiDuFaux",
+        "category": "public.app-category.productivity",
+        "dmg": {
+            "title": "La Vrai Du Faux",
+            "icon": "build/icon.icns",
+            "icon-size": 128,
+            "contents": [{
+                "x": 355,
+                "y": 125,
+                "type": "link",
+                "path": "/Applications"
+            }, {
+                "x": 155,
+                "y": 125,
+                "type": "file"
+            }]
+        },
+        "win": {
+            "iconUrl": "build/icon.ico",
+            "msi": true
+        }
+    }
 }

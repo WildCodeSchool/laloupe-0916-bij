@@ -234,9 +234,8 @@ html         {
   -webkit-animation:1s stamp;
   -moz-animation: 1s stamp;
   animation:1s stamp;
-  -webkit-transform : rotate(-20deg);
-  -moz-tranform: rotate(-20deg);
-  transform: rotate(-20deg);
+  -webkit-transform : rotate(0deg);
+
   z-index: 10;
 }
 

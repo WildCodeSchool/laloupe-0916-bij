@@ -317,12 +317,12 @@ html {
     margin-top: 1%;
     margin-left: -27%;
     width: 4%;
-    
+
 }
 .answer_smiley2 {
     position: absolute;
     margin-top: 1%;
-    margin-left: 0%;
+    margin-left: 0.5%;
     width: 4%;
 }
 
@@ -343,7 +343,7 @@ html {
 .answer_smiley5 {
     position: absolute;
     margin-top: 1%;
-    margin-left: 0%;
+    margin-left: 0.5%;
     width: 4%;
 }
 

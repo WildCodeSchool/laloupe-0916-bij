@@ -23,7 +23,12 @@ const routes = ($routeProvider, $httpProvider) => {
         })
         .when('/index1', {
             templateUrl: 'views/pres1/index1.html',
-            controller: 'presoneController',
+            controller: 'presOneController',
+            controllerAs: 'vm'
+        })
+        .when('/index2', {
+            templateUrl: 'views/pres2/index2.html',
+            controller: 'presTwoController',
             controllerAs: 'vm'
         })
         .otherwise({

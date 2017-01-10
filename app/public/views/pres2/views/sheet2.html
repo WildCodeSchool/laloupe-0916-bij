@@ -1,0 +1,38 @@
+<!-- question -->
+<div ng-hide="show" class="main_row row col s12">
+    <div class="main_container container col s7">
+        <div class="container_img_vertical">
+            <img class="responsive-img slideExpandUp" src="views/pres2/assets/img/large/oeuvre-d-art.png" class="parachutiste">
+        </div>
+    </div>
+    <div class="main_sub_container container col s5">
+        <div class="sub_container row col s12">
+            <ul class="sub_main container col s12">
+                <li class="col s6 decal_button">
+                    <a class="btn-floating btn-large choice" id="true_answer0" ng-click="vm.biggerTrueAnswer(0)"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
+                </li>
+                <li class="col s6 decal_button">
+                    <a class="btn-floating btn-large choice" id="false_answer0" ng-click="vm.biggerFalseAnswer(0)"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
+    <i class="material-icons">fast_forward</i>
+</a>
+<!-- answer -->
+<div ng-show="show" class="main_row_answer row col s12">
+    <div class="main_container_answer container col s12" ng-controller="presTwoController as vm">
+        <div class="marking position_right_imgvertic" ng-show="true">
+            <img class="ship_icon" src="assets/img/like_blue_vrai.png" alt="vrai">
+        </div>
+        <div class="container_answer_img_vertical col s12">
+            <img class="responsive-img size_middle_answer1 expandDown" src="views/pres2/assets/img/large/oeuvre-d-art.png" alt="parachutiste">
+        </div>
+
+    </div>
+</div>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(2)">
+    <i class="material-icons">fast_forward</i>
+</a>

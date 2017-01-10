@@ -1,12 +1,33 @@
-/* BODY*/
-
+/*main*/
+html {
+  color: white;
+  font-size: 80%;
+}
+.turquoise {
+  color: #4fc2c0;
+}
+.bleu {
+  color: #2a477c;
+}
+.violet {
+  color: #472f76;
+}
+.orang {
+  color: #f3a02f;
+}
+.vert {
+  color: #35b562;
+}
+::selection {
+  background-color: #2a477c;
+}
 body {
     background-color: #2a477c;
     font-style: Roboto;
+    color: #fff;
 }
 
 /* footer*/
-
 .social_footer{
   padding-top: 10px;
   width: 4vh;
@@ -17,8 +38,8 @@ body {
     width: 100%;
     height: 6vh;
 }
-/* NAVBAR*/
 
+/* NAVBAR*/
 .right, .right li, .right li a, .right li a i {
   height: 6vh;
   line-height: 6vh;
@@ -57,7 +78,6 @@ nav img {
 }
 
 /* MAIN*/
-
 .main_center {
   margin-top: 20px;
 }
@@ -66,7 +86,6 @@ nav img {
 }
 
 /*PARCOURS*/
-
 .row {
   margin-bottom: 0px;
 }
@@ -191,4 +210,121 @@ nav img {
 .parcours_resume {
   font-size: 1.5em;
   margin-top: 75%;
+}
+
+/*background color on hover angry button set to transparent*/
+.btn-floating:hover {
+  background-color: transparent !important;
+}
+
+/* parcours: general format */
+.main_parcours {
+  font-size: 2rem;
+  margin: 0;
+  margin-left: 25px;
+}
+.main_row {
+  display: flex;
+  margin-top: 10px;
+  height: 100%;
+  width: 100vw;
+}
+.main_sub_container {
+  margin-top: 30px;
+  width: 100%;
+text-align: left;
+}
+.main_container_grey, .main_container_grey_answer {
+  background-color: #dddddd;
+  height: 65%;
+}
+.main_container_grey_graph, .main_container_grey_graph_answer {
+  background-color: #dddddd;
+  height: 90%;
+}
+.container_img_grey, .container_img_grey_answer, .container_grey {
+  margin-top: 3%;
+  position: relative;
+}
+.container_img_grey {
+  width: 100%;
+}
+.img_grey {
+  position: relative;
+  width: 90%;
+}
+.main_title {
+  color: black;
+}
+.main_p {
+  font-size: 1.8rem;
+  color: black;
+}
+.sub_p {
+  margin: 15px;
+  font-size: 1.5rem;
+}
+.response-logo {
+  position: absolute;
+  right: 0 !important;
+  bottom: 14%;
+  height: 13%;
+}
+.marking {
+  position: absolute;
+  left: 61%;
+  top: 15%;
+}
+.marking img {
+  width: 50%;
+}
+.choice {
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
+.bigger {
+  height: 50px !important;
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
+/*.container_img {
+  position: relative;
+  width: 95%;
+}
+.container_img_heigth {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.container_img img {
+  width: 95%;
+}*/
+.sub_title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.sub_title2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+}
+.sub_main {
+  display: flex;
+  flex-direction: row;
+}
+.btn_choice, .btn_next {
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  background-color: #597dbe;
+}
+.btn_choice i, .btn_next i {
+  font-size: 4.5rem;
 }

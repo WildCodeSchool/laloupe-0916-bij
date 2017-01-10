@@ -1,4 +1,4 @@
-function presoneController() {
+function presOneController() {
     // angular.element(document.querySelector('#b0')).addClass('active pos1');
     this.show = false;
     this.showRecadrage = false;
@@ -102,7 +102,7 @@ function presoneController() {
     // Start offunction for animation true or false
     this.biggerTrueAnswer = (n) => {
         // console.log(angular.element(document.querySelector('#true_answer'))[0].className);
-        if (getElement('#true_answer' + n)[0].className == 'btn-floating btn-large choice') {
+        if (getElement('#true_answer' + n)[0].className == 'choice') {
             getElement('#true_answer' + n).addClass('bigger');
             getElement('#false_answer' + n).removeClass('bigger');
         } else {
@@ -111,7 +111,7 @@ function presoneController() {
     };
 
     this.biggerFalseAnswer = (n) => {
-        if (getElement('#false_answer' + n)[0].className == 'btn-floating btn-large choice') {
+        if (getElement('#false_answer' + n)[0].className == 'choice') {
             getElement('#false_answer' + n).addClass('bigger');
             getElement('#true_answer' + n).removeClass('bigger');
         } else {

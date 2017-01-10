@@ -1,0 +1,53 @@
+<!-- question -->
+<div ng-hide="show" class="main_row row col s12">
+    <div class="main_container container col s6">
+        <h1 class="sub_title">Mauvaises ondes ...</h1>
+        <video class="responsive-video" controls>
+            <source src="views/pres2/assets/img/large/mobile-pop-corn.mp4" type="video/mp4">
+        </video>
+        <p>Lien vers la vidéo : https://www.youtube.com/watch?v=munalYhAP4E</p>
+
+    </div>
+    <div class="main_sub_container container col s6">
+        <div class="subContainer row col s12">
+            <h2 class="sub_title">Une contre-publicité qui passe mal pour les fabricants de mobile</h2>
+            <p class="sub_p col s12">
+                <b></b>
+                alors que le débat sur la dangerosité des ondes reste entier. Une vidéo virale circulant sur internet montre des téléphones recevant des appels simultanés et transformant des grains de maïs en pop- corn. Une prouesse que l’on savait jusqu’à
+                aujourd’hui réalisable par un four micro-onde. Et peu de gens sont prêts à glisser leur tête dans le four !</p>
+        </div>
+        <div class="sub_container row col s12">
+            <ul class="sub_main container col s12">
+                <li class="col s6">
+                    <a class="btn-floating btn-large choice" id="true_answer0" ng-click="vm.biggerTrueAnswer(0)"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
+                </li>
+                <li class="col s6">
+                    <a class="btn-floating btn-large choice" id="false_answer0" ng-click="vm.biggerFalseAnswer(0)"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
+    <i class="material-icons">fast_forward</i>
+</a>
+<!-- answer -->
+<div ng-show="show" class="row col s12">
+    <div class="main_row_answer row col s12">
+        <h3>Peut-on faire cuire du pop-corn avec des téléphones portables ? La réponse dans l’émission E=m6</h3>
+    </div>
+    <div class="main_sub_container_answer container col s12">
+        <div class="marking position_left" ng-show="true">
+            <img class="ship_icon" src="assets/img/angry_red-faux.png" alt="faux">
+        </div>
+        <div class="main_container container col s12">
+            <video class="responsive-video" controls>
+                <source src="views/pres2/assets/img/large/Cuire-du-popcorn-au-telephone-portable.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p>http://www.m6.fr/emission-e_m6/videos/11246601-cuire_du_pop_corn_au_telephone_portable.html</p>
+    </div>
+</div>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(1)">
+    <i class="material-icons">fast_forward</i>
+</a>

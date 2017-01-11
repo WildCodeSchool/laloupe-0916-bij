@@ -1,8 +1,22 @@
 /* BODY*/
 
 body {
-    background-color: #2a477c;
+    background-color: rgb(255, 255, 255);
+    color: rgb(45, 78, 130);
     font-style: Roboto;
+}
+
+.BlueBackground {
+    background-color: rgb(45, 78, 130);
+}
+.whiteFont {
+    color: rgb(255, 255, 255);
+}
+.blueFont {
+    color: rgb(45, 78, 130);
+}
+.whiteBackground {
+    background-color: rgb(255, 255, 255);
 }
 
 /* footer*/
@@ -26,11 +40,8 @@ body {
 .right a {
   font-size: 1.5rem;
 }
-.navbar_link {
-    color: #2a477c;
-}
 nav ul a {
-    color: #2a477c;
+    color: rgb(45, 78, 130);
 }
 .navbar_logo {
     height: 100%;
@@ -48,7 +59,6 @@ nav img {
 }
 .navbar_paragraphe {
     font-size: 1.5rem;
-    color: white;
     margin-right: 25%;
     margin-left: 25%;
 }
@@ -71,7 +81,7 @@ nav img {
   margin-bottom: 0px;
 }
 .lock.icon {
-  color: #fff;
+  color: rgb(255, 255, 255);
   position: absolute;
   margin-left: 5%;
   margin-top: 5vh;
@@ -93,7 +103,7 @@ nav img {
   border-right: solid 3px currentColor;
 }
 .unlock.icon {
-  color: #fff;
+  color: rgb(255, 255, 255);
   position: absolute;
   margin-left: 5%;
   margin-top: 5vh;
@@ -127,7 +137,7 @@ nav img {
   border-left: solid 3px currentColor;
 }
 .edit.icon {
-  color: #fff;
+  color: rgb(255, 255, 255);
   position: absolute;
   margin-left: 5%;
   margin-top: 8.5vh;
@@ -151,7 +161,7 @@ nav img {
   border-bottom: solid 1.5vh transparent;
 }
 .write.icon {
-  color: #fff;
+  color: rgb(255, 255, 255);
   position: absolute;
   margin-left: 5%;
   margin-top: 5vh;
@@ -175,14 +185,15 @@ nav img {
   border-bottom: solid 1.5vh transparent;
 }
 .parcours_white_border {
-    border: white solid 5px;
+  border: rgb(255, 255, 255) solid 5px;
+  border-top: rgb(255, 255, 255) solid 0px;
     height: 94vh;
 }
 .parcours_blue_rectangle {
   height: 100%;
-  background-color: rgb(7, 33, 57);
-  border: #fff solid 2px;
-  color: #fff;
+  background-color: rgb(45, 78, 130)  ;
+  border: rgb(255, 255, 255) solid 2px;
+  color: rgb(255, 255, 255);
 }
 .titleParcours {
   font-size: 2em;

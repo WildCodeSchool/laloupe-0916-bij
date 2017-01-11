@@ -1,94 +1,5 @@
 /* parcours: specific animation */
-/* lascar */
-.verif {
-  font-size: 2rem;
-  color: white;
-}
 
-/* legendage */
-.main_row_legendage {
-  display: flex;
-  width: 100vw;
-  height: 90%;
-}
-.main_container_legendage, .container_img_legendage {
-  height: 100%;
-}
-.container_img_legendage img {
-  height: 95%;
-}
-.main_sub_container_legendage {
-  margin-top: 10px;
-}
-
-/* flip flop */
-.container_img_flip {
-  position: relative;
-  margin-left: 10px;
-}
-.container_img_flip img {
-  width: 100%;
-  /*height: 100%;*/
-}
-
-/*pointer*/
-.pointer{
-  cursor: pointer;
-}
-
-/* minions */
-/*.container_incrust {
-  position: absolute;
-  top: 0;
-  width: 110%;
-  height: 100%;
-}
-.container_incrust img {
-  width: 30%;
-  height: auto;
-}
-.minion {
-  position: relative;
-}
-.bulle {
-  bottom: 0;
-  position: absolute;
-}
-.incrust {
-  top: -15%;
-  position: absolute;
-}
-.bulle img {
-  width: 25%;
-}
-.incrust img {
-  margin-right: -20%;
-  width: 45%;
-}*/
-#logo_minion {
-  position: absolute;
-  left: 38%;
-  top: 0;
-  width: 15%;
-}
-
-/* parachute */
-.container_img_vertical {
-  position: relative;
-  margin: 0 auto;
-  height: 95%;
-}
-.container_img_vertical img {
-  height: 100%;
-}
-.container_answer_img_vertical {
-  position: relative;
-  margin: 0 auto;
-  height: 95%;
-}
-.container_answer_img_vertical img{
-  height: 100%;
-}
 
 /*twitter*/
 .title_Twitter{
@@ -175,15 +86,6 @@
 }
 .responsive-img.twitter2{
   width: 100%;
-}
-
-/*managing the button position on sheet5' response*/
-.decal_button {
-  margin-top: 50%;
-  margin-left: 50%;
-}
-.resize > img {
-  width: 25%;
 }
 
 /*TEXT Conclusion */

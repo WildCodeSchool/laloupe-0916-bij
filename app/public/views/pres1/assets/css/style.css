@@ -1,24 +1,14 @@
 /* parcours: specific animation */
-/* lascar */
-.verif {
-  font-size: 2rem;
-  color: white;
-}
 
-/* legendage */
-.main_row_legendage {
-  display: flex;
-  width: 100vw;
-  height: 90%;
+.bulle {
+  bottom: 5%;
+  position: absolute;
 }
-.main_container_legendage, .container_img_legendage {
-  height: 100%;
-}
-.container_img_legendage img {
-  height: 95%;
-}
-.main_sub_container_legendage {
-  margin-top: 10px;
+#logo_minion {
+  position: absolute;
+  left: 38%;
+  top: 0;
+  width: 15%;
 }
 
 /* flip flop */
@@ -28,66 +18,6 @@
 }
 .container_img_flip img {
   width: 100%;
-  /*height: 100%;*/
-}
-
-/*pointer*/
-.pointer{
-  cursor: pointer;
-}
-
-/* minions */
-/*.container_incrust {
-  position: absolute;
-  top: 0;
-  width: 110%;
-  height: 100%;
-}
-.container_incrust img {
-  width: 30%;
-  height: auto;
-}
-.minion {
-  position: relative;
-}*/
-/*.bulle {
-  bottom: -20%;;
-  position: absolute;
-}*/
-/*.incrust {
-  top: -15%;
-  position: absolute;
-}*/
-/*.bulle img {
-  width: 100%;
-}*/
-/*.incrust img {
-  margin-right: -20%;
-  width: 45%;
-}*/
-#logo_minion {
-  position: absolute;
-  left: 38%;
-  top: 0;
-  width: 15%;
-}
-
-/* parachute */
-.container_img_vertical {
-  position: relative;
-  margin: 0 auto;
-  height: 95%;
-}
-.container_img_vertical img {
-  height: 100%;
-}
-.container_answer_img_vertical {
-  position: relative;
-  margin: 0 auto;
-  height: 95%;
-}
-.container_answer_img_vertical img{
-  height: 100%;
 }
 
 /* tefal */
@@ -99,22 +29,22 @@
   text-align: center;
   height: 100%;
 }
-#slide_six_position {
-  margin-left: 2%;
-}
 .container_img_grey_tefal_answer {
   height: 90%;
 }
-
-.size_middle_answer {
+.img_grey_tefal {
+  position: relative;
+  width: 85%;
+}
+/* djibouti */
+.img_grey_djibouti{
+  position: relative;
+  width: 90%;
   margin-top: 2%;
-  height: 80%;
+  margin-left: 20%;
 }
+
 /* tinder */
-.tinder-img  {
-  height: 100%;
-  width: 100%;
-}
 .highlight, .tinder_highlight1, .tinder_highlight2, .tinder_highlight3, .tinder_highlight4 {
   position: absolute;
   background-color: yellow;
@@ -127,28 +57,28 @@
   right: 3%;
 }
 .tinder_highlight1 {
-  width: 10%;
-  height: 3%;
-  top: 61%;
-  left: 10%;
+  width: 7%;
+  height: 5%;
+  top: 63%;
+  left: 25%;
 }
 .tinder_highlight2 {
-  width: 18%;
-  height: 3%;
-  top: 34%;
-  right: 20%;
+  width: 11%;
+  height: 5%;
+  top: 36%;
+  right: 31%;
 }
 .tinder_highlight3 {
-  width: 10%;
-  height: 3%;
-  top: 41%;
-  right: 39%;
+  width: 8%;
+  height: 5%;
+  top: 43%;
+  right: 42%;
 }
 .tinder_highlight4 {
-  width: 23%;
-  height: 3%;
-  bottom: 31%;
-  right: 26%;
+  width: 15%;
+  height: 5%;
+  bottom: 26%;
+  right: 34%;
 }
 
 /*twitter*/
@@ -166,7 +96,6 @@
   width: 70%;
   margin-top: -1%
 }
-
 .zoomTwitter  {
   cursor: pointer;
   -moz-transition: all 0.3s;
@@ -177,7 +106,6 @@
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-
 .answer_smiley1 {
     position: absolute;
     margin-top: 1%;
@@ -191,43 +119,36 @@
     margin-left: 0.5%;
     width: 4%;
 }
-
 .answer_smiley3 {
     position: absolute;
     margin-top: 1%;
     margin-left: -27%;
     width: 4%;
 }
-
 .answer_smiley4 {
     position: absolute;
     margin-top: 1%;
     margin-left: -27%;
     width: 4%;
 }
-
 .answer_smiley5 {
     position: absolute;
     margin-top: 1%;
     margin-left: 0.5%;
     width: 4%;
 }
-
-
 .size_middle_answer_twitter_example{
   width: 100%;
 }
 .sub_main.container.col.s12.vrai_faux0{
   margin-top: -55%
 }
-
 .sub_main.container.col.s12.vrai_faux1{
   margin-top: -44%
 }
 .sub_main.container.col.s12.vrai_faux2{
   margin-top: -33%
 }
-
 .sub_main.container.col.s12.vrai_faux3{
   margin-top: -22%
 }
@@ -236,15 +157,6 @@
 }
 .responsive-img.twitter2{
   width: 100%;
-}
-
-/*managing the button position on sheet5' response*/
-.decal_button {
-  margin-top: 50%;
-  margin-left: 50%;
-}
-.resize > img {
-  width: 25%;
 }
 
 /*TEXT Conclusion */

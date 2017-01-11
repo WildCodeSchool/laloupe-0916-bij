@@ -37,7 +37,7 @@
 }
 
 /* minions */
-.container_incrust {
+/*.container_incrust {
   position: absolute;
   top: 0;
   width: 110%;
@@ -49,22 +49,22 @@
 }
 .minion {
   position: relative;
-}
-.bulle {
-  bottom: 0;
+}*/
+/*.bulle {
+  bottom: -20%;;
   position: absolute;
-}
-.incrust {
+}*/
+/*.incrust {
   top: -15%;
   position: absolute;
-}
-.bulle img {
-  width: 25%;
-}
-.incrust img {
+}*/
+/*.bulle img {
+  width: 100%;
+}*/
+/*.incrust img {
   margin-right: -20%;
   width: 45%;
-}
+}*/
 #logo_minion {
   position: absolute;
   left: 38%;
@@ -90,6 +90,26 @@
   height: 100%;
 }
 
+/* tefal */
+.tefal {
+  margin-top: 2%;
+  margin-left: 15%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  height: 100%;
+}
+#slide_six_position {
+  margin-left: 2%;
+}
+.container_img_grey_tefal_answer {
+  height: 90%;
+}
+
+.size_middle_answer {
+  margin-top: 2%;
+  height: 80%;
+}
 /* tinder */
 .tinder-img  {
   height: 100%;
@@ -225,12 +245,6 @@
 }
 .resize > img {
   width: 25%;
-}
-
-/* */
-
-#slide_six_position {
-  margin-left: -0.5%;
 }
 
 /*TEXT Conclusion */

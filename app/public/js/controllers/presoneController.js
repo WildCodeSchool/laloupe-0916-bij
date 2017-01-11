@@ -119,12 +119,6 @@ function presOneController() {
         }
     };
 
-    // End fo function for animation true or false
-    //
-    //   this.highlight = () => {
-    //     this.light = true;
-    // };
-
     // next function for navigate inside navigation slide
     this.next = () => {
         var posOne = angular.element(document.querySelector('.pos1'))[0].id;
@@ -158,7 +152,7 @@ function presOneController() {
         angular.element(document.querySelector('#b' + this.previewPos)).removeClass('active');
         this.active = i;
         this.previewPos = i;
-        this.selectClass = Math.floor(Math.random() * (4 - 1) + 1);
+        this.selectClass = 2;
         // console.log(this.selectClass);
         this.includerPres1 = i + 1;
     };

@@ -234,11 +234,11 @@ nav img {
   width: 100%;
 text-align: left;
 }
-.main_container_grey, .main_container_grey_answer {
+.main_container_grey, .main_container_grey_answer, .container_img_grey_tefal_answer {
   background-color: #dddddd;
   height: 65%;
 }
-.main_container_grey_graph, .main_container_grey_graph_answer {
+.main_container_grey_high, .main_container_grey_high_answer {
   background-color: #dddddd;
   height: 90%;
 }
@@ -256,12 +256,16 @@ text-align: left;
 .main_title {
   color: black;
 }
-.main_p {
+.main_p, .main_p_center {
   font-size: 1.8rem;
   color: black;
 }
+.main_p_center {
+  float: inherit !important;
+}
 .sub_p {
-  margin: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-size: 1.5rem;
 }
 .response-logo {
@@ -327,4 +331,7 @@ text-align: left;
 }
 .btn_choice i, .btn_next i {
   font-size: 4.5rem;
+}
+.main_container_answer, .main_row_answer {
+  float: inherit !important;
 }

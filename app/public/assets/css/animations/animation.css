@@ -22,7 +22,7 @@ html         {
  }
 
  /* Animation 1 */
- .anim1.ng-leave         {
+ /*.anim1.ng-leave         {
   -webkit-transform-origin: 0% 0%;
  	-webkit-animation: rotateFall 1s both ease-in;
  	-moz-transform-origin: 0% 0%;
@@ -34,7 +34,7 @@ html         {
   -webkit-animation:scaleUp 0.5s both ease-in;
  	-moz-animation:scaleUp 0.5s both ease-in;
  	animation:scaleUp 0.5s both ease-in;
- }
+ }*/
 
  /* Animation 2 */
  .anim2.ng-leave        {
@@ -49,7 +49,7 @@ html         {
  }
 
  /* Animation 3 */
- .anim3.ng-leave {
+ /*.anim3.ng-leave {
   -webkit-transform-origin: 50% 50%;
  	-webkit-animation: rotateOutNewspaper .5s both ease-in;
  	-moz-transform-origin: 50% 50%;
@@ -61,7 +61,7 @@ html         {
   -webkit-animation:slideInUp 0.5s both ease-in;
  	-moz-animation:slideInUp 0.5s both ease-in;
  	animation:slideInUp 0.5s both ease-in;
- }
+ }*/
  .anim4 {
   -webkit-animation:slideInUp 0.3s both ease-in;
    -moz-animation:slideInUp 0.3s both ease-in;
@@ -77,7 +77,7 @@ html         {
  }
 
  /* rotate and fall */
- @-webkit-keyframes rotateFall {
+ /*@-webkit-keyframes rotateFall {
  	0% { -webkit-transform: rotateZ(0deg); }
  	20% { -webkit-transform: rotateZ(10deg); -webkit-animation-timing-function: ease-out; }
  	40% { -webkit-transform: rotateZ(17deg); }
@@ -97,10 +97,10 @@ html         {
  	40% { transform: rotateZ(17deg); }
  	60% { transform: rotateZ(16deg); }
  	100% { transform: translateY(100%) rotateZ(17deg); }
- }
+ }*/
 
  /* scale up */
- @keyframes scaleUp {
+ /*@keyframes scaleUp {
  	from 		{ opacity: 0.3; transform: scale(0.8); }
  }
  @-moz-keyframes scaleUp {
@@ -108,7 +108,7 @@ html         {
  }
  @-webkit-keyframes scaleUp {
  	from 		{ opacity: 0.3; -webkit-transform: scale(0.8); }
- }
+ }*/
 
  /* slide in from the right */
  @keyframes slideInRight {
@@ -150,7 +150,7 @@ html         {
  }
 
  /* rotate out newspaper */
- @-webkit-keyframes rotateOutNewspaper {
+ /*@-webkit-keyframes rotateOutNewspaper {
  	to { -webkit-transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
  }
  @-moz-keyframes rotateOutNewspaper {
@@ -158,10 +158,10 @@ html         {
  }
  @keyframes rotateOutNewspaper {
  	to { transform: translateZ(-3000px) rotateZ(360deg); opacity: 0; }
- }
+ }*/
 
  /* animRotate */
- @-webkit-keyframes animRotate {
+ /*@-webkit-keyframes animRotate {
  	to { -webkit-transform: translateZ(-3000px) rotateZ(360deg); opacity: 1; }
  }
  @-moz-keyframes animRotate {
@@ -169,7 +169,7 @@ html         {
  }
  @keyframes animRotate {
  	to { transform: translateZ(-3000px) rotateZ(360deg); opacity: 1; }
- }
+ }*/
 /*fin animation page*/
 
 /* zoom animation */

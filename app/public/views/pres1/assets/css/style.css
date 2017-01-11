@@ -216,7 +216,7 @@ html {
   position: absolute;
   right: 40px;
   bottom: 20px;
-  background-color: #597dbe;
+  background-color: blue;
 }
 .btn_choice i, .btn_next i {
   font-size: 4.5rem;
@@ -228,7 +228,7 @@ html {
 
 .choice {
   background-color: transparent;
-  color: white;
+  color: red;
   -webkit-transition: 0.5s linear all;
   -moz-transition: 0.5s linear all;
   -o-transition: 0.5s linear all;

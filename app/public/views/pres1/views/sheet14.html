@@ -59,8 +59,10 @@
         <h1 class="title_Twitter">Certification Twitter <img class="zoomTwitter" src="views/pres1/assets/img/large/certification.png">
 </h1>
         <div class="col s4"></div>
-        <div class="col s4"><h4>VRAI</h4></div>
-        <div class="col s4"><h4>FAUX</h4></div>
+        <div ng-show="vm.showMe == 'LeParisien'" class="col s4"><h4>Certifié</h4></div>
+        <div ng-show="vm.showMe == '20mn'" class="col s4"><h4>Vrai compte</h4></div>
+        <div ng-show="vm.showMe == 'LeParisien'"class="col s4"><h4>Non Certifié</h4></div>
+        <div ng-show="vm.showMe == '20mn'"class="col s4"><h4>Faux Compte</h4></div>
     </div>
     <div class="col s4 twitter">
         <img class="size_middle_answer_block" src="views/pres1/assets/img/large/twitter0.jpg">

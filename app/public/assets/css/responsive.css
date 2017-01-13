@@ -53,41 +53,67 @@
     height: 25%;
   }
 }
-/*
-@media screen and (max-width: 1150px) {
-html {
-  font-size: 55%;
-  }
-  .title_pres {
-    font-size: 1.5rem;
-  }
-}*/
 
-/*@media screen and (max-height: 900px) {
-  .main_row {
-    /*height: 55vh;*/
-  /*}
-  .container_img {
-    width: 100%;
+
+/*@media screen and (max-width: 1280px) and ( max-height: 800px ){
+  .ship_icon {
+    width: 44%;
   }
-  .container_img img {
-    width: 100%;
+  .position_right_imgvertic{
+    position: absolute;
+    margin-top: 29%;
+    margin-left: 53%;
   }
-  .main_p {
-    margin: 10px;
-    height: 10vh;
-    font-size: 2rem;
+  .position_right_imghoriz{
+    position: absolute;
+    margin-top: 19%;
+    margin-left: 43%;
   }
-  .sub_p {
-    margin: 15px;
-    height: 30vh;
-    font-size: 2rem;
+  .position_top{
+    position: absolute;
+    margin-top: -2%;
+    margin-left: -20%;
   }
-  .main_row_answer, .main_container_answer {
-    margin-top: 20px;
+  .position_top_flipflop{
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
   }
-  #zoom_area img {
-    width: 100%;
+  .position_left{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: -7%;
+  }
+
+}
+@media screen and (min-width: 1281px) and (min-height: 801px){
+  .ship_icon{
+    max-width: 50%;
+  }
+  .position_right_imgvertic{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 35%;
+  }
+  .position_right_imghoriz{
+    position: absolute;
+    margin-top: 22%;
+    margin-left: 43%;
+  }
+  .position_top{
+    position: absolute;
+    margin-top: -1%;
+    margin-left: -13%;
+  }
+  .position_top_flipflop{
+    position: absolute;
+    margin-top: -1%;
+    margin-left: -13%;
+  }
+  .position_left{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 6%;
   }
 
 }*/

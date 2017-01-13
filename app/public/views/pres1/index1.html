@@ -1,17 +1,17 @@
 <ng-include src="'views/navbar.html'"></ng-include>
 <!-- PresentationCarousel -->
-<main ng-controller="presoneController as vm">
+<main ng-controller="presOneController as vm">
   <h2 class="main_parcours BlueBackground whiteFont">Parcours rééducation aux médias</h2>
-  <div class="pres1fixed">
-      <div class="pres1car">
-          <button class="pres1prev" ng-click="vm.preview()"><</button>
-          <ul id="pres1carousel" style="{{vm.moveStyle}}">
+  <div class="presfixed">
+      <div class="prescar">
+          <button class="presprev" ng-click="vm.preview()"><</button>
+          <ul id="prescarousel" style="{{vm.moveStyle}}">
               <li ng-repeat="slide in vm.slides">
                 <div class="chip title_pres {{slide.color}}"><img src="{{slide.icon}}" alt="icone">{{slide.title}}</div>
                 <a id="b{{$index}}" ng-class='{"active pos1":$index==0}'><img class="img_nav pointer" ng-src="views/pres1/assets/img/small/{{slide.image}}.jpg" alt="image{{$index+1}}" ng-click="vm.select($index)"/></a>
               </li>
           </ul>
-          <button class="pres1next" ng-click="vm.next()">></button>
+          <button class="presnext" ng-click="vm.next()">></button>
       </div>
   </div>
   <div class="blockSpacePres"></div>

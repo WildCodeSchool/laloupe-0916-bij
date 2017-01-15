@@ -1,50 +1,60 @@
 <!-- question -->
-<div ng-hide="show" class="main_row row col s12">
-    <div class="main_container container col s7">
-        <div class="container_img">
-            <img class="responsive-img" src="views/pres1/assets/img/large/le_plus_gros_chien_du_monde.jpg">
+<div ng-hide="show" class="main_row valign-wrapper row col s12">
+    <div class="main_container_grey valign container col s8">
+        <div class="container_img_grey col s8">
+            <img class="img_grey" src="views/pres1/assets/img/large/le_plus_gros_chien_du_monde.jpg">
         </div>
-    </div>
-    <div class="main_sub_container container col s5">
-        <div class="subContainer row col s12">
-            <h1 class="sub_title">08h32</h1>
-            <p class="sub_p col s12">
+        <div class="container_grey col s4">
+            <h2 class="main_title">08h32</h2>
+            <p class="main_p col s12">
                 <b>
                     <span>ÉTATS-UNIS</span>
                 </b>- Première sortie officielle en famille pour le plus grand chien du monde dans un parc de Washington.</p>
         </div>
-        <div class="sub_container row col s12">
-            <ul class="sub_main container col s12">
-                <li class="col s6">
-                    <a class="btn-floating btn-large choice" id="true_answer0" ng-click="vm.biggerTrueAnswer(0)"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
-                </li>
-                <li class="col s6">
-                    <a class="btn-floating btn-large choice" id="false_answer0" ng-click="vm.biggerFalseAnswer(0)"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
-                </li>
-            </ul>
-        </div>
+    </div>
+    <div class="main_sub_container col s4">
+        <!-- <div class="sub_container row col s12">
+            <p class="sub_p">Un détail interpelle sur l’image.<br/>Et si vous regardiez l’image d’un peu plus près ?</p>
+            <p class="sub_p">La recherche par image, un bon moyen d’en savoir plus sur un visuel et son origine.</p>
+        </div> -->
     </div>
 </div>
+<ul ng-hide="show" class="response-logo valign-wrapper col s4">
+    <li class="col s6 valign">
+        <img class="choice" id="true_answer0" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(0)">
+    </li>
+    <li class="col s6 valign">
+        <img class="choice" id="false_answer0" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(0)">
+    </li>
+</ul>
 <a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
     <i class="material-icons">fast_forward</i>
 </a>
 <!-- answer -->
-<div ng-show="show" class="main_row_answer anim4 row col s12">
-    <div class="main_container_answer container col s7">
+<div ng-show="show" class="main_row valign-wrapper row col s12">
+    <div class="main_container_grey_answer valign container col s8">
         <div class="marking position_right_imghoriz" ng-show="true">
-            <img class="ship_icon" src="assets/img/angry_red-faux.png" alt="faux">
+            <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
         </div>
-        <div directive-zoom id="zoom_area">
-            <div id="zoom"></div>
-            <img class="responsive-img" id="zoom_sur" src="views/pres1/assets/img/large/le_plus_gros_chien_du_monde.jpg">
+        <div class="container_img_grey_answer col s8">
+            <div directive-zoom id="zoom_area">
+                <div id="zoom"></div>
+                <img class="img_grey" id="zoom_sur" src="views/pres1/assets/img/large/le_plus_gros_chien_du_monde.jpg">
+            </div>
+        </div>
+        <div class="container_grey col s4">
+            <h2 class="main_title">08h32</h2>
+            <p class="main_p col s12">
+                <b>
+                    <span>ÉTATS-UNIS</span>
+                </b>- Première sortie officielle en famille pour le plus grand chien du monde dans un parc de Washington.</p>
         </div>
     </div>
-    <div class="main_sub_container_answer container col s5">
-        <h1 class="sub_title">08h32</h1>
-        <p class="sub_p_answer col s12">
-            <b>
-                <span>ÉTATS-UNIS</span>
-            </b>- Première sortie officielle en famille pour le plus grand chien du monde dans un parc de Washington.</p>
+    <div class="main_sub_container col s4">
+        <div class="sub_container row col s12">
+            <p class="sub_p">Un détail interpelle sur l’image.<br/>Et si vous regardiez l’image d’un peu plus près ?</p>
+            <p class="sub_p">La recherche par image, un bon moyen d’en savoir plus sur un visuel et son origine.</p>
+        </div>
     </div>
 </div>
 <a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(3)">

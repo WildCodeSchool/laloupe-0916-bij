@@ -95,13 +95,11 @@ function presOneController() {
         color: 'bleu'
     }];
 
+    // Start of function for animation true or false
     const getElement = (id) => {
       return angular.element(document.querySelector(id));
     };
-
-    // Start offunction for animation true or false
     this.biggerTrueAnswer = (n) => {
-        // console.log(angular.element(document.querySelector('#true_answer'))[0].className);
         if (getElement('#true_answer' + n)[0].className == 'choice') {
             getElement('#true_answer' + n).addClass('bigger');
             getElement('#false_answer' + n).removeClass('bigger');
@@ -109,7 +107,6 @@ function presOneController() {
             getElement('#true_answer').removeClass('bigger');
         }
     };
-
     this.biggerFalseAnswer = (n) => {
         if (getElement('#false_answer' + n)[0].className == 'choice') {
             getElement('#false_answer' + n).addClass('bigger');
@@ -118,6 +115,7 @@ function presOneController() {
             getElement('#false_answer' + n).removeClass('bigger');
         }
     };
+    // End fo function for animation true or false
 
     // next function for navigate inside navigation slide
     this.next = () => {
@@ -182,6 +180,7 @@ function presOneController() {
         this.minion = false;
       }
     };
+
     //Twitter controller
     this.showMe = '';
     this.twitterParisiens = () =>{

@@ -8,9 +8,9 @@ function presTwoController() {
     this.active = 0;
     this.previewPos = 0;
     this.position = 0;
-    this.answerLeParisien = false;
-    this.image20Minutes = true;
-    this.minion = false;
+    // this.answerLeParisien = false;
+    // this.image20Minutes = true;
+    // this.minion = false;
     // datas for navigation slide
     this.slides = [{
         image: '1_portable_small',
@@ -94,35 +94,27 @@ function presTwoController() {
         color: 'bleu'
     }];
 
+    // Start offunction for animation true or false
     const getElement = (id) => {
       return angular.element(document.querySelector(id));
     };
-
-    // Start offunction for animation true or false
     this.biggerTrueAnswer = (n) => {
-        // console.log(angular.element(document.querySelector('#true_answer'))[0].className);
-        if (getElement('#true_answer' + n)[0].className == 'btn-floating btn-large choice') {
+        if (getElement('#true_answer' + n)[0].className == 'choice') {
             getElement('#true_answer' + n).addClass('bigger');
             getElement('#false_answer' + n).removeClass('bigger');
         } else {
             getElement('#true_answer').removeClass('bigger');
         }
     };
-
     this.biggerFalseAnswer = (n) => {
-        if (getElement('#false_answer' + n)[0].className == 'btn-floating btn-large choice') {
+        if (getElement('#false_answer' + n)[0].className == 'choice') {
             getElement('#false_answer' + n).addClass('bigger');
             getElement('#true_answer' + n).removeClass('bigger');
         } else {
             getElement('#false_answer' + n).removeClass('bigger');
         }
     };
-
     // End fo function for animation true or false
-    //
-    //   this.highlight = () => {
-    //     this.light = true;
-    // };
 
     // next function for navigate inside navigation slide
     this.next = () => {
@@ -186,13 +178,5 @@ function presTwoController() {
         getElement('#inner-right').removeClass('on-right');
         this.minion = false;
       }
-    };
-    //Twitter controller
-    this.showMe = '';
-    this.twitterParisiens = () =>{
-      this.showMe = 'LeParisien';
-    };
-    this.twitter20minutes = () =>{
-      this.showMe = '20mn';
     };
 }

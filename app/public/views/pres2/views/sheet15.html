@@ -1,50 +1,61 @@
 <!-- question -->
-<div ng-hide="show" class="main_row row col s12">
-    <div class="main_container container col s4">
-        <div class="container_img">
-            <img class="responsive-img" src="views/pres1/assets/img/large/Graph-Mort-par-Balle-USA-Large.jpg" tabindex="1">
+<div ng-hide="show" class="main_row valign-wrapper row col s12">
+    <div class="main_container_grey_high valign container col s8">
+        <div class="container_img_grey col s6">
+            <img class="img_grey" src="views/pres1/assets/img/large/Graph-Mort-par-Balle-USA-Large.jpg">
+        </div>
+        <div class="container_grey col s6">
+            <h2 class="main_title">08h32</h2>
+            <p class="main_p col s12">Les détracteurs de la loi ‘’Défendez votre territoire’’ (‘’Stand your ground’’ en anglais) votée en 2005 dans l’État de Floride (États-Unis) en sont pour leurs frais. Rapidement comparé à un ‘’permis de tuer’’, la loi controversée aurait réduit le nombre de morts par armes à feu dans l’État. C’est en tout cas ce que laisse penser des chiffres publiés ce jour.</p>
         </div>
     </div>
-    <div class="main_sub_container container col s8">
-        <div class="subContainer row col s12">
-            <h1 class="sub_title"></h1>
-            <p class="sub_p col s12">
-                <b>Les détracteurs de la loi ‘’Défendez votre territoire’’ (‘’Stand your ground’’ en anglais) votée en 2005 dans l’État de Floride (États-Unis) en sont pour leurs frais. Rapidement comparé à un ‘’permis de tuer’’, la loi controversée aurait réduit le
-                    nombre de morts par armes à feu dans l’État. C’est en tout cas ce que laisse penser des chiffres publiés ce jour.</b>
-            </p>
-        </div>
-        <div class="sub_container row col s12">
-          <ul class="sub_main container col s12">
-              <li class="col s6">
-                <a class="btn-floating btn-large choice" id="true_answer0" ng-click="vm.biggerTrueAnswer(0)"><img src="./assets/icon/like_blue.png" alt="vrai">Vrai ?</a>
-              </li>
-              <li class="col s6">
-                <a class="btn-floating btn-large choice" id="false_answer0" ng-click="vm.biggerFalseAnswer(0)"><img src="./assets/icon/angry_red.png" alt="faux">Faux ?</a>
-              </li>
-          </ul>
-        </div>
+    <div class="main_sub_container col s4">
+        <!-- <div class="sub_container row col s12">
+            <p class="sub_p">Un détail interpelle sur l’image.<br/>Et si vous regardiez l’image d’un peu plus près ?</p>
+            <p class="sub_p">La recherche par image, un bon moyen d’en savoir plus sur un visuel et son origine.</p>
+        </div> -->
     </div>
 </div>
-<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true"><i class="material-icons">fast_forward</i></a>
+<ul ng-hide="show" class="response-logo valign-wrapper col s4">
+    <li class="col s6 valign">
+        <img class="choice" id="true_answer0" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(0)">
+    </li>
+    <li class="col s6 valign">
+        <img class="choice" id="false_answer0" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(0)">
+    </li>
+</ul>
+<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
+    <i class="material-icons">fast_forward</i>
+</a>
 <!-- answer -->
-<div ng-show="show" class="main_row_answer anim4 row col s12">
-    <div class="main_container_answer container col s4">
-        <div directive-zoom id="zoom_area" ng-click="highlight = true">
-            <div directive-rotation id="zoom"></div>
-            <img id="zoom_sur" class="pointer" src="views/pres1/assets/img/large/Graph-Mort-par-Balle-USA-Large.jpg">
+<div ng-show="show" class="main_row valign-wrapper row col s12">
+    <div class="main_container_grey_high_answer valign container col s8">
+        <div class="marking position_right_large" ng-show="true">
+            <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
         </div>
-    </div>
-    <div class="main_sub_container_answer container col s8">
-        <h1 class="sub_title"></h1>
-        <p ng-hide="highlight" class="sub_p_answer col s12">
-            <span>La loi floridienne ‘’Stand your ground’’ a fait couler beaucoup d’encre lors de sa promulgation en 2005. Offrant une conception très large de l’autodéfense, elle s’offre un retour sous les projecteurs inattendu avec la publication de chiffres
+        <div class="container_img_grey_answer col s6">
+            <div directive-rotation class="container_img" ng-click="highlight = true">
+                <img class="img_grey pointer" id="img_grey" src="views/pres1/assets/img/large/Graph-Mort-par-Balle-USA-Large.jpg">
+            </div>
+        </div>
+        <div class="container_grey col s6">
+            <h2 class="main_title">08h32</h2>
+            <p class="main_p col s12" ng-hide="highlight">La loi floridienne ‘’Stand your ground’’ a fait couler beaucoup d’encre lors de sa promulgation en 2005. Offrant une conception très large de l’autodéfense, elle s’offre un retour sous les projecteurs inattendu avec la publication de chiffres
                 par le département d’application des lois de l’État de Floride. Depuis l’entrée en vigueur de Le "permis de tuer" sauve des vies ! la loi en 2005, le nombre de morts par armes à feu a baissé significativement d’après le graphique communiqué à la
                 presse. La NRA (National Rifle Association), puissant lobby pro-arme et soutien indéfectible de cette loi, s’est réjouie de ces chiffres dans un communiqué.</span></p>
-        <p ng-show="highlight" class="sub_p_answer col s12">
-            <span>La loi floridienne ‘’Stand your ground’’ a fait couler beaucoup d’encre lors de sa promulgation en 2005. Offrant une conception très large de l’autodéfense, elle s’offre un retour sous les projecteurs inattendu avec la publication de chiffres
-                par le département d’application des lois de l’État de Floride. Depuis l’entrée en vigueur de Le "permis de tuer" sauve des vies ! la loi en 2005,
-                <mark>le nombre de morts par armes à feu a baissé significativement d’après le graphique communiqué à la presse. La NRA (National Rifle Association), puissant lobby pro-arme et soutien indéfectible de cette loi, s’est réjouie de ces chiffres</mark>
-                dans un communiqué.</span></p>
+            <p class="main_p col s12" ng-show="highlight">La loi floridienne ‘’Stand your ground’’ a fait couler beaucoup d’encre lors de sa promulgation en 2005. Offrant une conception très large de l’autodéfense, elle s’offre un retour sous les projecteurs inattendu avec la publication de chiffres
+                        par le département d’application des lois de l’État de Floride. Depuis l’entrée en vigueur de Le "permis de tuer" sauve des vies ! la loi en 2005,
+                        <mark>le nombre de morts par armes à feu a baissé significativement d’après le graphique communiqué à la presse. La NRA (National Rifle Association), puissant lobby pro-arme et soutien indéfectible de cette loi, s’est réjouie de ces chiffres</mark>
+                        dans un communiqué.</p>
+        </div>
+    </div>
+    <div class="main_sub_container col s4">
+        <div class="sub_container row col s12">
+            <p class="sub_p">L’ensemble des données chiffrées proviennent d’une source fiable (Le Département des lois de l’Etat de Floride).<br /> Pourtant notre perception de l’information est erronée. Pourquoi ?</p>
+            <p class="sub_p">A qui profite le crime ? Quel est l’intérêt pour la NRA de véhiculer cette information ?</p>
+        </div>
     </div>
 </div>
-<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(15)"><i class="material-icons">fast_forward</i></a>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(15)">
+    <i class="material-icons">fast_forward</i>
+</a>

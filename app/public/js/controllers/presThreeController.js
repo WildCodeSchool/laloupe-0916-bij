@@ -38,52 +38,52 @@ function presThreeController() {
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '4_Djibouti_John_Steinmeyer_small',
+        image: '6_Djibouti_John_Steinmeyer_small',
         title: 'Exercices: Légendage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '5_Vancouver_Photo_small',
+        image: '7_Vancouver_Photo_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '6_Tefal_Femme_small',
+        image: '8_Tefal_Femme_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '7_recadrage_small',
+        image: '9_recadrage_small',
         title: 'Exercices: Recadrage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '11_minions_small',
+        image: '10_minions_small',
         title: 'Culture',
         icon: './assets/icon/new_green.png',
         color: 'vert'
     }, {
-        image: '12_zlatan_small',
+        image: '11_zlatan_small',
         title: 'Vidéo',
         icon: './assets/icon/video_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '13_tinder_small',
-        title: 'Technologie',
-        icon: './assets/icon/conv_orange.png',
-        color: 'orang'
-    }, {
-        image: '14_twitter_small',
+        image: '12_bus_small',
         title: 'France',
         icon: './assets/icon/conv_violet.png',
         color: 'violet'
     }, {
-        image: '15_Graph_small',
-        title: 'International',
-        icon: './assets/icon/globe_blue.png',
-        color: 'bleu',
+        image: '13_hollande_small',
+        title: 'France',
+        icon: './assets/icon/conv_violet.png',
+        color: 'violet'
     }, {
-        image: '16_conclusion_small',
+        image: '14_clonezone_small',
+        title: 'Exercices: CloneZone',
+        icon: './assets/icon/globe_turquoise.png',
+        color: 'turquoise',
+    }, {
+        image: '15_conclusion_small',
         title: 'Conclusion',
         icon: './assets/icon/vrai_faux.png',
         color: 'bleu'

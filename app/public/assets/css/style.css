@@ -235,6 +235,13 @@ nav img {
 .main_container {
   margin-top: 2%;
 }
+.main_container_putaclic {
+  margin-top: 2%;
+  height: 60vh;
+}
+.container_img_putaclic, .container_img_putaclic img {
+  height: 100%;
+}
 .main_sub_container {
   margin-top: 30px;
   width: 100%;
@@ -393,7 +400,7 @@ right: 24%;
 }
 
 .size_middle_answer {
-  margin-top: 2%;
+  /*margin-top: 2%;*/
   height: 80%;
   position: relative;
 }

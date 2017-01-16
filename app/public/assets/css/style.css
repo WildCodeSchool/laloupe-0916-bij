@@ -91,8 +91,11 @@ nav img {
 .row {
   margin-bottom: 0px;
 }
-.parcours_resume, .titleParcours {
-  font-size: 3rem !important;
+.parcours_resume {
+  font-size: 2rem !important;
+}
+.titleParcours {
+  font-size: 3.5rem !important;
 }
 .lock.icon {
   color: rgb(255, 255, 255);

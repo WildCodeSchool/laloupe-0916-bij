@@ -163,6 +163,18 @@
   width: 100%;
 }
 
+/* loupe graph */
+.img-loupe {
+  position: absolute;
+  z-index: 10;
+  bottom: 2%;
+  left: 2%;
+  width: 25%;
+}
+.img-loupe img {
+  width: 100%;
+}
+
 /*TEXT Conclusion */
 .main_sheet16{
   margin-top: 100px;

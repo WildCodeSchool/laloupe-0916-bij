@@ -1,8 +1,8 @@
-function presTwoController() {
+function presThreeController() {
     this.show = false;
     this.showRecadrage = false;
     this.highlight = false;
-    this.includerPres2 = '1';
+    this.includerpres3 = '1';
     this.selectClass = "1";
     this.index = 0;
     this.active = 0;

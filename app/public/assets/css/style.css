@@ -91,6 +91,9 @@ nav img {
 .row {
   margin-bottom: 0px;
 }
+.parcours_resume, .titleParcours {
+  font-size: 3rem !important;
+}
 .lock.icon {
   color: rgb(255, 255, 255);
   position: absolute;

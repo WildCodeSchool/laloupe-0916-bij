@@ -248,6 +248,10 @@ nav img {
   margin-top: 2%;
   height: 60vh;
 }
+.main_container_video {
+  margin-top: 2%;
+  padding: 2% !important;
+}
 .container_img_putaclic, .container_img_putaclic img {
   height: 100%;
 }
@@ -317,15 +321,19 @@ text-align: left;
   position: absolute;
 }
 .position_right_imgvertic_tinder {
-  right: 24%;
-  top: 8%;
+  right: 15%;
+  top: 5%;
 }
 .position_left_imgvertic_tinder {
   left: 24%;
   top: 8%;
 }
-.position_right_imgvertic {
+.position_right_imgvertic_death {
   right: 28%;
+  top: 0;
+}
+.position_right_imgvertic {
+  right: 31%;
   top: 1%;
 }
 .position_left_imgvertic {
@@ -333,8 +341,8 @@ text-align: left;
   top: 8%;
 }
 .position_right_imghoriz {
-top: 13%;
-right: 33%;
+top: 11%;
+right: 30%;
 }
 .position_left_imghoriz {
   top: 30%;
@@ -342,7 +350,7 @@ right: 33%;
 }
 .position_right_large {
 top: 1%;
-right: 21%;
+right: 26%;
 }
 .position_top_flipflop{
   position: absolute;

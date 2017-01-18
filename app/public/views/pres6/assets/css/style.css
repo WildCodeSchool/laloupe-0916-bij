@@ -253,3 +253,12 @@
     white-space: nowrap;
     overflow: hidden;
 }
+
+
+/* ajout steph */
+.video {
+  width: 100%;
+}
+.video_hippo {
+  height: 90% !important;
+}

@@ -1,4 +1,4 @@
-<h1 class="title">Mauvaises ondes ...</h1>
+<h1 ng-hide="show" class="title">Mauvaises ondes ...</h1>
 <div ng-hide="show" class="main_row valign-wrapper row col s12">
     <div class="main_container_grey_video valign container col s8">
       <video class="container_video_grey col s7" controls>
@@ -30,26 +30,17 @@
     <i class="material-icons">fast_forward</i>
 </a>
 <!-- answer -->
-<div ng-show="show" class="main_row valign-wrapper row col s12">
-    <div class="valign container col s8">
-        <div class="marking position_right_imghoriz" ng-show="true">
-            <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
-        </div>
-        <video class="responsive-video container_video_grey" controls>
+<div ng-show="show" class="main_row row col s12">
+    <div class="main_container_video container valign-wrapper col s7">
+        <video class="responsive-video video valign" controls>
             <source src="./assets/img/large/popcorn_portable.mp4" type="video/mp4">
         </video>
-        <div class="container_grey col s4">
-            <h2 class="main_title"></h2>
-            <p class="main_p col s12"><b></b></p>
-        </div>
     </div>
-    <div class="main_sub_container col s4">
-        <div class="sub_container row col s12">
-            <p class="sub_p">Peut-on faire cuire du pop-corn avec des téléphones portables ? La réponse dans l’émission E=m6</p>
-            <p class="sub_p"></p>
+    <div class="main_sub_container valign-wrapper container col s5">
+        <div class="subContainer container col s12 valign">
+          <!-- <h1 class="sub_title">E-penser - Le lieu le plus dangereux de France -</h1> -->
+          <p class="sub_p col s12">Peut-on faire cuire du pop-corn avec des téléphones portables ? La réponse dans l’émission E=m6.</p>
         </div>
     </div>
 </div>
-<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(25)">
-    <i class="material-icons">fast_forward</i>
-</a>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(25)"><i class="material-icons">fast_forward</i></a>

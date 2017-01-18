@@ -30,7 +30,7 @@ function presOneController() {
         color: 'turquoise'
     }, {
         image: '4_Djibouti_John_Steinmeyer_small',
-        title: 'Exercices: Légendage',
+        title: 'Exercice: Légendage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
@@ -45,7 +45,7 @@ function presOneController() {
         color: 'turquoise'
     }, {
         image: '7_recadrage_small',
-        title: 'Exercices: Recadrage',
+        title: 'Exercice: Recadrage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
@@ -55,12 +55,12 @@ function presOneController() {
         color: 'bleu'
     }, {
         image: '9_Maitre-gims_small',
-        title: 'Exercices: Putaclic',
+        title: 'Exercice: Putaclic',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
         image: '10_messi_small',
-        title: 'Exercices: Putaclic',
+        title: 'Exercice: Putaclic',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {

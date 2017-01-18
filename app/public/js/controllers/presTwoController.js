@@ -2,7 +2,7 @@ function presTwoController() {
     this.show = false;
     this.showRecadrage = false;
     this.highlight = false;
-    this.includerPres2 = '1';
+    this.includerpres2 = '1';
     this.selectClass = "1";
     this.index = 0;
     this.active = 0;
@@ -91,7 +91,7 @@ function presTwoController() {
 
     // Start offunction for animation true or false
     const getElement = (id) => {
-      return angular.element(document.querySelector(id));
+        return angular.element(document.querySelector(id));
     };
     this.biggerTrueAnswer = (n) => {
         if (getElement('#true_answer' + n)[0].className == 'choice') {
@@ -146,7 +146,7 @@ function presTwoController() {
         this.previewPos = i;
         this.selectClass = Math.floor(Math.random() * (4 - 1) + 1);
         // console.log(this.selectClass);
-        this.includerpres3 = i + 1;
+        this.includerpres2 = i + 1;
     };
 
     // function for move to the next slide
@@ -155,23 +155,22 @@ function presTwoController() {
         this.next();
     };
 
-//flip-flop controller
+    //flip-flop controller
     this.flip = () => {
-      if(!getElement('#front').hasClass('on-left')) {
-        getElement('#front').addClass('on-left');
-        getElement('#inner-left').addClass('on-left');
-        getElement('#inner-right').addClass('on-right');
-        getElement('#logo_minion').removeClass('contractedUp');
-        getElement('#logo_minion').addClass('expandDown');
-        this.minion = true;
-      }
-      else {
-        getElement('#logo_minion').removeClass('expandDown');
-        getElement('#logo_minion').addClass('contractedUp');
-        getElement('#front').removeClass('on-left');
-        getElement('#inner-left').removeClass('on-left');
-        getElement('#inner-right').removeClass('on-right');
-        this.minion = false;
-      }
+        if (!getElement('#front').hasClass('on-left')) {
+            getElement('#front').addClass('on-left');
+            getElement('#inner-left').addClass('on-left');
+            getElement('#inner-right').addClass('on-right');
+            getElement('#logo_minion').removeClass('contractedUp');
+            getElement('#logo_minion').addClass('expandDown');
+            this.minion = true;
+        } else {
+            getElement('#logo_minion').removeClass('expandDown');
+            getElement('#logo_minion').addClass('contractedUp');
+            getElement('#front').removeClass('on-left');
+            getElement('#inner-left').removeClass('on-left');
+            getElement('#inner-right').removeClass('on-right');
+            this.minion = false;
+        }
     };
 }

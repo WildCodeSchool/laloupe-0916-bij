@@ -1,0 +1,65 @@
+<!-- question -->
+<div ng-hide="show" class="main_row valign-wrapper row col s12">
+    <div class="main_container_grey valign container col s8">
+        <div class="container_img_grey col s8">
+            <img class="img_grey" src="views/pres4/assets/img/large/carroussel.jpg">
+        </div>
+        <div class="container_grey col s4">
+            <h2 class="main_title">19h11</h2>
+            <p class="main_p col s12">
+                <b>
+                    <span>FRANCE</span>
+                </b>- Des rues désertes un samedi à Paris après les attentats qui ont ensanglanté la capitale française le 13 novembre 2015. Des Champs-Elysées à l’Opéra, les Parisiens ont délaissé les rues de la ville Lumière.</p>
+        </div>
+    </div>
+    <div class="main_sub_container col s4"></div>
+</div>
+<ul ng-hide="show" class="response-logo valign-wrapper col s4">
+    <li class="col s6 valign">
+        <img class="choice" id="true_answer0" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(0)">
+    </li>
+    <li class="col s6 valign">
+        <img class="choice" id="false_answer0" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(0)">
+    </li>
+</ul>
+<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
+    <i class="material-icons">fast_forward</i>
+</a>
+<!-- answer -->
+<div ng-show="show" class="main_row valign-wrapper row col s12">
+    <div class="main_container_grey_answer valign container col s8">
+        <div class="marking position_right_imghoriz" ng-show="true">
+            <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
+        </div>
+        <div class="container_img_grey_answer col s8">
+            <div class="container_img">
+                <img ng-click="highlight = true" class="img_grey" src="views/pres4/assets/img/large/carroussel.jpg">
+                <div ng-show="highlight" class="highlight"></div>
+            </div>
+        </div>
+        <div class="container_grey col s4">
+            <h2 class="main_title" ng-hide="highlight">19h11</h2>
+            <h2 class="main_title" ng-show="highlight">
+                <mark>19h11</mark>
+            </h2>
+            <p class="main_p col s12" ng-hide="highlight">
+                <b>
+                    <span>FRANCE</span>
+                </b>- Des rues désertes un samedi à Paris après les attentats qui ont ensanglanté la capitale française le 13 novembre 2015. Des Champs-Elysées à l’Opéra, les Parisiens ont délaissé les rues de la ville Lumière.</p>
+            <p class="main_p col s12" ng-show="highlight">
+                <b>
+                    <span>FRANCE</span>
+                </b>- Des rues désertes un samedi à Paris après les attentats qui ont ensanglanté la capitale française
+                <mark>le 13 novembre 2015.</mark>Des Champs-Elysées à l’Opéra, les Parisiens ont délaissé les rues de la ville Lumière.</p>
+        </div>
+    </div>
+    <div class="main_sub_container col s4">
+        <div class="sub_container row col s12">
+            <p class="sub_p">
+                Prenez le temps d’analyser tous les éléments d’une photo et de sa légende. Certains éléments peuvent être discordants.</p>
+        </div>
+    </div>
+</div>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(6)">
+    <i class="material-icons">fast_forward</i>
+</a>

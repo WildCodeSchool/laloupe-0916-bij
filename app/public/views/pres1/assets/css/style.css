@@ -186,3 +186,7 @@
     white-space: nowrap;
     overflow: hidden;
 }
+/*Foot */
+.size_foot{
+    width: 75%;
+  }

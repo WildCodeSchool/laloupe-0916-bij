@@ -1,5 +1,7 @@
 /* parcours: décodage */
-
+.size_foot{
+    width: 50%;
+  }
 /* flip flop */
 .container_img_flip {
   position: relative;

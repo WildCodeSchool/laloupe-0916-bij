@@ -19,7 +19,7 @@ function presTwoController() {
         color: 'violet'
     }, {
         image: '2_cloneZone_small',
-        title: 'Exercices: Légendage',
+        title: 'Exercices: CloneZone',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
@@ -59,25 +59,55 @@ function presTwoController() {
         color: 'turquoise'
     }, {
         image: '10_carte_small',
-        title: 'Exercices: Recadrage',
-        icon: './assets/icon/globe_turquoise.png',
-        color: 'turquoise'
+        title: 'France',
+        icon: './assets/icon/conv_orange.png',
+        color: 'orang'
     }, {
         image: '11_e_penser',
-        title: 'Exercices: Recadrage',
+        title: 'Vidéo',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
         image: '12_h&m',
-        title: 'Exercices: Recadrage',
+        title: 'Publicités',
+        icon: './assets/icon/globe_blue.png',
+        color: 'bleu'
+    }, {
+        image: '13_pickMonkey',
+        title: 'Exercices: Pick Monkey',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '13_pickMonkey',
+        image: '14_Graph_small',
+        title: 'International',
+        icon: './assets/icon/globe_blue.png',
+        color: 'bleu',
+    }, {
+        image: '15_enquete_opignion',
         title: 'Exercices: Recadrage',
-        icon: './assets/icon/globe_turquoise.png',
-        color: 'turquoise'
-    }];
+        icon: './assets/icon/globe_blue.png',
+        color: 'bleu'
+    }, {
+        image: '16_vraidufaux_small',
+        title: 'La fabrique à chiffres',
+        icon: './assets/icon/news_blue.png',
+        color: 'bleu'
+  }, {
+      image: '17_Débat_foot_small',
+      title: 'Débat',
+      icon: './assets/icon/news_blue.png',
+      color: 'bleu'
+  }, {
+      image: '18_press_small',
+      title: 'Presse',
+      icon: './assets/icon/news_blue.png',
+      color: 'bleu'
+  }, {
+      image: '19_conclusion_small',
+      title: 'Conclusion',
+      icon: './assets/icon/vrai_faux.png',
+      color: 'bleu'
+  }];
 
     // Start offunction for animation true or false
     const getElement = (id) => {

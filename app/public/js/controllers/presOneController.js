@@ -3,7 +3,7 @@ function presOneController() {
     this.show = false;
     this.showRecadrage = false;
     this.highlight = false;
-    this.includerPres1 = '1';
+    this.includerpres1 = '1';
     this.selectClass = "1";
     this.index = 0;
     this.active = 0;
@@ -152,7 +152,7 @@ function presOneController() {
         this.previewPos = i;
         this.selectClass = 2;
         // console.log(this.selectClass);
-        this.includerPres1 = i + 1;
+        this.includerpres1 = i + 1;
     };
 
     // function for move to the next slide

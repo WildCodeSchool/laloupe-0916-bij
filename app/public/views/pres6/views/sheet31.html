@@ -2,7 +2,7 @@
 <div ng-hide="show" class="main_row row col s12">
     <div class="main_container container col s7">
         <div class="container_img_vertical">
-            <img class="responsive-img slideExpandUp" src="views/pres4/assets/img/large/dindon.png" alt="dindon">
+            <img class="responsive-img slideExpandUp" src="./assets/img/large/portrait.png" alt="reportage de vie">
         </div>
     </div>
     <div class="main_sub_container container col s5">
@@ -22,15 +22,15 @@
 <!-- answer -->
 <div ng-show="show" class="main_row row col s12">
     <div class="main_container container col s12" ng-controller="presFourController as vm">
-        <div class="marking position_right_imgvertic" ng-show="true">
+        <div class="marking position_left_imgvertic_tinder" ng-show="true">
             <img class="ship_icon" src="./assets/icon/like_blue.png" alt="vrai">
         </div>
         <div class="container_answer_img_vertical col s12">
-            <img class="responsive-img size_middle_answer expandDown" src="views/pres4/assets/img/large/dindon.png" alt="dindon">
+            <img class="responsive-img size_middle_answer expandDown" src="./assets/img/large/portrait.png" alt="reportage de vie">
         </div>
 
     </div>
 </div>
-<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(8)">
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(32)">
     <i class="material-icons">fast_forward</i>
 </a>

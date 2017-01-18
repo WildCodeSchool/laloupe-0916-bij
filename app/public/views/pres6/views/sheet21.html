@@ -1,15 +1,17 @@
+
 <!-- question -->
-<div class="main_row row col s12">
-    <div class="main_container_putaclic container col s6">
-        <div class="container_img_putaclic">
-            <img class="responsive-img pointer" src="views/pres2/assets/img/large/pickMonkey.jpg">
-        </div>
-    </div>
-    <div class="main_sub_container col s4">
-        <div class="sub_container row col s12">
-            <p class="sub_p">Démonstration de l’outil Pick Monkey :</p>
-            <p class="sub_p">https://www.picmonkey.com/design/logo</p>
-        </div>
+<div ng-hide="show" class="main_row row col s12">
+    <div class="main_container container col s8">
+      <img ng-click="show = true" class="size_middle_answer pointer" src="./assets/img/large/enquete1.jpg">
+            <p class="sub_p col s12">Proposez différents recadrages possibles pour ce tableau, afin de lui faire dire totalement autre chose.</p>
     </div>
 </div>
-<a class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(13)"><i class="material-icons">fast_forward</i></a>
+<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true"><i class="material-icons">fast_forward</i></a>
+<!-- answer -->
+<div ng-show="show" class="main_row row col s12">
+    <div class="main_container container col s8">
+      <img ng-click="show = true" class="size_middle_answer pointer" src="./assets/img/large/enquete2.jpg">
+            <p class="sub_p col s12">Quel est l’intérêt de procéder à de tel recadrage ?</p>
+    </div>
+</div>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(22)"><i class="material-icons">fast_forward</i></a>

@@ -1,36 +1,23 @@
 <!-- question -->
 <div ng-hide="show" class="main_row row col s12">
     <div class="main_container container col s7">
-        <div class="container_img_vertical">
-            <img class="responsive-img slideExpandUp" src="views/pres4/assets/img/large/portrait.png" alt="reportage de vie">
-        </div>
-    </div>
-    <div class="main_sub_container container col s5">
-      <ul ng-hide="show" class="response-logo valign-wrapper col s4">
-          <li class="col s6 valign">
-              <img class="choice" id="true_answer0" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(0)">
-          </li>
-          <li class="col s6 valign">
-              <img class="choice" id="false_answer0" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(0)">
-          </li>
-      </ul>
-    </div>
-</div>
-<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
-    <i class="material-icons">fast_forward</i>
-</a>
-<!-- answer -->
-<div ng-show="show" class="main_row row col s12">
-    <div class="main_container container col s12" ng-controller="presFourController as vm">
-        <div class="marking position_left_imgvertic_tinder" ng-show="true">
-            <img class="ship_icon" src="./assets/icon/like_blue.png" alt="vrai">
-        </div>
-        <div class="container_answer_img_vertical col s12">
-            <img class="responsive-img size_middle_answer expandDown" src="views/pres4/assets/img/large/portrait.png" alt="reportage de vie">
-        </div>
+        <video class="responsive-video" controls>
+            <source src="./assets/img/large/hippopotame.mp4" type="video/mp4">
+        </video>
 
     </div>
+    <div class="main_sub_container container col s5">
+        <div class="subContainer row col s12">
+            <h1 class="sub_title">Il en faut peu pour être un héros...</h1>
+            <p class="sub_p col s12">Afrique du Sud - Les lois de la nature sont parfois surprenantes.
+              Un vidéaste est le témoin d’une incroyable scène digne du Livre de la Jungle.
+              Elle remet en cause beaucoup de nos croyances sur le monde animal.
+              Sous ses yeux ébahis, un hippopotame chevaleresque vole au secours d’une jeune impala à l’agonie. Absolument bluffant !
+            </p>
+        </div>
+        <div class="sub_container row col s12"></div>
+    </div>
 </div>
-<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(8)">
+<a ng-hide="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(33)">
     <i class="material-icons">fast_forward</i>
 </a>

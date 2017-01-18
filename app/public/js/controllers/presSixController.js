@@ -12,6 +12,8 @@ function presSixController() {
     this.answerLeParisien = false;
     this.image20Minutes = true;
     this.minion = false;
+    this.marking = true;
+
     // datas for navigation slide
     this.slides = [{
         image: 'chien_small',
@@ -260,6 +262,7 @@ function presSixController() {
             getElement('#logo_minion').removeClass('contractedUp');
             getElement('#logo_minion').addClass('expandDown');
             this.minion = true;
+            this.marking = false;
         } else {
             getElement('#logo_minion').removeClass('expandDown');
             getElement('#logo_minion').addClass('contractedUp');
@@ -267,6 +270,7 @@ function presSixController() {
             getElement('#inner-left').removeClass('on-left');
             getElement('#inner-right').removeClass('on-right');
             this.minion = false;
+            this.marking = true;
         }
     };
 

@@ -32,13 +32,13 @@
 </a>
 <!-- answer -->
 <div ng-show="show" class="main_row_answer row col s12">
-    <div class="main_container_answer container col s12" ng-controller="presOneController as vm">
+    <div class="main_container_answer container col s12">
+      <div class="marking position_top_flipflop" ng-show="vm.marking == true">
+        <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
+      </div>
         <p class="main_p_center col s12">
             <b>Tout est parfois une question de point de vue et de timing.</b>
         </p>
-        <div class="marking position_top_flipflop" ng-show="true">
-            <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
-        </div>
         <div class="container_img_flip photo" id="photo" ng-click="vm.flip()">
             <div class="front face" id="front">
                 <img src="./assets/img/large/vancouver_Photo_Plan_Large1.jpg">

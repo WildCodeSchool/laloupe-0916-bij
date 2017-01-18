@@ -325,27 +325,32 @@ text-align: left;
   top: 8%;
 }
 .position_right_imgvertic {
-  right: 32%;
-  top: 8%;
+  right: 28%;
+  top: 1%;
 }
 .position_left_imgvertic {
   left: 5%;
   top: 8%;
 }
 .position_right_imghoriz {
-top: 16%;
-right: 30%;
+top: 13%;
+right: 33%;
 }
 .position_left_imghoriz {
   top: 30%;
   left: 5%;
 }
 .position_right_large {
-top: 2%;
-right: 24%;
+top: 1%;
+right: 21%;
+}
+.position_top_flipflop{
+  position: absolute;
+  top: 10%;
+  right: 25%;
 }
 .marking img {
-  width: 50%;
+  width: 80%;
 }
 .choice {
   height: 40px;

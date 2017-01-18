@@ -13,77 +13,77 @@ function presThreeController() {
     // this.minion = false;
     // datas for navigation slide
     this.slides = [{
-        image: '1_portable_small',
+        image: 'portable_small',
         title: 'Technologie',
         icon: './assets/icon/conv_orange.png',
         color: 'orang'
     }, {
-        image: '2_oeuvre_small',
+        image: 'oeuvre_small',
         title: 'Culture',
         icon: './assets/icon/new_green.png',
         color: 'vert'
     }, {
-        image: '3_chien_small',
+        image: 'chien_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '4_lascars_small',
+        image: 'lascars_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '5_carroussel_small',
+        image: 'carroussel_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '6_Djibouti_John_Steinmeyer_small',
+        image: 'djibouti_small',
         title: 'Exercice: Légendage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '7_Vancouver_Photo_small',
+        image: 'vancouver_Photo_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '8_Tefal_Femme_small',
+        image: 'tefal_Femme_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '9_recadrage_small',
+        image: 'recadrage_small',
         title: 'Exercice: Recadrage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '10_minions_small',
+        image: 'minions_small',
         title: 'Culture',
         icon: './assets/icon/new_green.png',
         color: 'vert'
     }, {
-        image: '11_zlatan_small',
+        image: 'zlatan_small',
         title: 'Vidéo',
         icon: './assets/icon/video_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '12_bus_small',
+        image: 'bus_small',
         title: 'France',
         icon: './assets/icon/conv_violet.png',
         color: 'violet'
     }, {
-        image: '13_hollande_small',
+        image: 'hollande_small',
         title: 'France',
         icon: './assets/icon/conv_violet.png',
         color: 'violet'
     }, {
-        image: '14_clonezone_small',
+        image: 'clonezone_small',
         title: 'Exercice: CloneZone',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise',
     }, {
-        image: '15_conclusion_small',
+        image: 'conclusion_small',
         title: 'Conclusion',
         icon: './assets/icon/vrai_faux.png',
         color: 'bleu'

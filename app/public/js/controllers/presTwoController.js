@@ -13,97 +13,97 @@ function presTwoController() {
     // this.minion = false;
     // datas for navigation slide
     this.slides = [{
-        image: '1_hollande_small',
+        image: 'hollande_small',
         title: 'France',
         icon: './assets/icon/conv_violet.png',
         color: 'violet'
     }, {
-        image: '2_cloneZone_small',
+        image: 'cloneZone_small',
         title: 'Exercice: CloneZone',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '3_chien_small',
+        image: 'chien_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '4_lascars_small',
+        image: 'lascars_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '5_Djibouti_John_Steinmeyer_small',
+        image: 'djibouti_small',
         title: 'Exercice: Légendage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '6_carroussel_small',
+        image: 'carroussel_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '7_Vancouver_Photo_small',
+        image: 'vancouver_Photo_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '8_Tefal_Femme_small',
+        image: 'tefal_Femme_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '9_recadrage_small',
+        image: 'recadrage_small',
         title: 'Exercice: Recadrage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '10_carte_small',
+        image: 'carte_small',
         title: 'France',
         icon: './assets/icon/conv_orange.png',
         color: 'orang'
     }, {
-        image: '11_e_penser',
+        image: 'e_penser',
         title: 'Vidéo',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '12_h&m',
+        image: 'hetm',
         title: 'Publicité',
         icon: './assets/icon/globe_blue.png',
         color: 'bleu'
     }, {
-        image: '13_pickMonkey',
+        image: 'picMonkey',
         title: 'Exercice: Pic Monkey',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '14_Graph_small',
+        image: 'graph_small',
         title: 'International',
         icon: './assets/icon/globe_blue.png',
         color: 'bleu',
     }, {
-        image: '15_enquete_opignion',
+        image: 'enquete_opignion',
         title: 'Exercice: La fabrique à chiffres',
         icon: './assets/icon/globe_blue.png',
         color: 'bleu'
     }, {
-        image: '16_vraidufaux_small',
+        image: 'vraidufaux_small',
         title: 'L\'ours',
         icon: './assets/icon/news_blue.png',
         color: 'bleu'
   }, {
-      image: '17_Débat_foot_small',
+      image: 'dbat_foot_small',
       title: 'Débat',
       icon: './assets/icon/news_blue.png',
       color: 'bleu'
   }, {
-      image: '18_press_small',
+      image: 'press_small',
       title: 'Presse',
       icon: './assets/icon/news_blue.png',
       color: 'bleu'
   }, {
-      image: '19_conclusion_small',
+      image: 'conclusion_small',
       title: 'Conclusion',
       icon: './assets/icon/vrai_faux.png',
       color: 'bleu'

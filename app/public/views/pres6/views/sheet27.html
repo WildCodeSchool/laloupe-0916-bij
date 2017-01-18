@@ -1,36 +1,66 @@
-<!-- question -->
-<div ng-hide="show" class="main_row row col s12">
-    <div class="main_container container col s7">
-        <div class="container_img_vertical">
-            <img class="responsive-img slideExpandUp" src="views/pres3/assets/img/large/oeuvre-d-art.png" class="parachutiste">
+<h1 class="title">À Lyon, spectaculaire accident de bus...</h1>
+<div ng-hide="show" class="main_row valign-wrapper row col s12">
+    <div class="main_container_grey_video valign container col s8">
+      <video class="container_video_grey col s7" controls>
+          <source class="video_grey" src="./assets/img/large/accident_bus.mp4" type="video/mp4">
+      </video>
+        <div class="container_grey col s5">
+            <h4 class="main_title">LYON (Rhône)</h4>
+            <p class="main_p col s12">La blague de deux étudiants lyonnais a tourné au drame samedi matin. Élèves en Arts du Spectacle, ils souhaitaient réaliser un canular vidéo en effrayant un bus. Pris de panique, le conducteur de la TCL (Transports en Commun Lyonnais) a perdu
+            le contrôle. Trois blessés dont un grave sont à déplorer. Un bilan qui aurait pu être plus lourd si l’accident s’était déroulé à heure de pointe.</p>
         </div>
+        <p>Lien vers la vidéo : https://www.youtube.com/watch?v=4_N1_C5JOEs</p>
     </div>
-    <div class="main_sub_container container col s5">
-      <ul ng-hide="show" class="response-logo valign-wrapper col s4">
-          <li class="col s6 valign">
-              <img class="choice" id="true_answer0" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(0)">
-          </li>
-          <li class="col s6 valign">
-              <img class="choice" id="false_answer0" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(0)">
-          </li>
-      </ul>
+    <div class="main_sub_container col s4">
+        <!-- <div class="sub_container row col s12">
+            <p class="sub_p">Un détail interpelle sur l’image.<br/>Et si vous regardiez l’image d’un peu plus près ?</p>
+            <p class="sub_p">La recherche par image, un bon moyen d’en savoir plus sur un visuel et son origine.</p>
+        </div> -->
     </div>
 </div>
+<ul ng-hide="show" class="response-logo valign-wrapper col s4">
+    <li class="col s6 valign">
+        <img class="choice" id="true_answer0" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(0)">
+    </li>
+    <li class="col s6 valign">
+        <img class="choice" id="false_answer0" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(0)">
+    </li>
+</ul>
 <a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
     <i class="material-icons">fast_forward</i>
 </a>
 <!-- answer -->
-<div ng-show="show" class="main_row row col s12">
-    <div class="main_container container col s12" ng-controller="presOneController as vm">
-        <div class="marking position_right_imgvertic" ng-show="true">
-            <img class="ship_icon" src="./assets/icon/like_blue.png" alt="vrai">
+<div ng-show="show" class="main_row valign-wrapper row col s12">
+    <div class="main_container_grey_video valign container col s8">
+      <div class="marking position_right_imghoriz" ng-show="true">
+          <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
+      </div>
+      <video class="container_video_grey col s7" controls>
+          <source class="video_grey" src="./assets/img/large/accident_bus.mp4" type="video/mp4">
+      </video>
+        <div ng-click="highlight = true" class="container_grey col s5">
+            <h4 class="main_title">LYON (Rhône)</h4>
+            <p ng-hide="highlight" class="sub_p col s12">
+                <b></b>
+                La blague de deux étudiants lyonnais a tourné au drame samedi matin. Élèves en Arts du Spectacle, ils souhaitaient réaliser un canular vidéo en effrayant un bus. Pris de panique, le conducteur de la TCL (Transports en Commun Lyonnais) a perdu
+                le contrôle. Trois blessés dont un grave sont à déplorer. Un bilan qui aurait pu être plus lourd si l’accident s’était déroulé à heure de pointe.</p>
+            <p ng-show="highlight" class="sub_p col s12">
+                <b></b>
+                <mark>La blague de deux étudiants lyonnais</mark>
+                a tourné au drame samedi matin.
+                <mark>Élèves en Arts du Spectacle,</mark>
+                ils souhaitaient réaliser un canular vidéo en effrayant un bus. Pris de panique, le conducteur de la TCL (Transports en Commun Lyonnais) a perdu le contrôle. Trois blessés dont un grave sont à déplorer. Un bilan qui aurait pu être plus lourd
+                si l’accident s’était déroulé à heure de pointe.</p>
         </div>
-        <div class="container_answer_img_vertical col s12">
-            <img class="responsive-img size_middle_answer expandDown" src="views/pres3/assets/img/large/oeuvre-d-art.png" alt="parachutiste">
+        <p>Lien vers la vidéo : https://www.youtube.com/watch?v=4_N1_C5JOEs</p>
+    </div>
+    <div class="main_sub_container col s4">
+        <div class="sub_container row col s12">
+            <p class="sub_p">Le montage où l’art de raconter des histoires différentes avec les mêmes images.</p>
+            <p class="sub_p">Leçon de cinéma – Le montage : https://youtu.be/ETgwDJWNRwQ?t=2m23s</p>
         </div>
-
     </div>
 </div>
-<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(2)">
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(28)">
     <i class="material-icons">fast_forward</i>
 </a>

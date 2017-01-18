@@ -14,82 +14,82 @@ function presOneController() {
     this.minion = false;
     // datas for navigation slide
     this.slides = [{
-        image: '1_chien_small',
+        image: 'chien_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '2_lascars_small',
+        image: 'lascars_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '3_carroussel_small',
+        image: 'carroussel_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '4_Djibouti_John_Steinmeyer_small',
+        image: 'djibouti_small',
         title: 'Exercice: Légendage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '5_Vancouver_Photo_small',
+        image: 'vancouver_Photo_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '6_Tefal_Femme_small',
+        image: 'tefal_Femme_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '7_recadrage_small',
+        image: 'recadrage_small',
         title: 'Exercice: Recadrage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '8_chute-libre-image_small',
+        image: 'chute-libre-image_small',
         title: 'International',
         icon: './assets/icon/globe_blue.png',
         color: 'bleu'
     }, {
-        image: '9_Maitre-gims_small',
+        image: 'maitre_gims_small',
         title: 'Exercice: Putaclic',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '10_messi_small',
+        image: 'messi_small',
         title: 'Exercice: Putaclic',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '11_minions_small',
+        image: 'minions_small',
         title: 'Culture',
         icon: './assets/icon/new_green.png',
         color: 'vert'
     }, {
-        image: '12_zlatan_small',
+        image: 'zlatan_small',
         title: 'Vidéo',
         icon: './assets/icon/video_turquoise.png',
         color: 'turquoise'
     }, {
-        image: '13_tinder_small',
+        image: 'tinder_small',
         title: 'Technologie',
         icon: './assets/icon/conv_orange.png',
         color: 'orang'
     }, {
-        image: '14_twitter_small',
+        image: 'twitter_small',
         title: 'France',
         icon: './assets/icon/conv_violet.png',
         color: 'violet'
     }, {
-        image: '15_Graph_small',
+        image: 'graph_small',
         title: 'International',
         icon: './assets/icon/globe_blue.png',
         color: 'bleu',
     }, {
-        image: '16_conclusion_small',
+        image: 'conclusion_small',
         title: 'Conclusion',
         icon: './assets/icon/vrai_faux.png',
         color: 'bleu'

@@ -438,7 +438,12 @@ right: 24%;
   margin-left: 1%;
 }
 
-/*zlatan text align*/
-.subContainer_position {
-  margin-right: -25rem !important;
+/*img position paris*/
+.img_position {
+  margin-top: 5%;
+}
+
+/**/
+.main_title_blue {
+  color: #2a477c;
 }

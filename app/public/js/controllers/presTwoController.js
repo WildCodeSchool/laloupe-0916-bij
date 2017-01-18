@@ -19,7 +19,7 @@ function presTwoController() {
         color: 'violet'
     }, {
         image: '2_cloneZone_small',
-        title: 'Exercices: CloneZone',
+        title: 'Exercice: CloneZone',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
@@ -34,7 +34,7 @@ function presTwoController() {
         color: 'turquoise'
     }, {
         image: '5_Djibouti_John_Steinmeyer_small',
-        title: 'Exercices: Légendage',
+        title: 'Exercice: Légendage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
@@ -54,7 +54,7 @@ function presTwoController() {
         color: 'turquoise'
     }, {
         image: '9_recadrage_small',
-        title: 'Exercices: Recadrage',
+        title: 'Exercice: Recadrage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
@@ -69,12 +69,12 @@ function presTwoController() {
         color: 'turquoise'
     }, {
         image: '12_h&m',
-        title: 'Publicités',
+        title: 'Publicité',
         icon: './assets/icon/globe_blue.png',
         color: 'bleu'
     }, {
         image: '13_pickMonkey',
-        title: 'Exercices: Pick Monkey',
+        title: 'Exercice: Pic Monkey',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
@@ -84,12 +84,12 @@ function presTwoController() {
         color: 'bleu',
     }, {
         image: '15_enquete_opignion',
-        title: 'Exercices: Recadrage',
+        title: 'Exercice: La fabrique à chiffres',
         icon: './assets/icon/globe_blue.png',
         color: 'bleu'
     }, {
         image: '16_vraidufaux_small',
-        title: 'La fabrique à chiffres',
+        title: 'L\'ours',
         icon: './assets/icon/news_blue.png',
         color: 'bleu'
   }, {

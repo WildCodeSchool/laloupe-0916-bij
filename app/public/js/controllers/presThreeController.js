@@ -19,7 +19,7 @@ function presThreeController() {
         color: 'orang'
     }, {
         image: '2_oeuvre_small',
-        title: 'Cultures',
+        title: 'Culture',
         icon: './assets/icon/new_green.png',
         color: 'vert'
     }, {
@@ -39,7 +39,7 @@ function presThreeController() {
         color: 'turquoise'
     }, {
         image: '6_Djibouti_John_Steinmeyer_small',
-        title: 'Exercices: Légendage',
+        title: 'Exercice: Légendage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
@@ -54,7 +54,7 @@ function presThreeController() {
         color: 'turquoise'
     }, {
         image: '9_recadrage_small',
-        title: 'Exercices: Recadrage',
+        title: 'Exercice: Recadrage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
@@ -79,7 +79,7 @@ function presThreeController() {
         color: 'violet'
     }, {
         image: '14_clonezone_small',
-        title: 'Exercices: CloneZone',
+        title: 'Exercice: CloneZone',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise',
     }, {

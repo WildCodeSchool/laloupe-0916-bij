@@ -34,7 +34,7 @@ function presFourController() {
         color: 'turquoise'
     }, {
         image: '5_Djibouti_John_Steinmeyer_small',
-        title: 'Exercices: Légendage',
+        title: 'Exercice: Légendage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
@@ -54,7 +54,7 @@ function presFourController() {
         color: 'turquoise'
     }, {
         image: '9_recadrage_small',
-        title: 'Exercices: Recadrage',
+        title: 'Exercice: Recadrage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {

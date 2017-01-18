@@ -18,6 +18,9 @@ html {
 .vert {
   color: #35b562;
 }
+.rose {
+  color: #ec407a;
+}
 ::selection {
   background-color: #2a477c;
 }

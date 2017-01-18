@@ -61,7 +61,7 @@ function presFourController() {
         image: '10_dindon_small',
         title: 'Tendance',
         icon: './assets/icon/heart_pink.png',
-        color: 'vert'
+        color: 'rose'
     }, {
         image: '11_portrait_small',
         title: 'Portrait',

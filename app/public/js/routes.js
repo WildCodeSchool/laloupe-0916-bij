@@ -41,6 +41,16 @@ const routes = ($routeProvider, $httpProvider) => {
             controller: 'presFourController',
             controllerAs: 'vm'
         })
+        .when('/index5', {
+            templateUrl: 'views/pres5/index5.html',
+            controller: 'presFiveController',
+            controllerAs: 'vm'
+        })
+        .when('/index6', {
+            templateUrl: 'views/pres6/index6.html',
+            controller: 'presSixController',
+            controllerAs: 'vm'
+        })
         .otherwise({
             redirectTo: '/'
         });

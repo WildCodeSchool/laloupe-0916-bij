@@ -1,0 +1,16 @@
+<!-- question -->
+<div ng-hide="show" class="main_row row col s12">
+    <div class="main_container_grey_high container col s8">
+            <img ng-click="show = true" class="size_middle_answer pointer" src="views/pres2/assets/img/large/orientation_presse1.png">
+            <p class="sub_p col s12">Connaissez-vous le positionnement des principaux quotidiens et hebdomadaires français ?</p>
+    </div>
+</div>
+<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true"><i class="material-icons">fast_forward</i></a>
+<!-- answer -->
+<div ng-show="show" class="main_row row col s12">
+    <div class="main_container_grey_high container col s8">
+            <img class="size_middle_answer slideExpandUp" src="views/pres2/assets/img/large/orientation_presse2.jpg">
+            <p class="sub_p col s12">Superposons les trois images...</p>
+    </div>
+</div>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(18)"><i class="material-icons">fast_forward</i></a>

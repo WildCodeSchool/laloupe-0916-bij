@@ -252,7 +252,7 @@ nav img {
   height: 100%;
 }
 .main_sub_container {
-  margin-top: 30px;
+  margin-top: -40px;
   width: 100%;
 text-align: left;
 }
@@ -294,17 +294,18 @@ text-align: left;
 .main_title {
   color: black;
 }
-.main_p, .main_p_center {
+.main_p {
   font-size: 1.8rem;
   color: black;
 }
 .main_p_center {
   float: inherit !important;
+  font-size: 1.8rem;
 }
 .sub_p {
   margin-top: 15px;
   margin-bottom: 15px;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .response-logo {
   position: absolute;
@@ -424,4 +425,20 @@ right: 24%;
   bottom: 0;
   width: 100%;
   height: 6vh;
+}
+
+
+
+
+
+
+
+/*Rajout Gaëlle*/
+#slide_six_position {
+  margin-left: 1%;
+}
+
+/*zlatan text align*/
+.subContainer_position {
+  margin-right: -25rem !important;
 }

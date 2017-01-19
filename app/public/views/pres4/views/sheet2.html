@@ -1,0 +1,40 @@
+<!-- question -->
+<div ng-hide="show" class="main_row row">
+    <div class="main_container container col s7">
+        <div class="container_img_vertical">
+            <img class="responsive-img" src="./assets/img/large/tinder.jpg" alt="article sur Tinder et les IST">
+        </div>
+    </div>
+    <div class="main_sub_container container col s5">
+        <ul ng-hide="show" class="response-logo valign-wrapper col s4">
+            <li class="col s6 valign">
+                <img class="choice" id="true_answer0" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(0)">
+            </li>
+            <li class="col s6 valign">
+                <img class="choice" id="false_answer0" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(0)">
+            </li>
+        </ul>
+    </div>
+</div>
+<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
+    <i class="material-icons">fast_forward</i>
+</a>
+<!-- answer -->
+<div ng-show="show" class="main_row valign-wrapper row">
+    <div class="marking position_right_imgvertic_tinder" ng-show="true">
+        <img class="ship_icon" src="./assets/icon/vrai_du_faux.png" alt="faux">
+    </div>
+    <div class="container_answer_img_vertical col s6">
+        <img class="responsive-img size_middle_answer slideExpandUp" src="./assets/img/large/tinder2.jpg" alt="article sur Tinder et les IST surligné" ng-click="highlight = true">
+    </div>
+    <div class="main_sub_container col s6">
+        <div class="sub_container col s12">
+            <p class="sub_p">L’information est ici à mettre au conditionnel. Il est à noter que c’est ce temps de conjugaison qui est employé dans l’article.<br>
+                Rien ne prouve de façon certaine que Tinder est responsable de l’augmentation des Infections Sexuellement Transmissibles.<br>
+                On effectue ici une corrélation entre deux phénomènes indépendants.</p>
+        </div>
+    </div>
+</div>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(2)">
+    <i class="material-icons">fast_forward</i>
+</a>

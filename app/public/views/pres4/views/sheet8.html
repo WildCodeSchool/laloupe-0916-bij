@@ -1,0 +1,48 @@
+<div ng-hide="show" class="main_row valign-wrapper row">
+    <div class="main_container_grey_high valign container col s8">
+        <div class="container_img_grey col s8">
+            <img class="img_grey_tefal" src="./assets/img/large/tefal_left.png" alt="femme se battant avec une chemise">
+        </div>
+        <div class="container_grey col s4">
+            <h2 class="main_title">14h53</h2>
+            <p class="main_p col s12">
+                <b>
+                    <span>FRANCE</span>
+                </b>- Présentation et lancement de la nouvelle campagne choc contre les violences conjugales par le collectif des associations de soutien aux femmes victimes.</p>
+        </div>
+    </div>
+    <div class="main_sub_container col s4"></div>
+</div>
+<ul ng-hide="show" class="response-logo valign-wrapper col s4">
+    <li class="col s6 valign">
+        <img class="choice" id="true_answer0" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(0)">
+    </li>
+    <li class="col s6 valign">
+        <img class="choice" id="false_answer0" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(0)">
+    </li>
+</ul>
+<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
+    <i class="material-icons">fast_forward</i>
+</a>
+<!-- answer -->
+<div ng-show="show" class="main_row valign-wrapper row">
+    <div class="main_container_grey_high_answer valign container col s9">
+        <div class="marking position_right_large_tefal" ng-show="true">
+            <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
+        </div>
+        <div class="container_img_grey_tefal_answer col s9">
+            <div class="container_img tefal">
+                <img class="img_grey" src="./assets/img/large/tefal_left.png" alt="femme se battant avec une chemise">
+                <img class="responsive-img slideExpandUp" id="slide_six_position" src="./assets/img/large/tefal_right.png" alt=" logo pub Téfal">
+            </div>
+        </div>
+    </div>
+    <div class="main_sub_container col s3">
+        <div class="sub_container col s12">
+            <p class="sub_p">Le recadrage d’une photo ou d’une image, ou l’art de raconter une toute autre histoire à partir d’une même photo.</p>
+        </div>
+    </div>
+</div>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(8)">
+    <i class="material-icons">fast_forward</i>
+</a>

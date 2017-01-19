@@ -93,7 +93,7 @@ function presTwoController() {
         icon: './assets/icon/news_blue.png',
         color: 'bleu'
   }, {
-      image: 'dbat_foot_small',
+      image: 'debat_foot_small',
       title: 'Débat',
       icon: './assets/icon/news_blue.png',
       color: 'bleu'

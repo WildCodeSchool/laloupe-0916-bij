@@ -75,10 +75,10 @@ function presFourController() {
         icon: './assets/icon/conv_orange.png',
         color: 'orang'
     }, {
-        image: 'conclusion_small',
-        title: 'Technologie',
-        icon: './assets/icon/conv_orange.png',
-        color: 'orang'
+        image: 'debat_small',
+        title: 'Débat',
+        icon: './assets/icon/news_blue.png',
+        color: 'bleu'
     }, {
         image: 'minions_small',
         title: 'Culture',

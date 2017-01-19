@@ -12,6 +12,8 @@ function presSixController() {
     this.answerLeParisien = false;
     this.image20Minutes = true;
     this.minion = false;
+    this.marking = true;
+
     // datas for navigation slide
     this.slides = [{
         image: 'chien_small',
@@ -30,7 +32,7 @@ function presSixController() {
         color: 'turquoise'
     }, {
         image: 'djibouti_small',
-        title: 'Exercices: Légendage',
+        title: 'Exercice: Légendage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
@@ -45,7 +47,7 @@ function presSixController() {
         color: 'turquoise'
     }, {
         image: 'recadrage_small',
-        title: 'Exercices: Recadrage',
+        title: 'Exercice: Recadrage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
@@ -55,12 +57,12 @@ function presSixController() {
         color: 'bleu'
     }, {
         image: 'maitre_gims_small',
-        title: 'Exercices: Putaclic',
+        title: 'Exercice: Putaclic',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
         image: 'messi_small',
-        title: 'Exercices: Putaclic',
+        title: 'Exercice: Putaclic',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
@@ -110,7 +112,7 @@ function presSixController() {
         color: 'bleu'
     }, {
         image: 'picMonkey',
-        title: 'Exercice: Pic Monkey',
+        title: 'Exercice: PicMonkey',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
@@ -260,6 +262,7 @@ function presSixController() {
             getElement('#logo_minion').removeClass('contractedUp');
             getElement('#logo_minion').addClass('expandDown');
             this.minion = true;
+            this.marking = false;
         } else {
             getElement('#logo_minion').removeClass('expandDown');
             getElement('#logo_minion').addClass('contractedUp');
@@ -267,6 +270,7 @@ function presSixController() {
             getElement('#inner-left').removeClass('on-left');
             getElement('#inner-right').removeClass('on-right');
             this.minion = false;
+            this.marking = true;
         }
     };
 

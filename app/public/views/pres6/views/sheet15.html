@@ -1,8 +1,8 @@
 <!-- question -->
-<div ng-hide="show" class="main_row valign-wrapper row col s12">
+<div ng-hide="show" class="main_row valign-wrapper row">
     <div class="main_container_grey_high valign container col s8">
         <div class="container_img_grey col s6">
-            <img class="img_grey" src="./assets/img/large/graph.jpg">
+            <img class="img_grey" src="./assets/img/large/graph.jpg" alt="graphique manipulé">
         </div>
         <div class="container_grey col s6">
             <h2 class="main_title">Le "permis de tuer" sauve des vies !</h2>
@@ -12,10 +12,6 @@
         </div>
     </div>
     <div class="main_sub_container col s4">
-        <!-- <div class="sub_container row col s12">
-            <p class="sub_p">Un détail interpelle sur l’image.<br/>Et si vous regardiez l’image d’un peu plus près ?</p>
-            <p class="sub_p">La recherche par image, un bon moyen d’en savoir plus sur un visuel et son origine.</p>
-        </div> -->
     </div>
 </div>
 <ul ng-hide="show" class="response-logo valign-wrapper col s4">
@@ -30,7 +26,7 @@
     <i class="material-icons">fast_forward</i>
 </a>
 <!-- answer -->
-<div ng-show="show" class="main_row valign-wrapper row col s12">
+<div ng-show="show" class="main_row valign-wrapper row">
     <div class="main_container_grey_high_answer valign container col s8">
         <div class="marking position_right_imgvertic_death" ng-show="true">
             <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
@@ -38,7 +34,7 @@
         <div class="container_img_grey_answer col s6">
             <div directive-rotation class="container_img" ng-click="highlight = true">
                 <img class="img-loupe" src="./assets/img/large/loupe_blue.png" alt="loupe">
-                <img class="img_grey pointer" id="img_grey" src="./assets/img/large/graph_retourne.jpg">
+                <img class="img_grey pointer" id="img_grey" src="./assets/img/large/graph_retourne.jpg" alt="graphique non manipulé">
             </div>
         </div>
         <div class="container_grey col s6">
@@ -53,7 +49,7 @@
         </div>
     </div>
     <div class="main_sub_container col s4">
-        <div class="sub_container row col s12">
+        <div class="sub_container col s12">
             <p class="sub_p">L’ensemble des données chiffrées proviennent d’une source fiable (Le Département des lois de l’Etat de Floride).<br /> Pourtant notre perception de l’information est erronée. Pourquoi ?</p>
             <p class="sub_p">A qui profite le crime ? Quel est l’intérêt pour la NRA de véhiculer cette information ?</p>
         </div>

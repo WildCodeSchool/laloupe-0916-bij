@@ -21,14 +21,18 @@
 </a>
 <!-- answer -->
 <div ng-show="show" class="main_row row col s12">
-    <div class="main_container container col s12" ng-controller="presFourController as vm">
+    <div class="main_container valign-wrapper">
         <div class="marking position_Right_imgvertic_marc" ng-show="true">
             <img class="ship_icon" src="./assets/icon/like_blue.png" alt="vrai">
         </div>
-        <div class="container_answer_img_vertical col s12">
+        <div class="container_answer_img_vertical col s8">
             <img class="responsive-img size_middle_answer expandDown" src="./assets/img/large/portrait.jpg" alt="reportage de vie">
         </div>
-
+        <div class="main_sub_container col s4">
+            <div class="sub_container valign col s12">
+                <p class="sub_p">Cet article est entièrement vrai. Il est issu du magazine « Le Tigre » de Novembre – Décembre 2008. Les dates et les noms de certains réseaux sociaux ont été modifiés dans le « Vrai du Faux » pour être en phase avec l’époque.</p>
+            </div>
+        </div>
     </div>
 </div>
 <a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(31)">

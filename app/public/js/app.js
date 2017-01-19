@@ -9,5 +9,4 @@ angular.module('app', ['ngRoute', 'ngAnimate'])
         .controller('parcoursController', parcoursController)
         .directive('directiveZoom', directiveZoom)
         .directive('directiveRotation', directiveRotation)
-        .directive('directiveHighlight', directiveHighlight)
         .config(routes);

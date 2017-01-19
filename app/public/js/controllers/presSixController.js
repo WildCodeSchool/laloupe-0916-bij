@@ -112,7 +112,7 @@ function presSixController() {
         color: 'bleu'
     }, {
         image: 'picMonkey',
-        title: 'Exercice: Pic Monkey',
+        title: 'Exercice: PicMonkey',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {

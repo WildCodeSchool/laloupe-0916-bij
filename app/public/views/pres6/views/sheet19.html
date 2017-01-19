@@ -1,16 +1,20 @@
 <!-- question -->
 <div ng-hide="show" class="main_row row">
     <div class="container col s8">
-      <p class="sub_p col s12">Proposez différents recadrages possibles pour ce tableau, afin de lui faire dire totalement autre chose.</p>
-            <img ng-click="show = true" class="size_middle_answer pointer" src="./assets/img/large/hetm.jpg">
+        <p class="sub_p col s12">Avez-vous remarqué ?</p>
+        <img ng-click="show = true" class="size_middle_answer pointer" src="./assets/img/large/hetm.jpg" alt="3 mannequins">
     </div>
 </div>
-<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true"><i class="material-icons">fast_forward</i></a>
+<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
+    <i class="material-icons">fast_forward</i>
+</a>
 <!-- answer -->
 <div ng-show="show" class="main_row row">
     <div class="container col s8">
-      <p class="sub_p col s12">Superposons les trois images...</p>
-            <img class="size_middle_answer slideExpandUp" src="./assets/img/large/hetm_answer.jpg">
+        <p class="sub_p col s12">Superposons les trois images...</p>
+        <img class="size_middle_answer slideExpandUp" src="./assets/img/large/hetm_answer.jpg" alt="révélation de la supercherie des photos HetM">
     </div>
 </div>
-<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(19)"><i class="material-icons">fast_forward</i></a>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(19)">
+    <i class="material-icons">fast_forward</i>
+</a>

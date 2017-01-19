@@ -250,6 +250,7 @@ function presSixController() {
 
     // function for move to the next slide
     this.nextVisibleSlide = (i) => {
+      if (i == 27) { this.showBus = "one"; }
         this.select(i);
         this.next();
     };

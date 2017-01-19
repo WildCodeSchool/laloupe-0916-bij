@@ -2,18 +2,18 @@
 <div ng-hide="show" class="main_row row">
     <div class="main_container container col s7">
         <div class="container_img_vertical">
-            <img class="responsive-img slideExpandUp" src="./assets/img/large/vraidufaux_question.jpg" alt="carte">
+            <img class="responsive-img slideExpandUp" src="./assets/img/large/vraidufaux_question.jpg" alt="un ours">
         </div>
     </div>
     <div class="main_sub_container container col s5">
-      <ul ng-hide="show" class="response-logo valign-wrapper col s4">
-          <li class="col s6 valign">
-              <img class="choice" id="true_answer0" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(0)">
-          </li>
-          <li class="col s6 valign">
-              <img class="choice" id="false_answer0" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(0)">
-          </li>
-      </ul>
+        <ul ng-hide="show" class="response-logo valign-wrapper col s4">
+            <li class="col s6 valign">
+                <img class="choice" id="true_answer0" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(0)">
+            </li>
+            <li class="col s6 valign">
+                <img class="choice" id="false_answer0" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(0)">
+            </li>
+        </ul>
     </div>
 </div>
 <a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
@@ -21,12 +21,12 @@
 </a>
 <!-- answer -->
 <div ng-show="show" class="main_row row">
-    <div class="main_container container col s12" ng-controller="presOneController as vm">
+    <div class="main_container container col s12">
         <div class="marking position_right_imgvertic" ng-show="true">
             <img class="ship_icon" src="./assets/icon/angry_red.png" alt="vrai">
         </div>
         <div class="container_answer_img_vertical col s12">
-            <img class="responsive-img size_middle_answer expandDown" src="./assets/img/large/vraidufaux_answer.jpg" alt="carte">
+            <img class="responsive-img size_middle_answer expandDown" src="./assets/img/large/vraidufaux_answer.jpg" alt="ours surligné">
         </div>
 
     </div>

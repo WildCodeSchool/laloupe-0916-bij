@@ -177,9 +177,9 @@ function presSixController() {
         color: 'orang'
     }, {
         image: 'debat_small',
-        title: 'Technologie',
-        icon: './assets/icon/conv_orange.png',
-        color: 'orang'
+        title: 'Débat',
+        icon: './assets/icon/news_blue.png',
+        color: 'bleu'
     }, {
         image: 'conclusion_small',
         title: 'Conclusion',

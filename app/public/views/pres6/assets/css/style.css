@@ -259,6 +259,10 @@
 .video {
   width: 100%;
 }
-.video_hippo {
+.video_hippo, .video_canal, .video_popcorn {
   height: 90% !important;
+}
+.img_causalite_small {
+  margin-top: -7%;
+  margin-left:7%;
 }

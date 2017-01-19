@@ -6,14 +6,14 @@
         </div>
     </div>
     <div class="main_sub_container container col s5">
-      <ul ng-hide="show" class="response-logo valign-wrapper col s4">
-          <li class="col s6 valign">
-              <img class="choice" id="true_answer0" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(0)">
-          </li>
-          <li class="col s6 valign">
-              <img class="choice" id="false_answer0" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(0)">
-          </li>
-      </ul>
+        <ul ng-hide="show" class="response-logo valign-wrapper col s4">
+            <li class="col s6 valign">
+                <img class="choice" id="true_answer0" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(0)">
+            </li>
+            <li class="col s6 valign">
+                <img class="choice" id="false_answer0" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(0)">
+            </li>
+        </ul>
     </div>
 </div>
 <a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
@@ -25,10 +25,20 @@
         <div class="marking position_right_imgvertic" ng-show="true">
             <img class="ship_icon" src="./assets/icon/angry_red.png" alt="vrai">
         </div>
-        <div class="container_answer_img_vertical col s12">
+        <div class="container_answer_img_vertical col s7">
             <img class="responsive-img size_middle_answer expandDown" src="./assets/img/large/carte_answer.jpg" alt="carte">
         </div>
-
+        <div class="main_sub_container col s5">
+            <div class="sub_container row col s12">
+                <p class="sub_p_causalite">Il n’existe aucun lien entre les téléspectateurs de Secret Story et un vote Front National. On établit ici une corrélation entre deux événements sur la base d’éléments vrais et d’éléments complètement détournés.<br/><br/>
+                    L’enquête de l’IFOP est bien réelle, et montre un lien entre niveau de diplôme et vote FN.<br/><br/>
+                    La carte des audiences est par contre détournée. Il s’agit en réalité d’une carte représentant le vote Front National aux élections régionales de 2010.<br/><br/>
+                    Corrélation / Causalité<br/><br/>
+                    <div class="img_causalite_small">
+                      <img src="./assets/img/large/causalite.png" alt="corrélation et causalité"></p>
+                    </div>
+            </div>
+        </div>
     </div>
 </div>
 <a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(17)">

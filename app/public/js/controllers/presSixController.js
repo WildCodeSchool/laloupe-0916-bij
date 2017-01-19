@@ -1,6 +1,7 @@
 function presSixController() {
     // angular.element(document.querySelector('#b0')).addClass('active pos1');
     this.show = false;
+    this.showBus = "one";
     this.showRecadrage = false;
     this.highlight = false;
     this.includerpres6 = '1';

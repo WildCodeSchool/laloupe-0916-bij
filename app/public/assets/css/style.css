@@ -252,6 +252,10 @@ nav img {
   margin-top: 2%;
   padding: 2% !important;
 }
+.main_container_video_canal, .main_container_video_popcorn {
+  margin-top: -2%;
+  padding: 2% !important;
+}
 .container_img_putaclic, .container_img_putaclic img {
   height: 100%;
 }
@@ -310,6 +314,11 @@ text-align: left;
   margin-top: 15px;
   margin-bottom: 15px;
   font-size: 2rem;
+}
+.sub_p_causalite {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 1.7rem;
 }
 .response-logo {
   position: absolute;

@@ -1,8 +1,8 @@
 <!-- question -->
-<div ng-hide="show" class="main_row valign-wrapper row col s12">
+<div ng-hide="show" class="main_row valign-wrapper row">
     <div class="main_container_grey valign container col s8">
         <div class="container_img_grey col s7">
-            <img class="img_grey" src="views/pres2/assets/img/large/Vancouver_Photo_Plan_Large1.jpg">
+            <img class="img_grey" src="./assets/img/large/vancouver_Photo_Plan_Large1.jpg" alt="photo pendant les émeutes de Vancouver">
         </div>
         <div class="container_grey col s5">
             <h2 class="main_title">22h46</h2>
@@ -12,12 +12,7 @@
                 </b>- Scène de romantisme au milieu des forces de l’ordre canadiennes pendant les émeutes qui ont suivi la défaite des Canucks de Vancouver face aux Bruins de Boston en finale de la Stanley Cup de hockey sur glace.</p>
         </div>
     </div>
-    <div class="main_sub_container col s4">
-        <!-- <div class="sub_container row col s12">
-            <p class="sub_p">Essayez d’en savoir un peu plus sur cette photo avec la recherche par images.<br/>La légende est un élément de compréhension d’une photo. Elle permet de saisir le contexte de la prise de vue. Mais que se passe-il quand la légende est détournée ?</p>
-            <p class="sub_p">Quelle utilité ici de détourner la légende la photo ? A qui profite le crime ?</p>
-        </div> -->
-    </div>
+    <div class="main_sub_container col s4"></div>
 </div>
 <ul ng-hide="show" class="response-logo valign-wrapper col s4">
     <li class="col s6 valign">
@@ -31,21 +26,23 @@
     <i class="material-icons">fast_forward</i>
 </a>
 <!-- answer -->
-<div ng-show="show" class="main_row_answer row col s12">
-    <div class="main_container_answer container col s12" ng-controller="presOneController as vm">
-        <p class="main_p_center col s12">Tout est parfois une question de point de vue et de timing.</p>
-        <div class="marking position_top_flipflop" ng-show="true">
+<div ng-show="show" class="main_row_answer row">
+    <div class="main_container_answer container col s12">
+        <div class="marking position_top_flipflop" ng-show="vm.marking == true">
             <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
         </div>
+        <p class="main_p_center col s12">
+            <b>Tout est parfois une question de point de vue et de timing.</b>
+        </p>
         <div class="container_img_flip photo" id="photo" ng-click="vm.flip()">
             <div class="front face" id="front">
-                <img src="views/pres1/assets/img/large/Vancouver_Photo_Plan_Large1.jpg">
+                <img src="./assets/img/large/vancouver_Photo_Plan_Large1.jpg" alt="photo pendant les émeutes de Vancouver">
             </div>
             <div class="inner-left face" id="inner-left">
-                <img src="views/pres1/assets/img/large/Vancouver_Photo_Plan_Large1.jpg">
+                <img src="./assets/img/large/vancouver_Photo_Plan_Large1.jpg" alt="photo pendant les émeutes de Vancouver">
             </div>
             <div class="face" id='inner-right'>
-                <img src="views/pres1/assets/img/large/Vancouver_Photo_Plan_Large2.jpg">
+                <img src="./assets/img/large/vancouver_Photo_Plan_Large2.jpg" alt="photo pendant les émeutes de Vancouver">
             </div>
         </div>
     </div>

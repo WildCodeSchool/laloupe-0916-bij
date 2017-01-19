@@ -1,20 +1,17 @@
 <!-- question -->
-<div ng-hide="show" class="main_row valign-wrapper row col s12">
-    <div class="main_container_grey_high valign container col s9">
-        <div class="container_img_grey col s10">
-            <img class="img_grey" src="views/pres1/assets/img/large/minions.png">
+<<<<<<< HEAD
+<div ng-hide="show" class="main_row row col s12">
+    <div class="main_container container col s7">
+        <div class="container_img_vertical">
+            <img class="responsive-img slideExpandUp" src="./assets/img/large/minions1.jpg" alt="article mettant en relation les minions et les nazi">
         </div>
-        <div class="bulle col s4">
-          <img class="responsive-img left" src="views/pres1/assets/img/large/minionsBulle.png">
-        </div>
+    </div>
         <div class="container_grey col s2 m3">
             <h2 class="main_title"></h2>
             <p class="main_p col s12"></p>
         </div>
-    </div>
-    <div class="main_sub_container col s5">
-    </div>
-</div>
+      </div>
+    <div class="main_sub_container col s5"></div>
 <ul ng-hide="show" class="response-logo valign-wrapper col s4">
     <li class="col s6 valign">
         <img class="choice" id="true_answer0" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(0)">
@@ -28,25 +25,25 @@
 </a>
 
 <!-- answer -->
-<div ng-show="show" class="main_row_answer row col s12">
-    <div class="main_container_answer container col s12" ng-controller="presOneController as vm">
-        <div class="marking position_top_flipflop" ng-show="true">
+<div ng-show="show" class="main_row_answer row">
+    <div class="main_container_answer container col s12">
+        <div class="marking position_top_flipflop_minion" ng-show="vm.marking == true">
           <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
         </div>
         <div class="container_img_flip photo" id="photo" ng-click="vm.flip()">
             <div class="front face" id="front">
-                <img src="views/pres1/assets/img/large/minions.png">
+                <img src="./assets/img/large/minions.png" alt="anciens scaphandriers">
             </div>
             <div class="inner-left face" id="inner-left">
-                <img src="views/pres1/assets/img/large/minionsHighlight.png">
+                <img src="./assets/img/large/minionsHighlight.png" alt="article mettant en relation les minions et les nazi">
             </div>
             <div class="face" id='inner-right'>
-                <img src="views/pres1/assets/img/large/articleMinionsHighlight.png">
+                <img src="./assets/img/large/articleMinionsHighlight.png" alt="article surligné mettant en relation les minions et les nazi">
             </div>
         </div>
-            <img ng-show="vm.minion == true" class="responsive-img" id="logo_minion" src="views/pres1/assets/img/large/les-minions.png">
+        <img ng-show="vm.minion == true" class="responsive-img" id="logo_minion" src="./assets/img/large/les-minions.png" alt="minions">
     </div>
 </div>
-<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(10)">
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(11)">
     <i class="material-icons">fast_forward</i>
 </a>

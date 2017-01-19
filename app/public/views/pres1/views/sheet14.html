@@ -1,61 +1,72 @@
 <!-- question -->
 <div ng-hide="show" class="main_row col s12">
-    <div class="main_container_grey_high container col s8">
-      <img class="responsive-img teuteur" src="views/pres1/assets/img/large/twitter.jpg">
-            <p class="sub_p col s12">Difficile de savoir si ces informations sont vraies ou fausses à la simple lecture. Sans vérification on se positionnera en fonction qu’on pense l’information probable/possible ou non.
-Comment vérifier l’information ? </p>
-<ul ng-hide="show" class="sub_main container col s12 vrai_faux0">
-  <li class="col s5">
-    <img class="choice" id="true_answer0" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(0)">
-  </li>
-  <li class="col s2"></li>
-  <li class="col s5">
-    <img class="choice" id="false_answer0" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(0)">
-  </li>
-</ul>
+    <div class="container col s9">
+        <img class="responsive-img teuteur" src="./assets/img/large/twitter.jpg" alt="différents tweets">
+        <p class="sub_p col s12">Difficile de savoir si ces informations sont vraies ou fausses à la simple lecture.<br>
+            Sans vérification on se positionnera en fonction qu’on pense l’information probable/possible ou non.<br>
+            Comment vérifier l’information ?
+        </p>
+        <ul ng-hide="show" class="sub_main container col s12 vrai_faux0">
+            <li class="col s2"></li>
+            <li class="col s3">
+                <img class="choice_twitter" id="true_answer0" src="./assets/icon/like_blue.png" alt="vrai" ng-click="vm.biggerTrueAnswer(0)">
+            </li>
+            <li class="col s2"></li>
+            <li class="col s3">
+                <img class="choice_twitter" id="false_answer0" src="./assets/icon/angry_red.png" alt="faux" ng-click="vm.biggerFalseAnswer(0)">
+            </li>
+            <li class="col s2"></li>
+        </ul>
 
-<ul ng-hide="show" class="sub_main container col s12 vrai_faux1">
-  <li class="col s5">
-    <img class="choice" id="true_answer1" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(1)">
-  </li>
-  <li class="col s2"></li>
-  <li class="col s5">
-    <img class="choice" id="false_answer1" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(1)">
-  </li>
-</ul>
+        <ul ng-hide="show" class="sub_main container col s12 vrai_faux1">
+            <li class="col s2"></li>
+            <li class="col s3">
+                <img class="choice_twitter" id="true_answer1" src="./assets/icon/like_blue.png" alt="vrai" ng-click="vm.biggerTrueAnswer(1)">
+            </li>
+            <li class="col s2"></li>
+            <li class="col s3">
+                <img class="choice_twitter" id="false_answer1" src="./assets/icon/angry_red.png" alt="faux" ng-click="vm.biggerFalseAnswer(1)">
+            </li>
+            <li class="col s2"></li>
+        </ul>
 
-<ul ng-hide="show" class="sub_main container col s12 vrai_faux2">
-  <li class="col s5">
-    <img class="choice" id="true_answer2" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(2)">
-  </li>
-  <li class="col s2"></li>
-  <li class="col s5">
-    <img class="choice" id="false_answer2" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(2)">
-  </li>
-</ul>
+        <ul ng-hide="show" class="sub_main container col s12 vrai_faux2">
+            <li class="col s2"></li>
+            <li class="col s3">
+                <img class="choice_twitter" id="true_answer2" src="./assets/icon/like_blue.png" alt="vrai" ng-click="vm.biggerTrueAnswer(2)">
+            </li>
+            <li class="col s2"></li>
+            <li class="col s3">
+                <img class="choice_twitter" id="false_answer2" src="./assets/icon/angry_red.png" alt="faux" ng-click="vm.biggerFalseAnswer(2)">
+            </li>
+            <li class="col s2"></li>
+        </ul>
 
-<ul ng-hide="show"  class="sub_main container col s12 vrai_faux3">
-  <li class="col s5">
-    <img class="choice" id="true_answer3" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(3)">
-  </li>
-  <li class="col s2"></li>
-  <li class="col s5">
-    <img class="choice" id="false_answer3" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(3)">
-  </li>
-</ul>
+        <ul ng-hide="show" class="sub_main container col s12 vrai_faux3">
+            <li class="col s2"></li>
+            <li class="col s3">
+                <img class="choice_twitter" id="true_answer3" src="./assets/icon/like_blue.png" alt="vrai" ng-click="vm.biggerTrueAnswer(3)">
+            </li>
+            <li class="col s2"></li>
+            <li class="col s3">
+                <img class="choice_twitter" id="false_answer3" src="./assets/icon/angry_red.png" alt="faux" ng-click="vm.biggerFalseAnswer(3)">
+            </li>
+            <li class="col s2"></li>
+        </ul>
 
-<ul ng-hide="show" class="sub_main container col s12 vrai_faux4">
-  <li class="col s5">
-    <img class="choice" id="true_answer4" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(4)">
-  </li>
-  <li class="col s2"></li>
-  <li class="col s5">
-    <img class="choice" id="false_answer4" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(4)">
-  </li>
-</ul>
+        <ul ng-hide="show" class="sub_main container col s12 vrai_faux4">
+            <li class="col s2"></li>
+            <li class="col s3">
+                <img class="choice_twitter" id="true_answer4" src="./assets/icon/like_blue.png" alt="vrai" ng-click="vm.biggerTrueAnswer(4)">
+            </li>
+            <li class="col s2"></li>
+            <li class="col s3">
+                <img class="choice_twitter" id="false_answer4" src="./assets/icon/angry_red.png" alt="faux" ng-click="vm.biggerFalseAnswer(4)">
+            </li>
+            <li class="col s2"></li>
+        </ul>
     </div>
 </div>
-
 
 <a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
     <i class="material-icons">fast_forward</i>
@@ -64,26 +75,35 @@ Comment vérifier l’information ? </p>
 
 <div ng-show="show" class="row">
     <div class="col s12">
-        <h1 class="title_Twitter">Certification Twitter <img class="zoomTwitter" src="views/pres1/assets/img/large/certification.png">
-</h1>
+        <h1 class="title_Twitter">Certification Twitter
+            <img class="zoomTwitter" src="./assets/img/large/certification.png" alt="logo certification Twitter">
+        </h1>
         <div class="col s4"></div>
-        <div ng-show="vm.showMe == 'LeParisien'" class="col s4"><h4>Certifié</h4></div>
-        <div ng-show="vm.showMe == '20mn'" class="col s4"><h4>Vrai compte</h4></div>
-        <div ng-show="vm.showMe == 'LeParisien'"class="col s4"><h4>Non Certifié</h4></div>
-        <div ng-show="vm.showMe == '20mn'"class="col s4"><h4>Faux Compte</h4></div>
+        <div ng-show="vm.showMe == 'LeParisien'" class="col s4">
+            <h4>Certifié</h4>
+        </div>
+        <div ng-show="vm.showMe == '20mn'" class="col s4">
+            <h4>Vrai compte</h4>
+        </div>
+        <div ng-show="vm.showMe == 'LeParisien'" class="col s4">
+            <h4>Non Certifié</h4>
+        </div>
+        <div ng-show="vm.showMe == '20mn'" class="col s4">
+            <h4>Faux Compte</h4>
+        </div>
     </div>
     <div class="col s4 twitter">
-        <img class="size_middle_answer_block" src="views/pres1/assets/img/large/twitter0.jpg">
-        <img class="size_middle_answer_block" src="views/pres1/assets/img/large/twitter1.jpg"><img class="answer_smiley1" src="./assets/icon/like_blue.png" ng-show="true"/>
-        <img class="size_middle_answer_block zoomTwitter pointer" src="views/pres1/assets/img/large/twitter2.jpg" ng-click="vm.twitterParisiens()"><img class="answer_smiley2" src="./assets/icon/angry_red.png" ng-show="true" />
-        <img class="size_middle_answer_block" src="views/pres1/assets/img/large/twitter3.jpg"><img class="answer_smiley3" src="./assets/icon/like_blue.png" ng-show="true"/>
-        <img class="size_middle_answer_block" src="views/pres1/assets/img/large/twitter4.jpg"><img class="answer_smiley4" src="./assets/icon/like_blue.png" ng-show="true"/>
-        <img class="size_middle_answer_block zoomTwitter pointer" src="views/pres1/assets/img/large/twitter5.jpg" ng-click="vm.twitter20minutes()"><img class="answer_smiley5" src="./assets/icon/angry_red.png" ng-show="true"/>
+        <img class="size_middle_answer_block" src="./assets/img/large/twitter0.jpg" alt="tweet extrait de Twitter">
+        <img class="size_middle_answer_block" src="./assets/img/large/twitter1.jpg" alt="tweet extrait de Twitter"><img class="answer_smiley1" src="./assets/icon/like_blue.png" ng-show="true"/>
+        <img class="size_middle_answer_block zoomTwitter pointer" src="./assets/img/large/twitter2.jpg" alt="tweet extrait de Twitter" ng-click="vm.twitterParisiens()"><img class="answer_smiley2" src="./assets/icon/angry_red.png" ng-show="true"/>
+        <img class="size_middle_answer_block" src="./assets/img/large/twitter3.jpg" alt="tweet extrait de Twitter"><img class="answer_smiley3" src="./assets/icon/like_blue.png" ng-show="true"/>
+        <img class="size_middle_answer_block" src="./assets/img/large/twitter4.jpg" alt="tweet extrait de Twitter"><img class="answer_smiley4" src="./assets/icon/like_blue.png" ng-show="true"/>
+        <img class="size_middle_answer_block zoomTwitter pointer" src="./assets/img/large/twitter5.jpg" alt="tweet extrait de Twitter" ng-click="vm.twitter20minutes()"><img class="answer_smiley5" src="./assets/icon/angry_red.png" ng-show="true"/>
     </div>
-    <div ng-show="vm.showMe == 'LeParisien'" class="col s4"><img class="size_middle_answer_twitter_example expandDown" src="views/pres1/assets/img/large/twitter_vrai_LeParisien.jpg"></div>
-    <div ng-show="vm.showMe == 'LeParisien'" class="col s4"><img class="size_middle_answer_twitter_example expandDown" src="views/pres1/assets/img/large/twitter_faux_LeParisien.jpg"></div>
-    <div ng-show="vm.showMe == '20mn'" class="col s4"><img class="size_middle_answer_twitter_example expandDown" src="views/pres1/assets/img/large/twitter_vrai_20minutes.jpg"></div>
-    <div ng-show="vm.showMe == '20mn'" class="col s4"><img class="size_middle_answer_twitter_example expandDown" src="views/pres1/assets/img/large/twitter_faux_20minutes.jpg"></div>
+    <div ng-show="vm.showMe == 'LeParisien'" class="col s4"><img class="size_middle_answer_twitter_example expandDown" src="./assets/img/large/twitter_vrai_LeParisien.jpg" alt="exemple d'un compte certifié"></div>
+    <div ng-show="vm.showMe == 'LeParisien'" class="col s4"><img class="size_middle_answer_twitter_example expandDown" src="./assets/img/large/twitter_faux_LeParisien.jpg" alt="exemple d'un compte non certifié"></div>
+    <div ng-show="vm.showMe == '20mn'" class="col s4"><img class="size_middle_answer_twitter_example expandDown" src="./assets/img/large/twitter_vrai_20minutes.jpg" alt="exemple d'un vrai compte"></div>
+    <div ng-show="vm.showMe == '20mn'" class="col s4"><img class="size_middle_answer_twitter_example expandDown" src="./assets/img/large/twitter_faux_20minutes.jpg" alt="exemple d'un faux compte"></div>
 </div>
 
 <a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(14)">

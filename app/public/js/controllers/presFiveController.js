@@ -14,6 +14,56 @@ function presFiveController() {
     this.minion = false;
     // datas for navigation slide
     this.slides = [{
+        image: 'vraidufaux_small',
+        title: 'L\'ours',
+        icon: './assets/icon/news_blue.png',
+        color: 'bleu'
+    }, {
+        image: 'debat_foot_small',
+        title: 'Débat',
+        icon: './assets/icon/news_blue.png',
+        color: 'bleu'
+    }, {
+        image: 'press_small',
+        title: 'Presse',
+        icon: './assets/icon/news_blue.png',
+        color: 'bleu'
+    }, {
+        image: 'carte_small',
+        title: 'France',
+        icon: './assets/icon/conv_orange.png',
+        color: 'orang'
+    }, {
+        image: 'e_penser',
+        title: 'Vidéo',
+        icon: './assets/icon/globe_turquoise.png',
+        color: 'turquoise'
+    }, {
+        image: 'graph_small',
+        title: 'International',
+        icon: './assets/icon/globe_blue.png',
+        color: 'bleu',
+    }, {
+        image: 'enquete_opignion',
+        title: 'Exercice: La fabrique à chiffres',
+        icon: './assets/icon/globe_blue.png',
+        color: 'bleu'
+    }, {
+        image: 'tinder_small',
+        title: 'Technologie',
+        icon: './assets/icon/conv_orange.png',
+        color: 'orang'
+    }, {
+        image: 'minions_small',
+        title: 'Culture',
+        icon: './assets/icon/new_green.png',
+        color: 'vert'
+    }, {
+        image: 'zlatan_small',
+        title: 'Vidéo',
+        icon: './assets/icon/video_turquoise.png',
+        color: 'turquoise'
+    }, {
         image: 'chien_small',
         title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
@@ -24,13 +74,13 @@ function presFiveController() {
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: 'carroussel_small',
-        title: '24h en images',
+        image: 'djibouti_small',
+        title: 'Exercice: Légendage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: 'djibouti_small',
-        title: 'Exercices: Légendage',
+        image: 'carroussel_small',
+        title: '24h en images',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
@@ -44,50 +94,11 @@ function presFiveController() {
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: 'recadrage_small',
-        title: 'Exercices: Recadrage',
+        image: 'radeau_meduse_small',
+        title: 'Exercice: Recadrage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
-    }, {
-        image: 'chute-libre-image_small',
-        title: 'International',
-        icon: './assets/icon/globe_blue.png',
-        color: 'bleu'
-    }, {
-        image: 'maitre_gims_small',
-        title: 'Exercices: Putaclic',
-        icon: './assets/icon/globe_turquoise.png',
-        color: 'turquoise'
-    }, {
-        image: 'messi_small',
-        title: 'Exercices: Putaclic',
-        icon: './assets/icon/globe_turquoise.png',
-        color: 'turquoise'
-    }, {
-        image: 'minions_small',
-        title: 'Culture',
-        icon: './assets/icon/new_green.png',
-        color: 'vert'
-    }, {
-        image: 'zlatan_small',
-        title: 'Vidéo',
-        icon: './assets/icon/video_turquoise.png',
-        color: 'turquoise'
-    }, {
-        image: 'tinder_small',
-        title: 'Technologie',
-        icon: './assets/icon/conv_orange.png',
-        color: 'orang'
-    }, {
-        image: 'twitter_small',
-        title: 'France',
-        icon: './assets/icon/conv_violet.png',
-        color: 'violet'
-    }, {
-        image: 'graph_small',
-        title: 'International',
-        icon: './assets/icon/globe_blue.png',
-        color: 'bleu',
+
     }, {
         image: 'conclusion_small',
         title: 'Conclusion',
@@ -97,7 +108,7 @@ function presFiveController() {
 
     // Start of function for animation true or false
     const getElement = (id) => {
-      return angular.element(document.querySelector(id));
+        return angular.element(document.querySelector(id));
     };
     this.biggerTrueAnswer = (n) => {
         if (getElement('#true_answer' + n)[0].className == 'choice') {
@@ -161,32 +172,31 @@ function presFiveController() {
         this.next();
     };
 
-//flip-flop controller
+    //flip-flop controller
     this.flip = () => {
-      if(!getElement('#front').hasClass('on-left')) {
-        getElement('#front').addClass('on-left');
-        getElement('#inner-left').addClass('on-left');
-        getElement('#inner-right').addClass('on-right');
-        getElement('#logo_minion').removeClass('contractedUp');
-        getElement('#logo_minion').addClass('expandDown');
-        this.minion = true;
-      }
-      else {
-        getElement('#logo_minion').removeClass('expandDown');
-        getElement('#logo_minion').addClass('contractedUp');
-        getElement('#front').removeClass('on-left');
-        getElement('#inner-left').removeClass('on-left');
-        getElement('#inner-right').removeClass('on-right');
-        this.minion = false;
-      }
+        if (!getElement('#front').hasClass('on-left')) {
+            getElement('#front').addClass('on-left');
+            getElement('#inner-left').addClass('on-left');
+            getElement('#inner-right').addClass('on-right');
+            getElement('#logo_minion').removeClass('contractedUp');
+            getElement('#logo_minion').addClass('expandDown');
+            this.minion = true;
+        } else {
+            getElement('#logo_minion').removeClass('expandDown');
+            getElement('#logo_minion').addClass('contractedUp');
+            getElement('#front').removeClass('on-left');
+            getElement('#inner-left').removeClass('on-left');
+            getElement('#inner-right').removeClass('on-right');
+            this.minion = false;
+        }
     };
 
     //Twitter controller
     this.showMe = '';
-    this.twitterParisiens = () =>{
-      this.showMe = 'LeParisien';
+    this.twitterParisiens = () => {
+        this.showMe = 'LeParisien';
     };
-    this.twitter20minutes = () =>{
-      this.showMe = '20mn';
+    this.twitter20minutes = () => {
+        this.showMe = '20mn';
     };
 }

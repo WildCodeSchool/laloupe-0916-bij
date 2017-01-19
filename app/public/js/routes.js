@@ -7,14 +7,10 @@ const routes = ($routeProvider, $httpProvider) => {
             controllerAs: 'vm',
         })
         .when('/mention', {
-          templateUrl: 'views/mention.html',
-          controller: 'mainController',
-          controllerAs: 'vm',
+          templateUrl: 'views/mention.html'
         })
         .when('/credit', {
-          templateUrl: 'views/credit.html',
-          controller: 'mainController',
-          controllerAs: 'vm',
+          templateUrl: 'views/credit.html'
         })
         .when('/parcours', {
             templateUrl: 'views/parcours.html',

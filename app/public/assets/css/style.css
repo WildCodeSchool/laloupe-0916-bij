@@ -460,3 +460,8 @@ right: 26%;
 .main_title_blue {
   color: #2a477c;
 }
+
+/*texte + petit sur gun's death*/
+.smaller_text {
+  font-size: 1.6rem;
+}

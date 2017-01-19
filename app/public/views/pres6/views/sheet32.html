@@ -1,5 +1,5 @@
 <!-- question -->
-<div ng-hide="show" class="main_row row col s12">
+<div ng-hide="show" class="main_row row">
     <div class="main_container_video container col s6">
         <video class="responsive-video video_hippo" controls>
             <source src="./assets/img/large/hippopotame.mp4" type="video/mp4">
@@ -7,12 +7,15 @@
     </div>
     <div class="main_sub_container valign-wrapper container col s6">
         <div class="subContainer container col s12 valign">
-          <h1 class="sub_title">Il en faut peu pour être un héros...</h1>
-          <p class="sub_p col s12">Afrique du Sud - Les lois de la nature sont parfois surprenantes.
-            Un vidéaste est le témoin d’une incroyable scène digne du Livre de la Jungle.
-            Elle remet en cause beaucoup de nos croyances sur le monde animal.
-            Sous ses yeux ébahis, un hippopotame chevaleresque vole au secours d’une jeune impala à l’agonie. Absolument bluffant !</p>
+            <h1 class="sub_title">Il en faut peu pour être un héros...</h1>
+            <p class="sub_p col s12">Afrique du Sud - Les lois de la nature sont parfois surprenantes.<br>
+                Un vidéaste est le témoin d’une incroyable scène digne du Livre de la Jungle.<br>
+                Elle remet en cause beaucoup de nos croyances sur le monde animal.<br>
+                Sous ses yeux ébahis, un hippopotame chevaleresque vole au secours d’une jeune impala à l’agonie.<br>
+                Absolument bluffant !</p>
         </div>
     </div>
 </div>
-<a ng-hide="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(32)"><i class="material-icons">fast_forward</i></a>
+<a ng-hide="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(32)">
+    <i class="material-icons">fast_forward</i>
+</a>

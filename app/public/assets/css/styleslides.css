@@ -1,0 +1,476 @@
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start specific animation by slide @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+/* dog */
+
+.img-loupe {
+    position: absolute;
+    z-index: 10;
+    bottom: 2%;
+    left: 2%;
+    width: 25%;
+}
+
+.img-loupe img {
+    width: 100%;
+}
+
+
+/* shyster */
+
+
+/* paris*/
+
+.img_position {
+    margin-top: 5%;
+}
+
+.main_title_blue {
+    color: #2a477c;
+}
+
+
+/* djibouti */
+
+.img_grey_djibouti {
+    position: relative;
+    width: 90%;
+    margin-top: 2%;
+    margin-left: 20%;
+}
+
+
+/* vancouver */
+
+.container_img_flip {
+    position: relative;
+    margin-left: 10px;
+}
+
+.container_img_flip img {
+    width: 100%;
+}
+
+
+/* tefal */
+
+.tefal {
+    margin-top: 2%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 100%;
+}
+
+.container_img_grey_tefal_answer {
+    height: 90%;
+}
+
+.img_grey_tefal {
+    position: relative;
+    width: 85%;
+}
+
+.container_img_grey_tefal_answer {
+    background-color: #dddddd;
+    height: 65%;
+}
+
+#slide_six_position {
+    margin-left: 1%;
+}
+
+
+/* soldiers */
+
+
+/* skydiver */
+
+
+/* Master gims and Messi */
+
+.main_container_putaclic {
+    margin-top: 2%;
+    height: 60vh;
+}
+
+.container_img_putaclic, .container_img_putaclic img {
+    height: 100%;
+}
+
+
+/* minions */
+
+.bulle {
+    bottom: 5%;
+    position: absolute;
+}
+
+#logo_minion {
+    position: absolute;
+    left: 38%;
+    top: 0;
+    width: 15%;
+}
+
+
+/* Zlatan */
+
+
+/* tinder */
+
+.title_Twitter {
+    margin-left: 30%
+}
+
+.twitter {
+    margin-top: -4%
+}
+
+.teuteur {
+    width: 31%;
+}
+
+.size_middle_answer_block {
+    width: 70%;
+    margin-top: -1%
+}
+
+.zoomTwitter {
+    cursor: pointer;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.zoomTwitter:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.answer_smiley1 {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: -27%;
+    width: 4%;
+}
+
+.answer_smiley2 {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 0.5%;
+    width: 4%;
+}
+
+.answer_smiley3 {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: -27%;
+    width: 4%;
+}
+
+.answer_smiley4 {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: -27%;
+    width: 4%;
+}
+
+.answer_smiley5 {
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 0.5%;
+    width: 4%;
+}
+
+.size_middle_answer_twitter_example {
+    width: 100%;
+}
+
+.sub_main.container.col.s12.vrai_faux0 {
+    margin-top: -53%;
+    margin-left: 0;
+}
+
+.sub_main.container.col.s12.vrai_faux1 {
+    margin-top: -45%;
+    margin-left: 0;
+}
+
+.sub_main.container.col.s12.vrai_faux2 {
+    margin-top: -36%;
+    margin-left: 0;
+}
+
+.sub_main.container.col.s12.vrai_faux3 {
+    margin-top: -27%;
+    margin-left: 0;
+}
+
+.sub_main.container.col.s12.vrai_faux4 {
+    margin-top: -18%;
+    margin-left: 0;
+}
+
+.responsive-img.twitter2 {
+    width: 100%;
+}
+
+
+/* twitter */
+
+
+/* gun deaths */
+
+.smaller_text {
+    font-size: 1.6rem;
+}
+
+
+/* Raft of the jellyfish */
+
+
+/* map */
+
+.sub_p_causalite {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.7rem;
+}
+
+.img_causalite_small {
+    margin-top: -7%;
+    margin-left: 7%;
+}
+
+
+/* E-think */
+
+
+/* fashion models */
+
+
+/* picmonkey */
+
+
+/* opinion survey */
+
+.fab_chiffre {
+    width: 90%;
+}
+
+
+/* the bear */
+
+
+/* foot */
+
+.size_foot {
+    width: 75%;
+}
+
+
+/* press */
+
+
+/* Work of art */
+
+
+/* bad waves */
+
+.main_container_video_popcorn {
+    margin-top: -2%;
+    padding: 2% !important;
+}
+
+.video_popcorn {
+    height: 90% !important;
+}
+
+
+/* accident bus */
+
+.main_container_video_canal {
+    margin-top: -2%;
+    padding: 2% !important;
+}
+
+.video_canal {
+    height: 90% !important;
+}
+
+
+/* Kim Jong-Un */
+
+
+/* clone zone */
+
+
+/* turkeys */
+
+
+/* Marc L */
+
+
+/* hippopotamus */
+
+.video_hippo {
+    height: 90% !important;
+}
+
+
+/* expert and the end */
+
+.main_typewriter {
+    margin-top: 100px;
+}
+
+.line {
+    font-size: 5rem;
+    width: 22em;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start specific animation by slide @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start General style @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.video {
+    width: 100%;
+}
+
+.main_container_video {
+    margin-top: 2%;
+    padding: 2% !important;
+}
+
+.main_container_grey_video, .main_container_grey_video_answer {
+    background-color: #dddddd;
+    height: 75%;
+}
+
+.main_container_grey, .main_container_grey_answer {
+    background-color: #dddddd;
+    height: 65%;
+}
+
+.main_container_grey_high, .main_container_grey_high_answer {
+    background-color: #dddddd;
+    height: 90%;
+}
+
+.img_grey {
+    position: relative;
+    width: 90%;
+}
+
+.container_img_grey {
+    width: 100%;
+}
+
+.container_img_grey, .container_img_grey_answer, .container_grey, .container_video_grey {
+    margin-top: 2%;
+    position: relative;
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End General style @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start Picto position @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+.position_right_imgvertic_tinder {
+    right: 46%;
+    top: 0;
+}
+
+.position_right_imgvertic_death {
+    right: 30%;
+    top: 0;
+}
+
+.position_right_imgvertic_art {
+    right: 60%;
+    top: 1%;
+}
+
+.position_right_imgvertic_vote {
+    right: 45%;
+    top: 1%;
+}
+
+.position_right_imgvertic {
+    right: 33%;
+    top: 1%;
+}
+
+.position_right_imghoriz {
+    top: 13%;
+    right: 31%;
+}
+
+.position_right_imghoriz_popcorn {
+    top: 8%;
+    right: 38%;
+}
+
+.position_Right_imgvertic_marc {
+    top: 2%;
+    right: 34%;
+}
+
+.position_right_large {
+    top: 2%;
+    right: 40%;
+}
+
+.position_right_large_djibouti {
+    top: 3%;
+    right: 42%;
+}
+
+.position_right_large_tefal {
+    top: 2%;
+    right: 27%;
+}
+
+.position_top_flipflop {
+    position: absolute;
+    top: 10%;
+    right: 25%;
+}
+
+.position_top_flipflop_minion {
+    position: absolute;
+    top: 5%;
+    right: 25%;
+}
+
+.marking img {
+    width: 80%;
+}
+
+.choice, .choice_twitter {
+    background-color: transparent;
+    color: white;
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+}
+
+.choice {
+    height: 40px;
+}
+
+.choice_twitter {
+    height: 70px;
+}
+
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End Picto position @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/

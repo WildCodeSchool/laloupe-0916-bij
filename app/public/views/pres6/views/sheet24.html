@@ -1,15 +1,20 @@
 <!-- question -->
 <div ng-hide="show" class="main_row row">
     <div class="container col s10">
-      <p class="sub_p col s12">Schéma du positionnement et des sensibilités des principaux quotidiens et hebdomadaires français <br>Source : Science Po</p>
-            <img ng-click="show = true" class="size_middle_answer pointer" src="./assets/img/large/orientation_presse1.jpg">
+        <p class="sub_p col s12">Schéma du positionnement et des sensibilités des principaux quotidiens et hebdomadaires français<br>
+          Source : Science Po</p>
+        <img ng-click="show = true" class="size_middle_answer pointer" src="./assets/img/large/orientation_presse1.jpg" alt="camembert de l'orientation de la presse">
     </div>
 </div>
-<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true"><i class="material-icons">fast_forward</i></a>
+<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
+    <i class="material-icons">fast_forward</i>
+</a>
 <!-- answer -->
 <div ng-show="show" class="main_row row">
     <div class=" container col s12">
-            <img class="size_middle_answer valign slideExpandUp" src="./assets/img/large/orientation_presse2.jpg">
+        <img class="size_middle_answer valign slideExpandUp" src="./assets/img/large/orientation_presse2.jpg" alt="camembert de l'orientation de la presse">
     </div>
 </div>
-<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(24)"><i class="material-icons">fast_forward</i></a>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(24)">
+    <i class="material-icons">fast_forward</i>
+</a>

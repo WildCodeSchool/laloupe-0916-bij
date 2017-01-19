@@ -1,17 +1,15 @@
 <!-- question -->
-<div ng-hide="show" class="main_row row col s12">
-    <div class="main_container container col s7">
-        <video class="responsive-video" controls>
-            <source src="views/pres4/assets/img/large/zlatan.mp4" type="video/mp4">
+<div ng-hide="show" class="main_row row">
+    <div class="main_container_video container col s7">
+        <video class="responsive-video video" controls>
+            <source src="./assets/img/large/zlatan.mp4" type="video/mp4">
         </video>
-
     </div>
-    <div class="main_sub_container container col s5">
-        <div class="subContainer row col s12">
-            <h1 class="sub_title">Zlatan Ibrahimović - Le Complot</h1>
+    <div class="main_sub_container valign-wrapper container col s5">
+        <div class="subContainer container col s12 valign">
+            <h1 class="sub_title">Zlatan Ibrahimović -<br>Le Complot</h1>
             <p class="sub_p col s12">Et si Zlatan Ibrahimović n'était qu'un complot de l'Eglise catholique ?</p>
         </div>
-        <div class="sub_container row col s12"></div>
     </div>
 </div>
 <a ng-hide="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(15)">

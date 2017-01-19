@@ -55,7 +55,13 @@
     height: 55%;
   }
   .choice_twitter {
-      height: 50px;
+      height: 40px;
+  }
+  .choice {
+      height: 40px;
+  }
+  .bigger {
+      height: 50px !important;
   }
   .position_right_imgvertic_tinder {
       right: 42%;

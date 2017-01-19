@@ -193,15 +193,15 @@ function presSixController() {
         return angular.element(document.querySelector(id));
     };
     this.biggerTrueAnswer = (n) => {
-        if (getElement('#true_answer' + n)[0].className == 'choice') {
+        if (getElement('#true_answer' + n)[0].className == 'choice' || getElement('#true_answer' + n)[0].className == 'choice_twitter') {
             getElement('#true_answer' + n).addClass('bigger');
             getElement('#false_answer' + n).removeClass('bigger');
         } else {
-            getElement('#true_answer').removeClass('bigger');
+            getElement('#true_answer' + n).removeClass('bigger');
         }
     };
     this.biggerFalseAnswer = (n) => {
-        if (getElement('#false_answer' + n)[0].className == 'choice') {
+        if (getElement('#false_answer' + n)[0].className == 'choice' || getElement('#false_answer' + n)[0].className == 'choice_twitter') {
             getElement('#false_answer' + n).addClass('bigger');
             getElement('#true_answer' + n).removeClass('bigger');
         } else {

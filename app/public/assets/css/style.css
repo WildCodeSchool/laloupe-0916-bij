@@ -410,6 +410,10 @@ nav img {
     top: 0;
 }
 
+.position_right_imgvertic_art {
+  right: 60%;
+  top: 1%;
+}
 .position_right_imgvertic_vote {
     right: 45%;
     top: 1%;

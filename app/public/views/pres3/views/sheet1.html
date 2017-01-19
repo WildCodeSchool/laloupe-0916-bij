@@ -1,15 +1,15 @@
-<h1 class="title">Mauvaises ondes ...</h1>
-<div ng-hide="show" class="main_row valign-wrapper row col s12">
+<h1 ng-hide="show" class="title">Mauvaises ondes ...</h1>
+<div ng-hide="show" class="main_row valign-wrapper row">
     <div class="main_container_grey_video valign container col s8">
-      <video class="container_video_grey col s7" controls>
-          <source class="video_grey" src="views/pres3/assets/img/large/mobile-pop-corn.mp4" type="video/mp4">
-      </video>
+        <video class="container_video_grey col s7" controls>
+            <source class="video_grey" src="./assets/img/large/mobile_popcorn.mp4" type="video/mp4">
+        </video>
         <div class="container_grey col s5">
-            <h4 class="main_title">Une contre-publicité qui passe mal pour les fabricants de mobile</h4>
-            <p class="main_p col s12">alors que le débat sur la dangerosité des ondes reste entier. Une vidéo virale circulant sur internet montre des téléphones recevant des appels simultanés et transformant des grains de maïs en pop- corn. Une prouesse que l’on savait jusqu’à
-            aujourd’hui réalisable par un four micro-onde. Et peu de gens sont prêts à glisser leur tête dans le four !</p>
+            <p class="main_p col s12">
+                Une contre-publicité qui passe mal pour les fabricants de mobile alors que le débat sur la dangerosité des ondes reste entier. Une vidéo virale circulant sur internet montre des téléphones recevant des appels simultanés et transformant des
+                grains de maïs en pop- corn. Une prouesse que l’on savait jusqu’à aujourd’hui réalisable par un four micro-onde. Et peu de gens sont prêts à glisser leur tête dans le four !</p>
         </div>
-        <p>Lien vers la vidéo : https://www.youtube.com/watch?v=munalYhAP4E</p>
+        <p>Lien vers la vidéo : <a href="https://www.youtube.com/watch?v=munalYhAP4E" target="_blank">https://www.youtube.com/watch?v=munalYhAP4E</a></p>
     </div>
     <div class="main_sub_container col s4">
         <!-- <div class="sub_container row col s12">
@@ -30,23 +30,20 @@
     <i class="material-icons">fast_forward</i>
 </a>
 <!-- answer -->
-<div ng-show="show" class="main_row valign-wrapper row col s12">
-    <div class="main_container_grey_video_answer valign container col s8">
-        <div class="marking position_right_imghoriz" ng-show="true">
-            <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
-        </div>
-        <video class="responsive-video container_video_grey" controls>
-            <source src="views/pres3/assets/img/large/Cuire-du-popcorn-au-telephone-portable.mp4" type="video/mp4">
+<h3 ng-show="show">Peut-on faire cuire du pop-corn avec des téléphones portables ? La réponse dans l’émission E=m6.</h3>
+<div ng-show="show" class="main_row row">
+    <div class="main_container_video_popcorn container col s7">
+        <video class="responsive-video video_popcorn" controls>
+            <source src="./assets/img/large/popcorn_portable.mp4" type="video/mp4">
         </video>
-        <div class="container_grey col s4">
-            <h2 class="main_title"></h2>
-            <p class="main_p col s12"><b></b></p>
-        </div>
     </div>
-    <div class="main_sub_container col s4">
-        <div class="sub_container row col s12">
-            <p class="sub_p">Peut-on faire cuire du pop-corn avec des téléphones portables ? La réponse dans l’émission E=m6</p>
-            <p class="sub_p"></p>
+    <div class="marking position_right_imghoriz_popcorn" ng-show="true">
+        <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
+    </div>
+    <div class="main_sub_container valign-wrapper container col s5">
+        <div class="subContainer container col s12 valign">
+            <p class="sub_p col s12">Il est intéressant de connaître l’origine de ces  vidéos virales autour du pop corn et des téléphones portables.</p>
+            <p class="sub_p col s12">Elles prennent pour origine un buzz orchestré par la société Cardo Systems en 2008 afin de promouvoir de nouveaux écouteurs !</p>
         </div>
     </div>
 </div>

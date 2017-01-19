@@ -78,7 +78,7 @@ function presThreeController() {
         icon: './assets/icon/conv_violet.png',
         color: 'violet'
     }, {
-        image: 'clonezone_small',
+        image: 'cloneZone_small',
         title: 'Exercice: CloneZone',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise',

@@ -1,15 +1,15 @@
-<h1 class="title">À Lyon, spectaculaire accident de bus...</h1>
-<div ng-hide="show" class="main_row valign-wrapper row col s12">
+<h1 ng-show="vm.showBus == 'one' || vm.showBus == 'two'" class="title">À Lyon, spectaculaire accident de bus...</h1>
+<div ng-show="vm.showBus == 'one'" class="main_row valign-wrapper row col s12">
     <div class="main_container_grey_video valign container col s8">
       <video class="container_video_grey col s7" controls>
-          <source class="video_grey" src="views/pres3/assets/img/large/accident-de-bus-a-lyon.mp4" type="video/mp4">
+          <source class="video_grey" src="./assets/img/large/accident_bus.mp4" type="video/mp4">
       </video>
         <div class="container_grey col s5">
             <h4 class="main_title">LYON (Rhône)</h4>
             <p class="main_p col s12">La blague de deux étudiants lyonnais a tourné au drame samedi matin. Élèves en Arts du Spectacle, ils souhaitaient réaliser un canular vidéo en effrayant un bus. Pris de panique, le conducteur de la TCL (Transports en Commun Lyonnais) a perdu
             le contrôle. Trois blessés dont un grave sont à déplorer. Un bilan qui aurait pu être plus lourd si l’accident s’était déroulé à heure de pointe.</p>
         </div>
-        <p>Lien vers la vidéo : https://www.youtube.com/watch?v=4_N1_C5JOEs</p>
+        <p>Lien vers la vidéo : <a href="https://www.youtube.com/watch?v=4_N1_C5JOEs" target="_blank">https://www.youtube.com/watch?v=4_N1_C5JOEs</a></p>
     </div>
     <div class="main_sub_container col s4">
         <!-- <div class="sub_container row col s12">
@@ -18,7 +18,7 @@
         </div> -->
     </div>
 </div>
-<ul ng-hide="show" class="response-logo valign-wrapper col s4">
+<ul ng-show="vm.showBus == 'one'" class="response-logo valign-wrapper col s4">
     <li class="col s6 valign">
         <img class="choice" id="true_answer0" src="assets/img/like_blue_vrai.png" alt="vrai" ng-click="vm.biggerTrueAnswer(0)">
     </li>
@@ -26,17 +26,17 @@
         <img class="choice" id="false_answer0" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(0)">
     </li>
 </ul>
-<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
+<a ng-show="vm.showBus == 'one'" class="btn-floating btn-large btn_choice" ng-click="vm.showBus = 'two'">
     <i class="material-icons">fast_forward</i>
 </a>
 <!-- answer -->
-<div ng-show="show" class="main_row valign-wrapper row col s12">
+<div ng-show="vm.showBus == 'two'" class="main_row valign-wrapper row col s12">
     <div class="main_container_grey_video valign container col s8">
-      <div class="marking position_right_imghoriz" ng-show="true">
+      <div class="marking position_right_imghoriz">
           <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
       </div>
       <video class="container_video_grey col s7" controls>
-          <source class="video_grey" src="views/pres3/assets/img/large/accident-de-bus-a-lyon.mp4" type="video/mp4">
+          <source class="video_grey" src="./assets/img/large/accident_bus.mp4" type="video/mp4">
       </video>
         <div ng-click="highlight = true" class="container_grey col s5">
             <h4 class="main_title">LYON (Rhône)</h4>
@@ -55,9 +55,23 @@
         <p>Lien vers la vidéo : https://www.youtube.com/watch?v=4_N1_C5JOEs</p>
     </div>
     <div class="main_sub_container col s4">
-        <div class="sub_container row col s12">
-            <p class="sub_p">Le montage où l’art de raconter des histoires différentes avec les mêmes images.</p>
-            <p class="sub_p">Leçon de cinéma – Le montage : https://youtu.be/ETgwDJWNRwQ?t=2m23s</p>
+    </div>
+</div>
+<a ng-show="vm.showBus == 'two'" class="btn-floating btn-large btn_choice" ng-click="vm.showBus = 'three'">
+    <i class="material-icons">fast_forward</i>
+</a>
+<!-- answer2 -->
+<div ng-show="vm.showBus == 'three'" class="main_row row">
+    <div class="main_container_video col s7">
+        <video class="responsive-video video_canal" controls>
+            <source src="./assets/img/large/pub-canal-plus.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="main_sub_container valign-wrapper container col s5">
+        <div class="subContainer container col s12 valign">
+            <h1 class="sub_title"></h1>
+            <p class="sub_p col s12">La façon de monter une vidéo peut influer notre jugement ou notre perception.</p>
         </div>
     </div>
 </div>
+<a ng-show="vm.showBus == 'three'" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(12)"><i class="material-icons">fast_forward</i></a>

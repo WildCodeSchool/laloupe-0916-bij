@@ -1,4 +1,4 @@
-/*main*/
+/*MAIN*/
 
 html {
     color: white;
@@ -40,7 +40,14 @@ body {
 }
 
 
-/* footer*/
+/*FOOTER*/
+
+.main_footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6vh;
+}
 
 .social_footer {
     padding-top: 10px;
@@ -56,7 +63,7 @@ body {
 }
 
 
-/* NAVBAR*/
+/*NAVBAR*/
 
 .BlueBackground {
     background-color: rgb(45, 78, 130);
@@ -111,12 +118,15 @@ nav img {
     margin-left: 25%;
 }
 
-.mentionlegal{
-  margin-top: 12%;
+.mentionlegal {
+    margin-top: 12%;
 }
+
 .main_next_logo {
     font-size: 5em;
 }
+
+
 /*PARCOURS*/
 
 .row {
@@ -268,99 +278,14 @@ nav img {
 }
 
 
-/* parcours: general format */
-/*background color on hover angry button set to transparent*/
-
-.btn-floating:hover {
-    color: rgb(45, 78, 130) !important;
-}
-
-.main_parcours {
-    font-size: 2rem;
-    margin: 0;
-    padding-left: 2%;
-}
-
-.main_row {
-    display: flex;
-    margin-top: 10px;
-    height: 100%;
-    width: 100vw;
-}
-
-.main_container {
-    margin-top: 2%;
-}
-
-.main_sub_container {
-    margin-top: -40px;
-    width: 100%;
-    text-align: left;
-}
-
-.main_container_answer, .main_row_answer {
-    float: inherit !important;
-}
-
-.title {
-    position: absolute;
-    top: 2%;
-    margin-left: 30px;
-}
-
-.main_title {
-    color: black;
-}
-
-.main_p {
-    font-size: 1.8rem;
-    color: black;
-}
-
-.main_p_center {
-    float: inherit !important;
-    font-size: 1.8rem;
-}
-
-.sub_p {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 2rem;
-}
-
-.response-logo {
-    position: absolute;
-    right: 0 !important;
-    bottom: 14%;
-    height: 13%;
-}
-
-.marking {
-    position: absolute;
-}
+/*SLIDES: general format*/
 
 .bigger {
-    height: 65px !important;
+    height: 50px !important;
     -webkit-transition: 0.5s linear all;
     -moz-transition: 0.5s linear all;
     -o-transition: 0.5s linear all;
     transition: 0.5s linear all;
-}
-
-.sub_title {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.sub_title2 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 1.5rem;
-}
-
-.sub_main {
-    display: flex;
-    flex-direction: row;
 }
 
 .btn_choice, .btn_next {
@@ -374,11 +299,17 @@ nav img {
     font-size: 4.5rem;
 }
 
+.btn-floating:hover {
+    color: rgb(45, 78, 130) !important;
+}
 
-/*pointer*/
+.container_img_grey, .container_img_grey_answer, .container_grey, .container_video_grey {
+    margin-top: 2%;
+    position: relative;
+}
 
-.pointer {
-    cursor: pointer;
+.container_img_grey {
+    width: 100%;
 }
 
 
@@ -402,23 +333,97 @@ nav img {
     height: 100%;
 }
 
+.img_grey {
+  position: relative;
+  width: 90%;
+}
+
+.main_container {
+    margin-top: 2%;
+}
+
+.main_container_answer, .main_row_answer {
+    float: inherit !important;
+}
+
+.main_p {
+    font-size: 1.8rem;
+    color: black;
+}
+
+.main_p_center {
+    float: inherit !important;
+    font-size: 1.8rem;
+}
+
+.main_parcours {
+    font-size: 2rem;
+    margin: 0;
+    padding-left: 2%;
+}
+
+.main_row {
+    display: flex;
+    margin-top: 10px;
+    height: 100%;
+    width: 100vw;
+}
+
+.main_sub_container {
+    margin-top: -40px;
+    width: 100%;
+    text-align: left;
+}
+
+.main_title {
+    color: black;
+}
+
+.marking {
+    position: absolute;
+}
+
+.marking img {
+    width: 80%;
+}
+
+.response-logo {
+    position: absolute;
+    right: 0 !important;
+    bottom: 14%;
+    height: 13%;
+}
+
 .size_middle_answer {
-    /*margin-top: 2%;*/
     height: 80%;
     position: relative;
 }
 
-
-/* footer*/
-
-.social_footer {
-    padding-top: 10px;
-    width: 4vh;
+.sub_p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2rem;
 }
 
-.main_footer {
+.sub_title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sub_main {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 6vh;
+    top: 2%;
+    margin-left: 30px;
+}
+
+
+/*POINTER*/
+
+.pointer {
+    cursor: pointer;
 }

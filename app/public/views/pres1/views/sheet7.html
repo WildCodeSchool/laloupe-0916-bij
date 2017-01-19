@@ -1,16 +1,20 @@
 <!-- question -->
-<div ng-hide="show" class="main_row row col s12">
-    <div class="main_container_grey_high container col s8">
-            <img ng-click="show = true" class="size_middle_answer pointer" src="views/pres1/assets/img/large/recadrage.jpg">
-            <p class="sub_p col s12">Recadrez la photo de manière à proposer deux interprétations totalement opposées – Cette photo a été prise en Irak en Mars 2003</p>
+<div ng-hide="show" class="main_row row">
+    <div class="container col s8">
+        <p class="sub_p col s12">Recadrez la photo de manière à proposer deux interprétations totalement opposées – Cette photo a été prise en Irak en Mars 2003</p>
+        <img ng-click="show = true" class="size_middle_answer pointer" src="./assets/img/large/recadrage.jpg" alt="civil en difficulté">
     </div>
 </div>
-<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true"><i class="material-icons">fast_forward</i></a>
+<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
+    <i class="material-icons">fast_forward</i>
+</a>
 <!-- answer -->
-<div ng-show="show" class="main_row row col s12">
-    <div class="main_container_grey_high container col s8">
-            <img class="size_middle_answer slideExpandUp" src="views/pres1/assets/img/large/recadrage2.png">
-            <p class="sub_p col s12">Quel est l’intérêt de procéder à de tel recadrage ?</p>
+<div ng-show="show" class="main_row row">
+    <div class="container col s8">
+        <p class="sub_p col s12">Quel est l’intérêt de procéder à de tel recadrage ?</p>
+        <img class="size_middle_answer slideExpandUp" src="./assets/img/large/recadrage2.png" alt="2 recadrages (dés)avantageant l'armée">
     </div>
 </div>
-<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(7)"><i class="material-icons">fast_forward</i></a>
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(7)">
+    <i class="material-icons">fast_forward</i>
+</a>

@@ -404,7 +404,8 @@ right: 26%;
   bottom: 20px;
   background-color: rgb(45, 78, 130);
 }
-.btn_choice i, .btn_next i {
+
+.btn_choice i, .btn_next i, .btn_prev i {
   font-size: 4.5rem;
 }
 

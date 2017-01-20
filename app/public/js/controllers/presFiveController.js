@@ -1,6 +1,7 @@
 function presFiveController() {
     // angular.element(document.querySelector('#b0')).addClass('active pos1');
     this.show = false;
+    this.showBus = "one";
     this.showRecadrage = false;
     this.highlight = false;
     this.includerpres5 = '1';
@@ -12,6 +13,7 @@ function presFiveController() {
     this.answerLeParisien = false;
     this.image20Minutes = true;
     this.minion = false;
+    this.marking = true;
     // datas for navigation slide
     this.slides = [{
         image: 'vraidufaux_small',
@@ -111,15 +113,15 @@ function presFiveController() {
         return angular.element(document.querySelector(id));
     };
     this.biggerTrueAnswer = (n) => {
-        if (getElement('#true_answer' + n)[0].className == 'choice') {
+        if (getElement('#true_answer' + n)[0].className == 'choice' || getElement('#true_answer' + n)[0].className == 'choice_twitter') {
             getElement('#true_answer' + n).addClass('bigger');
             getElement('#false_answer' + n).removeClass('bigger');
         } else {
-            getElement('#true_answer').removeClass('bigger');
+            getElement('#true_answer' + n).removeClass('bigger');
         }
     };
     this.biggerFalseAnswer = (n) => {
-        if (getElement('#false_answer' + n)[0].className == 'choice') {
+        if (getElement('#false_answer' + n)[0].className == 'choice' || getElement('#false_answer' + n)[0].className == 'choice_twitter') {
             getElement('#false_answer' + n).addClass('bigger');
             getElement('#true_answer' + n).removeClass('bigger');
         } else {
@@ -168,6 +170,7 @@ function presFiveController() {
 
     // function for move to the next slide
     this.nextVisibleSlide = (i) => {
+      if (i == 27) { this.showBus = "one"; }
         this.select(i);
         this.next();
     };
@@ -181,6 +184,7 @@ function presFiveController() {
             getElement('#logo_minion').removeClass('contractedUp');
             getElement('#logo_minion').addClass('expandDown');
             this.minion = true;
+            this.marking = false;
         } else {
             getElement('#logo_minion').removeClass('expandDown');
             getElement('#logo_minion').addClass('contractedUp');
@@ -188,6 +192,7 @@ function presFiveController() {
             getElement('#inner-left').removeClass('on-left');
             getElement('#inner-right').removeClass('on-right');
             this.minion = false;
+            this.marking = true;
         }
     };
 

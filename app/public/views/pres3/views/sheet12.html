@@ -1,22 +1,19 @@
 <h1 ng-show="vm.showBus == 'one' || vm.showBus == 'two'" class="title">À Lyon, spectaculaire accident de bus...</h1>
-<div ng-show="vm.showBus == 'one'" class="main_row valign-wrapper row col s12">
+<div ng-show="vm.showBus == 'one'" class="main_row valign-wrapper row">
     <div class="main_container_grey_video valign container col s8">
-      <video class="container_video_grey col s7" controls>
-          <source class="video_grey" src="./assets/img/large/accident_bus.mp4" type="video/mp4">
-      </video>
+        <video class="container_video_grey col s7" controls>
+            <source class="video_grey" src="./assets/img/large/accident_bus.mp4" type="video/mp4">
+        </video>
         <div class="container_grey col s5">
             <h4 class="main_title">LYON (Rhône)</h4>
-            <p class="main_p col s12">La blague de deux étudiants lyonnais a tourné au drame samedi matin. Élèves en Arts du Spectacle, ils souhaitaient réaliser un canular vidéo en effrayant un bus. Pris de panique, le conducteur de la TCL (Transports en Commun Lyonnais) a perdu
-            le contrôle. Trois blessés dont un grave sont à déplorer. Un bilan qui aurait pu être plus lourd si l’accident s’était déroulé à heure de pointe.</p>
+            <p class="main_p col s12">La blague de deux étudiants lyonnais a tourné au drame samedi matin. Élèves en Arts du Spectacle, ils souhaitaient réaliser un canular vidéo en effrayant un bus. Pris de panique, le conducteur de la TCL (Transports en
+                Commun Lyonnais) a perdu le contrôle. Trois blessés dont un grave sont à déplorer. Un bilan qui aurait pu être plus lourd si l’accident s’était déroulé à heure de pointe.</p>
         </div>
-        <p>Lien vers la vidéo : <a href="https://www.youtube.com/watch?v=4_N1_C5JOEs" target="_blank">https://www.youtube.com/watch?v=4_N1_C5JOEs</a></p>
+        <p>Lien vers la vidéo :
+            <a href="https://www.youtube.com/watch?v=4_N1_C5JOEs" target="_blank">https://www.youtube.com/watch?v=4_N1_C5JOEs</a>
+        </p>
     </div>
-    <div class="main_sub_container col s4">
-        <!-- <div class="sub_container row col s12">
-            <p class="sub_p">Un détail interpelle sur l’image.<br/>Et si vous regardiez l’image d’un peu plus près ?</p>
-            <p class="sub_p">La recherche par image, un bon moyen d’en savoir plus sur un visuel et son origine.</p>
-        </div> -->
-    </div>
+    <div class="main_sub_container col s4"></div>
 </div>
 <ul ng-show="vm.showBus == 'one'" class="response-logo valign-wrapper col s4">
     <li class="col s6 valign">
@@ -32,20 +29,18 @@
 <!-- answer -->
 <div ng-show="vm.showBus == 'two'" class="main_row valign-wrapper row col s12">
     <div class="main_container_grey_video valign container col s8">
-      <div class="marking position_right_imghoriz">
-          <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
-      </div>
-      <video class="container_video_grey col s7" controls>
-          <source class="video_grey" src="./assets/img/large/accident_bus.mp4" type="video/mp4">
-      </video>
+        <div class="marking position_right_imghoriz">
+            <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
+        </div>
+        <video class="container_video_grey col s7" controls>
+            <source class="video_grey" src="./assets/img/large/accident_bus.mp4" type="video/mp4">
+        </video>
         <div ng-click="highlight = true" class="container_grey col s5">
             <h4 class="main_title">LYON (Rhône)</h4>
-            <p ng-hide="highlight" class="sub_p col s12">
-                <b></b>
+            <p ng-hide="highlight" class="main_p col s12">
                 La blague de deux étudiants lyonnais a tourné au drame samedi matin. Élèves en Arts du Spectacle, ils souhaitaient réaliser un canular vidéo en effrayant un bus. Pris de panique, le conducteur de la TCL (Transports en Commun Lyonnais) a perdu
                 le contrôle. Trois blessés dont un grave sont à déplorer. Un bilan qui aurait pu être plus lourd si l’accident s’était déroulé à heure de pointe.</p>
-            <p ng-show="highlight" class="sub_p col s12">
-                <b></b>
+            <p ng-show="highlight" class="main_p col s12">
                 <mark>La blague de deux étudiants lyonnais</mark>
                 a tourné au drame samedi matin.
                 <mark>Élèves en Arts du Spectacle,</mark>
@@ -54,8 +49,7 @@
         </div>
         <p>Lien vers la vidéo : https://www.youtube.com/watch?v=4_N1_C5JOEs</p>
     </div>
-    <div class="main_sub_container col s4">
-    </div>
+    <div class="main_sub_container col s4"></div>
 </div>
 <a ng-show="vm.showBus == 'two'" class="btn-floating btn-large btn_choice" ng-click="vm.showBus = 'three'">
     <i class="material-icons">fast_forward</i>
@@ -74,4 +68,6 @@
         </div>
     </div>
 </div>
-<a ng-show="vm.showBus == 'three'" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(12)"><i class="material-icons">fast_forward</i></a>
+<a ng-show="vm.showBus == 'three'" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(12)">
+    <i class="material-icons">fast_forward</i>
+</a>

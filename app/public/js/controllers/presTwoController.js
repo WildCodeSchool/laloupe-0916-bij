@@ -1,17 +1,18 @@
 function presTwoController() {
-    this.show = false;
-    this.showRecadrage = false;
-    this.highlight = false;
-    this.includerpres2 = '1';
-    this.selectClass = "1";
-    this.index = 0;
-    this.active = 0;
-    this.previewPos = 0;
-    this.position = 0;
-    // this.answerLeParisien = false;
-    // this.image20Minutes = true;
-    // this.minion = false;
-    // datas for navigation slide
+  this.show = false;
+  this.showBus = "one";
+  this.showRecadrage = false;
+  this.highlight = false;
+  this.includerpres2 = '1';
+  this.selectClass = "1";
+  this.index = 0;
+  this.active = 0;
+  this.previewPos = 0;
+  this.position = 0;
+  this.answerLeParisien = false;
+  this.image20Minutes = true;
+  this.minion = false;
+  this.marking = true;
     this.slides = [{
         image: 'hollande_small',
         title: 'France',
@@ -114,15 +115,15 @@ function presTwoController() {
         return angular.element(document.querySelector(id));
     };
     this.biggerTrueAnswer = (n) => {
-        if (getElement('#true_answer' + n)[0].className == 'choice') {
+        if (getElement('#true_answer' + n)[0].className == 'choice' || getElement('#true_answer' + n)[0].className == 'choice_twitter') {
             getElement('#true_answer' + n).addClass('bigger');
             getElement('#false_answer' + n).removeClass('bigger');
         } else {
-            getElement('#true_answer').removeClass('bigger');
+            getElement('#true_answer' + n).removeClass('bigger');
         }
     };
     this.biggerFalseAnswer = (n) => {
-        if (getElement('#false_answer' + n)[0].className == 'choice') {
+        if (getElement('#false_answer' + n)[0].className == 'choice' || getElement('#false_answer' + n)[0].className == 'choice_twitter') {
             getElement('#false_answer' + n).addClass('bigger');
             getElement('#true_answer' + n).removeClass('bigger');
         } else {
@@ -171,6 +172,7 @@ function presTwoController() {
 
     // function for move to the next slide
     this.nextVisibleSlide = (i) => {
+      if (i == 27) { this.showBus = "one"; }
         this.select(i);
         this.next();
     };
@@ -184,6 +186,7 @@ function presTwoController() {
             getElement('#logo_minion').removeClass('contractedUp');
             getElement('#logo_minion').addClass('expandDown');
             this.minion = true;
+            this.marking = false;
         } else {
             getElement('#logo_minion').removeClass('expandDown');
             getElement('#logo_minion').addClass('contractedUp');
@@ -191,6 +194,7 @@ function presTwoController() {
             getElement('#inner-left').removeClass('on-left');
             getElement('#inner-right').removeClass('on-right');
             this.minion = false;
+            this.marking = true;
         }
     };
 }

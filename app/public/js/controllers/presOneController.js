@@ -166,24 +166,25 @@ function presOneController() {
     };
 
 //flip-flop controller
-    this.flip = () => {
-      if(!getElement('#front').hasClass('on-left')) {
+this.flip = () => {
+    if (!getElement('#front').hasClass('on-left')) {
         getElement('#front').addClass('on-left');
         getElement('#inner-left').addClass('on-left');
         getElement('#inner-right').addClass('on-right');
         getElement('#logo_minion').removeClass('contractedUp');
         getElement('#logo_minion').addClass('expandDown');
         this.minion = true;
-      }
-      else {
+        this.marking = false;
+    } else {
         getElement('#logo_minion').removeClass('expandDown');
         getElement('#logo_minion').addClass('contractedUp');
         getElement('#front').removeClass('on-left');
         getElement('#inner-left').removeClass('on-left');
         getElement('#inner-right').removeClass('on-right');
         this.minion = false;
-      }
-    };
+        this.marking = true;
+    }
+};
 
     //Twitter controller
     this.showMe = '';

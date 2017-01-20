@@ -63,7 +63,7 @@
   .bigger {
       height: 50px !important;
   }
-  .position_right_imgvertic_tinder {
+  /*.position_right_imgvertic_tinder {
       right: 42%;
       top: 0;
   }
@@ -121,7 +121,7 @@
       position: absolute;
       top: 5%;
       right: 25%;
-  }
+  }*/
 
   .marking img {
       width: 60%;

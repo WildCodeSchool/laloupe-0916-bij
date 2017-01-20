@@ -9,7 +9,7 @@ function directiveZoom() {
                 navbar = document.getElementsByClassName("nav-wrapper"),
                 title = document.getElementsByClassName("main_parcours"),
                 nav = document.getElementsByClassName("presfixed");
-            container = document.getElementsByClassName("main_container_grey_answer");
+            container = document.getElementsByClassName("main_container_grey");
             image.onload = function() {
                 zoom.style.background = "url('" + image.src + "') no-repeat";
                 document.getElementById("zoom_area").onmousemove = () => {

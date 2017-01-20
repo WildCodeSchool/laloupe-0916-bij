@@ -352,6 +352,7 @@
 .main_container_grey_video, .main_container_grey_video_answer {
     background-color: #dddddd;
     height: 75%;
+
 }
 
 .main_container_grey, .main_container_grey_answer {
@@ -363,21 +364,6 @@
     background-color: #dddddd;
     height: 90%;
 }
-
-.img_grey {
-    position: relative;
-    width: 90%;
-}
-
-.container_img_grey {
-    width: 100%;
-}
-
-.container_img_grey, .container_img_grey_answer, .container_grey, .container_video_grey {
-    margin-top: 2%;
-    position: relative;
-}
-
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End General style @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 

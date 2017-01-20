@@ -16,6 +16,7 @@ function presSixController() {
     this.marking = true;
 
     // datas for navigation slide
+
     this.slides = [{
         image: 'chien_small',
         title: '24h en images',

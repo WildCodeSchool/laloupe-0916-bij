@@ -53,7 +53,7 @@ function presTwoController() {
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'
     }, {
-        image: 'recadrage_small',
+        image: 'radeau_meduse_small',
         title: 'Exercice: Recadrage',
         icon: './assets/icon/globe_turquoise.png',
         color: 'turquoise'

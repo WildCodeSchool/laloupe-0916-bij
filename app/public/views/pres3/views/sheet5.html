@@ -22,7 +22,7 @@
         <img class="choice" id="false_answer0" src="assets/img/angry_red-faux.png" alt="faux" ng-click="vm.biggerFalseAnswer(0)">
     </li>
 </ul>
-<a ng-hide="show" class="btn-floating btn-large btn_choice" ng-click="show = true">
+<a ng-hide="show"  class="btn-floating btn-large btn_choice" ng-click="show = true">
     <i class="material-icons">fast_forward</i>
 </a>
 <!-- answer -->
@@ -33,7 +33,7 @@
         </div>
         <div class="container_img_grey_answer col s8">
             <div class="container_img img_position">
-                <img ng-click="highlight = true" class="img_grey pointer" src="./assets/img/large/carroussel.jpg" alt="les rues de Paris">
+                <img ng-show="highlight = true" class="img_grey pointer" src="./assets/img/large/carroussel_answer.jpg" alt="les rues de Paris">
                 <div ng-show="highlight" class="highlight"></div>
             </div>
         </div>
@@ -60,6 +60,6 @@
         </div>
     </div>
 </div>
-<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(5)">
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(6)">
     <i class="material-icons">fast_forward</i>
 </a>

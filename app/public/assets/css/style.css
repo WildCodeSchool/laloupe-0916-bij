@@ -348,6 +348,7 @@ nav img {
 
 .main_container_vertical {
     height: 95%;
+    position: relative;
 }
 
 .main_container_answer, .main_row_answer {

@@ -352,6 +352,7 @@
 .main_container_video {
     margin-top: 2%;
     padding: 2% !important;
+    position: relative;
 }
 
 .main_container_grey_video, .main_container_grey_video_answer {
@@ -369,6 +370,7 @@
 .main_container_grey_high, .main_container_grey_high_answer {
     background-color: #dddddd;
     height: 90%;
+    position: relative;
 }
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End General style @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -377,80 +379,78 @@
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start Picto position @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 .position_right_imgvertic_tinder {
-  position: absolute;;
-    right: 39%;
-    top: 0;
+  position: absolute;
+    right: 3%;
+    top: -3%;
 }
 
 .position_right_imgvertic_death {
-  position: absolute;;
-    right: 30%;
-    top: 0;
+  position: absolute;
+    right: -4%;
+    top: -5;
 }
 
 .position_right_imgvertic_art {
-  position: absolute;;
+  position: absolute;
     right: 60%;
     top: 1%;
 }
 
 .position_right_imgvertic_vote {
-  position: absolute;;
+  position: absolute;
     right: 45%;
     top: 1%;
 }
 
 .position_right_imgvertic {
-  position: absolute;;
-    right: 29%;
-    top: 0;
+  position: absolute;
+    right: 22%;
+    top: -3%;
 }
 
 .position_right_imghoriz {
-  position: absolute;;
+  position: absolute;
     top: -10%;
     right: -5%;
 }
 
 .position_right_imghoriz_popcorn {
-  position: absolute;;
+  position: absolute;
     top: 8%;
     right: 38%;
 }
 
 .position_Right_imgvertic_marc {
-  position: absolute;;
-    top: 2%;
-    right: 34%;
+  position: absolute;
+    top: -3%;
+    right: 23%;
 }
 
 .position_right_large {
-  position: absolute;;
+  position: absolute;
     top: 2%;
     right: 40%;
 }
 
 .position_right_large_djibouti {
-  position: absolute;;
+  position: absolute;
     top: -8%;
     right: 17%;
 }
 
 .position_right_large_tefal {
-  position: absolute;;
-    top: 0;
-    right: 22%;
+  position: absolute;
+    top: -6;
+    right: -4%;
 }
 
 .position_top_flipflop {
-  position: absolute;;
     position: absolute;
     top: 8%;
     right: 23%;
 }
 
 .position_top_flipflop_minion {
-  position: absolute;;
     position: absolute;
     top: 2%;
     right: 22%;

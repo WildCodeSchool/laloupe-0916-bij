@@ -82,6 +82,12 @@ html         {
   z-index: 10;
 }
 
+.marking_tinder {
+  -webkit-animation:1s stamp;
+  -webkit-transform : rotate(0deg);
+  z-index: 10;
+}
+
 /*Marking Twitter*/
 .answer_smiley1, .answer_smiley2 , .answer_smiley3, .answer_smiley4, .answer_smiley5 {
   -webkit-animation:1s stamp;

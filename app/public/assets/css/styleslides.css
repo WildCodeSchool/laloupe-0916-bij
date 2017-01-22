@@ -6,8 +6,8 @@
 .img-loupe {
   position: absolute;
   z-index: 10;
-  bottom: 7%;
-  left: 1%;
+  bottom: 11%;
+  left: 6%;
   width: 10%;
 }
 
@@ -53,12 +53,8 @@
 /* tefal */
 
 .tefal {
-    /*margin-top: 2%;*/
-    /*margin-left: 15%;*/
     display: flex;
     flex-direction: row;
-    /*text-align: center;*/
-    /*height: 100%;*/
     width: 100%;
     height: 100%;
 }
@@ -71,11 +67,11 @@
     position: relative;
     height: 100%;
 }
-
+/*
 .container_img_grey_tefal_answer {
     background-color: #dddddd;
     height: 65%;
-}
+}*/
 
 #slide_six_position {
     margin-left: 1%;
@@ -111,7 +107,7 @@
 #logo_minion {
     position: absolute;
     left: 38%;
-    top: 0;
+    top: -70px;
     width: 15%;
 }
 
@@ -279,22 +275,22 @@
 
 /* bad waves */
 
-.main_container_video_popcorn {
+/*.main_container_video_popcorn {
     margin-top: -2%;
     padding: 2% !important;
-}
+}*/
 
-.video_popcorn {
+/*.video_popcorn {
     height: 90% !important;
-}
+}*/
 
 
 /* accident bus */
 
-.main_container_video_canal {
+/*.main_container_video_canal {
     margin-top: -2%;
     padding: 2% !important;
-}
+}*/
 
 .video_canal {
     height: 90% !important;
@@ -355,13 +351,13 @@
     position: relative;
 }
 
-.main_container_grey_video, .main_container_grey_video_answer {
+/*.main_container_grey_video, .main_container_grey_video_answer {
     background-color: #dddddd;
     height: 75%;
     position: relative;
-}
+}*/
 
-.main_container_grey, .main_container_grey_answer {
+.main_container_grey {
     background-color: #dddddd;
     height: 65%;
     position: relative;
@@ -378,34 +374,40 @@
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start Picto position @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
-.position_right_imgvertic_tinder {
+/*.position_right_imgvertic_tinder {
   position: absolute;
     right: 3%;
     top: -3%;
-}
+}*/
 
 .position_right_imgvertic_death {
   position: absolute;
-    right: -4%;
-    top: -5;
+    right: -7%;
+    top: -5%;
 }
 
 .position_right_imgvertic_art {
   position: absolute;
-    right: 60%;
-    top: 1%;
+    right: 12%;
+    top: -4%;
 }
 
 .position_right_imgvertic_vote {
   position: absolute;
-    right: 45%;
-    top: 1%;
+    right: 18%;
+    top: -3%;
+}
+
+.position_right_imgvertic_center {
+  position: absolute;
+    right: -7%;
+    top: -3%;
 }
 
 .position_right_imgvertic {
   position: absolute;
-    right: 22%;
-    top: -3%;
+    right: 0;
+    top: 0;
 }
 
 .position_right_imghoriz {
@@ -416,20 +418,8 @@
 
 .position_right_imghoriz_popcorn {
   position: absolute;
-    top: 8%;
-    right: 38%;
-}
-
-.position_Right_imgvertic_marc {
-  position: absolute;
-    top: -3%;
-    right: 23%;
-}
-
-.position_right_large {
-  position: absolute;
-    top: 2%;
-    right: 40%;
+    top: -2%;
+    right: -5%;
 }
 
 .position_right_large_djibouti {
@@ -440,7 +430,7 @@
 
 .position_right_large_tefal {
   position: absolute;
-    top: -6;
+    top: -6%;
     right: -4%;
 }
 
@@ -457,7 +447,10 @@
 }
 
 .marking img {
-    width: 80%;
+    width: 8rem;
+}
+.marking_tinder img {
+    width: 13rem;
 }
 
 .choice, .choice_twitter {
@@ -470,11 +463,11 @@
 }
 
 .choice {
-    height: 55px;
+    height: 5rem;
 }
 
 .choice_twitter {
-    height: 55px;
+    height: 5rem;
 }
 
 

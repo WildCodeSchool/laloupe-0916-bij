@@ -2,7 +2,7 @@
 <div ng-hide="show" class="main_row row valign-wrapper">
     <div class="main_container_vertical container valign col s7">
         <div class="container_img_vertical">
-          <img class="responsive-img slideExpandUp" src="./assets/img/large/carte.jpg" alt="carte">
+          <img class="responsive-img" src="./assets/img/large/carte.jpg" alt="carte">
         </div>
     </div>
     <div class="main_sub_container container col s5">
@@ -22,10 +22,10 @@
 <!-- answer -->
 <div ng-show="show" class="main_row row valign-wrapper">
     <div class="main_container_vertical container valign col s7">
-        <div class="marking position_right_imgvertic" ng-show="true">
-          <img class="ship_icon" src="./assets/icon/angry_red.png" alt="vrai">
-        </div>
         <div class="container_img_vertical">
+          <div class="marking position_right_imgvertic_vote" ng-show="true">
+            <img class="ship_icon" src="./assets/icon/angry_red.png" alt="vrai">
+          </div>
           <img class="responsive-img size_middle_answer expandDown" src="./assets/img/large/carte_answer.jpg" alt="carte surlignée">
         </div>
     </div>

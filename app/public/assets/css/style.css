@@ -281,7 +281,7 @@ nav img {
 /*SLIDES: general format*/
 
 .bigger {
-    height: 65px !important;
+    height: 6rem !important;
     -webkit-transition: 0.5s linear all;
     -moz-transition: 0.5s linear all;
     -o-transition: 0.5s linear all;
@@ -303,14 +303,14 @@ nav img {
     color: rgb(45, 78, 130) !important;
 }
 
-.container_grey, .container_video_grey {
+.container_grey {
     position: relative;
 }
 
 .container_img {
   height: 100%;
 }
-.container_img_grey, .container_img_grey_answer {
+.container_img_grey {
     width: 100%;
     height: 80%;
 }
@@ -387,14 +387,6 @@ nav img {
 
 .main_title {
     color: black;
-}
-
-.marking {
-    position: absolute;
-}
-
-.marking img {
-    width: 80%;
 }
 
 .response-logo {

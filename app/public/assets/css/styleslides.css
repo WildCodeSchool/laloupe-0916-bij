@@ -329,7 +329,7 @@
 }
 
 .lien_video {
-    bottom: 5%;
+    bottom: 0;
     position: absolute;
 }
 
@@ -413,14 +413,13 @@
 
 .position_top_flipflop {
     position: absolute;
-    top: 8%;
-    right: 23%;
+    top: 200%;
+    right: 24%;
 }
 
 .position_top_flipflop_minion {
     position: absolute;
-    top: 2%;
-    right: 22%;
+    right: 24%;
 }
 
 .marking img {

@@ -308,13 +308,13 @@ nav img {
 }
 
 .container_img {
-  height: 100%;
+    height: 100%;
 }
+
 .container_img_grey {
     width: 100%;
     height: 80%;
 }
-
 
 .container_img_vertical {
     position: relative;
@@ -337,8 +337,8 @@ nav img {
 }
 
 .img_grey {
-  position: relative;
-  height: 100%;
+    position: relative;
+    height: 100%;
 }
 
 .main_container {
@@ -397,9 +397,10 @@ nav img {
 }
 
 .sub_container_img_grey {
-  height: 100%;
-  margin: 0 auto;
+    height: 100%;
+    margin: 0 auto;
 }
+
 .size_middle_answer {
     height: 80%;
     position: relative;
@@ -435,5 +436,5 @@ nav img {
 }
 
 .position_marking {
-  position: relative;
+    position: relative;
 }

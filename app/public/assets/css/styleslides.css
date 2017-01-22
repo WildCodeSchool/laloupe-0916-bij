@@ -4,11 +4,11 @@
 /* dog */
 
 .img-loupe {
-  position: absolute;
-  z-index: 10;
-  bottom: 11%;
-  left: 6%;
-  width: 10%;
+    position: absolute;
+    z-index: 10;
+    bottom: 11%;
+    left: 6%;
+    width: 10%;
 }
 
 .img-loupe img {
@@ -67,6 +67,8 @@
     position: relative;
     height: 100%;
 }
+
+
 /*
 .container_img_grey_tefal_answer {
     background-color: #dddddd;
@@ -275,22 +277,8 @@
 
 /* bad waves */
 
-/*.main_container_video_popcorn {
-    margin-top: -2%;
-    padding: 2% !important;
-}*/
-
-/*.video_popcorn {
-    height: 90% !important;
-}*/
-
 
 /* accident bus */
-
-/*.main_container_video_canal {
-    margin-top: -2%;
-    padding: 2% !important;
-}*/
 
 .video_canal {
     height: 90% !important;
@@ -341,8 +329,8 @@
 }
 
 .lien_video {
-  bottom: 5%;
-  position: absolute;
+    bottom: 5%;
+    position: absolute;
 }
 
 .main_container_video {
@@ -350,12 +338,6 @@
     padding: 2% !important;
     position: relative;
 }
-
-/*.main_container_grey_video, .main_container_grey_video_answer {
-    background-color: #dddddd;
-    height: 75%;
-    position: relative;
-}*/
 
 .main_container_grey {
     background-color: #dddddd;
@@ -369,67 +351,62 @@
     position: relative;
 }
 
+
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ End General style @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Start Picto position @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
-/*.position_right_imgvertic_tinder {
-  position: absolute;
-    right: 3%;
-    top: -3%;
-}*/
-
 .position_right_imgvertic_death {
-  position: absolute;
+    position: absolute;
     right: -7%;
     top: -5%;
 }
 
 .position_right_imgvertic_art {
-  position: absolute;
+    position: absolute;
     right: 12%;
     top: -4%;
 }
 
 .position_right_imgvertic_vote {
-  position: absolute;
+    position: absolute;
     right: 18%;
     top: -3%;
 }
 
 .position_right_imgvertic_center {
-  position: absolute;
+    position: absolute;
     right: -7%;
     top: -3%;
 }
 
 .position_right_imgvertic {
-  position: absolute;
+    position: absolute;
     right: 0;
     top: 0;
 }
 
 .position_right_imghoriz {
-  position: absolute;
+    position: absolute;
     top: -10%;
     right: -5%;
 }
 
 .position_right_imghoriz_popcorn {
-  position: absolute;
+    position: absolute;
     top: -2%;
     right: -5%;
 }
 
 .position_right_large_djibouti {
-  position: absolute;
+    position: absolute;
     top: -8%;
     right: 17%;
 }
 
 .position_right_large_tefal {
-  position: absolute;
+    position: absolute;
     top: -6%;
     right: -4%;
 }
@@ -449,6 +426,7 @@
 .marking img {
     width: 8rem;
 }
+
 .marking_tinder img {
     width: 13rem;
 }

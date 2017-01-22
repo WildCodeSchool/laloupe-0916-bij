@@ -1,8 +1,8 @@
 <!-- question -->
-<div ng-hide="show" class="main_row row">
-    <div class="main_container container col s7">
+<div ng-hide="show" class="main_row row valign-wrapper">
+  <div class="main_container_vertical container valign col s7">
         <div class="container_img_vertical">
-            <img class="responsive-img slideExpandUp" src="./assets/img/large/vraidufaux_question.jpg" alt="un ours">
+            <img class="responsive-img" src="./assets/img/large/vraidufaux_question.jpg" alt="un ours">
         </div>
     </div>
     <div class="main_sub_container container col s5">
@@ -20,16 +20,17 @@
     <i class="material-icons">fast_forward</i>
 </a>
 <!-- answer -->
-<div ng-show="show" class="main_row row">
-    <div class="main_container container col s12">
-        <div class="marking position_right_imgvertic" ng-show="true">
+<div ng-show="show" class="main_row row valign-wrapper">
+  <div class="main_container_vertical container valign col s12">
+        <div class="container_answer_img_vertical col s4 offset-s4">
+          <div class="marking position_right_imgvertic_center" ng-show="true">
             <img class="ship_icon" src="./assets/icon/angry_red.png" alt="vrai">
-        </div>
-        <div class="container_answer_img_vertical col s12">
+          </div>
             <img class="responsive-img size_middle_answer expandDown" src="./assets/img/large/vraidufaux_answer.jpg" alt="ours surligné">
         </div>
+
     </div>
 </div>
-<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(1)"
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(1)">
     <i class="material-icons">fast_forward</i>
 </a>

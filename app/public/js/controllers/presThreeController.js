@@ -152,7 +152,7 @@ function presThreeController() {
 
     // function for move to the next slide
     this.nextVisibleSlide = (i) => {
-      if (i == 27) { this.showBus = "one"; }
+      if (i == 13) { this.showBus = "one"; }
         this.select(i);
         this.next();
     };

@@ -4,17 +4,20 @@
     width: 100vw;
     z-index: 100;
 }
+
 .prescar {
     width: 100%;
     overflow: hidden;
     z-index: 10;
 }
+
 #prescarousel, .prescar {
     display: flex;
     flex-direction: row;
     padding: 0;
     margin: 0;
 }
+
 #prescarousel li {
     width: 25vw;
     height: 20vh;
@@ -24,9 +27,11 @@
     overflow: hidden;
     position: relative;
 }
+
 .img_nav {
     height: 100%;
 }
+
 .presprev, .presnext {
     color: white;
     font-size: 2rem;
@@ -38,13 +43,16 @@
     text-align: center;
     z-index: 30;
 }
+
 .presprev {
     position: absolute;
 }
+
 .presnext {
     position: absolute;
     right: 0px;
 }
+
 .title_pres {
     margin-left: auto;
     margin-right: auto;
@@ -55,9 +63,11 @@
     border-radius: 0;
     position: absolute;
 }
+
 .title_pres img {
     margin-left: 30px;
 }
+
 .active::before {
     position: absolute;
     background-color: #4fc2c0;
@@ -71,4 +81,6 @@
     bottom: 0;
     font-size: .1rem;
 }
+
+
 /* Fin Menu de nagigation par image*/

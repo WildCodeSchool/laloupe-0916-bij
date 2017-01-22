@@ -1,7 +1,7 @@
 <!-- question -->
 <div ng-hide="show" class="main_row valign-wrapper row">
-    <div class="main_container_grey valign container col s8">
-        <div class="container_img_grey img_position col s8">
+    <div class="main_container_grey valign-wrapper container col s8">
+        <div class="container_img_grey valig col s8">
             <img class="img_grey" src="./assets/img/large/carroussel.jpg" alt="les rues de Paris">
         </div>
         <div class="container_grey col s4">
@@ -27,12 +27,12 @@
 </a>
 <!-- answer -->
 <div ng-show="show" class="main_row valign-wrapper row">
-    <div class="main_container_grey_answer valign container col s8">
+    <div class="main_container_grey valign-wrapper container col s8">
         <div class="marking position_right_imghoriz" ng-show="true">
             <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
         </div>
-        <div class="container_img_grey_answer col s8">
-            <div class="container_img img_position">
+        <div class="container_img_grey valign_wrapper col s8">
+            <div class="sub_container_img_grey">
                 <img ng-show="highlight = true" class="img_grey pointer" src="./assets/img/large/carroussel_answer.jpg" alt="les rues de Paris">
                 <div ng-show="highlight" class="highlight"></div>
             </div>
@@ -60,6 +60,6 @@
         </div>
     </div>
 </div>
-<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(6)">
+<a ng-show="show" class="btn-floating btn-large btn_next anim4" ng-click="vm.nextVisibleSlide(14)">
     <i class="material-icons">fast_forward</i>
 </a>

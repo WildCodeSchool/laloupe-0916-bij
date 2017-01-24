@@ -1,5 +1,4 @@
 <ng-include src="'views/navbar.html'"></ng-include>
-<!-- Pour réactiver l'animation sur les cadenas et le crayon, rajouter dans "vm.unlock()" le même chiffre que dans le "vm.lock()" correspondant. -->
 <div class="row parcours_white_border" ng-controller='parcoursController as vm'>
     <a href="#!/index1">
         <div class="col s2 parcours_blue_rectangle" ng-mouseenter="vm.unlock(1)" ng-mouseleave="vm.lock(1)">

@@ -1,4 +1,5 @@
 function presTwoController() {
+
   this.show = false;
   this.showBus = "one";
   this.showRecadrage = false;
@@ -13,6 +14,9 @@ function presTwoController() {
   this.image20Minutes = true;
   this.minion = false;
   this.marking = true;
+
+  // datas for navigation slide
+
     this.slides = [{
         image: 'hollande_small',
         title: 'France',
@@ -166,7 +170,6 @@ function presTwoController() {
         this.active = i;
         this.previewPos = i;
         this.selectClass = Math.floor(Math.random() * (4 - 1) + 1);
-        // console.log(this.selectClass);
         this.includerpres2 = i + 1;
     };
 

@@ -1,5 +1,5 @@
 function presSixController() {
-    // angular.element(document.querySelector('#b0')).addClass('active pos1');
+
     this.show = false;
     this.showBus = "one";
     this.showRecadrage = false;
@@ -245,7 +245,6 @@ function presSixController() {
         this.active = i;
         this.previewPos = i;
         this.selectClass = 2;
-        // console.log(this.selectClass);
         this.includerpres6 = i + 1;
     };
 

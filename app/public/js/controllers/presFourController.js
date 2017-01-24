@@ -1,4 +1,5 @@
 function presFourController() {
+  
     this.show = false;
     this.showBus = "one";
     this.showRecadrage = false;
@@ -13,7 +14,9 @@ function presFourController() {
     this.image20Minutes = true;
     this.minion = false;
     this.marking = true;
+
     // datas for navigation slide
+
     this.slides = [{
         image: 'twitter_small',
         title: 'France',
@@ -152,7 +155,6 @@ function presFourController() {
         this.active = i;
         this.previewPos = i;
         this.selectClass = Math.floor(Math.random() * (4 - 1) + 1);
-        // console.log(this.selectClass);
         this.includerpres4 = i + 1;
     };
 

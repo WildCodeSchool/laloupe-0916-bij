@@ -1,4 +1,5 @@
 function presThreeController() {
+
   this.show = false;
   this.showBus = "one";
   this.showRecadrage = false;
@@ -13,6 +14,9 @@ function presThreeController() {
   this.image20Minutes = true;
   this.minion = false;
   this.marking = true;
+
+  // datas for navigation slide
+
     this.slides = [{
         image: 'portable_small',
         title: 'Technologie',
@@ -146,7 +150,6 @@ function presThreeController() {
         this.active = i;
         this.previewPos = i;
         this.selectClass = Math.floor(Math.random() * (4 - 1) + 1);
-        // console.log(this.selectClass);
         this.includerpres3 = i + 1;
     };
 

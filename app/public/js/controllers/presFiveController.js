@@ -1,5 +1,5 @@
 function presFiveController() {
-    // angular.element(document.querySelector('#b0')).addClass('active pos1');
+    
     this.show = false;
     this.showBus = "one";
     this.showRecadrage = false;
@@ -14,7 +14,9 @@ function presFiveController() {
     this.image20Minutes = true;
     this.minion = false;
     this.marking = true;
+
     // datas for navigation slide
+
     this.slides = [{
         image: 'vraidufaux_small',
         title: 'L\'ours',
@@ -164,7 +166,6 @@ function presFiveController() {
         this.active = i;
         this.previewPos = i;
         this.selectClass = 2;
-        // console.log(this.selectClass);
         this.includerpres5 = i + 1;
     };
 

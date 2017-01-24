@@ -1,5 +1,5 @@
 function presOneController() {
-    // angular.element(document.querySelector('#b0')).addClass('active pos1');
+    
     this.show = false;
     this.showRecadrage = false;
     this.highlight = false;
@@ -154,7 +154,6 @@ function presOneController() {
         this.active = i;
         this.previewPos = i;
         this.selectClass = 2;
-        // console.log(this.selectClass);
         this.includerpres1 = i + 1;
     };
 

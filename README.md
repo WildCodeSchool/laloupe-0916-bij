@@ -24,6 +24,10 @@ npm start
 
 ## Production
 
+This app is part of a set of 2 app, one for BIJ users and one for package this Electron app.
+
+This Electron application is used only for packaged app for Windows, Linux and Mac. For package app use the methods bellow
+
 ### MacOS
 
 Use [brew](http://brew.sh/) to install required packages.
@@ -93,6 +97,20 @@ npm run dist
 Please use [Docker](https://github.com/electron-userland/electron-builder/wiki/Docker).
 
 npm run dist
+
+
+#### After package.
+
+Zip the folder bellow:
+-   win-ia32-unpacked
+
+Then copy/paste the files below from this app to "laloupe-0916-bij" into dist folder.
+-   win-ia32-unpacked.Zip
+-   levraidufaux Setup 0.1.0.exe
+-   levraidufaux-0.1.0-ia32.AppImage
+-   levraidufaux-0.1.0-x86_64.AppImage
+-   levraidufaux-0.1.0.dmg
+-   levraidufaux-0.1.0-mac.zip
 
 #### Contributors
 -   [Camille Fontaine](https://github.com/CamJr)

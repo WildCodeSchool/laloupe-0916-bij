@@ -29,16 +29,16 @@
 <!-- answer -->
 <h3 ng-show="show">Peut-on faire cuire du pop-corn avec des téléphones portables ? La réponse dans l’émission E=m6.</h3>
 <div ng-show="show" class="main_row row">
-  <div class="main_container_video col s7">
-    <div class="marking position_right_imghoriz_popcorn" ng-show="true">
-      <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
-    </div>
-    <video class="responsive-video video" controls>
+    <div class="main_container_video_mobile center col s8">
+        <div class="marking position_right_imghoriz_popcorn col s12 offset-s4" ng-show="true">
+            <img class="ship_icon" src="./assets/icon/angry_red.png" alt="faux">
+        </div>
+        <video class="valign-wrapper col s8 offset-s2" controls>
             <source src="./assets/img/large/popcorn_portable.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="main_sub_container valign-wrapper container col s5">
-      <div class="subContainer container col s12 valign">
+    <div class="main_sub_container valign-wrapper container col s4">
+        <div class="subContainer container col s12 valign">
             <p class="sub_p col s12">Il est intéressant de connaître l’origine de ces vidéos virales autour du pop corn et des téléphones portables.</p>
             <p class="sub_p col s12">Elles prennent pour origine un buzz orchestré par la société Cardo Systems en 2008 afin de promouvoir de nouveaux écouteurs !</p>
         </div>

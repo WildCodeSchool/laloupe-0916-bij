@@ -1,5 +1,5 @@
 function presFourController() {
-  
+
     this.show = false;
     this.showBus = "one";
     this.showRecadrage = false;
@@ -160,7 +160,9 @@ function presFourController() {
 
     // function for move to the next slide
     this.nextVisibleSlide = (i) => {
-      if (i == 27) { this.showBus = "one"; }
+        if (i == 27) {
+            this.showBus = "one";
+        }
         this.select(i);
         this.next();
     };
@@ -185,4 +187,14 @@ function presFourController() {
             this.marking = true;
         }
     };
+
+    //Twitter controller
+    this.showMe = '';
+    this.twitterParisiens = () => {
+        this.showMe = 'LeParisien';
+    };
+    this.twitter20minutes = () => {
+        this.showMe = '20mn';
+    };
+
 }

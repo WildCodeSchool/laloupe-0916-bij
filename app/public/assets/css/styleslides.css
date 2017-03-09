@@ -339,6 +339,12 @@
     position: relative;
 }
 
+.main_container_video_mobile {
+    margin-top: 5%;
+    padding: 2% !important;
+    position: relative;
+}
+
 .main_container_grey {
     background-color: #dddddd;
     height: 65%;
